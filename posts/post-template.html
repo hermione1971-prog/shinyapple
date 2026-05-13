@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ↓ 記事ごとに書き換えてください -->
+<meta name="description" content="（ここに記事の説明文を書く。100〜120文字程度）">
+<meta name="keywords" content="（キーワードをカンマ区切りで）">
+<meta property="og:title" content="（記事タイトル） | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="（記事の説明文）">
+<meta property="og:type" content="article">
+<!-- ↑ 記事ごとに書き換えてください -->
+<title>（記事タイトル） | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<!-- ↓ カテゴリと記事タイトルを書き換えてください -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">（カテゴリ名）</span>
+  <span class="le" style="display:none">（Category）</span>
+  <span>›</span>
+  <span class="lj">（記事タイトル）</span>
+  <span class="le" style="display:none">（Article title）</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <!-- 記事ヘッダー -->
+    <div class="article-header">
+      <div class="article-meta">
+        <!-- カテゴリタグ: work / life / money / japan のうち1つを残してください -->
+        <span class="post-tag work lj">おしごと</span>
+        <span class="post-tag work le" style="display:none">Work</span>
+        <!-- ↓ 投稿日を書き換えてください -->
+        <span class="post-date">2026.05.01</span>
+      </div>
+      <!-- ↓ タイトルを書き換えてください -->
+      <h1 class="article-title lj">（日本語タイトルをここに書く）</h1>
+      <h1 class="article-title le" style="display:none">（English title here）</h1>
+    </div>
+
+    <!-- 記事本文 -->
+    <div class="article-body">
+
+      <!-- アイキャッチ画像（写真があるときはコメントを外してください） -->
+      <!--
+      <img
+        src="../images/（ファイル名）.jpg"
+        alt="（画像の説明・日本語） / （description in English）">
+      -->
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>（導入文をここに書く。読者が「続きを読みたい」と思う一文を心がけましょう。）</p>
+
+        <h2>（見出し1）</h2>
+
+        <p>（本文）</p>
+
+        <!-- 写真を入れるときはここに追加 -->
+        <!--
+        <img src="../images/（ファイル名）.jpg" alt="（説明）">
+        -->
+
+        <h2>（見出し2）</h2>
+
+        <p>（本文）</p>
+
+        <ul>
+          <li>（箇条書き1）</li>
+          <li>（箇条書き2）</li>
+          <li>（箇条書き3）</li>
+        </ul>
+
+        <!-- アフィリエイトボックス（使うときはコメントを外して内容を書き換えてください） -->
+        <!--
+        <div class="affiliate-box">
+          <div class="affiliate-box-icon">🛒</div>
+          <div class="affiliate-box-body">
+            <p class="affiliate-box-title">（商品名）</p>
+            <p class="affiliate-box-desc">（商品の説明。実際に使った感想など。）</p>
+            <a href="（アフィリエイトURL）" class="affiliate-box-btn" target="_blank" rel="noopener sponsored">Amazonで見る →</a>
+          </div>
+        </div>
+        -->
+
+        <h2>まとめ</h2>
+
+        <p>（まとめの文章）</p>
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>(Opening paragraph. Write something that makes readers want to continue.)</p>
+
+        <h2>(Heading 1)</h2>
+
+        <p>(Body text)</p>
+
+        <h2>(Heading 2)</h2>
+
+        <p>(Body text)</p>
+
+        <ul>
+          <li>(List item 1)</li>
+          <li>(List item 2)</li>
+          <li>(List item 3)</li>
+        </ul>
+
+        <h2>In summary</h2>
+
+        <p>(Closing paragraph)</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <!-- ↓ 関連記事のリンク・タイトルを書き換えてください -->
+          <a class="post-card" href="#">
+            <div class="post-img">🌿</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag life lj">日常</span>
+                <span class="post-tag life le" style="display:none">Daily life</span>
+                <span class="post-date">2026.04.10</span>
+              </div>
+              <p class="post-title lj">（関連記事タイトル）</p>
+              <p class="post-title le" style="display:none">（Related post title）</p>
+            </div>
+          </a>
+          <a class="post-card" href="#">
+            <div class="post-img">🍱</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag life lj">日常</span>
+                <span class="post-tag life le" style="display:none">Daily life</span>
+                <span class="post-date">2026.04.05</span>
+              </div>
+              <p class="post-title lj">（関連記事タイトル）</p>
+              <p class="post-title le" style="display:none">（Related post title）</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉在住の主婦です。赤毛のアンが大好きで、日々のくらし・お金のこと・日本の季節を綴っています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <!-- アフィリエイト広告スペース -->
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">おすすめ</h2>
+      <h2 class="sidebar-title le" style="display:none">Recommended</h2>
+      <div class="ad-placeholder lj">ここにアフィリエイト広告や<br>おすすめ商品リンクを掲載できます</div>
+      <div class="ad-placeholder le" style="display:none">Affiliate links &amp; recommended products will appear here</div>
+    </div>
+
+    <!-- 人気記事 -->
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">人気の記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Popular posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><span class="lj">100均で見つけた春のお気に入り</span><span class="le" style="display:none">My spring favorites from Japan's 100-yen shop</span></li>
+        <li><span class="popular-num">2</span><span class="lj">今週の作り置きおかず、6品</span><span class="le" style="display:none">This week's Japanese meal prep — 6 dishes</span></li>
+        <li><span class="popular-num">3</span><span class="lj">埼玉の桜と、春の朝ごはん</span><span class="le" style="display:none">Cherry blossoms in Saitama &amp; a spring breakfast</span></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">埼玉から、日常のきれいなものを。</p>
+  <p class="footer-sub le" style="display:none">Small beautiful things from Saitama, Japan.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>

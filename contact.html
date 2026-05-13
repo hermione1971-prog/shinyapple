@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ぴかりんご / Shiny Apple へのお問い合わせページ。ご感想・ご質問・お仕事のご相談はこちらからどうぞ。">
+<meta property="og:title" content="お問い合わせ | ぴかりんご / Shiny Apple">
+<meta property="og:type" content="website">
+<title>お問い合わせ | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="index.html#posts" class="lj">記事一覧</a>
+        <a href="index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="about.html" class="lj">プロフィール</a>
+        <a href="about.html" class="le" style="display:none">About</a>
+        <a href="contact.html" class="lj">お問い合わせ</a>
+        <a href="contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="lj">
+    <h1 class="page-hero-title">お問い合わせ</h1>
+    <p class="page-hero-sub">〜 お気軽にどうぞ 〜</p>
+  </div>
+  <div class="le" style="display:none">
+    <h1 class="page-hero-title">Contact</h1>
+    <p class="page-hero-sub">~ Feel free to reach out ~</p>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html" class="lj">ホーム</a>
+  <a href="index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">お問い合わせ</span>
+  <span class="le" style="display:none">Contact</span>
+</div>
+
+<!-- MAIN -->
+<div class="container single-col">
+  <main>
+
+    <!-- 案内文 -->
+    <div class="content-section">
+      <div class="lj">
+        <p>ご感想・ご質問・記事へのご意見・お仕事のご相談など、お気軽にメッセージをお送りください。できる限りご返信いたします。</p>
+        <p style="font-size:13px;color:var(--text-light);">※ 返信まで数日かかる場合があります。あらかじめご了承ください。</p>
+      </div>
+      <div class="le" style="display:none">
+        <p>Feel free to send a message — whether it's feedback, a question about a post, or a collaboration idea. I'll do my best to reply.</p>
+        <p style="font-size:13px;color:var(--text-light);">※ Please allow a few days for a response. Thank you for your patience.</p>
+      </div>
+    </div>
+
+    <!-- フォーム -->
+    <div class="content-section">
+      <h2 class="lj">お問い合わせフォーム</h2>
+      <h2 class="le" style="display:none">Contact Form</h2>
+
+      <!--
+        【フォームを動かすための設定】
+        このフォームを実際にメールで受け取るには Formspree（無料）の設定が必要です。
+        1. https://formspree.io でアカウントを作成
+        2. 「New Form」を作成してフォームIDを取得（例: abcd1234）
+        3. 下の action="https://formspree.io/f/YOUR_FORM_ID" の YOUR_FORM_ID を置き換える
+      -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <div class="form-group">
+          <label for="name">
+            <span class="lj">お名前 <span style="color:#c04040;font-size:11px;">必須</span></span>
+            <span class="le" style="display:none">Your name <span style="color:#c04040;font-size:11px;">required</span></span>
+          </label>
+          <input type="text" id="name" name="name" required
+            placeholder="例：山田 花子" autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            <span class="lj">メールアドレス <span style="color:#c04040;font-size:11px;">必須</span></span>
+            <span class="le" style="display:none">Email address <span style="color:#c04040;font-size:11px;">required</span></span>
+          </label>
+          <input type="email" id="email" name="email" required
+            placeholder="例：hanako@example.com" autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">
+            <span class="lj">お問い合わせの種類</span>
+            <span class="le" style="display:none">Type of enquiry</span>
+          </label>
+          <select id="subject" name="subject">
+            <option value="感想・コメント">感想・コメント / Feedback</option>
+            <option value="記事へのご質問">記事へのご質問 / Question about a post</option>
+            <option value="お仕事のご相談">お仕事のご相談 / Collaboration</option>
+            <option value="その他">その他 / Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">
+            <span class="lj">メッセージ <span style="color:#c04040;font-size:11px;">必須</span></span>
+            <span class="le" style="display:none">Message <span style="color:#c04040;font-size:11px;">required</span></span>
+          </label>
+          <textarea id="message" name="message" required
+            placeholder="メッセージをご入力ください。/ Please type your message here."></textarea>
+        </div>
+
+        <p class="form-note lj">
+          送信前に<a href="privacy.html">プライバシーポリシー</a>をご確認ください。送信をもって同意いただいたものとみなします。
+        </p>
+        <p class="form-note le" style="display:none">
+          By submitting this form you agree to our <a href="privacy.html">Privacy Policy</a>.
+        </p>
+
+        <button type="submit" class="btn-submit">
+          <span class="lj">送信する ✦</span>
+          <span class="le" style="display:none">Send message ✦</span>
+        </button>
+
+      </form>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">埼玉から、日常のきれいなものを。</p>
+  <p class="footer-sub le" style="display:none">Small beautiful things from Saitama, Japan.</p>
+  <div class="footer-links">
+    <a href="about.html" class="lj">プロフィール</a>
+    <a href="about.html" class="le" style="display:none">About</a>
+    <a href="contact.html" class="lj">お問い合わせ</a>
+    <a href="contact.html" class="le" style="display:none">Contact</a>
+    <a href="privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>

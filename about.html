@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ぴかりんごのプロフィール。埼玉在住の主婦。赤毛のアンが大好きで、日常・家計・日本の文化を日英で発信しています。">
+<meta name="keywords" content="ぴかりんご, プロフィール, 埼玉, 主婦ブログ, Shiny Apple, about">
+<meta property="og:title" content="プロフィール | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="ぴかりんごのプロフィールページ。埼玉在住主婦による日英バイリンガルvlogサイト。">
+<meta property="og:type" content="website">
+<title>プロフィール | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="index.html#posts" class="lj">記事一覧</a>
+        <a href="index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="about.html" class="lj">プロフィール</a>
+        <a href="about.html" class="le" style="display:none">About</a>
+        <a href="contact.html" class="lj">お問い合わせ</a>
+        <a href="contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="lj">
+    <h1 class="page-hero-title">プロフィール</h1>
+    <p class="page-hero-sub">〜 ぴかりんごについて 〜</p>
+  </div>
+  <div class="le" style="display:none">
+    <h1 class="page-hero-title">About me</h1>
+    <p class="page-hero-sub">~ A little about Shiny Apple ~</p>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html" class="lj">ホーム</a>
+  <a href="index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">プロフィール</span>
+  <span class="le" style="display:none">About</span>
+</div>
+
+<!-- MAIN -->
+<div class="container single-col">
+  <main>
+
+    <!-- プロフィール写真＋名前 -->
+    <div class="content-section" style="text-align:center;">
+      <!--
+        プロフィール写真を追加するときは、下の絵文字のdivを削除して
+        <img> タグのコメントを外してください。
+        <img src="images/profile.jpg" alt="ぴかりんごのプロフィール写真 / Profile photo of Shiny Apple" class="profile-photo">
+      -->
+      <div class="profile-photo-placeholder">🍎</div>
+      <p class="profile-name">ぴかりんご</p>
+      <p class="profile-name-en">Shiny Apple</p>
+      <div class="profile-tags">
+        <span class="profile-tag lj">埼玉県在住</span>
+        <span class="profile-tag le" style="display:none">Based in Saitama, Japan</span>
+        <span class="profile-tag lj">主婦</span>
+        <span class="profile-tag le" style="display:none">Homemaker</span>
+        <span class="profile-tag lj">赤毛のアン好き</span>
+        <span class="profile-tag le" style="display:none">Anne of Green Gables fan</span>
+        <span class="profile-tag lj">リベ活中</span>
+        <span class="profile-tag le" style="display:none">Learning finance</span>
+        <span class="profile-tag lj">在宅ワーク</span>
+        <span class="profile-tag le" style="display:none">Remote work</span>
+      </div>
+    </div>
+
+    <!-- 自己紹介 -->
+    <div class="content-section">
+      <h2 class="lj">はじめまして</h2>
+      <h2 class="le" style="display:none">Hello there</h2>
+      <div class="lj">
+        <p>
+          （ここに自己紹介文を書いてください。）
+        </p>
+        <p>
+          ダミーテキスト：埼玉県の静かな住宅街で暮らしています。子どものころから赤毛のアンシリーズが大好きで、日常の中の小さな美しいものを見つけることが好きです。このブログでは、くらし・お金・日本の文化などをゆるやかに綴っています。
+        </p>
+      </div>
+      <div class="le" style="display:none">
+        <p>
+          (Write your introduction here.)
+        </p>
+        <p>
+          Dummy text: I live in a quiet neighbourhood in Saitama Prefecture. I've loved Anne of Green Gables since childhood and enjoy finding small beautiful things in everyday life. On this blog I write about daily life, personal finance, and Japanese culture.
+        </p>
+      </div>
+    </div>
+
+    <!-- このブログについて -->
+    <div class="content-section">
+      <h2 class="lj">このブログについて</h2>
+      <h2 class="le" style="display:none">About this blog</h2>
+      <div class="lj">
+        <p>日本語と英語の両方で書いています。日本のくらしに興味を持つ海外の方にも、日常を届けられたらうれしいです。</p>
+        <h3>書いていること</h3>
+        <ul>
+          <li>🌿 <strong>日常</strong> — 暮らし・季節・手作り・ごはん</li>
+          <li>💛 <strong>家計・リベ活</strong> — 節約・家計管理・投資の勉強（日本語のみ）</li>
+          <li>🍎 <strong>おしごと</strong> — データアノテーション・在宅ワーク体験記</li>
+          <li>🎋 <strong>日本の文化</strong> — 季節行事・100均・コンビニ・日本のあれこれ</li>
+        </ul>
+      </div>
+      <div class="le" style="display:none">
+        <p>I write in both Japanese and English, hoping to share a little window into everyday Japanese life.</p>
+        <h3>What I write about</h3>
+        <ul>
+          <li>🌿 <strong>Daily life</strong> — seasonal moments, home cooking, handmade things</li>
+          <li>🍎 <strong>Work</strong> — data annotation and remote work experiences</li>
+          <li>🎋 <strong>Japanese culture</strong> — seasonal events, 100-yen shops, convenience stores, and more</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 引用ボックス -->
+    <div class="quote-box" style="margin-bottom:1.5rem;">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery, <em>Anne of Green Gables</em></p>
+    </div>
+
+    <!-- お問い合わせへのCTA -->
+    <div class="content-section" style="text-align:center;">
+      <h2 class="lj">お気軽にどうぞ</h2>
+      <h2 class="le" style="display:none">Get in touch</h2>
+      <p class="lj" style="font-size:14px;color:var(--text-light);">ご感想・ご質問・お仕事のご相談など、お気軽にどうぞ。</p>
+      <p class="le" style="display:none;font-size:14px;color:var(--text-light);">Feel free to reach out with questions, comments, or collaboration ideas.</p>
+      <a href="contact.html" class="lj" style="display:inline-block;margin-top:1rem;padding:10px 28px;background:var(--purple-dark);color:var(--cream);border-radius:24px;font-family:'Playfair Display',serif;font-size:15px;text-decoration:none;">お問い合わせはこちら</a>
+      <a href="contact.html" class="le" style="display:none;margin-top:1rem;padding:10px 28px;background:var(--purple-dark);color:var(--cream);border-radius:24px;font-family:'Playfair Display',serif;font-size:15px;text-decoration:none;">Contact me</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">埼玉から、日常のきれいなものを。</p>
+  <p class="footer-sub le" style="display:none">Small beautiful things from Saitama, Japan.</p>
+  <div class="footer-links">
+    <a href="about.html" class="lj">プロフィール</a>
+    <a href="about.html" class="le" style="display:none">About</a>
+    <a href="contact.html" class="lj">お問い合わせ</a>
+    <a href="contact.html" class="le" style="display:none">Contact</a>
+    <a href="privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>

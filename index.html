@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ぴかりんご／Shiny Apple - 埼玉在住主婦の日常vlog。日本の暮らし、家計管理、季節の風景を日英で発信。A Japanese housewife's daily vlog from Saitama — everyday life, home cooking, and real Japan.">
+<meta name="keywords" content="Japanese daily life, Japan housewife, life in Saitama, Japanese culture, 主婦ブログ, 日常vlog, リベ活">
+<meta property="og:title" content="ぴかりんご / Shiny Apple">
+<meta property="og:description" content="埼玉在住主婦の日常vlog / A Japanese housewife's daily vlog from Saitama">
+<meta property="og:type" content="website">
+<title>ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="#posts" class="lj">記事一覧</a>
+        <a href="#posts" class="le" style="display:none">Posts</a>
+        <a href="about.html" class="lj">プロフィール</a>
+        <a href="about.html" class="le" style="display:none">About</a>
+        <a href="contact.html" class="lj">お問い合わせ</a>
+        <a href="contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-flowers">🌸 🌿 🍎 🌼 🌿</span>
+  <div class="lj">
+    <h1 class="hero-title">ぴかりんごの小部屋</h1>
+    <p class="hero-sub">〜 野の花と日々のこと 〜</p>
+    <p class="hero-tagline">
+      埼玉の片隅から、日常のきれいなものを<br>
+      ひとつひとつ拾い集めています。
+    </p>
+  </div>
+  <div class="le" style="display:none">
+    <h1 class="hero-title-en">Shiny Apple's little room</h1>
+    <p class="hero-sub">~ Wildflowers &amp; everyday moments ~</p>
+    <p class="hero-tagline">
+      From a quiet corner of Saitama, Japan —<br>
+      collecting small, beautiful things one by one.
+    </p>
+  </div>
+  <span class="hero-ornament">✦ ✦ ✦</span>
+</section>
+
+<!-- MAIN -->
+<div class="container">
+
+  <!-- POSTS -->
+  <main id="posts">
+
+    <!-- Category pills -->
+    <div class="cat-pills">
+      <button class="cat-pill all active lj">✦ すべて</button>
+      <button class="cat-pill all active le" style="display:none">✦ All</button>
+      <button class="cat-pill life lj">🌿 日常</button>
+      <button class="cat-pill life le" style="display:none">🌿 Daily life</button>
+      <button class="cat-pill money lj">💛 家計・リベ活</button>
+      <button class="cat-pill money le" style="display:none">💛 Finances</button>
+      <button class="cat-pill work lj">🍎 おしごと</button>
+      <button class="cat-pill work le" style="display:none">🍎 Work</button>
+      <button class="cat-pill japan lj">🎋 日本の文化</button>
+      <button class="cat-pill japan le" style="display:none">🎋 Japanese culture</button>
+    </div>
+
+    <!-- Post grid -->
+    <div class="posts-grid">
+
+      <a class="post-card" href="#">
+        <div class="post-img">📝</div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag work lj">おしごと</span>
+            <span class="post-tag work le" style="display:none">Work</span>
+            <span class="post-date">2026.05.01</span>
+          </div>
+          <p class="post-title lj">初めてのデータアノテーション体験記</p>
+          <p class="post-title le" style="display:none">My first data annotation experience</p>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img">🌸</div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag japan lj">日本の文化</span>
+            <span class="post-tag japan le" style="display:none">Japanese culture</span>
+            <span class="post-date">2026.04.25</span>
+          </div>
+          <p class="post-title lj">埼玉の桜と、春の朝ごはん</p>
+          <p class="post-title le" style="display:none">Cherry blossoms in Saitama &amp; a spring breakfast</p>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img">💰</div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag money lj">家計・リベ活</span>
+            <span class="post-tag money le" style="display:none">Finances</span>
+            <span class="post-date">2026.04.20</span>
+          </div>
+          <p class="post-title lj">主婦のお金の整理術、やってみた</p>
+          <p class="post-title le" style="display:none">How I reorganized our household finances</p>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img">🛒</div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag japan lj">日本の文化</span>
+            <span class="post-tag japan le" style="display:none">Japanese culture</span>
+            <span class="post-date">2026.04.15</span>
+          </div>
+          <p class="post-title lj">100均で見つけた春のお気に入り</p>
+          <p class="post-title le" style="display:none">My spring favorites from Japan's 100-yen shop</p>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img">🌿</div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag life lj">日常</span>
+            <span class="post-tag life le" style="display:none">Daily life</span>
+            <span class="post-date">2026.04.10</span>
+          </div>
+          <p class="post-title lj">庭の片隅で見つけた春の草花</p>
+          <p class="post-title le" style="display:none">Wildflowers I found in my garden corner</p>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img">🍱</div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag life lj">日常</span>
+            <span class="post-tag life le" style="display:none">Daily life</span>
+            <span class="post-date">2026.04.05</span>
+          </div>
+          <p class="post-title lj">今週の作り置きおかず、6品</p>
+          <p class="post-title le" style="display:none">This week's Japanese meal prep — 6 dishes</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="about">
+
+    <!-- About -->
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">
+        埼玉在住の主婦です。赤毛のアンが大好きで、素朴なものや手作りのものに心惹かれます。日々のくらし、お金のこと、日本の季節を綴っています。
+      </p>
+      <p class="about-body le" style="display:none">
+        A homemaker from Saitama, Japan. Big fan of <em>Anne of Green Gables</em>. Writing about everyday Japanese life, household finances, and the small beautiful things I find each season.
+      </p>
+    </div>
+
+    <!-- Ad space -->
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">おすすめ</h2>
+      <h2 class="sidebar-title le" style="display:none">Recommended</h2>
+      <div class="ad-placeholder lj">
+        ここにアフィリエイト広告や<br>おすすめ商品リンクを掲載できます
+      </div>
+      <div class="ad-placeholder le" style="display:none">
+        Affiliate links &amp; recommended products will appear here
+      </div>
+    </div>
+
+    <!-- Popular -->
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">人気の記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Popular posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><span class="lj">100均で見つけた春のお気に入り</span><span class="le" style="display:none">My spring favorites from Japan's 100-yen shop</span></li>
+        <li><span class="popular-num">2</span><span class="lj">今週の作り置きおかず、6品</span><span class="le" style="display:none">This week's Japanese meal prep — 6 dishes</span></li>
+        <li><span class="popular-num">3</span><span class="lj">埼玉の桜と、春の朝ごはん</span><span class="le" style="display:none">Cherry blossoms in Saitama &amp; a spring breakfast</span></li>
+      </ul>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">埼玉から、日常のきれいなものを。</p>
+  <p class="footer-sub le" style="display:none">Small beautiful things from Saitama, Japan.</p>
+  <div class="footer-links">
+    <a href="about.html" class="lj">プロフィール</a>
+    <a href="about.html" class="le" style="display:none">About</a>
+    <a href="contact.html" class="lj">お問い合わせ</a>
+    <a href="contact.html" class="le" style="display:none">Contact</a>
+    <a href="privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
