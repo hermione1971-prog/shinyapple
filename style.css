@@ -176,6 +176,7 @@ nav a:hover { color: var(--purple-dark); }
   line-height: 2;
   max-width: 500px;
   margin: 0 auto 2rem;
+  word-break: keep-all;
 }
 
 .hero-ornament {
