@@ -25,7 +25,7 @@
 body {
   background: var(--cream);
   color: var(--text);
-  font-family: 'EB Garamond', 'Zen Kurenaido', serif;
+  font-family: 'EB Garamond', 'Yu Mincho', '游明朝', 'Hiragino Mincho ProN', 'Zen Kurenaido', serif;
   font-size: 16px;
   line-height: 1.8;
 }
@@ -631,7 +631,7 @@ nav a:hover { color: var(--purple-dark); }
 }
 
 .article-body h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Yu Mincho', '游明朝', 'Hiragino Mincho ProN', serif;
   font-size: 22px;
   font-weight: 400;
   color: var(--purple-dark);
@@ -641,7 +641,7 @@ nav a:hover { color: var(--purple-dark); }
 }
 
 .article-body h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Yu Mincho', '游明朝', 'Hiragino Mincho ProN', serif;
   font-size: 17px;
   font-weight: 400;
   color: var(--purple-mid);
@@ -649,9 +649,9 @@ nav a:hover { color: var(--purple-dark); }
 }
 
 .article-body p {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--text);
-  line-height: 2;
+  line-height: 2.1;
   margin-bottom: 1.4rem;
 }
 
