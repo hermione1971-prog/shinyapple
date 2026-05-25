@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>銀行に預けておくだけは危険？！―保険より新NISAが長期資産形成に向いている理由 | ぴかりんごの小部屋</title>
+<meta name="description" content="教育費・老後資金を貯蓄型保険で準備しようとしていませんか？200年のデータが示す長期投資の本質と、新NISAを活用すべき理由をわかりやすく解説します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #faf7f2;
+    --cream-dark: #f0ebe1;
+    --lavender: #ede8f5;
+    --lavender-mid: #c5b8e0;
+    --purple: #7c6aad;
+    --purple-dark: #5a4d8a;
+    --text-main: #2d2a35;
+    --text-muted: #6b6575;
+    --text-light: #9e98aa;
+    --border: #e0d9ec;
+    --amber: #c4841a;
+    --amber-bg: #fdf0d8;
+    --green: #3a7a3a;
+    --green-bg: #eaf4ea;
+    --blue: #2a6db5;
+    --blue-bg: #e8f1fb;
+    --red-text: #9b2c2c;
+    --red-bg: #fdf0f0;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--cream);
+    color: var(--text-main);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  /* ヘッダー */
+  .site-header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .site-logo {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    text-decoration: none;
+  }
+  .site-logo span { color: var(--lavender-mid); }
+  .breadcrumb {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-left: auto;
+  }
+  .breadcrumb a { color: var(--purple); text-decoration: none; }
+
+  /* メインレイアウト */
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  /* 記事ヘッダー */
+  .article-header { margin-bottom: 2.5rem; }
+  .article-category {
+    display: inline-block;
+    background: var(--lavender);
+    color: var(--purple-dark);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+  .article-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 4vw, 28px);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+  }
+  .article-meta {
+    font-size: 13px;
+    color: var(--text-light);
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .article-divider {
+    border: none;
+    border-top: 2px solid var(--lavender);
+    margin: 1.5rem 0 2rem;
+  }
+
+  /* 本文 */
+  .article-body p {
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    line-height: 1.9;
+  }
+
+  /* スライドセクション */
+  .slide-section {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  .slide-section-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-light);
+    letter-spacing: 1.5px;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  /* スライド①カード */
+  .slide-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 0.75rem;
+  }
+  .tag-warn { background: var(--amber-bg); color: var(--amber); }
+  .tag-ok   { background: var(--green-bg); color: var(--green); }
+  .tag-info { background: var(--blue-bg);  color: var(--blue);  }
+
+  .slide-title-h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(17px, 3vw, 22px);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  .slide-h2 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .slide-lead {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .accent-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--blue);
+    border-radius: 0 8px 8px 0;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .accent-box.warn { border-left-color: var(--amber); }
+  .accent-box.ok   { border-left-color: var(--green); }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  @media(max-width: 500px){ .two-col { grid-template-columns: 1fr; } }
+  .col-card {
+    background: var(--cream);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+  }
+  .col-label { font-size: 12px; font-weight: 500; margin-bottom: 4px; }
+  .col-val   { font-size: 20px; font-weight: 700; }
+  .col-sub   { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+  /* バーチャート */
+  .chart-wrap { margin: 1rem 0; }
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .bar-label { font-size: 12px; color: var(--text-muted); width: 72px; flex-shrink: 0; text-align: right; }
+  .bar-track { flex: 1; height: 22px; background: var(--cream); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; display: flex; align-items: center; justify-content: flex-end; padding-right: 6px; font-size: 11px; font-weight: 500; }
+  .bar-fill.stocks { background: #378ADD; color: #E6F1FB; }
+  .bar-fill.bond   { background: #5DCAA5; color: #04342C; }
+  .bar-fill.gold   { background: #FAC775; color: #412402; }
+  .bar-fill.inf    { background: #B4B2A9; color: #2C2C2A; }
+
+  /* 比較表 */
+  table.compare { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 0.5rem; table-layout: fixed; }
+  table.compare th { font-size: 11px; font-weight: 500; padding: 8px 6px; text-align: center; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+  table.compare td { padding: 9px 6px; text-align: center; border-bottom: 1px solid var(--border); font-size: 12px; }
+  table.compare td:first-child { text-align: left; font-weight: 500; font-size: 12px; }
+  .good { color: var(--green); }
+  .bad  { color: var(--red-text); }
+  .mid  { color: var(--amber); }
+
+  /* ステップリスト（スライド①） */
+  .step-list { list-style: none; }
+  .step-list li { display: flex; gap: 12px; align-items: flex-start; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 13px; line-height: 1.6; }
+  .step-list li:last-child { border-bottom: none; }
+  .step-num-circle { width: 24px; height: 24px; border-radius: 50%; background: var(--blue); color: white; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+
+  .highlight-box {
+    border: 2px solid var(--blue);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1rem;
+    background: var(--blue-bg);
+  }
+  .highlight-box .hl-title { font-size: 14px; font-weight: 700; color: var(--blue); margin-bottom: 0.5rem; }
+  .highlight-box .hl-body  { font-size: 13px; line-height: 1.8; color: var(--text-main); }
+
+  .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px,1fr)); gap: 10px; margin: 1rem 0; }
+  .mini-card { background: var(--cream); border-radius: 8px; padding: 0.85rem 1rem; }
+  .mini-card .mc-icon  { font-size: 18px; margin-bottom: 5px; }
+  .mini-card .mc-title { font-size: 12px; font-weight: 500; margin-bottom: 3px; }
+  .mini-card .mc-body  { font-size: 11px; color: var(--text-muted); line-height: 1.5; }
+
+  .vs-header { display: grid; grid-template-columns: 1fr 28px 1fr; gap: 8px; margin-bottom: 6px; }
+  .vs-header span { font-size: 12px; font-weight: 500; text-align: center; padding: 4px; border-radius: 8px; }
+  .vs-hl { background: var(--amber-bg); color: var(--amber); }
+  .vs-hr { background: var(--green-bg); color: var(--green); }
+  .vs-row { display: grid; grid-template-columns: 1fr 28px 1fr; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .vs-left  { background: var(--amber-bg); border-radius: 8px; padding: 0.6rem 0.75rem; font-size: 12px; color: #633806; line-height: 1.5; }
+  .vs-right { background: var(--green-bg); border-radius: 8px; padding: 0.6rem 0.75rem; font-size: 12px; color: #175017; line-height: 1.5; }
+  .vs-mid   { text-align: center; font-size: 11px; color: var(--text-light); font-weight: 500; }
+
+  .slide-num-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    font-size: 11px;
+    color: var(--text-light);
+    letter-spacing: 1px;
+  }
+  .slide-inner { position: relative; }
+
+  /* スライド区切り */
+  .slide-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 1.5rem 0;
+  }
+
+  /* シミュレーター */
+  .sim-row { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+  .sim-row label { font-size: 13px; color: var(--text-muted); width: 150px; flex-shrink: 0; }
+  .sim-row input[type=range] { flex: 1; accent-color: var(--purple); }
+  .sim-row .sim-val { font-size: 13px; font-weight: 500; min-width: 70px; text-align: right; color: var(--text-main); }
+  .sim-results { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
+  @media(max-width:480px){ .sim-results { grid-template-columns:1fr; } }
+  .sim-card { border-radius: 8px; padding: 1rem; }
+  .sim-card.bad  { background: var(--amber-bg); }
+  .sim-card.good { background: var(--green-bg); }
+  .sim-card .sc-label { font-size: 11px; font-weight: 500; margin-bottom: 4px; }
+  .sim-card.bad  .sc-label { color: var(--amber); }
+  .sim-card.good .sc-label { color: var(--green); }
+  .sim-card .sc-val { font-size: 22px; font-weight: 700; }
+  .sim-card.bad  .sc-val { color: var(--red-text); }
+  .sim-card.good .sc-val { color: var(--green); }
+  .sim-card .sc-sub { font-size: 11px; margin-top: 3px; color: var(--text-muted); }
+  .diff-box {
+    background: var(--blue-bg);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    font-size: 13px;
+  }
+  .diff-box .diff-num { font-size: 18px; font-weight: 700; color: var(--blue); }
+  .sim-note { font-size: 11px; color: var(--text-light); line-height: 1.6; margin-top: 0.5rem; }
+
+  /* アクションステップ */
+  .action-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+  .action-card.recommended { border: 2px solid var(--blue); }
+  .action-step-num-wrap { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .action-step-num { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; }
+  .s1 { background: var(--amber-bg); color: #633806; }
+  .s2 { background: var(--blue-bg);  color: #0c447c; }
+  .s3 { background: var(--green-bg); color: #175017; }
+  .step-connector-line { width: 1px; height: 20px; background: var(--border); }
+  .action-body { flex: 1; min-width: 0; }
+  .action-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; line-height: 1.4; }
+  .action-desc  { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 10px; }
+  .action-tags  { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .action-tag   { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
+  .atag-a { background: var(--amber-bg); color: var(--amber); }
+  .atag-b { background: var(--blue-bg);  color: var(--blue);  }
+  .atag-g { background: var(--green-bg); color: var(--green); }
+  .action-checklist { list-style: none; }
+  .action-checklist li { font-size: 12px; color: var(--text-muted); padding: 4px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+  .action-checklist li:last-child { border-bottom: none; }
+  .check-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--green-bg); border: 2px solid var(--green); flex-shrink: 0; margin-top: 2px; }
+  .rec-badge { display: inline-block; background: var(--blue-bg); color: var(--blue); font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; }
+
+  /* 締め */
+  .closing-box {
+    background: var(--lavender);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+  .closing-box p { font-size: 14px; line-height: 1.9; color: var(--purple-dark); margin-bottom: 1rem; }
+  .closing-box p:last-child { margin-bottom: 0; }
+  .closing-box .closing-sign { font-size: 13px; color: var(--lavender-mid); font-style: italic; }
+
+  .disclaimer {
+    font-size: 11px;
+    color: var(--text-light);
+    line-height: 1.7;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* フッター */
+  .site-footer {
+    background: white;
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .site-footer a { color: var(--purple); text-decoration: none; }
+
+  .source-note { font-size: 10px; color: var(--text-light); margin-top: 0.75rem; text-align: right; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="site-logo">ぴかりんご<span>の小部屋</span></a>
+  <nav class="breadcrumb">
+    <a href="/">ホーム</a> &rsaquo; <a href="/">お金の話</a> &rsaquo; 保険より新NISA
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- 記事ヘッダー -->
+  <header class="article-header">
+    <span class="article-category">💰 お金の話</span>
+    <h1 class="article-title">銀行に預けておくだけは危険？！―保険より新NISAが長期資産形成に向いている理由<br>—— 子育て世代が知っておきたいお金の基本</h1>
+    <div class="article-meta">
+      <span>2026年5月</span>
+      <span>ぴかりんご</span>
+    </div>
+  </header>
+  <hr class="article-divider">
+
+  <!-- 本文①：書き出し〜スライド①前 -->
+  <article class="article-body">
+
+    <p>ここ数年、ずっと投資信託とか、新NISAとかよく耳にしていたけれど、ずっと自分とは無関係の話だと思っていました。投資というのはそもそも余剰資金――いわゆるすぐに使う予定のないお金を持っている経済的にゆとりのある人がやるもの。パート収入はいつも手元にとどまることなく、私の財布を素通りして生活費に消えるような生活を何十年もしていたのですから、それも自然なことでした。</p>
+
+    <p>リベラルアーツ大学の両学長の朝のライブ配信を聞いていると、資産が4千万を超えましたとか、親からの相続で8千万相続しました、だとか、30代ですでに何千万の資産がある方とかすごい方が大勢います。</p>
+
+    <p>恥ずかしくて自分の資産などはとても言えませんが、リベシティに入会して、家計管理を進めていくと、意外なことに自分も資産を運用するフェーズにいるということがわかり、私もついに新NISAデビューすることになりました。</p>
+
+    <p>投資の前提はもちろん変わらず、短期的に必要になるであろう生活防衛資金（リベシティでは、会社員で1か月にかかる生活費の半年分、個人事業主で2年分）が準備できていれば、それを超える資金については、新NISAの口座でeMAXIS Slimオールカントリーやs&amp;p500を運用することを推奨しています。</p>
+
+    <p>私の親の世代は、株というと危ないもの、ギャンブルのようなものというイメージが強い人も多いかもしれません。私もどちらかというとそのようなイメージを持っていました。（私の父は株をやっていたようですが、投資成績はふるわなかったようです。）</p>
+
+    <p>もしかして、今までの私のように、うちには余裕資金なんてないから、投資信託なんて無関係だわ。と思ってしまっていませんか？生活費の半年分なんてないよ！だから、投資信託なんて関係ないと思っている人も是非知っておいてほしい話です。</p>
+
+    <p>特にお子さんが生まれた方は、パパさんもママさんも、子供の幸せのために生命保険の加入や学費の準備など、お金まわりのことをいろいろ考えられると思います。でも、金融機関で勧められるままに適当な学資保険や生命保険などにやたらに入ってしまったら、大変な苦労をすることになってしまうかもしれません。</p>
+
+    <p>日本は何十年もの間超低金利・デフレの時代が続き、いつのまにか安い国になってしまいました。銀行になけなしのお金を預けておいても金利は雀の涙です。世界中の給与水準が上がり続ける一方で日本人の給与所得はあがることなく、横ばいの状態が続いてきました。教育資金も上がる一方、老後2000万円問題など、暗いニュースばかりです。</p>
+
+    <p>そんななかで、テレビでは、さわやかな俳優さんや女優さんなどが、もしものときに備えようと保険のCMが常に流れています。貯蓄型保険とか、ドル建て保険とか、巷には私たちの不安な気持ちにスーッと入り込んでくるサービスであふれています。</p>
+
+    <p>以下の資料を見てください。</p>
+
+    <!-- ===== スライド① ===== -->
+    <div class="slide-section">
+      <div class="slide-inner">
+        <p class="slide-section-label">資料①：通貨・株式・新NISAの基本</p>
+
+        <!-- 1/6 -->
+        <span class="slide-num-badge">01 / 06</span>
+        <div class="slide-tag tag-warn">知っておきたい事実</div>
+        <h2 class="slide-title-h1">「お金を守る」つもりが<br>実は減っているかもしれない</h2>
+        <p class="slide-lead">子どもの教育費、老後のお金…大切な将来のために貯めているお金、本当に「増えて」いますか？</p>
+        <div class="accent-box warn">歴史上に存在した約750の通貨のうち、現在も残っているのはわずか20%。残った通貨も、すべて価値が下がり続けています。現金のまま置いておくことは、長期では「守る」ではなく「減らす」ことになりえます。</div>
+        <div class="two-col">
+          <div class="col-card">
+            <div class="col-label" style="color:var(--amber)">現金100万円を20年放置</div>
+            <div class="col-val" style="color:var(--red-text)">購買力↓</div>
+            <div class="col-sub">インフレで実質的な価値が目減り</div>
+          </div>
+          <div class="col-card">
+            <div class="col-label" style="color:var(--green)">同じ100万円を投資に回したら</div>
+            <div class="col-val" style="color:var(--green)">購買力↑</div>
+            <div class="col-sub">長期では資産が成長する可能性</div>
+          </div>
+        </div>
+
+        <hr class="slide-divider">
+
+        <!-- 2/6 -->
+        <span class="slide-num-badge" style="top:auto;position:static;display:block;text-align:right;font-size:11px;color:var(--text-light);letter-spacing:1px;margin-bottom:0.5rem">02 / 06</span>
+        <div class="slide-tag tag-info">大切な考え方</div>
+        <h2 class="slide-h2">本当に欲しいのは「お金」じゃない。「購買力」です</h2>
+        <p class="slide-lead">「老後のために2,000万円必要」という話を聞いたことがあると思います。でも大事なのは金額より、その2,000万円で何が買えるか、です。</p>
+        <div class="mini-grid">
+          <div class="mini-card"><div class="mc-icon">🏠</div><div class="mc-title">モノ</div><div class="mc-body">家・食料・服・家電…必要なものを買う力</div></div>
+          <div class="mini-card"><div class="mc-icon">🩺</div><div class="mc-title">サービス</div><div class="mc-body">医療・教育・介護…人生に必要なサービスを受ける力</div></div>
+          <div class="mini-card"><div class="mc-icon">🌱</div><div class="mc-title">選択肢</div><div class="mc-body">やりたいことを選べる自由と余裕</div></div>
+        </div>
+        <div class="accent-box ok"><strong>ポイント：</strong>物価が上がれば、同じ金額でも買えるものが少なくなります。20年後の100万円は、今の100万円より価値が低くなっている可能性があります。</div>
+
+        <hr class="slide-divider">
+
+        <!-- 3/6 -->
+        <span class="slide-num-badge" style="top:auto;position:static;display:block;text-align:right;font-size:11px;color:var(--text-light);letter-spacing:1px;margin-bottom:0.5rem">03 / 06</span>
+        <div class="slide-tag tag-info">200年のデータが示すこと</div>
+        <h2 class="slide-h2">長期で見ると、株式の力は圧倒的</h2>
+        <p class="slide-lead">1802年に1ドル投資したとして、2021年時点での価値を比べると…</p>
+        <div class="chart-wrap">
+          <div class="bar-row"><span class="bar-label">株式</span><div class="bar-track"><div class="bar-fill stocks" style="width:100%">5,400万ドル</div></div></div>
+          <div class="bar-row"><span class="bar-label">長期国債</span><div class="bar-track"><div class="bar-fill bond" style="width:32%">5万ドル</div></div></div>
+          <div class="bar-row"><span class="bar-label">金</span><div class="bar-track"><div class="bar-fill gold" style="width:6%">94ドル</div></div></div>
+          <div class="bar-row"><span class="bar-label">インフレ</span><div class="bar-track"><div class="bar-fill inf" style="width:2%">23ドル</div></div></div>
+        </div>
+        <div class="accent-box">現金（通貨）の購買力はインフレと同じ動きをします。つまり実質的に「減り続ける」側です。一方、株式インデックスは物価の上昇をはるかに超えて成長してきました。</div>
+        <p class="source-note">出典：ジェレミー・シーゲル著『長期投資対象としての株式』第6版</p>
+
+        <hr class="slide-divider">
+
+        <!-- 4/6 -->
+        <span class="slide-num-badge" style="top:auto;position:static;display:block;text-align:right;font-size:11px;color:var(--text-light);letter-spacing:1px;margin-bottom:0.5rem">04 / 06</span>
+        <div class="slide-tag tag-warn">よくある誤解</div>
+        <h2 class="slide-h2">「貯蓄型保険で教育費・老後費を準備」は本当にお得？</h2>
+        <div class="vs-header">
+          <span class="vs-hl">貯蓄型保険</span><span></span><span style="background:var(--green-bg);color:var(--green);font-size:12px;font-weight:500;text-align:center;padding:4px;border-radius:8px;">新NISA（投資信託）</span>
+        </div>
+        <div class="vs-row"><div class="vs-left">返戻率は100〜110%程度。インフレに勝てないことも</div><div class="vs-mid">利回り</div><div class="vs-right">長期で年平均5〜7%程度の実績（過去データ）</div></div>
+        <div class="vs-row"><div class="vs-left">原則、途中解約すると元本割れのリスクあり</div><div class="vs-mid">流動性</div><div class="vs-right">いつでも売却可能。緊急時にも対応しやすい</div></div>
+        <div class="vs-row"><div class="vs-left">契約内容が複雑で手数料が不透明なことも</div><div class="vs-mid">透明性</div><div class="vs-right">コスト（信託報酬）が明確。低コストファンドも豊富</div></div>
+        <div class="vs-row"><div class="vs-left">保険料控除の節税効果はあるが限定的</div><div class="vs-mid">節税</div><div class="vs-right">運用益・売却益が非課税（最大1,800万円）</div></div>
+        <div class="accent-box ok" style="margin-top:1rem;"><strong>整理：</strong>保険は「万が一のリスクに備える」もの。「長期の資産形成」は新NISAなどの投資で行うのが合理的です。</div>
+
+        <hr class="slide-divider">
+
+        <!-- 5/6 -->
+        <span class="slide-num-badge" style="top:auto;position:static;display:block;text-align:right;font-size:11px;color:var(--text-light);letter-spacing:1px;margin-bottom:0.5rem">05 / 06</span>
+        <div class="slide-tag tag-info">整理</div>
+        <h2 class="slide-h2">お金の役割を「期間」で分けて考える</h2>
+        <div style="overflow-x:auto">
+          <table class="compare">
+            <thead><tr><th></th><th>現金・預金</th><th>貯蓄型保険</th><th>新NISA</th></tr></thead>
+            <tbody>
+              <tr><td>短期の支払いに</td><td class="good">◎ 適切</td><td class="bad">✕ 不向き</td><td class="mid">△ 変動あり</td></tr>
+              <tr><td>長期の資産形成に</td><td class="bad">✕ 不向き</td><td class="mid">△ 低利回り</td><td class="good">◎ 最も有効</td></tr>
+              <tr><td>流動性</td><td class="good">◎ 高い</td><td class="bad">✕ 低い</td><td class="good">○ 高い</td></tr>
+              <tr><td>インフレ対応</td><td class="bad">✕ 対応不可</td><td class="bad">✕ 困難</td><td class="good">◎ 長期で対応</td></tr>
+              <tr><td>非課税メリット</td><td class="bad">なし</td><td class="mid">△ 控除のみ</td><td class="good">◎ 運用益非課税</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="slide-divider">
+
+        <!-- 6/6 -->
+        <span class="slide-num-badge" style="top:auto;position:static;display:block;text-align:right;font-size:11px;color:var(--text-light);letter-spacing:1px;margin-bottom:0.5rem">06 / 06</span>
+        <div class="slide-tag tag-ok">まとめ</div>
+        <h2 class="slide-h2">子育て世代の「お金の基本戦略」</h2>
+        <ul class="step-list">
+          <li><div class="step-num-circle">1</div><div><strong>まず保険を見直す：</strong>死亡保障・医療保障など「万が一のリスク対策」に必要な分だけ、掛け捨てで最小限に。貯蓄目的の保険は解約も検討を。</div></li>
+          <li><div class="step-num-circle">2</div><div><strong>生活防衛資金を現金で確保：</strong>3〜6か月分の生活費は、すぐ使える預金として手元に。これが「短期のお金」です。</div></li>
+          <li><div class="step-num-circle">3</div><div><strong>新NISAで長期投資をスタート：</strong>残ったお金は教育費・老後資金として新NISAで積立投資へ。低コストのインデックスファンドが選択肢のひとつ。</div></li>
+        </ul>
+        <div class="highlight-box">
+          <div class="hl-title">考え方のまとめ</div>
+          <div class="hl-body">短期のお金 → 現金・預金で準備<br>長期のお金（教育費・老後） → 新NISAで投資信託<br>保険は「貯蓄」でなく「リスク対策」のツール</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 本文②：スライド①〜②間 -->
+    <p>もう、貯蓄型の学資保険に入ってしまったという方もいらっしゃるのではないでしょうか？今解約してしまったら元本割れしてしまって損してしまうなんて状況の方もいるかもしれません。あと数年で満期という方は、詳細な計算が必要かも知れませんが、これから満期まで何年もあるとか、契約したばかりという方ならば、解約したほうが良いケースが多いと思います。</p>
+
+    <p>実際に数字で比べてみましょう。下のシミュレーターで、ご自身の条件を入力してみてください。</p>
+
+    <!-- ===== スライド② シミュレーター ===== -->
+    <div class="slide-section">
+      <p class="slide-section-label">資料②：学資保険 vs 新NISA シミュレーター</p>
+
+      <div class="sim-row">
+        <label>月々の積立額</label>
+        <input type="range" id="monthly" min="5000" max="30000" step="1000" value="10000">
+        <span class="sim-val" id="monthly-out">10,000円</span>
+      </div>
+      <div class="sim-row">
+        <label>学資保険の返戻率</label>
+        <input type="range" id="return-rate" min="100" max="115" step="0.5" value="105">
+        <span class="sim-val" id="return-out">105.0%</span>
+      </div>
+      <div class="sim-row">
+        <label>新NISAの想定利回り</label>
+        <input type="range" id="yield-rate" min="3" max="8" step="0.5" value="5">
+        <span class="sim-val" id="yield-out">年5.0%</span>
+      </div>
+
+      <hr class="slide-divider">
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:1rem">18年後（大学入学時）の試算結果</p>
+
+      <div class="sim-results">
+        <div class="sim-card bad">
+          <div class="sc-label">学資保険</div>
+          <div class="sc-val" id="hoken-result">―</div>
+          <div class="sc-sub" id="hoken-sub"></div>
+        </div>
+        <div class="sim-card good">
+          <div class="sc-label">新NISA（インデックス）</div>
+          <div class="sc-val" id="nisa-result">―</div>
+          <div class="sc-sub" id="nisa-sub"></div>
+        </div>
+      </div>
+
+      <div class="diff-box">
+        <span>新NISAのほうが</span>
+        <span class="diff-num" id="diff-result">―</span>
+        <span>多くなる試算です</span>
+      </div>
+
+      <div style="position:relative;width:100%;height:220px;margin-bottom:0.5rem">
+        <canvas id="simChart" role="img" aria-label="学資保険と新NISAの18年間積立推移グラフ"></canvas>
+      </div>
+      <p class="sim-note">※ 新NISAの試算は複利（毎月積立・年利を12分割）で計算。実際の運用成果は変動します。学資保険の試算は積立総額×返戻率で計算。インフレや為替リスクは考慮していません。投資には元本割れリスクがあります。</p>
+    </div>
+
+    <!-- ===== スライド③ アクションステップ ===== -->
+    <div class="slide-section">
+      <p class="slide-section-label">資料③：今日からできる3ステップ</p>
+
+      <div class="action-card">
+        <div class="action-step-num-wrap">
+          <div class="action-step-num s1">1</div>
+          <div class="step-connector-line"></div>
+        </div>
+        <div class="action-body">
+          <div class="action-title">今入っている保険を「書き出す」</div>
+          <div class="action-desc">まず現状把握から。保険証券を引っ張り出して、月々いくら払っているか・何のための保険か・返戻率はどのくらいかを一覧にしましょう。</div>
+          <div class="action-tags">
+            <span class="action-tag atag-a">保険証券を確認</span>
+            <span class="action-tag atag-a">月払い保険料を合計</span>
+            <span class="action-tag atag-a">目的別に整理</span>
+          </div>
+          <ul class="action-checklist">
+            <li><div class="check-dot"></div>死亡保障・医療保障など「万が一」対策の保険は必要最小限に残す</li>
+            <li><div class="check-dot"></div>貯蓄型・ドル建て・学資などの「貯蓄目的」保険は要検討</li>
+            <li><div class="check-dot"></div>解約返戻金・満期まで何年あるかを確認する</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-step-num-wrap">
+          <div class="action-step-num s2">2</div>
+          <div class="step-connector-line"></div>
+        </div>
+        <div class="action-body">
+          <div class="action-title">生活防衛資金を確認する</div>
+          <div class="action-desc">投資を始める前に、すぐに使える現金が手元にあるか確認します。これは「短期のお金」として現金・預金で持っておく分です。</div>
+          <div class="action-tags">
+            <span class="action-tag atag-b">会社員：生活費の半年分</span>
+            <span class="action-tag atag-b">個人事業主：2年分</span>
+          </div>
+          <ul class="action-checklist">
+            <li><div class="check-dot"></div>この金額は普通預金・定期預金で確保。投資には回さない</li>
+            <li><div class="check-dot"></div>防衛資金が足りなければ、まずここを優先して貯める</li>
+            <li><div class="check-dot"></div>防衛資金を超えた分が「長期のお金」＝投資に回せる分</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="action-card recommended">
+        <div class="action-step-num-wrap">
+          <div class="action-step-num s3">3</div>
+        </div>
+        <div class="action-body">
+          <span class="rec-badge">ここがゴール</span>
+          <div class="action-title">新NISAで積立投資をスタートする</div>
+          <div class="action-desc">証券口座を開設し、毎月一定額を全世界株式インデックスファンド（例：eMAXIS Slim 全世界株式）に積み立てます。一度設定すれば、あとは自動で続きます。</div>
+          <div class="action-tags">
+            <span class="action-tag atag-g">証券口座を開設</span>
+            <span class="action-tag atag-g">毎月自動積立の設定</span>
+            <span class="action-tag atag-g">長期で放置でOK</span>
+          </div>
+          <ul class="action-checklist">
+            <li><div class="check-dot"></div>つみたて投資枠（年120万円）をまず活用。少額でも始めることが大切</li>
+            <li><div class="check-dot"></div>運用益・売却益は非課税（最大1,800万円まで）</li>
+            <li><div class="check-dot"></div>短期の値動きは気にしない。20年後を見据えて続けることが重要</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background:var(--green-bg);border-radius:12px;padding:1rem 1.25rem;margin-top:4px;display:flex;gap:12px;align-items:center;">
+        <span style="font-size:20px">🌿</span>
+        <div style="font-size:13px;color:#175017;line-height:1.6">完璧でなくて大丈夫。まず保険証券を1枚出してみること――それが最初の一歩です。</div>
+      </div>
+    </div>
+
+    <!-- 締めの文章 -->
+    <div class="closing-box">
+      <p>私自身、つい最近まで「投資は自分には関係ない」と思っていた一人です。</p>
+      <p>保険のCMを見るたびに「備えなきゃ」と漠然と不安になって、よくわからないまま勧められるがままに契約していた時期もありました。でも、お金のことをきちんと学んでみると、「守っているつもりが、実は減らしていた」という現実に気づかされました。</p>
+      <p>難しいことは何もありません。まず保険証券を1枚引っ張り出すこと。それだけで十分なスタートです。</p>
+      <p>子どもの未来のために、老後の自分のために、できることから少しずつ。一緒に整えていきましょう。</p>
+      <p class="closing-sign">— ぴかりんご</p>
+    </div>
+
+    <p class="disclaimer">※ この記事は特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。詳細はご自身でご確認のうえ、判断されることをおすすめします。また、本記事はリベラルアーツ大学の考え方を参考に、筆者の視点でまとめたものです。</p>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p><a href="/">ぴかりんごの小部屋</a> &copy; 2026</p>
+</footer>
+
+<script>
+  function fmt(n){ return Math.round(n).toLocaleString('ja-JP') + '円'; }
+  function calcNisa(monthly, rate, years){
+    let v = 0, r = rate / 100 / 12;
+    for(let i = 0; i < years * 12; i++) v = (v + monthly) * (1 + r);
+    return v;
+  }
+  function calcHoken(monthly, returnRate, years){
+    return monthly * 12 * years * (returnRate / 100);
+  }
+  let simChart = null;
+  function update(){
+    const monthly = parseInt(document.getElementById('monthly').value);
+    const rr = parseFloat(document.getElementById('return-rate').value);
+    const yr = parseFloat(document.getElementById('yield-rate').value);
+    document.getElementById('monthly-out').textContent = monthly.toLocaleString('ja-JP') + '円';
+    document.getElementById('return-out').textContent = rr.toFixed(1) + '%';
+    document.getElementById('yield-out').textContent = '年' + yr.toFixed(1) + '%';
+    const hoken = calcHoken(monthly, rr, 18);
+    const nisa  = calcNisa(monthly, yr, 18);
+    const diff  = nisa - hoken;
+    document.getElementById('hoken-result').textContent = fmt(hoken);
+    document.getElementById('hoken-sub').textContent = '返戻率' + rr.toFixed(1) + '% / 積立総額' + fmt(monthly * 12 * 18);
+    document.getElementById('nisa-result').textContent = fmt(nisa);
+    document.getElementById('nisa-sub').textContent = '年利' + yr.toFixed(1) + '% 複利 / 積立総額' + fmt(monthly * 12 * 18);
+    document.getElementById('diff-result').textContent = fmt(diff);
+    const labels = [], hokenData = [], nisaData = [];
+    for(let y = 1; y <= 18; y++){
+      labels.push(y + '年');
+      hokenData.push(Math.round(calcHoken(monthly, rr, y)));
+      nisaData.push(Math.round(calcNisa(monthly, yr, y)));
+    }
+    if(simChart){
+      simChart.data.datasets[0].data = hokenData;
+      simChart.data.datasets[1].data = nisaData;
+      simChart.update();
+    } else {
+      simChart = new Chart(document.getElementById('simChart'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            { label:'学資保険', data: hokenData, borderColor:'#c4841a', backgroundColor:'rgba(196,132,26,0.07)', borderWidth:2, pointRadius:0, tension:0.3, borderDash:[6,3] },
+            { label:'新NISA',  data: nisaData,  borderColor:'#3a7a3a', backgroundColor:'rgba(58,122,58,0.07)',  borderWidth:2, pointRadius:0, tension:0.3 }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { font:{size:11}, color:'#9e98aa', maxTicksLimit:9, autoSkip:true }, grid: { display:false } },
+            y: { ticks: { font:{size:11}, color:'#9e98aa', callback: v => Math.round(v/10000) + '万' }, grid: { color:'rgba(158,152,170,0.15)' } }
+          }
+        }
+      });
+    }
+  }
+  ['monthly','return-rate','yield-rate'].forEach(id => document.getElementById(id).addEventListener('input', update));
+  update();
+</script>
+</body>
+</html>
