@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="保険と新NISAの役割の違いを解説。学資保険や貯蓄型保険より新NISAが長期資産形成に向いている理由を、シミュレーターとともにわかりやすく紹介します。">
+<meta name="keywords" content="新NISA,学資保険,貯蓄型保険,長期投資,インデックスファンド,リベシティ,資産形成,eMAXIS Slim">
+<meta property="og:title" content="保険より新NISAが長期資産形成に向いている理由 | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="保険と新NISAの役割の違いを解説。学資保険や貯蓄型保険より新NISAが長期資産形成に向いている理由をわかりやすく紹介します。">
+<meta property="og:type" content="article">
+<title>保険より新NISAが長期資産形成に向いている理由 | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+.sim-box {
+  background: #f9f6ff;
+  border: 1px solid #e0d9ec;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.sim-box-label {
+  font-size: 0.72rem;
+  color: #9e98aa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+.sim-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.9rem;
+}
+.sim-row label {
+  font-size: 0.82rem;
+  color: #6b6575;
+  width: 150px;
+  flex-shrink: 0;
+}
+.sim-row input[type=range] { flex: 1; accent-color: #7c6aad; }
+.sim-row .sim-val {
+  font-size: 0.82rem;
+  font-weight: 600;
+  min-width: 68px;
+  text-align: right;
+  color: #2d2a35;
+}
+.sim-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 1rem 0;
+}
+@media(max-width:480px){ .sim-results { grid-template-columns:1fr; } }
+.sim-card { border-radius: 8px; padding: 0.9rem 1rem; }
+.sim-card.bad  { background: #fdf0d8; }
+.sim-card.good { background: #eaf4ea; }
+.sim-card .sc-label { font-size: 0.7rem; font-weight: 600; margin-bottom: 3px; }
+.sim-card.bad  .sc-label { color: #c4841a; }
+.sim-card.good .sc-label { color: #3a7a3a; }
+.sim-card .sc-val { font-size: 1.25rem; font-weight: 700; }
+.sim-card.bad  .sc-val { color: #9b2c2c; }
+.sim-card.good .sc-val { color: #3a7a3a; }
+.sim-card .sc-sub { font-size: 0.67rem; margin-top: 2px; color: #9e98aa; }
+.sim-diff {
+  background: #e8f1fb;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.sim-diff strong { color: #2a6db5; font-size: 1rem; }
+.sim-chart-wrap { position: relative; width: 100%; height: 200px; margin-bottom: 0.5rem; }
+.sim-note { font-size: 0.68rem; color: #9e98aa; line-height: 1.6; }
+.compare-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin: 1rem 0; }
+.compare-table th { padding: 7px 6px; text-align: center; border-bottom: 2px solid #e0d9ec; color: #6b6575; font-weight: 600; background: #f5f2fb; }
+.compare-table td { padding: 7px 6px; text-align: center; border-bottom: 1px solid #e0d9ec; }
+.compare-table td:first-child { text-align: left; font-weight: 500; }
+.tc-good { color: #3a7a3a; font-weight: 600; }
+.tc-bad  { color: #9b2c2c; }
+.tc-mid  { color: #c4841a; }
+.step-box {
+  background: #f5f2fb;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #7c6aad;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.step-body { font-size: 0.88rem; line-height: 1.7; color: #2d2a35; }
+.step-body strong { display: block; margin-bottom: 3px; }
+.disclaimer-box {
+  font-size: 0.73rem;
+  color: #9e98aa;
+  border-top: 1px solid #e0d9ec;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">家計・リベ活</span>
+  <span class="le" style="display:none">Finances</span>
+  <span>›</span>
+  <span class="lj">保険より新NISAが長期資産形成に向いている理由</span>
+  <span class="le" style="display:none">Japan's New NISA: A Guide for Foreign Residents</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <!-- 記事ヘッダー -->
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag money lj">家計・リベ活</span>
+        <span class="post-tag money le" style="display:none">Finances</span>
+        <span class="post-date">2026.05.25</span>
+      </div>
+      <h1 class="article-title lj">保険より新NISAが長期資産形成に向いている理由</h1>
+      <h1 class="article-title le" style="display:none">Japan's New NISA: A Guide for Foreign Residents</h1>
+    </div>
+
+    <!-- 記事本文 -->
+    <div class="article-body">
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>リベシティに入会して家計管理を始めたとき、自分にはまだ投資は関係ないと思っていました。でも学んでいくうちに、「生活防衛資金さえ確保できていれば、それを超える資金は新NISAで運用すべき」という考え方に出会い、ついに新NISAデビューすることになりました。</p>
+
+        <p>そこで今回は、私がリベシティで学んだ「保険とNISAの役割の違い」について、同じように迷っている方に向けてまとめてみます。特にお子さんがいる方や、老後のお金を漠然と心配している方にぜひ読んでほしい内容です。</p>
+
+        <h2>保険とNISAの「役割」はそもそも違う</h2>
+
+        <p>保険と新NISAは、どちらもお金に関係するサービスですが、役割がまったく異なります。混同してしまうと、「守っているつもりが損をしている」という状況になりかねません。</p>
+
+        <p><strong>保険</strong>は「万が一のリスクに備えるツール」です。死亡・病気・ケガなど、予測できないリスクに対して備えるものです。貯蓄型保険は「保険＋貯蓄」を合わせたものですが、その分コストが高く、長期では割に合わないケースが多くなります。</p>
+
+        <p><strong>新NISA</strong>は「長期の資産形成ツール」です。運用益が非課税になる制度で、教育費や老後資金など、長い時間をかけて増やしていくお金に向いています。</p>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>貯蓄型保険</th>
+              <th>新NISA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>長期の資産形成</td><td class="tc-bad">✕ 低利回り</td><td class="tc-good">◎ 最も有効</td></tr>
+            <tr><td>インフレへの対応</td><td class="tc-bad">✕ 困難</td><td class="tc-good">◎ 長期で対応</td></tr>
+            <tr><td>途中解約</td><td class="tc-bad">✕ 元本割れリスク</td><td class="tc-good">◎ いつでも可能</td></tr>
+            <tr><td>非課税メリット</td><td class="tc-mid">△ 控除のみ</td><td class="tc-good">◎ 運用益が非課税</td></tr>
+            <tr><td>コストの透明性</td><td class="tc-bad">✕ 不透明なことも</td><td class="tc-good">◎ 明確・低コスト</td></tr>
+          </tbody>
+        </table>
+
+        <h2>200年のデータが示すこと</h2>
+
+        <p>ジェレミー・シーゲルの著書『長期投資対象としての株式』によると、1802年に1ドルを投資した場合、2021年時点で株式は約5,400万ドルに成長しています。一方、現金（通貨）の実質的な購買力はインフレとともに減り続けています。</p>
+
+        <p>つまり、長期で見ると「現金のまま置いておくこと」はお金を守るどころか、じわじわと減らしていることになるのです。お金に働いてもらう——その意識が長期の資産形成には欠かせません。</p>
+
+        <h2>学資保険と新NISA、どれだけ差がつく？</h2>
+
+        <p>実際の数字で比べてみましょう。スライダーを動かして、ご自身の条件で試してみてください。</p>
+
+        <div class="sim-box">
+          <p class="sim-box-label">📊 シミュレーター：学資保険 vs 新NISA（18年後の試算）</p>
+
+          <div class="sim-row">
+            <label>月々の積立額</label>
+            <input type="range" id="monthly" min="5000" max="30000" step="1000" value="10000">
+            <span class="sim-val" id="monthly-out">10,000円</span>
+          </div>
+          <div class="sim-row">
+            <label>学資保険の返戻率</label>
+            <input type="range" id="return-rate" min="100" max="115" step="0.5" value="105">
+            <span class="sim-val" id="return-out">105.0%</span>
+          </div>
+          <div class="sim-row">
+            <label>新NISAの想定利回り</label>
+            <input type="range" id="yield-rate" min="3" max="8" step="0.5" value="5">
+            <span class="sim-val" id="yield-out">年5.0%</span>
+          </div>
+
+          <div class="sim-results">
+            <div class="sim-card bad">
+              <div class="sc-label">学資保険</div>
+              <div class="sc-val" id="hoken-result">―</div>
+              <div class="sc-sub" id="hoken-sub"></div>
+            </div>
+            <div class="sim-card good">
+              <div class="sc-label">新NISA（インデックス）</div>
+              <div class="sc-val" id="nisa-result">―</div>
+              <div class="sc-sub" id="nisa-sub"></div>
+            </div>
+          </div>
+
+          <div class="sim-diff">
+            新NISAのほうが <strong id="diff-result">―</strong> 多くなる試算です
+          </div>
+
+          <div class="sim-chart-wrap">
+            <canvas id="simChart" role="img" aria-label="学資保険と新NISAの18年間積立推移グラフ"></canvas>
+          </div>
+          <p class="sim-note">※ 新NISAは複利（毎月積立・年利を12分割）で計算。実際の運用成果は変動し、元本割れのリスクがあります。学資保険は積立総額×返戻率で計算。インフレや為替リスクは考慮していません。</p>
+        </div>
+
+        <h2>今日からできる3つのこと</h2>
+
+        <div class="step-box">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <strong>今入っている保険を書き出す</strong>
+            保険証券を引っ張り出して、目的・月額・返戻率を一覧にしましょう。「万が一に備える」掛け捨て保険は必要最小限に。貯蓄型・ドル建て・学資保険は要検討です。
+          </div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <strong>生活防衛資金を確認する</strong>
+            まず生活費の半年分（会社員の場合）を現金・普通預金で確保します。これは投資に回さず、いざというときのために手元に置いておくお金です。
+          </div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <strong>新NISAで積立投資をスタートする</strong>
+            証券口座を開設し、毎月一定額をインデックスファンド（例：eMAXIS Slim 全世界株式）に積み立てます。一度設定すれば、あとは自動で続きます。少額でも、始めることが大切です。
+          </div>
+        </div>
+
+        <h2>まとめ</h2>
+
+        <p>保険は「リスクに備えるツール」、新NISAは「長期の資産形成ツール」——この2つの役割を混同しないことが、お金を増やすための第一歩です。私自身、リベシティで学ぶまでこの違いをきちんと理解できていませんでした。</p>
+
+        <p>難しく考えなくていいと思います。まずは保険証券を1枚引っ張り出すことから始めてみてください。</p>
+
+        <div class="affiliate-box">
+          <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="お金の大学 書影" class="affiliate-box-icon" style="width:60px;height:auto;border-radius:4px;object-fit:cover;">
+          <div class="affiliate-box-body">
+            <p class="affiliate-box-title">お金の大学（著：両@リベ大学長）</p>
+            <p class="affiliate-box-desc">保険・投資・節税など、お金の基本をわかりやすく解説した一冊。リベシティを主宰する両学長の著書で、私がお金の勉強を始めるきっかけになりました。</p>
+            <a href="https://amzn.to/49aEmCJ" class="affiliate-box-btn" target="_blank" rel="noopener sponsored">Amazonで見る →</a>
+          </div>
+        </div>
+
+        <div class="disclaimer-box">
+          ※ この記事は特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。詳細はご自身でご確認のうえ、判断されることをおすすめします。<br>
+          ※ 本記事はリベラルアーツ大学（リベシティ）の考え方を参考に、筆者の視点でまとめたものです。
+        </div>
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>If you live in Japan, you may have heard the term "NISA" — but perhaps never looked into it, assuming it was only for Japanese citizens. Good news: most foreign residents in Japan can open a NISA account and start investing tax-free.</p>
+
+        <p>In this post, I'll explain what Japan's New NISA is, who can use it, and why it's a much better tool for long-term savings than insurance-based savings plans.</p>
+
+        <h2>What is Japan's New NISA?</h2>
+
+        <p>NISA (少額投資非課税制度) is Japan's tax-free investment account, similar to an ISA in the UK or a Roth IRA in the US. The "New NISA," launched in January 2024, is a significantly improved version with no time limit and a higher investment ceiling.</p>
+
+        <ul>
+          <li><strong>Two investment tracks:</strong> つみたて投資枠 (annual limit: ¥1.2M) for regular index fund investing, and 成長投資枠 (annual limit: ¥2.4M) for broader investments</li>
+          <li><strong>Lifetime limit:</strong> ¥18 million total</li>
+          <li><strong>Tax benefit:</strong> All gains and dividends are completely tax-free</li>
+          <li><strong>No expiry:</strong> Unlike the old NISA, there is no time limit on how long you can hold your investments</li>
+        </ul>
+
+        <h2>Can foreigners in Japan use NISA?</h2>
+
+        <p>Yes — as long as you meet the following conditions:</p>
+
+        <ul>
+          <li>You are registered as a resident in Japan (住民登録済み)</li>
+          <li>You have a My Number card (マイナンバー)</li>
+          <li>You are 18 years old or older</li>
+        </ul>
+
+        <p>Most visa types are eligible, including work visas, spouse visas, and permanent resident visas. Short-stay tourists and those without resident registration cannot use NISA.</p>
+
+        <h2>NISA vs. Insurance Savings Plans</h2>
+
+        <p>Many people in Japan — both Japanese and foreign residents — are sold insurance savings products (貯蓄型保険) as a way to save for education or retirement. While these feel "safe," they often underperform over the long term.</p>
+
+        <table class="compare-table">
+          <thead>
+            <tr><th></th><th>Insurance savings plan</th><th>New NISA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Long-term growth</td><td class="tc-bad">✕ Low return</td><td class="tc-good">◎ Best option</td></tr>
+            <tr><td>Inflation protection</td><td class="tc-bad">✕ Difficult</td><td class="tc-good">◎ Long-term coverage</td></tr>
+            <tr><td>Early withdrawal</td><td class="tc-bad">✕ May lose principal</td><td class="tc-good">◎ Any time</td></tr>
+            <tr><td>Tax benefit</td><td class="tc-mid">△ Deduction only</td><td class="tc-good">◎ All gains tax-free</td></tr>
+            <tr><td>Cost transparency</td><td class="tc-bad">✕ Often opaque</td><td class="tc-good">◎ Clear, low-cost</td></tr>
+          </tbody>
+        </table>
+
+        <p>The key insight: insurance is a tool for managing risk (illness, death, accident). It is not an efficient tool for growing wealth. Keep insurance minimal and use NISA for long-term savings.</p>
+
+        <h2>How to Get Started</h2>
+
+        <p>Opening a NISA account in Japan is straightforward, even for foreigners. Here are the basic steps:</p>
+
+        <div class="step-box">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <strong>Choose a securities company</strong>
+            Popular online brokers in Japan include SBI Securities (SBI証券) and Rakuten Securities (楽天証券). Both offer full online account opening and have English support pages.
+          </div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <strong>Open your NISA account online</strong>
+            You will need your My Number card (マイナンバーカード), your residence card (在留カード), and a Japanese bank account. The process is mostly online and takes a few days for approval.
+          </div>
+        </div>
+        <div class="step-box">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <strong>Set up automatic monthly investing</strong>
+            Choose a low-cost index fund such as eMAXIS Slim 全世界株式 (All Country) or eMAXIS Slim 米国株式 (S&amp;P500), set a monthly amount, and let it run automatically. Start small — even ¥1,000 a month is a valid start.
+          </div>
+        </div>
+
+        <h2>In summary</h2>
+
+        <p>Japan's New NISA is one of the best tools available for long-term wealth building — and it's open to most foreign residents. The key is to separate the role of insurance (risk protection) from the role of NISA (long-term growth), and to start investing as early as possible.</p>
+
+        <p>If you're living in Japan and haven't looked into NISA yet, now is a great time to start.</p>
+
+        <div class="disclaimer-box">
+          ※ This article does not constitute financial advice or a recommendation of any specific financial product. Investing involves risk, including the possible loss of principal. Please do your own research before making any investment decisions.<br>
+          ※ This article is based on the financial philosophy of Riberaru Ātsu Daigaku (Liberal Arts University / Riberti), interpreted from the author's personal perspective.
+        </div>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="money-01-libekatsu.html">
+            <div class="post-img">📒</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.19</span>
+              </div>
+              <p class="post-title lj">主婦歴２６年目の初家計簿</p>
+              <p class="post-title le" style="display:none">My First Household Budget After 26 Years of Marriage</p>
+            </div>
+          </a>
+          <a class="post-card" href="life-02-work-caregiving.html">
+            <div class="post-img">🏥</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag life lj">日常</span>
+                <span class="post-tag life le" style="display:none">Daily life</span>
+                <span class="post-date">2026.05.20</span>
+              </div>
+              <p class="post-title lj">仕事と介護</p>
+              <p class="post-title le" style="display:none">Work and Caregiving</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <!-- おすすめの本（日本語のみ） -->
+    <div class="sidebar-card lj">
+      <h2 class="sidebar-title">おすすめの本</h2>
+      <div style="text-align:center; margin-bottom: 0.75rem;">
+        <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg"
+             alt="お金の大学 書影"
+             style="width:120px; height:auto; border-radius:6px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+      </div>
+      <p style="font-size:0.82rem; font-weight:600; margin-bottom:0.4rem;">お金の大学</p>
+      <p style="font-size:0.78rem; color:#6b6575; margin-bottom:0.75rem; line-height:1.6;">保険・投資・節税など、お金の基本が全部わかる。リベシティを主宰する両学長の著書です。</p>
+      <a href="https://amzn.to/49aEmCJ" target="_blank" rel="noopener sponsored"
+         style="display:block; text-align:center; background:#7c6aad; color:white; font-size:0.78rem; padding:0.5rem; border-radius:6px; text-decoration:none;">Amazonで見る →</a>
+    </div>
+
+    <!-- 新着記事 -->
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Latest posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><a href="money-02-hoken-vs-nisa.html" class="lj" style="text-decoration:none;color:inherit;">保険より新NISAが長期資産形成に向いている理由</a><a href="money-02-hoken-vs-nisa.html" class="le" style="display:none;text-decoration:none;color:inherit;">Why New NISA Beats Insurance Savings Plans</a></li>
+        <li><span class="popular-num">2</span><a href="life-02-work-caregiving.html" class="lj" style="text-decoration:none;color:inherit;">仕事と介護</a><a href="life-02-work-caregiving.html" class="le" style="display:none;text-decoration:none;color:inherit;">Work and Caregiving</a></li>
+        <li><span class="popular-num">3</span><a href="work-04-remote-first-payment.html" class="lj" style="text-decoration:none;color:inherit;">海外リモートワークと初めての支払い</a><a href="work-04-remote-first-payment.html" class="le" style="display:none;text-decoration:none;color:inherit;">My First Overseas Remote Work — and First Payment</a></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">埼玉から、日常のきれいなものを。</p>
+  <p class="footer-sub le" style="display:none">Small beautiful things from Saitama, Japan.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+
+// シミュレーター
+function fmt(n){ return Math.round(n).toLocaleString('ja-JP') + '円'; }
+function calcNisa(monthly, rate, years){
+  let v = 0, r = rate / 100 / 12;
+  for(let i = 0; i < years * 12; i++) v = (v + monthly) * (1 + r);
+  return v;
+}
+function calcHoken(monthly, returnRate, years){
+  return monthly * 12 * years * (returnRate / 100);
+}
+let simChart = null;
+function updateSim(){
+  const monthly = parseInt(document.getElementById('monthly').value);
+  const rr = parseFloat(document.getElementById('return-rate').value);
+  const yr = parseFloat(document.getElementById('yield-rate').value);
+  document.getElementById('monthly-out').textContent = monthly.toLocaleString('ja-JP') + '円';
+  document.getElementById('return-out').textContent = rr.toFixed(1) + '%';
+  document.getElementById('yield-out').textContent = '年' + yr.toFixed(1) + '%';
+  const hoken = calcHoken(monthly, rr, 18);
+  const nisa  = calcNisa(monthly, yr, 18);
+  const diff  = nisa - hoken;
+  document.getElementById('hoken-result').textContent = fmt(hoken);
+  document.getElementById('hoken-sub').textContent = '返戻率' + rr.toFixed(1) + '% / 積立' + fmt(monthly * 12 * 18);
+  document.getElementById('nisa-result').textContent = fmt(nisa);
+  document.getElementById('nisa-sub').textContent = '年利' + yr.toFixed(1) + '% 複利 / 積立' + fmt(monthly * 12 * 18);
+  document.getElementById('diff-result').textContent = fmt(diff);
+  const labels = [], hokenData = [], nisaData = [];
+  for(let y = 1; y <= 18; y++){
+    labels.push(y + '年');
+    hokenData.push(Math.round(calcHoken(monthly, rr, y)));
+    nisaData.push(Math.round(calcNisa(monthly, yr, y)));
+  }
+  if(simChart){
+    simChart.data.datasets[0].data = hokenData;
+    simChart.data.datasets[1].data = nisaData;
+    simChart.update();
+  } else {
+    simChart = new Chart(document.getElementById('simChart'), {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [
+          { label:'学資保険', data: hokenData, borderColor:'#c4841a', backgroundColor:'rgba(196,132,26,0.07)', borderWidth:2, pointRadius:0, tension:0.3, borderDash:[6,3] },
+          { label:'新NISA',  data: nisaData,  borderColor:'#3a7a3a', backgroundColor:'rgba(58,122,58,0.07)',  borderWidth:2, pointRadius:0, tension:0.3 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { labels: { font:{size:11}, color:'#6b6575' } } },
+        scales: {
+          x: { ticks: { font:{size:10}, color:'#9e98aa', maxTicksLimit:9 }, grid: { display:false } },
+          y: { ticks: { font:{size:10}, color:'#9e98aa', callback: v => Math.round(v/10000) + '万' }, grid: { color:'rgba(158,152,170,0.15)' } }
+        }
+      }
+    });
+  }
+}
+['monthly','return-rate','yield-rate'].forEach(id => document.getElementById(id).addEventListener('input', updateSim));
+updateSim();
+</script>
+
+</body>
+</html>
