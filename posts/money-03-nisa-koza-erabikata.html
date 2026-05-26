@@ -15,11 +15,11 @@
 <style>
 /* ─── 比較表・アフィリエイトカード共通 CSS変数 ─── */
 .tbl-module, .aff-module {
-  --color-text-primary: #3a2c20;
-  --color-text-secondary: #6a5848;
-  --color-text-tertiary: #9a8878;
-  --color-border-tertiary: #ddd0c8;
-  --color-border-secondary: #c8b8a8;
+  --color-text-primary: #2a1c10;
+  --color-text-secondary: #3a2c20;
+  --color-text-tertiary: #6a5848;
+  --color-border-tertiary: #c8b8a8;
+  --color-border-secondary: #a89080;
   --color-background-secondary: #f7f0e6;
   --color-background-primary: #fdf8f2;
   --color-background-tertiary: #efe5d8;
@@ -28,35 +28,35 @@
 }
 /* ─── 比較表スタイル ─── */
 .tbl-module .wrap{padding:.5rem 0}
-.tbl-module .legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:1.25rem;font-size:12px;color:var(--color-text-secondary)}
+.tbl-module .legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:1.25rem;font-size:13px;color:var(--color-text-secondary)}
 .tbl-module .legend-item{display:flex;align-items:center;gap:5px}
-.tbl-module .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
-.tbl-module .tbl-wrap{overflow-x:auto;border:1px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg)}
-.tbl-module table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
-.tbl-module colgroup col:first-child{width:155px}
-.tbl-module colgroup col{width:125px}
-.tbl-module thead tr:first-child th{font-size:11px;font-weight:500;padding:10px 12px 4px;border-bottom:none;text-align:center}
+.tbl-module .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.tbl-module .tbl-wrap{overflow-x:auto;border:1.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg)}
+.tbl-module table{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}
+.tbl-module colgroup col:first-child{width:160px}
+.tbl-module colgroup col{width:130px}
+.tbl-module thead tr:first-child th{font-size:12px;font-weight:600;padding:10px 12px 4px;border-bottom:none;text-align:center}
 .tbl-module thead tr:first-child th:first-child{text-align:left}
-.tbl-module thead tr:last-child th{font-size:12px;font-weight:500;color:var(--color-text-primary);padding:6px 12px 10px;border-bottom:1px solid var(--color-border-tertiary);text-align:center}
+.tbl-module thead tr:last-child th{font-size:13px;font-weight:600;color:var(--color-text-primary);padding:6px 12px 10px;border-bottom:1.5px solid var(--color-border-tertiary);text-align:center}
 .tbl-module thead tr:last-child th:first-child{text-align:left}
-.tbl-module .net-head{background:#E6F1FB;color:#0C447C}
-.tbl-module .taimen-head{background:#FAEEDA;color:#633806}
-.tbl-module tbody tr td{padding:10px 12px;border-bottom:1px solid var(--color-border-tertiary);vertical-align:middle;text-align:center;color:var(--color-text-primary)}
+.tbl-module .net-head{background:#D0E8F8;color:#0A3860}
+.tbl-module .taimen-head{background:#F5E0C0;color:#4a2800}
+.tbl-module tbody tr td{padding:11px 12px;border-bottom:1px solid var(--color-border-tertiary);vertical-align:middle;text-align:center;color:var(--color-text-primary)}
 .tbl-module tbody tr:last-child td{border-bottom:none}
-.tbl-module tbody tr td:first-child{text-align:left;font-weight:500;font-size:12px;color:var(--color-text-secondary)}
-.tbl-module .cat-row td{background:var(--color-background-secondary);font-size:11px;font-weight:500;color:var(--color-text-tertiary);letter-spacing:.04em;padding:5px 12px;text-align:left}
-.tbl-module .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap}
-.tbl-module .free{background:#EAF3DE;color:#27500A}
-.tbl-module .paid{background:#FCEBEB;color:#791F1F}
-.tbl-module .partial{background:#FAEEDA;color:#633806}
-.tbl-module .na{background:#F1EFE8;color:#5F5E5A}
-.tbl-module .rec-sbi{display:inline-block;background:#E6F1FB;color:#0C447C;font-size:10px;font-weight:500;padding:2px 7px;border-radius:6px;margin-bottom:4px}
-.tbl-module .rec-rakuten{display:inline-block;background:#FCEBEB;color:#791F1F;font-size:10px;font-weight:500;padding:2px 7px;border-radius:6px;margin-bottom:4px}
-.tbl-module .note-section{margin-top:1.25rem;border:1px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem}
-.tbl-module .note-title{font-size:12px;font-weight:600;color:var(--color-text-secondary);margin-bottom:10px}
-.tbl-module .note-item{font-size:12px;color:var(--color-text-secondary);line-height:1.7;padding:5px 0;border-bottom:1px solid var(--color-border-tertiary)}
+.tbl-module tbody tr td:first-child{text-align:left;font-weight:600;font-size:13px;color:var(--color-text-secondary)}
+.tbl-module .cat-row td{background:#e8ddd0;font-size:12px;font-weight:700;color:#3a2c20;letter-spacing:.04em;padding:6px 12px;text-align:left}
+.tbl-module .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap}
+.tbl-module .free{background:#D4EDCA;color:#1a4008}
+.tbl-module .paid{background:#F8D7D7;color:#6a0f0f}
+.tbl-module .partial{background:#F5E0C0;color:#4a2800}
+.tbl-module .na{background:#E8E4DC;color:#4a4038}
+.tbl-module .rec-sbi{display:inline-block;background:#D0E8F8;color:#0A3860;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;margin-bottom:4px}
+.tbl-module .rec-rakuten{display:inline-block;background:#F8D7D7;color:#6a0f0f;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;margin-bottom:4px}
+.tbl-module .note-section{margin-top:1.25rem;border:1.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem}
+.tbl-module .note-title{font-size:13px;font-weight:700;color:var(--color-text-secondary);margin-bottom:10px}
+.tbl-module .note-item{font-size:13px;color:var(--color-text-secondary);line-height:1.8;padding:6px 0;border-bottom:1px solid var(--color-border-tertiary)}
 .tbl-module .note-item:last-child{border-bottom:none;padding-bottom:0}
-.tbl-module .note-label{font-weight:600;color:var(--color-text-primary)}
+.tbl-module .note-label{font-weight:700;color:var(--color-text-primary)}
 /* ─── アフィリエイトカード ─── */
 .aff-module{margin:2rem 0}
 .aff-module .aff-heading{font-size:15px;font-weight:600;color:var(--color-text-secondary);margin-bottom:.75rem}
