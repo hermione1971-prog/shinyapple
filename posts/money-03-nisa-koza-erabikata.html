@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="新NISAの口座はどこで開くのが正解？銀行・対面証券・ネット証券の手数料や商品数を比較。SBI証券・楽天証券をおすすめする理由と、夫婦で異なる証券会社を選んで後悔した体験談。">
+<meta name="keywords" content="新NISA, 証券口座, SBI証券, 楽天証券, 口座開設, ネット証券 比較, 銀行 NISA デメリット, クレカ積立">
+<meta property="og:title" content="新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較 | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="新NISA口座を開く前に知っておきたい。銀行でのNISA口座が損な理由と、SBI証券・楽天証券をすすめる理由を比較表付きで解説。">
+<meta property="og:type" content="article">
+<title>新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較 | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ─── 比較表・アフィリエイトカード共通 CSS変数 ─── */
+.tbl-module, .aff-module {
+  --color-text-primary: #3a2c20;
+  --color-text-secondary: #6a5848;
+  --color-text-tertiary: #9a8878;
+  --color-border-tertiary: #ddd0c8;
+  --color-border-secondary: #c8b8a8;
+  --color-background-secondary: #f7f0e6;
+  --color-background-primary: #fdf8f2;
+  --color-background-tertiary: #efe5d8;
+  --border-radius-lg: 12px;
+  --border-radius-md: 8px;
+}
+/* ─── 比較表スタイル ─── */
+.tbl-module .wrap{padding:.5rem 0}
+.tbl-module .legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:1.25rem;font-size:12px;color:var(--color-text-secondary)}
+.tbl-module .legend-item{display:flex;align-items:center;gap:5px}
+.tbl-module .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.tbl-module .tbl-wrap{overflow-x:auto;border:1px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg)}
+.tbl-module table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
+.tbl-module colgroup col:first-child{width:155px}
+.tbl-module colgroup col{width:125px}
+.tbl-module thead tr:first-child th{font-size:11px;font-weight:500;padding:10px 12px 4px;border-bottom:none;text-align:center}
+.tbl-module thead tr:first-child th:first-child{text-align:left}
+.tbl-module thead tr:last-child th{font-size:12px;font-weight:500;color:var(--color-text-primary);padding:6px 12px 10px;border-bottom:1px solid var(--color-border-tertiary);text-align:center}
+.tbl-module thead tr:last-child th:first-child{text-align:left}
+.tbl-module .net-head{background:#E6F1FB;color:#0C447C}
+.tbl-module .taimen-head{background:#FAEEDA;color:#633806}
+.tbl-module tbody tr td{padding:10px 12px;border-bottom:1px solid var(--color-border-tertiary);vertical-align:middle;text-align:center;color:var(--color-text-primary)}
+.tbl-module tbody tr:last-child td{border-bottom:none}
+.tbl-module tbody tr td:first-child{text-align:left;font-weight:500;font-size:12px;color:var(--color-text-secondary)}
+.tbl-module .cat-row td{background:var(--color-background-secondary);font-size:11px;font-weight:500;color:var(--color-text-tertiary);letter-spacing:.04em;padding:5px 12px;text-align:left}
+.tbl-module .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap}
+.tbl-module .free{background:#EAF3DE;color:#27500A}
+.tbl-module .paid{background:#FCEBEB;color:#791F1F}
+.tbl-module .partial{background:#FAEEDA;color:#633806}
+.tbl-module .na{background:#F1EFE8;color:#5F5E5A}
+.tbl-module .rec-sbi{display:inline-block;background:#E6F1FB;color:#0C447C;font-size:10px;font-weight:500;padding:2px 7px;border-radius:6px;margin-bottom:4px}
+.tbl-module .rec-rakuten{display:inline-block;background:#FCEBEB;color:#791F1F;font-size:10px;font-weight:500;padding:2px 7px;border-radius:6px;margin-bottom:4px}
+.tbl-module .note-section{margin-top:1.25rem;border:1px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem}
+.tbl-module .note-title{font-size:12px;font-weight:600;color:var(--color-text-secondary);margin-bottom:10px}
+.tbl-module .note-item{font-size:12px;color:var(--color-text-secondary);line-height:1.7;padding:5px 0;border-bottom:1px solid var(--color-border-tertiary)}
+.tbl-module .note-item:last-child{border-bottom:none;padding-bottom:0}
+.tbl-module .note-label{font-weight:600;color:var(--color-text-primary)}
+/* ─── アフィリエイトカード ─── */
+.aff-module{margin:2rem 0}
+.aff-module .aff-heading{font-size:15px;font-weight:600;color:var(--color-text-secondary);margin-bottom:.75rem}
+.aff-module .aff-sub{font-size:13px;color:var(--color-text-secondary);margin-bottom:1rem}
+.aff-module .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.aff-module .card{background:var(--color-background-primary);border-radius:var(--border-radius-lg);padding:1.25rem;display:flex;flex-direction:column;gap:10px}
+.aff-module .rakuten-card{border:2px solid #E24B4A}
+.aff-module .sbi-card{border:2px solid #185FA5}
+.aff-module .card-header{display:flex;align-items:center;gap:10px}
+.aff-module .card-icon{font-size:22px;width:36px;text-align:center;flex-shrink:0}
+.aff-module .card-title{font-size:14px;font-weight:600;color:var(--color-text-primary)}
+.aff-module .card-subtitle{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.aff-module .tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.aff-module .tag{font-size:11px;font-weight:500;padding:3px 8px;border-radius:20px}
+.aff-module .tag-rakuten{background:#FCEBEB;color:#791F1F}
+.aff-module .tag-sbi{background:#E6F1FB;color:#0C447C}
+.aff-module hr.divider{border:none;border-top:1px solid var(--color-border-tertiary);margin:0}
+.aff-module .link-list{display:flex;flex-direction:column;gap:8px}
+.aff-module .link-btn{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:var(--border-radius-md);font-size:13px;font-weight:500;text-decoration:none;border:1px solid var(--color-border-secondary);color:var(--color-text-primary);background:var(--color-background-secondary)}
+.aff-module .link-btn:hover{background:var(--color-background-tertiary);text-decoration:none}
+.aff-module .link-label{display:flex;align-items:center;gap:8px}
+.aff-module .link-type{font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px}
+.aff-module .type-sec{background:#EAF3DE;color:#27500A}
+.aff-module .type-card{background:#FAEEDA;color:#633806}
+.aff-module .type-bank{background:#E1F5EE;color:#085041}
+.aff-module .aff-note{font-size:11px;color:var(--color-text-secondary);margin-top:1rem;line-height:1.7}
+/* ─── 注意ボックス ─── */
+.caution-box{background:#fff8e6;border:1.5px solid #c8a850;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.caution-box .caution-title{font-weight:700;color:#8a6010;margin-bottom:.5rem;font-size:14px}
+.caution-box p{font-size:14px;color:#5a4030;line-height:1.8;margin:0}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">家計・リベ活</span>
+  <span class="le" style="display:none">Finances</span>
+  <span>›</span>
+  <span class="lj">新NISAの口座はどこで開く？</span>
+  <span class="le" style="display:none">Where to Open Your NISA Account</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag money lj">家計・リベ活</span>
+        <span class="post-tag money le" style="display:none">Finances</span>
+        <span class="post-date">2026.05.26</span>
+      </div>
+      <h1 class="article-title lj">新NISAの口座はどこで開く？<br>銀行・対面証券・ネット証券を徹底比較</h1>
+      <h1 class="article-title le" style="display:none">Where to Open Your NISA Account:<br>Banks vs. Brokerages in Japan</h1>
+    </div>
+
+    <div class="article-body">
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>ここ数年、新NISAや投資の話をよく聞くようになりました。「興味はあるけど、なんだかリスクが高そう……。余裕資金なんてないし……。」と思いながら、毎日の家事・仕事・節約に追われて、気がついたら何年も経ってしまった、という方は多いのではないでしょうか。</p>
+
+        <p>他ならぬ私もまさにそのひとりで、子供の教育費、住宅や車のローンの返済、日常のさまざまな支出をまかなうのに必死で、投資のことを考える余裕すらありませんでした。</p>
+
+        <p>TVのCMや利用している銀行でも「新NISAをはじめよう！」というキャンペーンをよく見かけます。「お金を預けるのはどこも同じだし、NISAの口座だってどこで開いても同じでしょ？」と思っている方——ちょっと待ってください！</p>
+
+        <h2>金融機関によって、何がどう違うの？</h2>
+
+        <p>実は、どこの金融機関を選ぶかによって、株式の買入手数料・NISA口座維持手数料・買入できる金融商品の数が<strong>まったく違います</strong>。この選択で、長期的な資産形成の結果に大きな差が出ます。</p>
+
+        <h2>銀行でのNISA口座はおすすめしない理由</h2>
+
+        <p>普段使っている銀行であれば、担当者に直接相談できる安心感や、預金と運用商品をまとめて管理できる便利さがあります。でも、<strong>デメリットの方が圧倒的に多い</strong>のです。</p>
+
+        <ul>
+          <li><strong>取扱商品が少ない</strong>——ネット証券の約250本に対して、銀行は約30本程度。選択肢がとても狭いです。</li>
+          <li><strong>株式・ETFが買えない</strong>——銀行は法律上、個別株の売買ができません。将来的に成長投資枠で株やETFへの投資を検討するなら、はじめから証券会社で開設しておく方が有利です。</li>
+          <li><strong>クレカ積立・ポイント還元がない</strong>——ネット証券なら積立額に応じてポイントが貯まります。「塵も積もれば山となる」で、長期では無視できないお得さです。</li>
+          <li><strong>成長投資枠の手数料がかかる場合がある</strong>——ネット証券では無料ですが、銀行では銘柄によって購入時手数料が発生することがあります。</li>
+        </ul>
+
+        <h2>証券会社を比較してみよう</h2>
+
+        <p>以下の表で、代表的な金融機関を比較してみましょう。（2026年5月現在）</p>
+
+        <!-- ── 比較表 ── -->
+        <div class="tbl-module">
+          <div class="wrap">
+            <div class="legend">
+              <div class="legend-item"><div class="dot" style="background:#639922"></div>無料</div>
+              <div class="legend-item"><div class="dot" style="background:#BA7517"></div>条件付き / 一部有料</div>
+              <div class="legend-item"><div class="dot" style="background:#A32D2D"></div>有料</div>
+              <div class="legend-item"><div class="dot" style="background:#888780"></div>取扱なし</div>
+            </div>
+            <div class="tbl-wrap">
+              <table>
+                <colgroup><col><col><col><col><col></colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="3" class="net-head">ネット証券</th>
+                    <th class="taimen-head">対面証券</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>SBI証券<br><span class="rec-sbi">おすすめ</span></th>
+                    <th>楽天証券<br><span class="rec-rakuten">おすすめ</span></th>
+                    <th>マネックス証券</th>
+                    <th>野村証券</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cat-row"><td colspan="5">国内株式（成長投資枠）</td></tr>
+                  <tr>
+                    <td>売買手数料</td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge paid">有料</span><br><small style="color:#9a8878;font-size:10px">20万以下2,860円〜</small></td>
+                  </tr>
+                  <tr>
+                    <td>単元未満株（1株〜）</td>
+                    <td><span class="badge free">対応・無料</span></td>
+                    <td><span class="badge partial">スプレッドあり</span></td>
+                    <td><span class="badge free">対応・無料</span></td>
+                    <td><span class="badge na">非対応</span></td>
+                  </tr>
+                  <tr class="cat-row"><td colspan="5">米国株式（成長投資枠）</td></tr>
+                  <tr>
+                    <td>売買手数料</td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge na">取扱なし</span></td>
+                  </tr>
+                  <tr class="cat-row"><td colspan="5">投資信託</td></tr>
+                  <tr>
+                    <td>つみたて枠・購入手数料</td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                  </tr>
+                  <tr>
+                    <td>成長枠・購入手数料</td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge free">無料</span></td>
+                    <td><span class="badge partial">銘柄による</span></td>
+                  </tr>
+                  <tr>
+                    <td>取扱本数（つみたて枠）</td>
+                    <td style="font-weight:600;color:#27500A">約250本</td>
+                    <td style="font-weight:600;color:#27500A">約250本</td>
+                    <td style="font-weight:600;color:#27500A">約250本</td>
+                    <td style="color:#791F1F">約30本</td>
+                  </tr>
+                  <tr class="cat-row"><td colspan="5">クレカ積立</td></tr>
+                  <tr>
+                    <td>対応カード</td>
+                    <td style="font-size:12px">三井住友カード<br>（NL / ゴールドNL）</td>
+                    <td style="font-size:12px">楽天カード（各種）</td>
+                    <td style="font-size:12px">マネックスカード</td>
+                    <td><span class="badge na">非対応</span></td>
+                  </tr>
+                  <tr>
+                    <td>無料カード還元率</td>
+                    <td>0.5%</td>
+                    <td>0.5〜1.0%</td>
+                    <td>1.1%</td>
+                    <td><span class="badge na">—</span></td>
+                  </tr>
+                  <tr>
+                    <td>ゴールドカード還元率</td>
+                    <td>最大1.0%<br><small style="color:#9a8878;font-size:10px">※備考①参照</small></td>
+                    <td>最大1.0%<br><small style="color:#9a8878;font-size:10px">※備考②参照</small></td>
+                    <td><span class="badge na">—</span></td>
+                    <td><span class="badge na">—</span></td>
+                  </tr>
+                  <tr>
+                    <td>投信保有ポイント</td>
+                    <td><span class="badge free">付与あり</span></td>
+                    <td><span class="badge free">付与あり</span></td>
+                    <td><span class="badge free">付与あり</span></td>
+                    <td><span class="badge na">なし</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note-section">
+              <div class="note-title">📋 備考</div>
+              <div class="note-item"><span class="note-label">① SBI × ゴールドNL：</span>入会初年度は1.0%。2年目以降は前年のカード利用金額により変動（100万円以上→1.0%、10万円以上→0.75%、10万円未満→0%）。なお積立金額はカード年間利用金額の集計対象外。</div>
+              <div class="note-item"><span class="note-label">② 楽天 × ゴールドカード：</span>楽天ゴールドカード（年会費2,200円）は0.75%、楽天プレミアムカード（年会費11,000円）は1.0%。カードの種類により固定。</div>
+              <div class="note-item"><span class="note-label">③ 無料カード同士の比較：</span>三井住友NL（0.5%）と楽天カード（0.5〜1.0%）では楽天カードが有利な場合もある。「最大3.0%」はプラチナプリファード利用時のみ。</div>
+              <div class="note-item"><span class="note-label">④ 共通事項：</span>つみたて投資枠の購入手数料は法令により全社無料。2026年5月現在の情報。手数料・還元率は予告なく変更される場合があります。</div>
+            </div>
+          </div>
+        </div>
+
+        <h2>対面の証券会社もおすすめしない理由</h2>
+
+        <p>野村証券などの対面証券は、担当者に直接相談できる安心感があります。ただ、比較表を見るとわかるとおり、手数料・取扱商品数・クレカ積立など、ほぼすべての面でネット証券に劣っています。「相談できる安心感」の分だけコストがかかる構造です。</p>
+
+        <h2>リベ大が推薦するのは「楽天証券」か「SBI証券」</h2>
+
+        <p>リベラルアーツ大学の両学長をはじめ、多くのインフルエンサーが<strong>楽天証券</strong>か<strong>SBI証券</strong>を推薦しています。どちらも手数料・商品数・サービスの面で業界トップクラス。どちらを選ぶかは、自分の「経済圏」次第です。</p>
+
+        <ul>
+          <li><strong>楽天経済圏</strong>（楽天市場・楽天銀行・楽天カードをよく使う）→ <strong>楽天証券</strong></li>
+          <li><strong>三井住友・SBI経済圏</strong>（住信SBIネット銀行や三井住友カードを使う）→ <strong>SBI証券</strong></li>
+        </ul>
+
+        <h2>私が楽天証券、夫がSBI証券を選んだ理由</h2>
+
+        <p>私は楽天市場でよく買い物をしており、楽天銀行・楽天カードを以前から使っていたため、楽天証券で新NISAの口座を開設しました。</p>
+
+        <p>夫の口座開設は、私がリベシティで学び始めた後のことで、住信SBIネット銀行の使い勝手がとても良かったことから、銀行との相性を優先してSBI証券を選びました。</p>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ 後から気づいて後悔したこと</div>
+          <p>これからご夫婦やご家族で口座開設を検討されている方に、ぜひお伝えしておきたいことがあります。<br><br>
+          あまり考えたくないことではありますが、<strong>資産運用の途中で運用者が亡くなった場合、同じ証券会社でないと資産の移管ができません</strong>。<br><br>
+          私と夫は別々の証券会社を選んでしまいました。もしご夫婦・ご家族で一緒に始めるなら、<strong>同じ証券会社を選ぶことを強くおすすめします</strong>。</p>
+        </div>
+
+        <h2>まとめ</h2>
+
+        <p>仕事・家事・節約・介護など、本当に忙しい毎日の中で、なかなかお金まわりのことに手が回らないのはよくわかります。でも、<strong>お金まわりのインフラを整えることは、生活の土台になる大切なこと</strong>です。</p>
+
+        <ul>
+          <li>❌ 銀行や対面証券での口座開設は避ける</li>
+          <li>✅ ネット証券（楽天証券 or SBI証券）を選ぶ</li>
+          <li>✅ 自分の「経済圏」に合わせて選ぶ</li>
+          <li>⚠️ ご夫婦・ご家族は<strong>同じ証券会社</strong>を選ぶ</li>
+        </ul>
+
+        <p>慎重に選んで、ご自身に合った一歩を踏み出してください🍎</p>
+
+        <!-- ── アフィリエイトリンク（A8.net登録後にhref="#"を実際のリンクに更新してください） ── -->
+        <div class="aff-module">
+          <p class="aff-heading">📎 口座開設はこちらから</p>
+          <p class="aff-sub">自分の経済圏に合わせてお選びください。</p>
+          <div class="grid">
+            <div class="card rakuten-card">
+              <div class="card-header">
+                <div class="card-icon">🏪</div>
+                <div>
+                  <div class="card-title">楽天経済圏の方はこちら</div>
+                  <div class="card-subtitle">楽天カードで積立 → 楽天ポイントを貯める</div>
+                </div>
+              </div>
+              <div class="tag-row">
+                <span class="tag tag-rakuten">楽天カード 0.5〜1.0%還元</span>
+                <span class="tag tag-rakuten">楽天銀行と連携でお得</span>
+              </div>
+              <hr class="divider">
+              <div class="link-list">
+                <a class="link-btn" href="#" target="_blank" rel="noopener sponsored">
+                  <span class="link-label"><span class="link-type type-sec">証券</span>楽天証券 口座開設</span><span>→</span>
+                </a>
+                <a class="link-btn" href="#" target="_blank" rel="noopener sponsored">
+                  <span class="link-label"><span class="link-type type-card">カード</span>楽天カード 申込み</span><span>→</span>
+                </a>
+                <a class="link-btn" href="#" target="_blank" rel="noopener sponsored">
+                  <span class="link-label"><span class="link-type type-bank">銀行</span>楽天銀行 口座開設</span><span>→</span>
+                </a>
+              </div>
+            </div>
+            <div class="card sbi-card">
+              <div class="card-header">
+                <div class="card-icon">🏦</div>
+                <div>
+                  <div class="card-title">三井住友経済圏の方はこちら</div>
+                  <div class="card-subtitle">三井住友NLカードで積立 → Vポイントを貯める</div>
+                </div>
+              </div>
+              <div class="tag-row">
+                <span class="tag tag-sbi">三井住友NL 0.5〜1.0%還元</span>
+                <span class="tag tag-sbi">住信SBIネット銀行と連携</span>
+              </div>
+              <hr class="divider">
+              <div class="link-list">
+                <a class="link-btn" href="#" target="_blank" rel="noopener sponsored">
+                  <span class="link-label"><span class="link-type type-sec">証券</span>SBI証券 口座開設</span><span>→</span>
+                </a>
+                <a class="link-btn" href="#" target="_blank" rel="noopener sponsored">
+                  <span class="link-label"><span class="link-type type-card">カード</span>三井住友カード（NL）申込み</span><span>→</span>
+                </a>
+                <a class="link-btn" href="#" target="_blank" rel="noopener sponsored">
+                  <span class="link-label"><span class="link-type type-bank">銀行</span>住信SBIネット銀行 口座開設</span><span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="aff-note">※ 各リンクはアフィリエイトリンクです。リンク経由でお申込みいただいても、皆さんのご負担は一切増えません。本ブログの運営費に充てさせていただいております。</p>
+        </div>
+
+        <!-- Amazon アフィリエイト -->
+        <div class="affiliate-box">
+          <div class="affiliate-box-icon">📖</div>
+          <div class="affiliate-box-body">
+            <p class="affiliate-box-title">【改訂版】本当の自由を手に入れる お金の大学</p>
+            <p class="affiliate-box-desc">リベ大・両学長の著書。お金の基本が一冊でわかる累計200万部のベストセラー。証券口座を開く前にぜひ読んでほしい一冊です。</p>
+            <a href="https://amzn.to/49aEmCJ" class="affiliate-box-btn" target="_blank" rel="noopener sponsored">Amazonで見る →</a>
+          </div>
+        </div>
+
+        <p style="font-size:12px;color:#9a8878;margin-top:1.5rem;">※本記事はリベラルアーツ大学（リベ大）の情報を参考に、個人の体験をもとに作成しています。投資は自己責任でお願いします。</p>
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>If you're living in Japan and thinking about opening a NISA account, you might assume it doesn't matter where — any bank or brokerage should be the same, right? It's not. Your choice of institution can significantly affect your fees, product options, and long-term returns.</p>
+
+        <h2>Why you shouldn't open NISA at a bank</h2>
+
+        <p>Banks in Japan actively advertise NISA accounts, but they come with serious drawbacks:</p>
+
+        <ul>
+          <li><strong>Far fewer fund options</strong> — Banks offer around 30 funds; online brokerages offer ~250.</li>
+          <li><strong>No stocks or ETFs</strong> — By law, banks cannot handle individual stock trading. If you ever want to invest in stocks or ETFs under the growth investment quota, you'll need a brokerage anyway.</li>
+          <li><strong>No credit card investment rewards</strong> — Online brokerages let you earn reward points by investing via credit card. Banks don't offer this.</li>
+          <li><strong>Potential fees on some funds</strong> — Online brokerages charge zero purchase fees. Banks may charge fees on certain growth-quota funds.</li>
+        </ul>
+
+        <h2>Comparison: major brokerages at a glance</h2>
+
+        <!-- EN comparison table -->
+        <div class="tbl-module">
+          <div class="wrap">
+            <div class="tbl-wrap">
+              <table>
+                <colgroup><col><col><col><col><col></colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="3" class="net-head">Online brokerages</th>
+                    <th class="taimen-head">Traditional</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>SBI Securities<br><span class="rec-sbi">Recommended</span></th>
+                    <th>Rakuten Securities<br><span class="rec-rakuten">Recommended</span></th>
+                    <th>Monex</th>
+                    <th>Nomura</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cat-row"><td colspan="5">Japanese stocks (growth quota)</td></tr>
+                  <tr>
+                    <td>Trading fee</td>
+                    <td><span class="badge free">Free</span></td>
+                    <td><span class="badge free">Free</span></td>
+                    <td><span class="badge free">Free</span></td>
+                    <td><span class="badge paid">Paid</span></td>
+                  </tr>
+                  <tr class="cat-row"><td colspan="5">Investment trusts</td></tr>
+                  <tr>
+                    <td>Purchase fee (tsumitate)</td>
+                    <td><span class="badge free">Free</span></td>
+                    <td><span class="badge free">Free</span></td>
+                    <td><span class="badge free">Free</span></td>
+                    <td><span class="badge free">Free</span></td>
+                  </tr>
+                  <tr>
+                    <td>Fund options (tsumitate)</td>
+                    <td style="font-weight:600;color:#27500A">~250</td>
+                    <td style="font-weight:600;color:#27500A">~250</td>
+                    <td style="font-weight:600;color:#27500A">~250</td>
+                    <td style="color:#791F1F">~30</td>
+                  </tr>
+                  <tr class="cat-row"><td colspan="5">Credit card investment</td></tr>
+                  <tr>
+                    <td>Compatible card</td>
+                    <td style="font-size:12px">Sumitomo Visa NL<br>(incl. Gold NL)</td>
+                    <td style="font-size:12px">Rakuten Card</td>
+                    <td style="font-size:12px">Monex Card</td>
+                    <td><span class="badge na">N/A</span></td>
+                  </tr>
+                  <tr>
+                    <td>Reward rate</td>
+                    <td>0.5–1.0%</td>
+                    <td>0.5–1.0%</td>
+                    <td>1.1%</td>
+                    <td><span class="badge na">—</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note-section">
+              <div class="note-title">📋 Notes</div>
+              <div class="note-item"><span class="note-label">SBI × Gold NL card:</span> 1.0% in the first year. From year 2, the rate depends on prior year card spending (¥1M+ → 1.0%, ¥100K+ → 0.75%, under ¥100K → 0%). Investment amounts are excluded from the annual spending calculation.</div>
+              <div class="note-item"><span class="note-label">All data as of May 2026.</span> Fees and reward rates may change without notice.</div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Traditional brokerages aren't ideal either</h2>
+
+        <p>Brokerages like Nomura Securities offer face-to-face consultations, which can be reassuring. But as the table shows, their fees are higher and the product range is narrower — you're essentially paying for hand-holding you may not need long-term.</p>
+
+        <h2>The recommended choice: Rakuten or SBI</h2>
+
+        <p>Most Japanese financial educators — including Ryo-gakucho of リベ大 (Liberal Arts University) — recommend either <strong>Rakuten Securities</strong> or <strong>SBI Securities</strong>. Both offer zero fees, ~250 fund options, and credit card investment rewards.</p>
+
+        <p>The choice depends on which "economic ecosystem" you already use:</p>
+        <ul>
+          <li>Use <strong>Rakuten</strong> (Rakuten Ichiba, Rakuten Bank, Rakuten Card) → <strong>Rakuten Securities</strong></li>
+          <li>Use <strong>Sumitomo/SBI</strong> services (Sumishin SBI Netbank, Sumitomo Visa card) → <strong>SBI Securities</strong></li>
+        </ul>
+
+        <h2>Our household: one Rakuten, one SBI — and a lesson learned</h2>
+
+        <p>I opened my NISA account at Rakuten Securities because I already used Rakuten Bank and Rakuten Card. My husband opened his at SBI Securities after I joined the リベシティ community and learned how well it integrates with Sumishin SBI Netbank.</p>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ Something I wish I'd known</div>
+          <p>If you're opening accounts as a couple or family, please keep this in mind:<br><br>
+          If one person passes away during the investment period, <strong>assets can only be transferred to another account at the same brokerage</strong>. My husband and I ended up at different brokerages — not ideal in hindsight.<br><br>
+          If you're starting together, <strong>use the same brokerage</strong>.</p>
+        </div>
+
+        <h2>In summary</h2>
+
+        <ul>
+          <li>❌ Avoid NISA accounts at banks or traditional brokerages</li>
+          <li>✅ Choose an online brokerage (Rakuten Securities or SBI Securities)</li>
+          <li>✅ Match your choice to your existing financial ecosystem</li>
+          <li>⚠️ Couples and families: <strong>use the same brokerage</strong></li>
+        </ul>
+
+        <p>Take your time, make a careful choice, and take that first step 🍎</p>
+
+        <p style="font-size:12px;color:#9a8878;margin-top:1.5rem;">※ This article is based on personal experience and information from リベラルアーツ大学 (Liberal Arts University Japan). Always do your own research before investing.</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="money-02-hoken-vs-nisa.html">
+            <div class="post-img">📈</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.25</span>
+              </div>
+              <p class="post-title lj">銀行に預けておくだけでは危険？！―保険より新NISAが長期資産形成に向いている理由</p>
+              <p class="post-title le" style="display:none">Japan's New NISA: A Guide for Foreign Residents</p>
+            </div>
+          </a>
+          <a class="post-card" href="money-01-libekatsu.html">
+            <div class="post-img">💛</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.19</span>
+              </div>
+              <p class="post-title lj">主婦歴２６年目の初家計簿</p>
+              <p class="post-title le" style="display:none">My First Household Budget After 26 Years of Marriage</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <div class="sidebar-card lj">
+      <h2 class="sidebar-title">おすすめの本</h2>
+      <a href="https://amzn.to/49aEmCJ" target="_blank" rel="noopener sponsored" style="display:block;text-decoration:none;">
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;">
+          <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="【改訂版】本当の自由を手に入れる お金の大学" style="width:120px;border-radius:4px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+          <p style="font-size:13px;font-weight:bold;color:var(--text);margin-bottom:4px;line-height:1.5;">【改訂版】本当の自由を手に入れる<br>お金の大学</p>
+          <p style="font-size:12px;color:var(--text-light);margin-bottom:12px;">両＠リベ大学長 著</p>
+          <span style="display:inline-block;background:var(--purple-mid);color:#fff;font-size:12px;padding:6px 16px;border-radius:20px;">Amazonで見る →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><span class="lj">新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較</span><span class="le" style="display:none">Where to Open Your NISA Account</span></li>
+        <li><span class="popular-num">2</span><span class="lj">銀行に預けておくだけでは危険？！―保険より新NISAが長期資産形成に向いている理由</span><span class="le" style="display:none">Why New NISA Beats Insurance Savings Plans</span></li>
+        <li><span class="popular-num">3</span><span class="lj">仕事と介護</span><span class="le" style="display:none">Work and Caregiving</span></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">日本の片隅から、日常のいろいろなことを。</p>
+  <p class="footer-sub le" style="display:none">From a quiet corner of Japan, writing about the many sides of everyday life.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
