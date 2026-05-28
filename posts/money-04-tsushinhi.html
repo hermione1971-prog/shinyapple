@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="家族4台で月25,660円だったスマホ代が、楽天モバイルや日本通信SIMへの乗り換えで家族5人・月6,325円に。通信費の見直し方法と4年間の実体験をご紹介。">
+<meta name="keywords" content="通信費 見直し, 楽天モバイル, 日本通信SIM, スマホ代 節約, 格安SIM, 家計 通信費, スマホ保険 解約, 大手キャリア 乗り換え">
+<meta property="og:title" content="現代の必需品　通信費膨らんでいませんか？ | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="家族4台・月25,660円のスマホ代が家族5人・月6,325円に。楽天モバイル＋日本通信SIM乗り換えの実体験。">
+<meta property="og:type" content="article">
+<title>現代の必需品　通信費膨らんでいませんか？ | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ── 注意ボックス ── */
+.caution-box{background:#fff8e6;border:1.5px solid #c8a850;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.caution-box .caution-title{font-weight:700;color:#8a6010;margin-bottom:.5rem;font-size:14px}
+.caution-box p{font-size:14px;color:#5a4030;line-height:1.8;margin:0}
+/* ── 料金比較ボックス ── */
+.cost-flow{display:flex;flex-wrap:wrap;gap:12px;margin:1.5rem 0;align-items:center}
+.cost-step{flex:1;min-width:140px;background:#fdf8f2;border:1.5px solid #c8b8a8;border-radius:10px;padding:14px 16px;text-align:center}
+.cost-step .cs-label{font-size:11px;font-weight:700;color:#7a6858;margin-bottom:6px;letter-spacing:.05em}
+.cost-step .cs-amount{font-size:24px;font-weight:700;color:#4a3020;line-height:1}
+.cost-step .cs-sub{font-size:11px;color:#8a7868;margin-top:4px}
+.cost-step.highlight{background:#ede0f5;border-color:#9a78c0}
+.cost-step.highlight .cs-amount{color:#5a3888}
+.cost-arrow{font-size:20px;color:#b8a898;flex-shrink:0}
+/* ── 料金内訳テーブル ── */
+.fee-table{width:100%;border-collapse:collapse;font-size:14px;margin:1rem 0 1.5rem}
+.fee-table th{background:#ede5d8;color:#4a3020;font-weight:700;padding:8px 12px;text-align:left;border-bottom:2px solid #c8b8a8}
+.fee-table td{padding:8px 12px;border-bottom:1px solid #e0d4c4;color:#3a2c20}
+.fee-table .total-row td{background:#f0e8d8;font-weight:700;color:#4a3020;border-top:2px solid #c8b8a8;border-bottom:none}
+.fee-table td:last-child{text-align:right;font-weight:600}
+.fee-table .total-row td:last-child{color:#5a3888;font-size:16px}
+/* ── まとめボックス ── */
+.conclusion-box{background:#f5f0fb;border:1.5px solid #b0a0d0;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.conclusion-box .con-title{font-weight:700;color:#5a3888;margin-bottom:.75rem;font-size:14px}
+.conclusion-box ul{margin:0;padding-left:1.2rem}
+.conclusion-box li{font-size:14px;color:#3a2c20;line-height:1.9}
+/* ── 画像プレースホルダー（画像が入るまでの仮表示） ── */
+.img-placeholder{background:#f0e8d8;border:2px dashed #c8b8a8;border-radius:8px;padding:24px;text-align:center;color:#9a8878;font-size:13px;margin:1.5rem 0}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">家計・リベ活</span>
+  <span class="le" style="display:none">Finances</span>
+  <span>›</span>
+  <span class="lj">通信費膨らんでいませんか？</span>
+  <span class="le" style="display:none">Is Your Phone Bill Draining Your Budget?</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <!-- 記事ヘッダー -->
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag money lj">家計・リベ活</span>
+        <span class="post-tag money le" style="display:none">Finances</span>
+        <span class="post-date">2026.05.28</span>
+      </div>
+      <h1 class="article-title lj">現代の必需品<br>通信費膨らんでいませんか？</h1>
+      <h1 class="article-title le" style="display:none">Is Your Phone Bill Draining Your Budget?<br>Our Family's Journey to Smarter Mobile Plans</h1>
+    </div>
+
+    <!-- 記事本文 -->
+    <div class="article-body">
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>スマホは２１世紀の現代に生きる私たちにとって、いつの間にか欠かせないものになりましたね。</p>
+
+        <p>NTTドコモ モバイル社会研究所の最新調査（2026年1月）によると、小学5年生で所有率が過半数を超え、中学生では8割以上がスマートフォンを所有しています。東京都の最新調査では、小学校低学年（1〜3年生）のスマホ所有率が初めて3割を超えたとのことです。</p>
+
+        <p>みなさんのご家庭では、毎月どのくらいスマホ代がかかっていますか？</p>
+
+        <p>今から、私が４年前に行ったスマホの通信費の見直しについてお話しします。まずは、我が家の2021年某月の請求をお見せしましょう。</p>
+
+        <h2>4年前の我が家の通信費：月25,660円の衝撃</h2>
+
+        <!-- 画像1：2021年の請求明細 -->
+        <!-- ↓ 画像ファイル名を確認後、以下のコメントを外してください -->
+        <!--
+        <img
+          src="../images/（ファイル名）.jpg"
+          alt="2021年のスマホ請求明細 / Our 2021 smartphone bill">
+        -->
+        <div class="img-placeholder">📄 画像：2021年の請求明細（ファイル名確認後に差し替えてください）</div>
+
+        <p>iPhone4台の本体代金の分割払いと電話料金を合わせて、なんと月に<strong>25,660円</strong>も支払っていました。本当に驚きです！　今思えば、よく家計が破綻しなかったものだと思います。</p>
+
+        <p>家族4台分の通信料だけでも<strong>16,276円</strong>。夫の通信費が多くかかった月はもっと支払うこともありました。</p>
+
+        <p>夫婦2台だけのころは、2年ごとに最新機種に乗り換えるだけで、通信費もあまり気にしていませんでした。でも子供2人が成長してスマホを持たせることになると、本体の分割払い×4台分・通信費×4台分と、支払い金額はどんどん膨らんでいきました。スマホの使い方って、同じ家族でも本当に違うので、料金を抑えるのが本当に大変でした。</p>
+
+        <h2>スマホにまつわる「もったいない」落とし穴</h2>
+
+        <h3>① スマホ保険は本当に必要？</h3>
+
+        <p>知識が乏しかったころは、スマホ保険にも加入していました。月600円×4台分、年間にすると<strong>28,800円</strong>の出費です。スマホが故障しなければ、まるまる消えていくお金です。</p>
+
+        <p>両学長・リベラルアーツ大学の動画に出会ったおかげで、半年間でスマホ保険を解約し、「保険をかけているつもり貯金」を始めました。幸い、新しいiPhoneに買い換えるまでに故障することもなく過ごせたので、<strong>10万円以上のお金を節約</strong>することができました。</p>
+
+        <h3>② 3か月無料オプションの「外し忘れ」に要注意！</h3>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ ぴかりんご家の苦い経験</div>
+          <p>大手ショップでスマホの契約をする際に勧められる「3か月無料オプション」には、くれぐれも注意してください。外し忘れると、使っていないサービスの料金が請求に乗ってきます。<br><br>
+          ぴかりんご家でも、スマホの契約に疎かった夫と長男がオプションを外し忘れて、無駄な料金を何か月もの間、支払っていたという経験があります。<strong>契約直後の請求明細は必ず確認</strong>することをおすすめします。</p>
+        </div>
+
+        <h2>楽天モバイルに乗り換えて4年以上</h2>
+
+        <p>なるべく通信費を抑えたくて試行錯誤した結果、最終的に選んだのが<strong>楽天モバイル</strong>でした。外出時にはデータ通信をこまめにOFFにするなど工夫しながら、家族全員で4年以上使い続けました。</p>
+
+        <p>その間の家族5人分の通信費は次のとおりです。</p>
+
+        <table class="fee-table">
+          <thead><tr><th>家族</th><th>キャリア</th><th>月額</th></tr></thead>
+          <tbody>
+            <tr><td>夫</td><td>楽天モバイル</td><td>2,181円</td></tr>
+            <tr><td>長男</td><td>楽天モバイル</td><td>3,282円</td></tr>
+            <tr><td>次男</td><td>楽天モバイル</td><td>1,070円</td></tr>
+            <tr><td>母</td><td>楽天モバイル</td><td>1,070円</td></tr>
+            <tr><td>私</td><td>楽天モバイル</td><td>1,070円</td></tr>
+          </tbody>
+          <tfoot><tr class="total-row"><td colspan="2">合計（5人）</td><td>8,673円</td></tr></tfoot>
+        </table>
+
+        <p>1人増えているのに、以前の<strong>半分以下</strong>の通信費で済んでいます。</p>
+
+        <p>楽天モバイルの使い心地についても正直にお伝えします。</p>
+
+        <p><strong>良かった点</strong>は、「楽天リンク」のアプリを使えば固定電話や他社の携帯電話との通話料が無料なこと、そして楽天市場でのお買い物ポイントが4倍になること。埼玉在住の私や次男は、4年以上使って不便を感じたことはほとんどありませんでした。</p>
+
+        <p>一方で<strong>気になった点</strong>もあります。大手3キャリア（docomo・au・softbank）と違い、後発のMVOである楽天は基地局の整備がまだ追いついていないエリアがあります。長男が社会人1年目に茨城へ1か月の研修に行ったとき、ゲームや動画視聴が思うようにできなかったと言っていました。夫も遠方に出かけた際につながりにくいエリアがあったと話していました。</p>
+
+        <p>まとめると、<strong>東京・神奈川・千葉・埼玉などの都心部にお住まいの方</strong>には楽天モバイルはおすすめできます。地方への外出が多い方は、事前にエリア確認をしておくとよいでしょう。</p>
+
+        <h2>さらに一部を日本通信SIMに乗り換えて（月6,325円）</h2>
+
+        <p>3年半前から母が同居するようになり、5人全員で楽天モバイルを使っていましたが、1か月ほど前に私・夫・次男の3人は<strong>日本通信SIM</strong>に乗り換えました。</p>
+
+        <p>私と次男は、家のWi-Fiでの使用がほとんどで、外出時もLINE通話で十分。銀行アプリやキャッシュレス決済に使う程度なので、より安い日本通信SIMで事足りています。</p>
+
+        <p>一方、長男は引き続き楽天モバイルを利用中。お昼休みに安定した速度でゲームをしたいことと、たまに音声通話をする必要があるためです。母名義のスマホも、千葉や東京の友人と時々長電話することがあるため、楽天モバイルのままにしています。</p>
+
+        <!-- 画像2：現在の料金画面など -->
+        <!-- ↓ 画像ファイル名を確認後、以下のコメントを外してください -->
+        <!--
+        <img
+          src="../images/（ファイル名）.jpg"
+          alt="現在のスマホ料金画面 / Current mobile plan charges">
+        -->
+        <div class="img-placeholder">📱 画像：現在の料金画面など（ファイル名確認後に差し替えてください）</div>
+
+        <p>最新の家族5人分の通信費です。</p>
+
+        <table class="fee-table">
+          <thead><tr><th>家族</th><th>キャリア</th><th>月額</th></tr></thead>
+          <tbody>
+            <tr><td>夫</td><td>日本通信SIM</td><td>1,393円</td></tr>
+            <tr><td>長男</td><td>楽天モバイル</td><td>3,282円</td></tr>
+            <tr><td>次男</td><td>日本通信SIM</td><td>293円</td></tr>
+            <tr><td>私</td><td>日本通信SIM</td><td>293円</td></tr>
+            <tr><td>母</td><td>楽天モバイル</td><td>1,064円</td></tr>
+          </tbody>
+          <tfoot><tr class="total-row"><td colspan="2">合計（5人）</td><td>6,325円</td></tr></tfoot>
+        </table>
+
+        <p>通話が必要な長男・母は楽天モバイルのまま、通話をほぼ使わない私・夫・次男は日本通信SIMへ。我が家なりの現在の最適解です。</p>
+
+        <!-- 通信費の変遷サマリー -->
+        <div class="cost-flow">
+          <div class="cost-step">
+            <div class="cs-label">2021年（大手3社）</div>
+            <div class="cs-amount">25,660<span style="font-size:14px">円</span></div>
+            <div class="cs-sub">iPhone 4台</div>
+          </div>
+          <div class="cost-arrow">›</div>
+          <div class="cost-step">
+            <div class="cs-label">楽天モバイル（5人）</div>
+            <div class="cs-amount">8,673<span style="font-size:14px">円</span></div>
+            <div class="cs-sub">半分以下に</div>
+          </div>
+          <div class="cost-arrow">›</div>
+          <div class="cost-step highlight">
+            <div class="cs-label">現在（楽天＋日本通信）</div>
+            <div class="cs-amount">6,325<span style="font-size:14px">円</span></div>
+            <div class="cs-sub">さらに節約！</div>
+          </div>
+        </div>
+
+        <h2>まとめ：乗り換え前に確認しておきたいこと</h2>
+
+        <p>通信品質の安定性・店舗数の多さ・サポートの手厚さなど、大手キャリアには大手ならではの良さがあります。その一方で、支払い金額の大きさは各ご家庭の家計や資産形成にも大きく影響します。</p>
+
+        <p>乗り換えを検討する際には、以下の点をあらかじめ確認しておくとスムーズです。</p>
+
+        <div class="conclusion-box">
+          <div class="con-title">📋 乗り換え前のチェックリスト</div>
+          <ul>
+            <li>📱 端末はSIMフリー（もしくはSIMロック解除済み）か？</li>
+            <li>💳 本体の分割払いが残っていないか？</li>
+            <li>📍 乗り換え先のキャリアのエリアを確認したか？</li>
+            <li>📞 音声通話をよく使うか、LINE通話で十分か？</li>
+            <li>⚙️ 契約後にオプションを外し忘れていないか？</li>
+          </ul>
+        </div>
+
+        <p>乗り換えをするにせよ、しないにせよ、一度ご自身の通信費を見直してみることをおすすめします。きっと発見があるはずです🍎</p>
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>Smartphones have quietly become an essential part of modern life. A 2026 survey by NTT DOCOMO Mobile Society Research Institute found that more than half of Japanese fifth graders own a smartphone, and over 80% of junior high school students do. In Tokyo, ownership rates among early elementary school children (grades 1–3) surpassed 30% for the first time.</p>
+
+        <p>How much does your household spend on mobile plans each month? Here's how our family of five went from ¥25,660 a month to just ¥6,325 — and what we learned along the way.</p>
+
+        <h2>Our 2021 phone bill: ¥25,660 a month</h2>
+
+        <!-- Image 1 placeholder -->
+        <div class="img-placeholder" style="color:#9a8878;font-size:13px">📄 Image: 2021 phone bill (to be added)</div>
+
+        <p>Back in 2021, we were paying a combined total of <strong>¥25,660 per month</strong> for four iPhones — covering both the monthly device installments and the service charges. Just the communication fees alone came to <strong>¥16,276</strong>. Looking back, I'm amazed our household budget survived.</p>
+
+        <p>When it was just my husband and me, we'd simply upgrade to the latest model every two years without thinking much about costs. But once our two children needed their own phones, four separate device payments plus four service plans added up fast — and different family members use their phones very differently, making it hard to find a plan that worked for everyone.</p>
+
+        <h2>The hidden costs we weren't watching</h2>
+
+        <h3>① Smartphone insurance: worth it?</h3>
+
+        <p>When we didn't know better, we were also paying for smartphone insurance — ¥600 per device, per month. For four devices, that's <strong>¥28,800 a year</strong>. If nothing breaks, every yen of it disappears.</p>
+
+        <p>After discovering the リベ大 (Liberal Arts University Japan) YouTube channel, I cancelled the insurance and started a dedicated "self-insurance" savings fund instead. We went through an entire upgrade cycle without a single device breaking — saving us <strong>over ¥100,000</strong>.</p>
+
+        <h3>② The "3 months free" option trap</h3>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ A lesson learned the hard way</div>
+          <p>When signing a new contract at a carrier store in Japan, you'll often be offered optional add-on services "free for the first 3 months." If you forget to cancel them, you'll keep paying — for services you may never use.<br><br>
+          In our family, both my husband and our eldest son forgot to cancel their trial options and paid for unused services for several months. <strong>Always check your first bill carefully after signing a new contract.</strong></p>
+        </div>
+
+        <h2>Four years on Rakuten Mobile</h2>
+
+        <p>After researching and experimenting, we switched our whole family to <strong>Rakuten Mobile</strong> — and stayed for over four years. I also got into the habit of turning off mobile data when I didn't need it outside the house.</p>
+
+        <p>Here's what we were paying for all five of us:</p>
+
+        <table class="fee-table">
+          <thead><tr><th>Family member</th><th>Plan</th><th>Monthly cost</th></tr></thead>
+          <tbody>
+            <tr><td>Husband</td><td>Rakuten Mobile</td><td>¥2,181</td></tr>
+            <tr><td>Eldest son</td><td>Rakuten Mobile</td><td>¥3,282</td></tr>
+            <tr><td>Younger son</td><td>Rakuten Mobile</td><td>¥1,070</td></tr>
+            <tr><td>Mother</td><td>Rakuten Mobile</td><td>¥1,070</td></tr>
+            <tr><td>Me</td><td>Rakuten Mobile</td><td>¥1,070</td></tr>
+          </tbody>
+          <tfoot><tr class="total-row"><td colspan="2">Total (5 people)</td><td>¥8,673</td></tr></tfoot>
+        </table>
+
+        <p>Even with a fifth person added, we were paying less than <strong>half</strong> of our old bill.</p>
+
+        <p><strong>What we liked:</strong> Free calls via the Rakuten Link app (including to landlines), and 4× Rakuten points on shopping. My younger son and I — both mostly at home in Saitama — never had any real issues with the service.</p>
+
+        <p><strong>Where it fell short:</strong> Rakuten is a newer carrier (MVO), and its coverage in rural and regional areas is noticeably weaker than the big three (Docomo, au, SoftBank). Our eldest son struggled with slow speeds during a month-long work training in Ibaraki. My husband also noticed dead spots on longer trips. For those living or traveling outside major urban areas, it's worth checking the coverage map first.</p>
+
+        <h2>Going further: switching part of the family to Nihon Tsushin SIM</h2>
+
+        <p>About a month ago, my husband, younger son, and I switched from Rakuten to <strong>Nihon Tsushin SIM</strong>. We rely mostly on home Wi-Fi, and for calls, LINE voice calls are plenty for us — so an even simpler, cheaper plan made sense.</p>
+
+        <p>Our eldest son is sticking with Rakuten Mobile — he plays games on his lunch break and needs a stable connection, plus he still makes the occasional voice call. My mother's plan (in my name) stays on Rakuten too, since she likes calling old friends in Chiba and Tokyo for long catch-ups.</p>
+
+        <!-- Image 2 placeholder -->
+        <div class="img-placeholder" style="color:#9a8878;font-size:13px">📱 Image: current plan screenshots (to be added)</div>
+
+        <p>Our current breakdown:</p>
+
+        <table class="fee-table">
+          <thead><tr><th>Family member</th><th>Plan</th><th>Monthly cost</th></tr></thead>
+          <tbody>
+            <tr><td>Husband</td><td>Nihon Tsushin SIM</td><td>¥1,393</td></tr>
+            <tr><td>Eldest son</td><td>Rakuten Mobile</td><td>¥3,282</td></tr>
+            <tr><td>Younger son</td><td>Nihon Tsushin SIM</td><td>¥293</td></tr>
+            <tr><td>Me</td><td>Nihon Tsushin SIM</td><td>¥293</td></tr>
+            <tr><td>Mother</td><td>Rakuten Mobile</td><td>¥1,064</td></tr>
+          </tbody>
+          <tfoot><tr class="total-row"><td colspan="2">Total (5 people)</td><td>¥6,325</td></tr></tfoot>
+        </table>
+
+        <!-- Cost journey summary -->
+        <div class="cost-flow">
+          <div class="cost-step">
+            <div class="cs-label">2021 (Big carrier)</div>
+            <div class="cs-amount">¥25,660</div>
+            <div class="cs-sub">4 iPhones</div>
+          </div>
+          <div class="cost-arrow">›</div>
+          <div class="cost-step">
+            <div class="cs-label">Rakuten Mobile (5 people)</div>
+            <div class="cs-amount">¥8,673</div>
+            <div class="cs-sub">Cut by more than half</div>
+          </div>
+          <div class="cost-arrow">›</div>
+          <div class="cost-step highlight">
+            <div class="cs-label">Rakuten + Nihon Tsushin</div>
+            <div class="cs-amount">¥6,325</div>
+            <div class="cs-sub">Our current best!</div>
+          </div>
+        </div>
+
+        <h2>Before you switch: a quick checklist</h2>
+
+        <p>The major carriers have real advantages — better coverage, more stores, and hands-on customer support. But the cost difference can have a meaningful impact on your household budget and long-term savings.</p>
+
+        <div class="conclusion-box">
+          <div class="con-title">📋 Things to check before switching</div>
+          <ul>
+            <li>📱 Is your device SIM-free (or can it be SIM-unlocked)?</li>
+            <li>💳 Are you still paying off a device installment plan?</li>
+            <li>📍 Does your new carrier have good coverage where you live and travel?</li>
+            <li>📞 Do you need voice calls, or is LINE calling enough?</li>
+            <li>⚙️ Have you cancelled any trial add-on options after signing?</li>
+          </ul>
+        </div>
+
+        <p>Whether you decide to switch or stay, I'd encourage everyone to take a fresh look at their mobile bills. You might be surprised by what you find 🍎</p>
+
+        <p style="font-size:12px;color:#9a8878;margin-top:1.5rem;">※ Plan prices are based on our household's actual bills as of May 2026. Rates vary depending on usage and may change. Please check each carrier's current pricing before making any decisions.</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="money-01-libekatsu.html">
+            <div class="post-img">💛</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.19</span>
+              </div>
+              <p class="post-title lj">主婦歴２６年目の初家計簿</p>
+              <p class="post-title le" style="display:none">My First Household Budget After 26 Years of Marriage</p>
+            </div>
+          </a>
+          <a class="post-card" href="money-03-nisa-koza-erabikata.html">
+            <div class="post-img">🏦</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.26</span>
+              </div>
+              <p class="post-title lj">新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較</p>
+              <p class="post-title le" style="display:none">Where to Open Your NISA Account: Banks vs. Brokerages in Japan</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <div class="sidebar-card lj">
+      <h2 class="sidebar-title">おすすめの本</h2>
+      <a href="https://amzn.to/49aEmCJ" target="_blank" rel="noopener sponsored" style="display:block;text-decoration:none;">
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;">
+          <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="【改訂版】本当の自由を手に入れる お金の大学" style="width:120px;border-radius:4px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+          <p style="font-size:13px;font-weight:bold;color:var(--text);margin-bottom:4px;line-height:1.5;">【改訂版】本当の自由を手に入れる<br>お金の大学</p>
+          <p style="font-size:12px;color:var(--text-light);margin-bottom:12px;">両＠リベ大学長 著</p>
+          <span style="display:inline-block;background:var(--purple-mid);color:#fff;font-size:12px;padding:6px 16px;border-radius:20px;">Amazonで見る →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><span class="lj">現代の必需品　通信費膨らんでいませんか？</span><span class="le" style="display:none">Is Your Phone Bill Draining Your Budget?</span></li>
+        <li><span class="popular-num">2</span><span class="lj">新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較</span><span class="le" style="display:none">Where to Open Your NISA Account</span></li>
+        <li><span class="popular-num">3</span><span class="lj">銀行に預けておくだけでは危険？！―保険より新NISAが長期資産形成に向いている理由</span><span class="le" style="display:none">Why New NISA Beats Insurance Savings Plans</span></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">日本の片隅から、日常のいろいろなことを。</p>
+  <p class="footer-sub le" style="display:none">From a quiet corner of Japan, writing about the many sides of everyday life.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
