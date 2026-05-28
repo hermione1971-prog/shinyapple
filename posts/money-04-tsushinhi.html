@@ -30,12 +30,12 @@
 .conclusion-box ul{margin:0;padding-left:1.2rem}
 .conclusion-box li{font-size:14px;color:#3a2c20;line-height:1.9}
 /* ── 比較表共通ラッパー ── */
-.tbl-card{border:1.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin:1.5rem 0}
+.tbl-card{border:1.5px solid #c8b8a8;border-radius:12px;overflow:hidden;margin:1.5rem 0}
 /* ── 大手キャリア比較表（cpc-mod） ── */
 .cpc-mod h2.sr-only,.kpc-mod h2.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .cpc-mod .wrap,.kpc-mod .wrap{padding:.5rem 0}
-.cpc-mod .note{font-size:12px;color:var(--color-text-secondary);margin-top:1rem;line-height:1.6}
-.kpc-mod .note{font-size:12px;color:var(--color-text-secondary);margin-top:1rem;line-height:1.8}
+.cpc-mod .note{font-size:12px;color:#7a6858;margin-top:1rem;line-height:1.6}
+.kpc-mod .note{font-size:12px;color:#7a6858;margin-top:1rem;line-height:1.8}
 .cpc-mod .tag{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:4px;margin-left:6px;vertical-align:middle}
 .cpc-mod .tag-rakuten{background:#FEE2E2;color:#991B1B}
 .cpc-mod .tag-up{background:#FEF3C7;color:#92400E}
@@ -43,25 +43,27 @@
 .cpc-mod table,.kpc-mod table{width:100%;border-collapse:collapse}
 .cpc-mod table{font-size:14px}
 .kpc-mod table{font-size:13.5px}
-.cpc-mod thead tr,.kpc-mod thead tr{border-bottom:2px solid var(--color-border-secondary)}
-.cpc-mod th,.kpc-mod th{padding:10px 8px;font-weight:500;font-size:13px;color:var(--color-text-secondary);text-align:left}
+.cpc-mod thead tr,.kpc-mod thead tr{border-bottom:2px solid #b8a898}
+.cpc-mod th,.kpc-mod th{padding:10px 8px;font-weight:700;font-size:13px;color:#4a3020;background:#ede5d8;text-align:left;border-right:1px solid #d0c0b0;border-bottom:2px solid #b8a898}
+.cpc-mod th:last-child,.kpc-mod th:last-child{border-right:none}
 .cpc-mod th:not(:first-child),.kpc-mod th:not(:first-child){text-align:center}
-.cpc-mod td,.kpc-mod td{padding:10px 8px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top;color:var(--color-text-primary)}
+.cpc-mod td,.kpc-mod td{padding:10px 8px;border-bottom:1px solid #ddd0c8;border-right:1px solid #ece0d4;vertical-align:top;color:#3a2c20}
+.cpc-mod td:last-child,.kpc-mod td:last-child{border-right:none}
 .cpc-mod td:not(:first-child),.kpc-mod td:not(:first-child){text-align:center}
 .cpc-mod tr:last-child td,.kpc-mod tr:last-child td{border-bottom:none}
-.cpc-mod .carrier-name{font-weight:500;font-size:14px}
-.cpc-mod .plan-name{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
-.cpc-mod .price-main{font-size:16px;font-weight:500;color:var(--color-text-primary)}
-.cpc-mod .price-sub,.kpc-mod .price-sub{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
-.cpc-mod .price-rakuten{color:#DC2626;font-weight:500}
-.cpc-mod .section-header{background:var(--color-background-secondary)}
-.cpc-mod .section-header td{font-size:12px;font-weight:500;color:var(--color-text-secondary);padding:6px 8px}
+.cpc-mod .carrier-name{font-weight:600;font-size:14px;color:#3a2c20}
+.cpc-mod .plan-name{font-size:12px;color:#7a6858;margin-top:2px}
+.cpc-mod .price-main{font-size:16px;font-weight:600;color:#3a2c20}
+.cpc-mod .price-sub,.kpc-mod .price-sub{font-size:11px;color:#7a6858;margin-top:2px}
+.cpc-mod .price-rakuten{color:#DC2626;font-weight:600}
+.cpc-mod .section-header{background:#f5ede0}
+.cpc-mod .section-header td{font-size:12px;font-weight:700;color:#5a4030;padding:6px 8px;border-right:none;border-bottom:1px solid #ddd0c8}
 .cpc-mod .check{color:#16A34A}
 .cpc-mod .cross{color:#DC2626}
 /* ── 子どもプラン比較表（kpc-mod） ── */
-.kpc-mod .section-header td{background:var(--color-background-secondary);font-size:12px;font-weight:500;color:var(--color-text-secondary);padding:6px 8px}
-.kpc-mod .price-big{font-size:16px;font-weight:500}
-.kpc-mod .price-red{color:#DC2626;font-weight:500}
+.kpc-mod .section-header td{background:#f5ede0;font-size:12px;font-weight:700;color:#5a4030;padding:6px 8px;border-right:none;border-bottom:1px solid #ddd0c8}
+.kpc-mod .price-big{font-size:16px;font-weight:600;color:#3a2c20}
+.kpc-mod .price-red{color:#DC2626;font-weight:600}
 .kpc-mod .badge{display:inline-block;font-size:11px;font-weight:500;padding:2px 7px;border-radius:4px;margin-top:3px}
 .kpc-mod .badge-green{background:#DCFCE7;color:#166534}
 .kpc-mod .badge-amber{background:#FEF3C7;color:#92400E}
@@ -70,25 +72,25 @@
 .kpc-mod .caution{font-size:11px;color:#DC2626;margin-top:3px}
 /* ── 料金歴史比較（fhc-mod） ── */
 .fhc-mod .wrap{padding:.5rem 0}
-.fhc-mod .stitle{font-size:13px;font-weight:500;color:var(--color-text-secondary);margin:0 0 10px;padding-bottom:6px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.fhc-mod .stitle{font-size:13px;font-weight:700;color:#5a4030;margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid #ddd0c8}
 .fhc-mod .pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:2rem}
-.fhc-mod .pc{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px}
+.fhc-mod .pc{background:#fdf8f2;border:1.5px solid #c8b8a8;border-radius:12px;padding:14px}
 .fhc-mod .pc.hl{border:2px solid #378ADD}
-.fhc-mod .plabel{font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:6px}
+.fhc-mod .plabel{font-size:11px;font-weight:600;color:#5a4030;margin-bottom:6px}
 .fhc-mod .ptotal{font-size:22px;font-weight:500;margin-bottom:2px}
-.fhc-mod .psub{font-size:11px;color:var(--color-text-secondary);line-height:1.7}
-.fhc-mod .bd{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:2px 0;margin-top:8px}
+.fhc-mod .psub{font-size:11px;color:#6a5848;line-height:1.7}
+.fhc-mod .bd{background:#f0e8dc;border-radius:8px;padding:2px 0;margin-top:8px}
 .fhc-mod .br{display:flex;justify-content:space-between;padding:4px 10px;font-size:12px}
-.fhc-mod .brl{color:var(--color-text-secondary)}
-.fhc-mod .brv{font-weight:500;color:var(--color-text-primary)}
-.fhc-mod .brn{font-size:10px;color:var(--color-text-secondary);padding:0 10px 4px}
-.fhc-mod .sbox{background:#EAF3DE;border-radius:var(--border-radius-lg);padding:14px 18px;margin-bottom:2rem;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.fhc-mod .brl{color:#4a3020;font-weight:500}
+.fhc-mod .brv{font-weight:700;color:#3a2c20}
+.fhc-mod .brn{font-size:10px;color:#9a8878;padding:0 10px 4px}
+.fhc-mod .sbox{background:#EAF3DE;border-radius:12px;padding:14px 18px;margin-bottom:2rem;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 .fhc-mod .si{text-align:center}
-.fhc-mod .sn{font-size:20px;font-weight:500;color:#27500A}
+.fhc-mod .sn{font-size:20px;font-weight:600;color:#27500A}
 .fhc-mod .sl{font-size:11px;color:#3B6D11;margin-top:2px}
-.fhc-mod .note{font-size:11px;color:var(--color-text-secondary);line-height:1.8;margin-top:1.5rem}
-.fhc-mod .badge-r{display:inline-block;font-size:10px;background:#EAF3DE;color:#27500A;padding:1px 6px;border-radius:3px;margin-left:4px;font-weight:500}
-.fhc-mod .badge-e{display:inline-block;font-size:10px;background:#F1EFE8;color:#5F5E5A;padding:1px 6px;border-radius:3px;margin-left:4px;font-weight:500}
+.fhc-mod .note{font-size:11px;color:#7a6858;line-height:1.8;margin-top:1.5rem}
+.fhc-mod .badge-r{display:inline-block;font-size:10px;background:#EAF3DE;color:#27500A;padding:1px 6px;border-radius:3px;margin-left:4px;font-weight:600}
+.fhc-mod .badge-e{display:inline-block;font-size:10px;background:#f0ece0;color:#5a4030;padding:1px 6px;border-radius:3px;margin-left:4px;font-weight:600}
 </style>
 </head>
 <body>
@@ -428,7 +430,7 @@
               <div class="br"><span class="brl">楽天 3GB以内 ×3回線</span><span class="brv">3,234円</span></div>
               <div class="brn">1,078円×3 − 家族割110円×3</div>
               <div class="br"><span class="brl">Nuro光</span><span class="brv">5,200円</span></div>
-              <div class="br" style="border-top:0.5px solid var(--color-border-tertiary);font-weight:500"><span class="brl" style="color:var(--color-text-primary)">合計</span><span class="brv">14,770円</span></div>
+              <div class="br" style="border-top:1px solid #c8b8a8;font-weight:700"><span class="brl" style="color:#3a2c20">合計</span><span class="brv">14,770円</span></div>
             </div>
           </div>
           <div class="pc hl">
@@ -443,7 +445,7 @@
               <div class="br"><span class="brl">楽天モバイル ×2回線</span><span class="brv">6,556円</span></div>
               <div class="brn">3,278円×2 − 家族割110円×2</div>
               <div class="br"><span class="brl">Nuro光</span><span class="brv">5,200円</span></div>
-              <div class="br" style="border-top:0.5px solid var(--color-border-tertiary);font-weight:500"><span class="brl" style="color:var(--color-text-primary)">合計</span><span class="brv">13,726円</span></div>
+              <div class="br" style="border-top:1px solid #c8b8a8;font-weight:700"><span class="brl" style="color:#3a2c20">合計</span><span class="brv">13,726円</span></div>
             </div>
           </div>
           <div class="pc">
@@ -454,7 +456,7 @@
               <div class="br"><span class="brl">大手キャリア ×5回線</span><span class="brv">36,500円</span></div>
               <div class="brn">割引後目安 約7,300円×5（参考値）</div>
               <div class="br"><span class="brl">光回線</span><span class="brv">5,500円</span></div>
-              <div class="br" style="border-top:0.5px solid var(--color-border-tertiary);font-weight:500"><span class="brl" style="color:var(--color-text-primary)">合計</span><span class="brv">42,000円</span></div>
+              <div class="br" style="border-top:1px solid #c8b8a8;font-weight:700"><span class="brl" style="color:#3a2c20">合計</span><span class="brv">42,000円</span></div>
             </div>
           </div>
         </div>
