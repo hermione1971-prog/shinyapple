@@ -24,6 +24,19 @@
 .fee-table .total-row td{background:#f0e8d8;font-weight:700;color:#4a3020;border-top:2px solid #c8b8a8;border-bottom:none}
 .fee-table td:last-child{text-align:right;font-weight:600}
 .fee-table .total-row td:last-child{color:#5a3888;font-size:16px}
+/* ── 楽天リンク 通話可否テーブル ── */
+.call-table-wrap{border:1.5px solid #c8b8a8;border-radius:10px;overflow:hidden;margin:1rem 0 1.5rem}
+.call-table{width:100%;border-collapse:collapse;font-size:14px}
+.call-table th{background:#ede5d8;color:#4a3020;font-weight:700;padding:9px 12px;text-align:left;border-bottom:2px solid #c8b8a8;border-right:1px solid #d0c0b0}
+.call-table th:last-child{border-right:none;text-align:center}
+.call-table td{padding:9px 12px;border-bottom:1px solid #e0d4c4;border-right:1px solid #ece0d4;color:#3a2c20;vertical-align:middle}
+.call-table td:last-child{border-right:none;text-align:center;white-space:nowrap}
+.call-table tr:last-child td{border-bottom:none}
+.call-table tr:hover td{background:#faf4ee}
+.call-table .ct-free{color:#16A34A;font-weight:700}
+.call-table .ct-paid{color:#DC2626;font-weight:700}
+.call-table .ct-highlight{background:#fff4f4}
+.call-table .ct-highlight td{background:#fff4f4}
 /* ── 向いている人・向いていない人カード ── */
 .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.5rem 0}
 @media(max-width:580px){.fit-grid{grid-template-columns:1fr}}
@@ -402,6 +415,43 @@
 
         <p>一方で<strong>気になった点</strong>もあります。大手3キャリアと違い、後発の楽天は基地局の整備がまだ追いついていないエリアがあります。長男が社会人1年目に茨城へ1か月の研修に行ったとき、ゲームや動画視聴が思うようにできなかったと言っていました。夫も遠方に出かけた際につながりにくいエリアがあったと話していました。</p>
 
+        <p>また、楽天リンクには<strong>無料でかけられない番号がある</strong>点も覚えておきましょう。特に気をつけたいのが<strong>0570（ナビダイヤル）</strong>です。病院の予約・役所の手続き・保険会社・銀行のカスタマーセンターなど、意外と多くの窓口がナビダイヤルを使っています。「楽天リンクで無料のはずなのに課金されていた！」とならないよう、注意してください。</p>
+
+        <div class="call-table-wrap">
+          <table class="call-table">
+            <thead>
+              <tr><th>番号の種類</th><th>主な用途</th><th>楽天リンク</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>一般電話（固定・携帯）</td>
+                <td>通常の電話</td>
+                <td class="ct-free">✓ 無料</td>
+              </tr>
+              <tr>
+                <td>0120・0800（フリーダイヤル）</td>
+                <td>企業サポート窓口など</td>
+                <td class="ct-free">✓ 無料</td>
+              </tr>
+              <tr class="ct-highlight">
+                <td><strong>0570（ナビダイヤル）</strong></td>
+                <td><strong>病院・役所・銀行・保険会社など</strong></td>
+                <td class="ct-paid">✗ 有料</td>
+              </tr>
+              <tr>
+                <td>110・119・118（緊急番号）</td>
+                <td>警察・消防・海上保安庁</td>
+                <td class="ct-free">✓ かけられる</td>
+              </tr>
+              <tr>
+                <td>国際電話</td>
+                <td>海外への通話</td>
+                <td class="ct-paid">✗ 有料</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <p><strong>東京・神奈川・千葉・埼玉などの都心部にお住まいの方</strong>には、楽天モバイルはおすすめできます。地方への外出が多い方は、事前にエリア確認をしておくとよいでしょう。</p>
 
         <div class="fit-grid">
@@ -593,6 +643,43 @@
         </table>
 
         <p>Even with a fifth person added, we were paying less than <strong>half</strong> of our old bill. Rakuten Link app calls are free (including landlines), and we earn 4× Rakuten points on shopping. For those of us in the greater Tokyo area, coverage was rarely an issue. However, our eldest son struggled with slow speeds during a month-long work trip to rural Ibaraki — a real weakness for Rakuten outside major cities.</p>
+
+        <p>One more thing to be aware of: <strong>not all numbers are free via Rakuten Link</strong>. The most important exception is <strong>0570 (Navi Dial)</strong> — a paid connection service widely used by hospitals, government offices, banks, and insurance companies. You may not even notice it's a Navi Dial number until you see a charge on your bill.</p>
+
+        <div class="call-table-wrap">
+          <table class="call-table">
+            <thead>
+              <tr><th>Number type</th><th>Common uses</th><th>Rakuten Link</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Regular calls (landline / mobile)</td>
+                <td>Standard calls</td>
+                <td class="ct-free">✓ Free</td>
+              </tr>
+              <tr>
+                <td>0120 / 0800 (toll-free)</td>
+                <td>Customer support lines</td>
+                <td class="ct-free">✓ Free</td>
+              </tr>
+              <tr class="ct-highlight">
+                <td><strong>0570 (Navi Dial)</strong></td>
+                <td><strong>Hospitals, gov't offices, banks, insurance</strong></td>
+                <td class="ct-paid">✗ Charged</td>
+              </tr>
+              <tr>
+                <td>110 / 119 / 118 (emergency)</td>
+                <td>Police / Fire / Coast Guard</td>
+                <td class="ct-free">✓ Works</td>
+              </tr>
+              <tr>
+                <td>International calls</td>
+                <td>Overseas numbers</td>
+                <td class="ct-paid">✗ Charged</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <div class="fit-grid">
           <div class="fit-card fit-card-good">
