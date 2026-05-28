@@ -11,7 +11,7 @@
 
 - **サイト名**：ぴかりんごの小部屋 〜新しい私と出会う旅〜
 - **運営者**：ぴかりんご（50代主婦・埼玉県在住）
-- **公開URL**：https://shinyapple.pages.dev
+- **公開URL**：https://pikaringo.com（旧URL：https://shinyapple.pages.dev も有効）
 - **GitHub**：https://github.com/hermione1971-prog/shinyapple
 - **ローカルフォルダ**：C:\Users\hermi\shinyapple
 - **言語**：日本語・英語バイリンガル
@@ -219,6 +219,14 @@ npx wrangler pages deploy . --project-name=shinyapple --commit-dirty=true
 |---|---|---|---|
 | work-remote-decision.html | 50代主婦が在宅ワークを目指すことにした理由 | おしごと | 2026.05.07 |
 | work-02-money-vs-time.html | お金より大切なこと | 日常 | 2026.05.16 |
+| work-03-hellowork-resolve.html | 失業申請と強い決意 | おしごと | 2026.05.10 |
+| life-01-poikatsu-loss.html | ポイ活でお金を失った話 | 日常 | 2026.05.18 |
+| money-01-libekatsu.html | 主婦歴２６年目の初家計簿 | 家計・リベ活 | 2026.05.19 |
+| work-04-remote-first-payment.html | 海外リモートワークと初めての支払い | おしごと | 2026.05.17 |
+| life-02-work-caregiving.html | 仕事と介護 | 日常 | 2026.05.20 |
+| money-02-hoken-vs-nisa.html | 銀行に預けておくだけでは危険？！ | 家計・リベ活 | 2026.05.25 |
+| money-03-nisa-koza-erabikata.html | 新NISAの口座はどこで開く？ | 家計・リベ活 | 2026.05.26 |
+| money-04-tsushinhi.html | 現代の必需品　通信費膨らんでいませんか？ | 家計・リベ活 | 2026.05.28 |
 
 ---
 

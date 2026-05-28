@@ -15,7 +15,7 @@
 - ヒーロータグライン（日本語）：人生は一度きり。自分らしく生きることをテーマに、新しい挑戦や日常のささやかなできごとなどを気のおもむくままにつづります。
 - 運営者：ぴかりんご / Shiny Apple
 - 拠点：埼玉県
-- 公開URL：https://shinyapple.pages.dev
+- 公開URL：https://pikaringo.com（旧URL：https://shinyapple.pages.dev も引き続き有効）
 - GitHubリポジトリ：https://github.com/hermione1971-prog/shinyapple
 - ホスティング：Cloudflare Pages（wranglerでデプロイ）
 - お問い合わせフォーム：Formspree（ID: mzdwpaqz）
@@ -37,7 +37,7 @@
 | おしごと | Work | データアノテーション・在宅ワーク |
 | 日本の文化 | Japanese culture | 季節行事・食・100均・コンビニ等 |
 
-## 公開済み記事（全7記事）
+## 公開済み記事（全10記事）
 
 | # | ファイル名 | タイトル（日本語） | カテゴリ | 日付 |
 |---|---|---|---|---|
@@ -48,12 +48,15 @@
 | 5 | posts/money-01-libekatsu.html | 主婦歴２６年目の初家計簿 | 家計・リベ活 | 2026.05.19 |
 | 6 | posts/work-04-remote-first-payment.html | 海外リモートワークと初めての支払い | おしごと | 2026.05.17 |
 | 7 | posts/life-02-work-caregiving.html | 仕事と介護 | 日常 | 2026.05.20 |
+| 8 | posts/money-02-hoken-vs-nisa.html | 銀行に預けておくだけでは危険？！―保険より新NISAが長期資産形成に向いている理由 | 家計・リベ活 | 2026.05.25 |
+| 9 | posts/money-03-nisa-koza-erabikata.html | 新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較 | 家計・リベ活 | 2026.05.26 |
+| 10 | posts/money-04-tsushinhi.html | 現代の必需品　通信費膨らんでいませんか？ | 家計・リベ活 | 2026.05.28 |
 
 ## トップページ（index.html）の構成
 
 - 「✦ はじめにお読みください」特別枠（固定）→ 記事1（work-remote-decision.html）へリンク
 - 記事グリッド：記事7から順に新しい記事が上に来るよう手動で並べる
-- サイドバー「新着記事」：最新3記事を表示（記事7・6・5）
+- サイドバー「新着記事」：最新3記事を表示（記事10・9・8）
 - サイドバー「ぴかりんごのお気に入り」（日本語のみ）：お金の大学の本のアフィリエイトリンク
 
 ## サイドバーのルール
@@ -61,9 +64,9 @@
 ### 新着記事（全記事ページ共通）
 新しい記事を追加するたびに、**全ページ**のサイドバーを更新する必要がある。
 現在の表示（最新3記事）：
-1. 仕事と介護 → posts/life-02-work-caregiving.html
-2. 海外リモートワークと初めての支払い → posts/work-04-remote-first-payment.html
-3. 主婦歴２６年目の初家計簿 → posts/money-01-libekatsu.html
+1. 現代の必需品　通信費膨らんでいませんか？ → posts/money-04-tsushinhi.html
+2. 新NISAの口座はどこで開く？ → posts/money-03-nisa-koza-erabikata.html
+3. 銀行に預けておくだけでは危険？！ → posts/money-02-hoken-vs-nisa.html
 
 ### おすすめの本（money-01-libekatsu.html のみ）
 日本語版サイドバーに「おすすめの本」セクションあり。
@@ -76,10 +79,12 @@
 
 - Amazonアソシエイト：登録済み（ストアID: shinyapple-22）
 - Googleサーチコンソール：登録済み
+- A8.net：登録済み（楽天モバイル等の審査待ち）
 - 現在の設置箇所：
   - posts/money-01-libekatsu.html（本文内＋サイドバー、日本語のみ）
   - index.html サイドバー（日本語のみ）
 - 英語版にはアフィリエイトリンクを設置しない（英語圏の読者は日本語書籍を読めないため）
+- A8.net 楽天モバイル審査通過後：posts/money-04-tsushinhi.html に3箇所設置予定
 
 ## ファイル構成
 
@@ -99,7 +104,10 @@ shinyapple/
 │   ├── life-01-poikatsu-loss.html     # 記事4
 │   ├── money-01-libekatsu.html        # 記事5
 │   ├── work-04-remote-first-payment.html # 記事6
-│   └── life-02-work-caregiving.html   # 記事7
+│   ├── life-02-work-caregiving.html   # 記事7
+│   ├── money-02-hoken-vs-nisa.html    # 記事8
+│   ├── money-03-nisa-koza-erabikata.html # 記事9
+│   └── money-04-tsushinhi.html        # 記事10
 └── images/
     ├── profile-illustration.png       # プロフィールイラスト（about・サイドバー）
     └── .gitkeep
