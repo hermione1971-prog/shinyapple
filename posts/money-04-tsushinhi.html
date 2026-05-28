@@ -24,6 +24,17 @@
 .fee-table .total-row td{background:#f0e8d8;font-weight:700;color:#4a3020;border-top:2px solid #c8b8a8;border-bottom:none}
 .fee-table td:last-child{text-align:right;font-weight:600}
 .fee-table .total-row td:last-child{color:#5a3888;font-size:16px}
+/* ── 向いている人・向いていない人カード ── */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.5rem 0}
+@media(max-width:580px){.fit-grid{grid-template-columns:1fr}}
+.fit-card{border-radius:10px;padding:1rem 1.2rem}
+.fit-card-good{background:#f0f9e8;border:1.5px solid #7ec850}
+.fit-card-caution{background:#fff7ed;border:1.5px solid #e8a030}
+.fit-card-title{font-weight:700;font-size:14px;margin-bottom:.75rem}
+.fit-good-title{color:#3a7010}
+.fit-caution-title{color:#8a4a00}
+.fit-card ul{margin:0;padding-left:1.3rem}
+.fit-card li{font-size:14px;line-height:2;color:#3a2c20}
 /* ── 情報ボックス ── */
 .tip-box{background:#f0f9e8;border:1.5px solid #7ec850;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
 .tip-box .tip-title{font-weight:700;color:#3a7010;margin-bottom:.5rem;font-size:14px}
@@ -393,6 +404,31 @@
 
         <p><strong>東京・神奈川・千葉・埼玉などの都心部にお住まいの方</strong>には、楽天モバイルはおすすめできます。地方への外出が多い方は、事前にエリア確認をしておくとよいでしょう。</p>
 
+        <div class="fit-grid">
+          <div class="fit-card fit-card-good">
+            <div class="fit-card-title fit-good-title">✅ こんな方におすすめ</div>
+            <ul>
+              <li>首都圏・大都市圏にお住まいの方</li>
+              <li>自宅・職場にWi-Fiがある方</li>
+              <li>通話はLINEが中心の方</li>
+              <li>楽天市場・楽天カードをよく使う方</li>
+              <li>データ無制限をお得に使いたい方</li>
+              <li>家族でまとめて複数回線を持ちたい方</li>
+            </ul>
+          </div>
+          <div class="fit-card fit-card-caution">
+            <div class="fit-card-title fit-caution-title">⚠️ 乗り換えを慎重に考えたい方</div>
+            <ul>
+              <li>地方・山間部・郊外にお住まいの方</li>
+              <li>外出先でのデータ通信が多い方</li>
+              <li>仕事・介護など音声通話が多い方</li>
+              <li>キャリアの実店舗サポートを重視する方</li>
+              <li>緊急時など電波の安定性が特に重要な方</li>
+              <li>スマホ操作に不慣れでサポートが必要な方</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="tip-box">
           <div class="tip-title">💡 楽天モバイルをご家族でお使いの方へ</div>
           <p>楽天モバイルには<strong>「最強家族割プログラム」</strong>というサービスがあります。対象プランに2回線以上加入している場合、1回線あたり<strong>月110円の割引</strong>が適用されます（お子さま向けプランは対象外）。数百円の違いでも、ちりも積もれば山となります。スマホの契約後は、忘れずに設定しておきましょう！<br><br>
@@ -557,6 +593,31 @@
         </table>
 
         <p>Even with a fifth person added, we were paying less than <strong>half</strong> of our old bill. Rakuten Link app calls are free (including landlines), and we earn 4× Rakuten points on shopping. For those of us in the greater Tokyo area, coverage was rarely an issue. However, our eldest son struggled with slow speeds during a month-long work trip to rural Ibaraki — a real weakness for Rakuten outside major cities.</p>
+
+        <div class="fit-grid">
+          <div class="fit-card fit-card-good">
+            <div class="fit-card-title fit-good-title">✅ Rakuten Mobile may suit you if…</div>
+            <ul>
+              <li>You live in a major urban area (Tokyo, Osaka, etc.)</li>
+              <li>You have Wi-Fi at home and work</li>
+              <li>You mainly use LINE for calls</li>
+              <li>You already use Rakuten services (shopping, card, etc.)</li>
+              <li>You want unlimited data at a low fixed price</li>
+              <li>Your family wants to share multiple lines</li>
+            </ul>
+          </div>
+          <div class="fit-card fit-card-caution">
+            <div class="fit-card-title fit-caution-title">⚠️ Think carefully before switching if…</div>
+            <ul>
+              <li>You live in a rural, mountainous, or suburban area</li>
+              <li>You use mobile data heavily while out and about</li>
+              <li>You rely on voice calls for work or caregiving</li>
+              <li>You prefer in-person carrier store support</li>
+              <li>Reliable signal is critical (emergencies, etc.)</li>
+              <li>You're not confident with app-based account management</li>
+            </ul>
+          </div>
+        </div>
 
         <div class="tip-box">
           <div class="tip-title">💡 For families on Rakuten Mobile</div>
