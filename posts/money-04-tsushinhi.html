@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="家族4台で月25,660円だったスマホ代が、楽天モバイルや日本通信SIMへの乗り換えで家族5人・月6,325円に。通信費の見直し方法と4年間の実体験をご紹介。">
-<meta name="keywords" content="通信費 見直し, 楽天モバイル, 日本通信SIM, スマホ代 節約, 格安SIM, 家計 通信費, スマホ保険 解約, 大手キャリア 乗り換え">
+<meta name="description" content="家族4台で月25,660円だったスマホ代が、楽天モバイルや日本通信SIMへの乗り換えで家族5人・月6,325円に。大手キャリア・子どもプラン比較表と4年間の実体験をご紹介。">
+<meta name="keywords" content="通信費 見直し, 楽天モバイル, 日本通信SIM, スマホ代 節約, 格安SIM, 家計 通信費, スマホ保険 解約, 大手キャリア 乗り換え, 子どもスマホ プラン">
 <meta property="og:title" content="現代の必需品　通信費膨らんでいませんか？ | ぴかりんご / Shiny Apple">
-<meta property="og:description" content="家族4台・月25,660円のスマホ代が家族5人・月6,325円に。楽天モバイル＋日本通信SIM乗り換えの実体験。">
+<meta property="og:description" content="家族4台・月25,660円のスマホ代が家族5人・月6,325円に。大手キャリア料金比較＋楽天・日本通信SIM乗り換えの実体験。">
 <meta property="og:type" content="article">
 <title>現代の必需品　通信費膨らんでいませんか？ | ぴかりんご / Shiny Apple</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,15 +17,6 @@
 .caution-box{background:#fff8e6;border:1.5px solid #c8a850;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
 .caution-box .caution-title{font-weight:700;color:#8a6010;margin-bottom:.5rem;font-size:14px}
 .caution-box p{font-size:14px;color:#5a4030;line-height:1.8;margin:0}
-/* ── 料金比較ボックス ── */
-.cost-flow{display:flex;flex-wrap:wrap;gap:12px;margin:1.5rem 0;align-items:center}
-.cost-step{flex:1;min-width:140px;background:#fdf8f2;border:1.5px solid #c8b8a8;border-radius:10px;padding:14px 16px;text-align:center}
-.cost-step .cs-label{font-size:11px;font-weight:700;color:#7a6858;margin-bottom:6px;letter-spacing:.05em}
-.cost-step .cs-amount{font-size:24px;font-weight:700;color:#4a3020;line-height:1}
-.cost-step .cs-sub{font-size:11px;color:#8a7868;margin-top:4px}
-.cost-step.highlight{background:#ede0f5;border-color:#9a78c0}
-.cost-step.highlight .cs-amount{color:#5a3888}
-.cost-arrow{font-size:20px;color:#b8a898;flex-shrink:0}
 /* ── 料金内訳テーブル ── */
 .fee-table{width:100%;border-collapse:collapse;font-size:14px;margin:1rem 0 1.5rem}
 .fee-table th{background:#ede5d8;color:#4a3020;font-weight:700;padding:8px 12px;text-align:left;border-bottom:2px solid #c8b8a8}
@@ -38,8 +29,66 @@
 .conclusion-box .con-title{font-weight:700;color:#5a3888;margin-bottom:.75rem;font-size:14px}
 .conclusion-box ul{margin:0;padding-left:1.2rem}
 .conclusion-box li{font-size:14px;color:#3a2c20;line-height:1.9}
-/* ── 画像プレースホルダー（画像が入るまでの仮表示） ── */
-.img-placeholder{background:#f0e8d8;border:2px dashed #c8b8a8;border-radius:8px;padding:24px;text-align:center;color:#9a8878;font-size:13px;margin:1.5rem 0}
+/* ── 比較表共通ラッパー ── */
+.tbl-card{border:1.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin:1.5rem 0}
+/* ── 大手キャリア比較表（cpc-mod） ── */
+.cpc-mod h2.sr-only,.kpc-mod h2.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.cpc-mod .wrap,.kpc-mod .wrap{padding:.5rem 0}
+.cpc-mod .note{font-size:12px;color:var(--color-text-secondary);margin-top:1rem;line-height:1.6}
+.kpc-mod .note{font-size:12px;color:var(--color-text-secondary);margin-top:1rem;line-height:1.8}
+.cpc-mod .tag{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.cpc-mod .tag-rakuten{background:#FEE2E2;color:#991B1B}
+.cpc-mod .tag-up{background:#FEF3C7;color:#92400E}
+.cpc-mod .tag-new{background:#DBEAFE;color:#1E40AF}
+.cpc-mod table,.kpc-mod table{width:100%;border-collapse:collapse}
+.cpc-mod table{font-size:14px}
+.kpc-mod table{font-size:13.5px}
+.cpc-mod thead tr,.kpc-mod thead tr{border-bottom:2px solid var(--color-border-secondary)}
+.cpc-mod th,.kpc-mod th{padding:10px 8px;font-weight:500;font-size:13px;color:var(--color-text-secondary);text-align:left}
+.cpc-mod th:not(:first-child),.kpc-mod th:not(:first-child){text-align:center}
+.cpc-mod td,.kpc-mod td{padding:10px 8px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top;color:var(--color-text-primary)}
+.cpc-mod td:not(:first-child),.kpc-mod td:not(:first-child){text-align:center}
+.cpc-mod tr:last-child td,.kpc-mod tr:last-child td{border-bottom:none}
+.cpc-mod .carrier-name{font-weight:500;font-size:14px}
+.cpc-mod .plan-name{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.cpc-mod .price-main{font-size:16px;font-weight:500;color:var(--color-text-primary)}
+.cpc-mod .price-sub,.kpc-mod .price-sub{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.cpc-mod .price-rakuten{color:#DC2626;font-weight:500}
+.cpc-mod .section-header{background:var(--color-background-secondary)}
+.cpc-mod .section-header td{font-size:12px;font-weight:500;color:var(--color-text-secondary);padding:6px 8px}
+.cpc-mod .check{color:#16A34A}
+.cpc-mod .cross{color:#DC2626}
+/* ── 子どもプラン比較表（kpc-mod） ── */
+.kpc-mod .section-header td{background:var(--color-background-secondary);font-size:12px;font-weight:500;color:var(--color-text-secondary);padding:6px 8px}
+.kpc-mod .price-big{font-size:16px;font-weight:500}
+.kpc-mod .price-red{color:#DC2626;font-weight:500}
+.kpc-mod .badge{display:inline-block;font-size:11px;font-weight:500;padding:2px 7px;border-radius:4px;margin-top:3px}
+.kpc-mod .badge-green{background:#DCFCE7;color:#166534}
+.kpc-mod .badge-amber{background:#FEF3C7;color:#92400E}
+.kpc-mod .badge-red{background:#FEE2E2;color:#991B1B}
+.kpc-mod .badge-blue{background:#DBEAFE;color:#1E40AF}
+.kpc-mod .caution{font-size:11px;color:#DC2626;margin-top:3px}
+/* ── 料金歴史比較（fhc-mod） ── */
+.fhc-mod .wrap{padding:.5rem 0}
+.fhc-mod .stitle{font-size:13px;font-weight:500;color:var(--color-text-secondary);margin:0 0 10px;padding-bottom:6px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.fhc-mod .pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:2rem}
+.fhc-mod .pc{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px}
+.fhc-mod .pc.hl{border:2px solid #378ADD}
+.fhc-mod .plabel{font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:6px}
+.fhc-mod .ptotal{font-size:22px;font-weight:500;margin-bottom:2px}
+.fhc-mod .psub{font-size:11px;color:var(--color-text-secondary);line-height:1.7}
+.fhc-mod .bd{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:2px 0;margin-top:8px}
+.fhc-mod .br{display:flex;justify-content:space-between;padding:4px 10px;font-size:12px}
+.fhc-mod .brl{color:var(--color-text-secondary)}
+.fhc-mod .brv{font-weight:500;color:var(--color-text-primary)}
+.fhc-mod .brn{font-size:10px;color:var(--color-text-secondary);padding:0 10px 4px}
+.fhc-mod .sbox{background:#EAF3DE;border-radius:var(--border-radius-lg);padding:14px 18px;margin-bottom:2rem;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.fhc-mod .si{text-align:center}
+.fhc-mod .sn{font-size:20px;font-weight:500;color:#27500A}
+.fhc-mod .sl{font-size:11px;color:#3B6D11;margin-top:2px}
+.fhc-mod .note{font-size:11px;color:var(--color-text-secondary);line-height:1.8;margin-top:1.5rem}
+.fhc-mod .badge-r{display:inline-block;font-size:10px;background:#EAF3DE;color:#27500A;padding:1px 6px;border-radius:3px;margin-left:4px;font-weight:500}
+.fhc-mod .badge-e{display:inline-block;font-size:10px;background:#F1EFE8;color:#5F5E5A;padding:1px 6px;border-radius:3px;margin-left:4px;font-weight:500}
 </style>
 </head>
 <body>
@@ -83,7 +132,6 @@
 <div class="container">
   <main>
 
-    <!-- 記事ヘッダー -->
     <div class="article-header">
       <div class="article-meta">
         <span class="post-tag money lj">家計・リベ活</span>
@@ -94,7 +142,6 @@
       <h1 class="article-title le" style="display:none">Is Your Phone Bill Draining Your Budget?<br>Our Family's Journey to Smarter Mobile Plans</h1>
     </div>
 
-    <!-- 記事本文 -->
     <div class="article-body">
 
       <!-- ===== 日本語本文 ===== -->
@@ -104,23 +151,100 @@
 
         <p>NTTドコモ モバイル社会研究所の最新調査（2026年1月）によると、小学5年生で所有率が過半数を超え、中学生では8割以上がスマートフォンを所有しています。東京都の最新調査では、小学校低学年（1〜3年生）のスマホ所有率が初めて3割を超えたとのことです。</p>
 
-        <p>みなさんのご家庭では、毎月どのくらいスマホ代がかかっていますか？</p>
+        <p>みなさんのご家庭では、毎月どのくらいスマホ代がかかっていますか？　今回は、私が数年前に行ったスマホの通信費の見直しについてお話しします。</p>
 
-        <p>今から、私が数年前に行ったスマホの通信費の見直しについてお話しします。まずは、我が家の某年某月の請求書をお見せします。</p>
+        <h2>某年某月の請求書：月25,660円の衝撃</h2>
 
-        <h2>ある月の我が家の通信費：月25,660円の衝撃</h2>
+        <p>まずは、我が家の某年某月の請求書をお見せします。</p>
 
         <img
           src="../images/tsushihi-auseikyu.png"
           alt="auの請求明細。家族4台合計25,660円 / Our au phone bill showing ¥25,660 monthly charge for 4 devices"
           style="border-radius:8px;max-width:100%;margin:1rem 0;box-shadow:0 2px 12px rgba(0,0,0,0.12);">
 
+        <p>iPhone4台の本体代金の分割払いと電話料金を合わせて、なんと月に<strong>25,660円</strong>も支払っていました。本当に驚きです！　今思えば、よく家計が破綻しなかったものだと思います。家族4台分の通信料だけでも<strong>16,276円</strong>。夫の通信費が多くかかった月はもっと支払うこともありました。</p>
 
-        <p>iPhone4台の本体代金の分割払いと電話料金を合わせて、なんと月に<strong>25,660円</strong>も支払っていました。本当に驚きです！　今思えば、よく家計が破綻しなかったものだと思います。</p>
+        <h2>子供のスマホが増えると通信費はこうなる</h2>
 
-        <p>家族4台分の通信料だけでも<strong>16,276円</strong>。夫の通信費が多くかかった月はもっと支払うこともありました。</p>
+        <p>夫婦2台だけのころは、2年ごとに最新機種に乗り換えるだけで、通信費もあまり気にしていませんでした。でも子供2人が成長してスマホを持たせることになると、本体の分割払い×4台分・通信費×4台分と、支払い金額はどんどん膨らんでいきました。</p>
 
-        <p>夫婦2台だけのころは、2年ごとに最新機種に乗り換えるだけで、通信費もあまり気にしていませんでした。でも子供2人が成長してスマホを持たせることになると、本体の分割払い×4台分・通信費×4台分と、支払い金額はどんどん膨らんでいきました。スマホの使い方って、同じ家族でも本当に違うので、料金を抑えるのが本当に大変でした。</p>
+        <p>今では各キャリアが子ども向けのプランを充実させています。現在お子さんにスマホを持たせることを検討されている方は、ぜひ比較してみてください。</p>
+
+        <div class="tbl-card">
+        <div class="kpc-mod" style="padding:0 1rem">
+        <div class="wrap">
+        <h2 class="sr-only">2026年最新・子ども向けプラン料金比較（楽天モバイル・ドコモ・au・ソフトバンク）</h2>
+        <table>
+        <thead>
+        <tr>
+        <th style="width:22%">比較項目</th>
+        <th style="width:20%">🔴 楽天モバイル<br><span style="font-weight:400;font-size:11px">最強こども割 / 青春割</span></th>
+        <th style="width:19%">ドコモ<br><span style="font-weight:400;font-size:11px">U15はじめてスマホプラン</span></th>
+        <th style="width:19%">au<br><span style="font-weight:400;font-size:11px">U18バリュープラン</span></th>
+        <th style="width:19%">ソフトバンク<br><span style="font-weight:400;font-size:11px">スマホデビュープラン+</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="section-header"><td colspan="5">🎂 対象年齢 / 割引期間</td></tr>
+        <tr>
+        <td>対象年齢</td>
+        <td><div>こども割：12歳以下</div><div class="price-sub">（13歳以降は自動で青春割へ）</div><div>青春割：22歳以下</div></td>
+        <td><div>15歳以下が申込可</div><div class="price-sub">割引は18歳まで継続</div></td>
+        <td><div>18歳以下</div><div class="price-sub">（U12バリュープランは12歳以下）</div></td>
+        <td><div>18歳以下</div><div class="price-sub">（スマホデビュープラン+）</div></td>
+        </tr>
+        <tr class="section-header"><td colspan="5">💰 月額料金（税込）</td></tr>
+        <tr>
+        <td>3GB以内 / 小容量</td>
+        <td><div class="price-big price-red">528円〜</div><div class="price-sub">こども割+家族割 最大440円引き<br>家族割なし：638円</div><div><span class="badge badge-green">業界最安水準</span></div></td>
+        <td><div class="price-big">1,628円</div><div class="price-sub">5GB・セット割込み<br>5分かけ放題含む</div></td>
+        <td><div class="price-big">〜1,100円</div><div class="price-sub">3GB以内・家族割適用後<br>U12：永年550円（低速）</div></td>
+        <td><div class="price-big">1,078円〜</div><div class="price-sub">1年目のみ。2年目以降値上がり</div><div><span class="badge badge-amber">2年目に値上がり注意</span></div></td>
+        </tr>
+        <tr>
+        <td>10〜20GB</td>
+        <td><div class="price-big price-red">2,068円〜</div><div class="price-sub">（通常2,178円から110円引き）</div></td>
+        <td><div class="price-big">2,508円</div><div class="price-sub">10GB・セット割込み</div></td>
+        <td><div class="price-big">2,728円</div><div class="price-sub">20GBまで・家族割適用後</div></td>
+        <td><div class="price-big">要確認</div><div class="price-sub">（プランによる）</div></td>
+        </tr>
+        <tr>
+        <td>無制限 / 上限料金</td>
+        <td><div class="price-big price-red">3,168円</div><div class="price-sub">（通常3,278円から110円引き）<br>どれだけ使ってもこれが上限</div><div><span class="badge badge-green">青春割は22歳まで継続</span></div></td>
+        <td><div class="price-sub">10GB超は別プランが必要</div></td>
+        <td><div class="price-sub">20GB超は通常プランへ</div></td>
+        <td><div class="price-sub">超過後は通常プランへ</div></td>
+        </tr>
+        <tr class="section-header"><td colspan="5">📞 通話・その他</td></tr>
+        <tr>
+        <td>かけ放題</td>
+        <td><span style="color:#16A34A;font-weight:500">✓ 無料</span><div class="price-sub">Rakuten Linkアプリ使用時</div></td>
+        <td><span style="font-size:13px">5分以内無料</span><div class="price-sub">（プランに含まれる）</div></td>
+        <td><span style="font-size:13px">au家族間は無料</span><div class="price-sub">他社はかけ放題オプション必要</div></td>
+        <td><span style="font-size:13px">なし</span><div class="price-sub">かけ放題は別途オプション</div></td>
+        </tr>
+        <tr>
+        <td>フィルタリング</td>
+        <td><span style="font-size:13px">あんしんコントロール</span><div class="price-sub">by i-フィルター 月額550円</div></td>
+        <td><span style="font-size:13px">あんしんフィルター</span><div class="price-sub">無料（18歳未満は必須）</div></td>
+        <td><span style="font-size:13px">あんしんフィルター for au</span><div class="price-sub">無料（18歳未満は必須）</div></td>
+        <td><span style="font-size:13px">フィルタリングプラス</span><div class="price-sub">無料（18歳未満は必須）</div></td>
+        </tr>
+        <tr>
+        <td>注意点</td>
+        <td><div class="price-sub">・3GB超で割引が440円→110円に減額<br>・データ上限設定機能なし<br>・フィルタリングは有料（+550円）</div></td>
+        <td><div class="price-sub">・申込は15歳までが条件<br>・19歳でデータ量が大幅減（5GB→1GB、料金そのまま）</div></td>
+        <td><div class="price-sub">・余ったギガは翌月繰越不可<br>・家族割はauセット前提</div></td>
+        <td><div class="price-sub">・2年目以降に料金が上がる<br>・長期利用には不向き</div></td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="note">※ 料金はすべて税込。各種割引の適用条件により実際の金額は異なります。楽天モバイルのフィルタリングは有料（月額550円）。大手3社は18歳未満への提供が法律上義務付けられており無料。2026年5月現在の情報。</div>
+        </div>
+        </div>
+        </div>
+
+        <p>スマホの使い方って、同じ家族でも本当に違います。ゲームや動画をよく使う子、ほとんど使わない子、通話が多い子……。家族全員に合うプランを探すのが、本当に大変でした。</p>
 
         <h2>スマホにまつわる「もったいない」落とし穴</h2>
 
@@ -138,11 +262,110 @@
           ぴかりんご家でも、スマホの契約に疎かった夫と長男がオプションを外し忘れて、無駄な料金を何か月もの間、支払っていたという経験があります。<strong>契約直後の請求明細は必ず確認</strong>することをおすすめします。</p>
         </div>
 
-        <h2>楽天モバイルに乗り換えて4年以上</h2>
+        <h2>大手キャリアと格安SIM、どこが違う？</h2>
+
+        <p>大手3キャリア（docomo・au・softbank）の強みは、実店舗の多さ・サポートの手厚さ・つながりやすさにあります。その一方で、料金には大きな差があります。乗り換えを考え始めたとき、私が一番驚いたのは<strong>月々の金額の差</strong>でした。</p>
+
+        <div class="tbl-card">
+        <div class="cpc-mod" style="padding:0 1rem">
+        <div class="wrap">
+        <h2 class="sr-only">2026年最新・大手キャリア料金比較表（楽天モバイル・ドコモ・au・ソフトバンク）</h2>
+        <table>
+        <thead>
+        <tr>
+        <th style="width:22%">キャリア / プラン</th>
+        <th style="width:19%">🔴 楽天モバイル<br><span style="font-size:11px;font-weight:400">Rakuten最強プラン</span></th>
+        <th style="width:19%">ドコモ<br><span style="font-size:11px;font-weight:400">ahamo</span></th>
+        <th style="width:19%">au<br><span style="font-size:11px;font-weight:400">使い放題MAX+</span></th>
+        <th style="width:19%">ソフトバンク<br><span style="font-size:11px;font-weight:400">メリハリ無制限+</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="section-header"><td colspan="5">📱 月額料金（税込）</td></tr>
+        <tr>
+        <td><div class="carrier-name">〜3GB</div></td>
+        <td><div class="price-main price-rakuten">1,078円</div></td>
+        <td><div class="price-main">—</div><div class="price-sub">3GB以下の段階制なし</div></td>
+        <td><div class="price-main">—</div><div class="price-sub">段階制なし（無制限のみ）</div></td>
+        <td><div class="price-main">—</div><div class="price-sub">段階制なし（無制限のみ）</div></td>
+        </tr>
+        <tr>
+        <td><div class="carrier-name">〜20GB</div></td>
+        <td><div class="price-main price-rakuten">2,178円</div></td>
+        <td><div class="price-main">2,970円</div><div class="price-sub">（30GB）割引なし単価</div></td>
+        <td><div class="price-main">7,458円</div><div class="price-sub">割引前・無制限</div></td>
+        <td><div class="price-main">7,425円</div><div class="price-sub">割引前・無制限</div></td>
+        </tr>
+        <tr>
+        <td><div class="carrier-name">無制限</div></td>
+        <td><div class="price-main price-rakuten">3,278円</div><div class="price-sub">※Rakuten Linkで通話も無料</div></td>
+        <td><div class="price-main">2,970円</div><div class="price-sub">（30GBまで、超過時速度制限）</div></td>
+        <td><div class="price-main">7,458円</div><div class="price-sub">割引後:約6,248円〜<span class="tag tag-up">11月値上げ予定</span></div></td>
+        <td><div class="price-main">7,425円</div><div class="price-sub">割引後:約4,928円〜<span class="tag tag-up">7月値上げ+550円</span></div></td>
+        </tr>
+        <tr class="section-header"><td colspan="5">📞 通話</td></tr>
+        <tr>
+        <td>かけ放題</td>
+        <td><span style="color:#16A34A;font-weight:500">✓ 無料</span><div class="price-sub">Rakuten Linkアプリ使用時</div></td>
+        <td><span style="font-size:13px">5分以内無料</span><div class="price-sub">かけ放題は+1,100円/月</div></td>
+        <td><span style="font-size:13px">なし</span><div class="price-sub">かけ放題は+1,980円/月</div></td>
+        <td><span style="font-size:13px">なし</span><div class="price-sub">かけ放題は+1,980円/月</div></td>
+        </tr>
+        <tr class="section-header"><td colspan="5">🔧 その他の特徴</td></tr>
+        <tr>
+        <td>店舗サポート</td>
+        <td><span style="color:#DC2626">✗ 原則なし</span></td>
+        <td><span style="color:#DC2626">✗ なし</span><div class="price-sub">（オンライン専用）</div></td>
+        <td><span style="color:#16A34A">✓ あり</span></td>
+        <td><span style="color:#16A34A">✓ あり</span></td>
+        </tr>
+        <tr>
+        <td>契約縛り・解約金</td>
+        <td><span style="font-size:13px">1年以内解約で手数料あり</span></td>
+        <td><span style="color:#16A34A">✓ 縛りなし</span></td>
+        <td><span style="font-size:13px">1年以内:最大1,100円</span></td>
+        <td><span style="color:#16A34A">✓ 縛りなし</span></td>
+        </tr>
+        <tr>
+        <td>家族割</td>
+        <td><span style="font-size:13px">最強家族割 -110円/回線</span></td>
+        <td><span style="font-size:13px">割引なし（家族割の対象外）</span></td>
+        <td><span style="font-size:13px">家族割プラス 3回線以上:-1,210円</span></td>
+        <td><span style="font-size:13px">新みんな家族割 3回線以上:-1,210円</span></td>
+        </tr>
+        <tr>
+        <td>ポイント・経済圏</td>
+        <td><span style="font-size:13px">楽天ポイント・楽天経済圏と相性◎</span></td>
+        <td><span style="font-size:13px">dポイント</span></td>
+        <td><span style="font-size:13px">Pontaポイント / au PAY</span></td>
+        <td><span style="font-size:13px">PayPay / Yahoo!ショッピング</span></td>
+        </tr>
+        <tr class="section-header"><td colspan="5">💰 無制限プランの実質最安値比較（割引適用後・目安）</td></tr>
+        <tr>
+        <td style="font-size:13px">割引後・1人の場合</td>
+        <td><div class="price-main price-rakuten">3,278円</div><div class="price-sub">割引条件なし・固定</div></td>
+        <td><div class="price-main">2,970円</div><div class="price-sub">30GB / 追加オプションなし</div></td>
+        <td><div class="price-main">約6,248円〜</div><div class="price-sub">家族割3回線以上適用時</div></td>
+        <td><div class="price-main">約4,928円〜</div><div class="price-sub">家族割+光セット適用時<br>※7月以降+550円</div></td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="note">
+        ※ 料金はすべて税込。各種割引の適用条件により実際の金額は異なります。<br>
+        ※ ソフトバンク「メリハリ無制限+」は2026年6月で新規受付終了・7月より料金改定（+550円）。au「使い放題MAX+」は2026年11月より値上げ予定。<br>
+        ※ 最新情報は各社公式サイトをご確認ください（2026年5月現在）。
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <p>この表を見て、いかがでしょうか。同じ「無制限」でも、楽天モバイルと大手3社では月々数千円の差があります。家族4〜5人分となると、その差は何万円にもなります。</p>
+
+        <h2>楽天モバイルを4年以上使ってみて</h2>
 
         <p>なるべく通信費を抑えたくて試行錯誤した結果、最終的に選んだのが<strong>楽天モバイル</strong>でした。外出時にはデータ通信をこまめにOFFにするなど工夫しながら、家族全員で4年以上使い続けました。</p>
 
-        <p>その間の家族5人分の通信費は次のとおりです。</p>
+        <p>その間の家族5人分の通信費です。</p>
 
         <table class="fee-table">
           <thead><tr><th>家族</th><th>キャリア</th><th>月額</th></tr></thead>
@@ -156,34 +379,21 @@
           <tfoot><tr class="total-row"><td colspan="2">合計（5人）</td><td>8,673円</td></tr></tfoot>
         </table>
 
-        <p>1人増えているのに、以前の<strong>半分以下</strong>の通信費で済んでいます。</p>
+        <p>1人増えているのに、以前の<strong>半分以下</strong>の通信費になりました。</p>
 
-        <p>楽天モバイルの使い心地についても正直にお伝えします。</p>
+        <p><strong>良かった点</strong>は、「楽天リンク」のアプリを使えば固定電話や他社の携帯電話との通話料が無料なこと、楽天市場でのお買い物ポイントが4倍になること。埼玉在住の私や次男は、4年以上使って不便を感じたことはほとんどありませんでした。</p>
 
-        <p><strong>良かった点</strong>は、「楽天リンク」のアプリを使えば固定電話や他社の携帯電話との通話料が無料なこと、そして楽天市場でのお買い物ポイントが4倍になること。埼玉在住の私や次男は、4年以上使って不便を感じたことはほとんどありませんでした。</p>
+        <p>一方で<strong>気になった点</strong>もあります。大手3キャリアと違い、後発の楽天は基地局の整備がまだ追いついていないエリアがあります。長男が社会人1年目に茨城へ1か月の研修に行ったとき、ゲームや動画視聴が思うようにできなかったと言っていました。夫も遠方に出かけた際につながりにくいエリアがあったと話していました。</p>
 
-        <p>一方で<strong>気になった点</strong>もあります。大手3キャリア（docomo・au・softbank）と違い、後発のMVOである楽天は基地局の整備がまだ追いついていないエリアがあります。長男が社会人1年目に茨城へ1か月の研修に行ったとき、ゲームや動画視聴が思うようにできなかったと言っていました。夫も遠方に出かけた際につながりにくいエリアがあったと話していました。</p>
+        <p><strong>東京・神奈川・千葉・埼玉などの都心部にお住まいの方</strong>には、楽天モバイルはおすすめできます。地方への外出が多い方は、事前にエリア確認をしておくとよいでしょう。</p>
 
-        <p>まとめると、<strong>東京・神奈川・千葉・埼玉などの都心部にお住まいの方</strong>には楽天モバイルはおすすめできます。地方への外出が多い方は、事前にエリア確認をしておくとよいでしょう。</p>
-
-        <h2>さらに一部を日本通信SIMに乗り換えて（月6,325円）</h2>
+        <h2>さらに一部を日本通信SIMへ（現在：月6,325円）</h2>
 
         <p>3年半前から母が同居するようになり、5人全員で楽天モバイルを使っていましたが、1か月ほど前に私・夫・次男の3人は<strong>日本通信SIM</strong>に乗り換えました。</p>
 
         <p>私と次男は、家のWi-Fiでの使用がほとんどで、外出時もLINE通話で十分。銀行アプリやキャッシュレス決済に使う程度なので、より安い日本通信SIMで事足りています。</p>
 
-        <p>一方、長男は引き続き楽天モバイルを利用中。お昼休みに安定した速度でゲームをしたいことと、たまに音声通話をする必要があるためです。母名義のスマホも、千葉や東京の友人と時々長電話することがあるため、楽天モバイルのままにしています。</p>
-
-        <!-- 画像2：現在の料金画面など -->
-        <!-- ↓ 画像ファイル名を確認後、以下のコメントを外してください -->
-        <!--
-        <img
-          src="../images/（ファイル名）.jpg"
-          alt="現在のスマホ料金画面 / Current mobile plan charges">
-        -->
-        <div class="img-placeholder">📱 画像：現在の料金画面など（ファイル名確認後に差し替えてください）</div>
-
-        <p>最新の家族5人分の通信費です。</p>
+        <p>一方、長男はお昼休みに安定した速度でゲームをしたいことと、たまに音声通話が必要なことから、引き続き楽天モバイルを利用しています。母名義のスマホも、千葉や東京の友人と時々長電話することがあるため、楽天モバイルのままにしています。</p>
 
         <table class="fee-table">
           <thead><tr><th>家族</th><th>キャリア</th><th>月額</th></tr></thead>
@@ -199,32 +409,81 @@
 
         <p>通話が必要な長男・母は楽天モバイルのまま、通話をほぼ使わない私・夫・次男は日本通信SIMへ。我が家なりの現在の最適解です。</p>
 
-        <!-- 通信費の変遷サマリー -->
-        <div class="cost-flow">
-          <div class="cost-step">
-            <div class="cs-label">2021年（大手3社）</div>
-            <div class="cs-amount">25,660<span style="font-size:14px">円</span></div>
-            <div class="cs-sub">iPhone 4台</div>
+        <h2>ぴかりんご家の通信費の歩み</h2>
+
+        <p>最後に、我が家の通信費全体の変遷を振り返ってみます。光回線（Nuro光）も含めた、ご家庭の通信費トータルで見るとこうなります。</p>
+
+        <div class="fhc-mod">
+        <div class="wrap">
+        <h2 class="sr-only">ぴかりんご家の通信費変遷</h2>
+        <div class="stitle">3つのフェーズで見るぴかりんご家の通信費</div>
+        <div class="pgrid">
+          <div class="pc">
+            <div class="plabel">① 楽天モバイル時代（約4年間）<span class="badge-r">実績</span></div>
+            <div class="ptotal" style="color:#DC2626">約14,820円<span style="font-size:13px;font-weight:400">/月</span></div>
+            <div class="psub">スマホ5回線＋Nuro光</div>
+            <div class="bd">
+              <div class="br"><span class="brl">楽天 無制限 ×2回線</span><span class="brv">6,336円</span></div>
+              <div class="brn">3,278円×2 − 家族割110円×2</div>
+              <div class="br"><span class="brl">楽天 3GB以内 ×3回線</span><span class="brv">3,234円</span></div>
+              <div class="brn">1,078円×3 − 家族割110円×3</div>
+              <div class="br"><span class="brl">Nuro光</span><span class="brv">5,200円</span></div>
+              <div class="br" style="border-top:0.5px solid var(--color-border-tertiary);font-weight:500"><span class="brl" style="color:var(--color-text-primary)">合計</span><span class="brv">14,770円</span></div>
+            </div>
           </div>
-          <div class="cost-arrow">›</div>
-          <div class="cost-step">
-            <div class="cs-label">楽天モバイル（5人）</div>
-            <div class="cs-amount">8,673<span style="font-size:14px">円</span></div>
-            <div class="cs-sub">半分以下に</div>
+          <div class="pc hl">
+            <div class="plabel">② 現在の最適化構成<span class="badge-r">実績</span></div>
+            <div class="ptotal" style="color:#185FA5">約13,726円<span style="font-size:13px;font-weight:400">/月</span></div>
+            <div class="psub">日本通信SIM×3＋楽天×2＋Nuro光</div>
+            <div class="bd">
+              <div class="br"><span class="brl">日本通信SIM 290円 ×2回線</span><span class="brv">580円</span></div>
+              <div class="brn">合理的シンプル290プラン</div>
+              <div class="br"><span class="brl">日本通信SIM 1,390円 ×1回線</span><span class="brv">1,390円</span></div>
+              <div class="brn">合理的みんなのプラン（20GB＋通話70分）</div>
+              <div class="br"><span class="brl">楽天モバイル ×2回線</span><span class="brv">6,556円</span></div>
+              <div class="brn">3,278円×2 − 家族割110円×2</div>
+              <div class="br"><span class="brl">Nuro光</span><span class="brv">5,200円</span></div>
+              <div class="br" style="border-top:0.5px solid var(--color-border-tertiary);font-weight:500"><span class="brl" style="color:var(--color-text-primary)">合計</span><span class="brv">13,726円</span></div>
+            </div>
           </div>
-          <div class="cost-arrow">›</div>
-          <div class="cost-step highlight">
-            <div class="cs-label">現在（楽天＋日本通信）</div>
-            <div class="cs-amount">6,325<span style="font-size:14px">円</span></div>
-            <div class="cs-sub">さらに節約！</div>
+          <div class="pc">
+            <div class="plabel">③ もし大手キャリアなら<span class="badge-e">試算</span></div>
+            <div class="ptotal" style="color:#888780">約42,000円<span style="font-size:13px;font-weight:400">/月</span></div>
+            <div class="psub">大手3社 無制限×5回線＋光回線</div>
+            <div class="bd">
+              <div class="br"><span class="brl">大手キャリア ×5回線</span><span class="brv">36,500円</span></div>
+              <div class="brn">割引後目安 約7,300円×5（参考値）</div>
+              <div class="br"><span class="brl">光回線</span><span class="brv">5,500円</span></div>
+              <div class="br" style="border-top:0.5px solid var(--color-border-tertiary);font-weight:500"><span class="brl" style="color:var(--color-text-primary)">合計</span><span class="brv">42,000円</span></div>
+            </div>
           </div>
+        </div>
+        <div class="sbox">
+          <div style="font-size:13px;color:#3B6D11;font-weight:500;flex:1;min-width:120px">大手キャリアと比べた節約額</div>
+          <div class="si"><div class="sn">月 約28,300円</div><div class="sl">現在の構成 vs 大手キャリア</div></div>
+          <div style="color:#3B6D11;font-size:18px">→</div>
+          <div class="si"><div class="sn">年間 約339,600円</div><div class="sl">の節約</div></div>
+          <div style="color:#3B6D11;font-size:18px">→</div>
+          <div class="si"><div class="sn">4年間 約1,358,400円</div><div class="sl">累計節約（楽天時代から換算）</div></div>
+        </div>
+        <div class="stitle">月額通信費の比較</div>
+        <div style="position:relative;width:100%;height:220px;margin-bottom:0.5rem">
+          <canvas id="chart" role="img" aria-label="大手キャリア試算・楽天時代実績・現在の実績の月額通信費を比較した棒グラフ"></canvas>
+        </div>
+        <div class="note">
+        ※ ①楽天時代：無制限2回線（3,278円×2−110円×2）＋3GB以内3回線（1,078円×3−110円×3）＋Nuro光5,200円。<br>
+        ※ ②現在：日本通信SIM「合理的シンプル290プラン」290円×2＋「合理的みんなのプラン」1,390円×1＋楽天（3,278円×2−110円×2）＋Nuro光5,200円。<br>
+        ※ ③大手キャリア：割引後の無制限プラン目安7,300円×5＋光回線5,500円。参考値。<br>
+        ※ 2026年5月現在の料金をもとに算出。実際の利用状況により異なります。
+        </div>
+        </div>
         </div>
 
         <h2>まとめ：乗り換え前に確認しておきたいこと</h2>
 
         <p>通信品質の安定性・店舗数の多さ・サポートの手厚さなど、大手キャリアには大手ならではの良さがあります。その一方で、支払い金額の大きさは各ご家庭の家計や資産形成にも大きく影響します。</p>
 
-        <p>乗り換えを検討する際には、以下の点をあらかじめ確認しておくとスムーズです。</p>
+        <p>乗り換えをするにせよ、しないにせよ、一度ご自身の通信費を見直してみることをおすすめします。乗り換えを検討する際には、以下の点をあらかじめ確認しておくとスムーズです。</p>
 
         <div class="conclusion-box">
           <div class="con-title">📋 乗り換え前のチェックリスト</div>
@@ -237,7 +496,7 @@
           </ul>
         </div>
 
-        <p>乗り換えをするにせよ、しないにせよ、一度ご自身の通信費を見直してみることをおすすめします。きっと発見があるはずです🍎</p>
+        <p>きっと発見があるはずです🍎</p>
 
       </div>
       <!-- ===== 日本語本文 ここまで ===== -->
@@ -245,42 +504,34 @@
       <!-- ===== English body ===== -->
       <div class="le" style="display:none">
 
-        <p>Smartphones have quietly become an essential part of modern life. A 2026 survey by NTT DOCOMO Mobile Society Research Institute found that more than half of Japanese fifth graders own a smartphone, and over 80% of junior high school students do. In Tokyo, ownership rates among early elementary school children (grades 1–3) surpassed 30% for the first time.</p>
+        <p>Smartphones have quietly become an essential part of modern life. A 2026 survey by NTT DOCOMO Mobile Society Research Institute found that more than half of Japanese fifth graders own a smartphone, and over 80% of junior high school students do. In Tokyo, ownership rates among early elementary school children surpassed 30% for the first time.</p>
 
-        <p>How much does your household spend on mobile plans each month? Here's how our family of five went from ¥25,660 a month to just ¥6,325 — and what we learned along the way.</p>
+        <p>How much does your household spend on mobile plans each month? Here's how our family of five went from a shocking ¥25,660 a month to just ¥6,325 — and what we learned along the way.</p>
 
-        <h2>Our 2021 phone bill: ¥25,660 a month</h2>
+        <h2>One month's phone bill: ¥25,660</h2>
 
         <img
           src="../images/tsushihi-auseikyu.png"
           alt="auの請求明細。家族4台合計25,660円 / Our au phone bill showing ¥25,660 monthly charge for 4 devices"
           style="border-radius:8px;max-width:100%;margin:1rem 0;box-shadow:0 2px 12px rgba(0,0,0,0.12);">
 
-        <p>Looking at one of our old au bills — we were paying a combined total of <strong>¥25,660 per month</strong> for four iPhones, covering both monthly device installments and service charges. Just the communication fees alone came to <strong>¥16,276</strong>. Looking back, I'm amazed our household budget survived.</p>
+        <p>For four iPhones — device installments plus service charges combined — we were paying <strong>¥25,660 per month</strong>. Communication fees alone came to <strong>¥16,276</strong>. Looking back, I'm amazed our household budget survived.</p>
 
-        <p>When it was just my husband and me, we'd simply upgrade to the latest model every two years without thinking much about costs. But once our two children needed their own phones, four separate device payments plus four service plans added up fast — and different family members use their phones very differently, making it hard to find a plan that worked for everyone.</p>
+        <p>When it was just my husband and me, we never thought much about phone costs. But once our two children needed their own phones, four sets of device payments and service plans added up fast — and every family member uses their phone differently, making it hard to find a plan that worked for everyone.</p>
 
         <h2>The hidden costs we weren't watching</h2>
 
-        <h3>① Smartphone insurance: worth it?</h3>
-
-        <p>When we didn't know better, we were also paying for smartphone insurance — ¥600 per device, per month. For four devices, that's <strong>¥28,800 a year</strong>. If nothing breaks, every yen of it disappears.</p>
-
-        <p>After discovering the リベ大 (Liberal Arts University Japan) YouTube channel, I cancelled the insurance and started a dedicated "self-insurance" savings fund instead. We went through an entire upgrade cycle without a single device breaking — saving us <strong>over ¥100,000</strong>.</p>
-
-        <h3>② The "3 months free" option trap</h3>
+        <p>When we didn't know better, we were also paying for <strong>smartphone insurance</strong> — ¥600 per device per month, or <strong>¥28,800 a year</strong> for four devices. After discovering the リベ大 (Liberal Arts University Japan) YouTube channel, I cancelled the insurance and started a "self-insurance" savings fund instead — saving over ¥100,000 in the process.</p>
 
         <div class="caution-box">
           <div class="caution-title">⚠️ A lesson learned the hard way</div>
-          <p>When signing a new contract at a carrier store in Japan, you'll often be offered optional add-on services "free for the first 3 months." If you forget to cancel them, you'll keep paying — for services you may never use.<br><br>
-          In our family, both my husband and our eldest son forgot to cancel their trial options and paid for unused services for several months. <strong>Always check your first bill carefully after signing a new contract.</strong></p>
+          <p>When signing a new contract at a carrier store in Japan, you'll often be offered optional add-on services "free for the first 3 months." If you forget to cancel them, you'll keep paying for services you never use.<br><br>
+          In our family, both my husband and our eldest son forgot to cancel their trial options and paid for unused services for several months. <strong>Always check your first bill carefully after signing.</strong></p>
         </div>
 
         <h2>Four years on Rakuten Mobile</h2>
 
-        <p>After researching and experimenting, we switched our whole family to <strong>Rakuten Mobile</strong> — and stayed for over four years. I also got into the habit of turning off mobile data when I didn't need it outside the house.</p>
-
-        <p>Here's what we were paying for all five of us:</p>
+        <p>After researching and experimenting, we switched our whole family to <strong>Rakuten Mobile</strong>. Here's what we paid for all five of us:</p>
 
         <table class="fee-table">
           <thead><tr><th>Family member</th><th>Plan</th><th>Monthly cost</th></tr></thead>
@@ -294,22 +545,11 @@
           <tfoot><tr class="total-row"><td colspan="2">Total (5 people)</td><td>¥8,673</td></tr></tfoot>
         </table>
 
-        <p>Even with a fifth person added, we were paying less than <strong>half</strong> of our old bill.</p>
+        <p>Even with a fifth person added, we were paying less than <strong>half</strong> of our old bill. Rakuten Link app calls are free (including landlines), and we earn 4× Rakuten points on shopping. For those of us in the greater Tokyo area, coverage was rarely an issue. However, our eldest son struggled with slow speeds during a month-long work trip to rural Ibaraki — a real weakness for Rakuten outside major cities.</p>
 
-        <p><strong>What we liked:</strong> Free calls via the Rakuten Link app (including to landlines), and 4× Rakuten points on shopping. My younger son and I — both mostly at home in Saitama — never had any real issues with the service.</p>
+        <h2>Going further: Nihon Tsushin SIM (current: ¥6,325/month)</h2>
 
-        <p><strong>Where it fell short:</strong> Rakuten is a newer carrier (MVO), and its coverage in rural and regional areas is noticeably weaker than the big three (Docomo, au, SoftBank). Our eldest son struggled with slow speeds during a month-long work training in Ibaraki. My husband also noticed dead spots on longer trips. For those living or traveling outside major urban areas, it's worth checking the coverage map first.</p>
-
-        <h2>Going further: switching part of the family to Nihon Tsushin SIM</h2>
-
-        <p>About a month ago, my husband, younger son, and I switched from Rakuten to <strong>Nihon Tsushin SIM</strong>. We rely mostly on home Wi-Fi, and for calls, LINE voice calls are plenty for us — so an even simpler, cheaper plan made sense.</p>
-
-        <p>Our eldest son is sticking with Rakuten Mobile — he plays games on his lunch break and needs a stable connection, plus he still makes the occasional voice call. My mother's plan (in my name) stays on Rakuten too, since she likes calling old friends in Chiba and Tokyo for long catch-ups.</p>
-
-        <!-- Image 2 placeholder -->
-        <div class="img-placeholder" style="color:#9a8878;font-size:13px">📱 Image: current plan screenshots (to be added)</div>
-
-        <p>Our current breakdown:</p>
+        <p>About a month ago, my husband, younger son, and I switched to <strong>Nihon Tsushin SIM</strong> — an even more affordable option for people who mostly use Wi-Fi and don't need voice calls. Our eldest son and mother stayed on Rakuten for reliable gaming speeds and longer phone calls.</p>
 
         <table class="fee-table">
           <thead><tr><th>Family member</th><th>Plan</th><th>Monthly cost</th></tr></thead>
@@ -323,45 +563,24 @@
           <tfoot><tr class="total-row"><td colspan="2">Total (5 people)</td><td>¥6,325</td></tr></tfoot>
         </table>
 
-        <!-- Cost journey summary -->
-        <div class="cost-flow">
-          <div class="cost-step">
-            <div class="cs-label">2021 (Big carrier)</div>
-            <div class="cs-amount">¥25,660</div>
-            <div class="cs-sub">4 iPhones</div>
-          </div>
-          <div class="cost-arrow">›</div>
-          <div class="cost-step">
-            <div class="cs-label">Rakuten Mobile (5 people)</div>
-            <div class="cs-amount">¥8,673</div>
-            <div class="cs-sub">Cut by more than half</div>
-          </div>
-          <div class="cost-arrow">›</div>
-          <div class="cost-step highlight">
-            <div class="cs-label">Rakuten + Nihon Tsushin</div>
-            <div class="cs-amount">¥6,325</div>
-            <div class="cs-sub">Our current best!</div>
-          </div>
-        </div>
-
         <h2>Before you switch: a quick checklist</h2>
 
-        <p>The major carriers have real advantages — better coverage, more stores, and hands-on customer support. But the cost difference can have a meaningful impact on your household budget and long-term savings.</p>
+        <p>Major carriers offer real advantages — better coverage, more stores, and hands-on support. But the cost difference is significant, especially for larger families.</p>
 
         <div class="conclusion-box">
           <div class="con-title">📋 Things to check before switching</div>
           <ul>
             <li>📱 Is your device SIM-free (or can it be SIM-unlocked)?</li>
             <li>💳 Are you still paying off a device installment plan?</li>
-            <li>📍 Does your new carrier have good coverage where you live and travel?</li>
+            <li>📍 Does your new carrier have good coverage where you live?</li>
             <li>📞 Do you need voice calls, or is LINE calling enough?</li>
             <li>⚙️ Have you cancelled any trial add-on options after signing?</li>
           </ul>
         </div>
 
-        <p>Whether you decide to switch or stay, I'd encourage everyone to take a fresh look at their mobile bills. You might be surprised by what you find 🍎</p>
+        <p>Whether you switch or stay, I'd encourage everyone to take a fresh look at their mobile bills. You might be surprised by what you find 🍎</p>
 
-        <p style="font-size:12px;color:#9a8878;margin-top:1.5rem;">※ Plan prices are based on our household's actual bills as of May 2026. Rates vary depending on usage and may change. Please check each carrier's current pricing before making any decisions.</p>
+        <p style="font-size:12px;color:#9a8878;margin-top:1.5rem;">※ Plan prices are based on our household's actual bills as of May 2026. Rates vary depending on usage and may change. Please check each carrier's official website before making decisions.</p>
 
       </div>
       <!-- ===== English body end ===== -->
@@ -470,6 +689,40 @@ function setLang(lang) {
   document.getElementById('btn-en').classList.toggle('active', !isJa);
   document.documentElement.lang = isJa ? 'ja' : 'en';
 }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+new Chart(document.getElementById('chart'), {
+  type: 'bar',
+  data: {
+    labels: ['大手キャリア（試算）', '楽天5回線時代（実績）', '現在の最適構成（実績）'],
+    datasets: [{
+      label: '月額通信費合計',
+      data: [42000, 14770, 13726],
+      backgroundColor: ['#B4B2A9', '#F09595', '#85B7EB'],
+      borderColor: ['#888780', '#DC2626', '#185FA5'],
+      borderWidth: 1,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => '  月額 ' + ctx.parsed.y.toLocaleString() + '円' } }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 50000,
+        ticks: { callback: v => (v / 10000) + '万円' },
+        grid: { color: 'rgba(128,128,128,0.12)' }
+      },
+      x: { grid: { display: false }, ticks: { autoSkip: false } }
+    }
+  }
+});
 </script>
 
 </body>
