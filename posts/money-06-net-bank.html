@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ゆうちょ・三井住友・三菱UFJ・りそなの4行をネット銀行に集約。楽天銀行×楽天証券のマネーブリッジ、住信SBIネット銀行の目的別口座で管理がシンプルに。50代主婦の実体験をもとに解説します。">
+<meta name="keywords" content="楽天銀行, 住信SBIネット銀行, ネット銀行 おすすめ, マネーブリッジ, 目的別口座, 銀行 整理, 普通預金 金利, ネット銀行 通帳なし">
+<meta property="og:title" content="楽天銀行・住信SBIネット銀行　都市銀行よりネット銀行が大優勝！な話 | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="口座を5つから3つに整理したら、毎月の銀行回りがゼロに。楽天コンボ・SBIコンボの実体験と、都市銀行との金利・手数料比較を主婦目線で解説。">
+<meta property="og:type" content="article">
+<title>楽天銀行・住信SBIネット銀行　都市銀行よりネット銀行が大優勝！な話 | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ── Before/After 口座一覧 ── */
+.bank-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1rem 0 1.5rem}
+@media(max-width:580px){.bank-grid{grid-template-columns:1fr}}
+.bank-card{border-radius:10px;padding:12px 14px}
+.bank-card-before{background:#f5f5f5;border:1.5px solid #ccc}
+.bank-card-after{background:#f0f9e8;border:1.5px solid #7ec850}
+.bank-card-label{font-size:11px;font-weight:700;color:#8a7f78;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.bank-card-before .bank-card-label{color:#8a7f78}
+.bank-card-after .bank-card-label{color:#3a7010}
+.bank-card-name{font-size:14px;font-weight:700;color:#3a2c20;margin-bottom:4px}
+.bank-card-purpose{font-size:12px;color:#6a5848;line-height:1.7}
+/* ── 比較テーブル ── */
+.cmp-table{width:100%;border-collapse:collapse;font-size:13px;margin:1rem 0 1.5rem}
+.cmp-table th{padding:9px 10px;font-weight:700;text-align:center;border-bottom:2px solid #b8a898;color:#4a3020}
+.cmp-table th:first-child{text-align:left;background:#ede5d8}
+.cmp-table th.th-rakuten{background:#fff0f0;color:#BF0000}
+.cmp-table th.th-sbi{background:#f0f4ff;color:#1e4a8a}
+.cmp-table th.th-city{background:#f5f5f5;color:#6a6a6a}
+.cmp-table td{padding:9px 10px;border-bottom:1px solid #e0d4c4;text-align:center;color:#3a2c20}
+.cmp-table td:first-child{text-align:left;font-weight:500;color:#4a3020;background:#fdf8f2}
+.cmp-table .good{color:#16A34A;font-weight:600}
+.cmp-table .bad{color:#DC2626}
+.cmp-table tr:last-child td{border-bottom:none}
+/* ── 銀行紹介カード ── */
+.bank-intro{border-radius:12px;padding:1.25rem;margin:1.25rem 0}
+.bank-intro-rakuten{background:#fff8f8;border:1.5px solid #f0b8b8}
+.bank-intro-sbi{background:#f0f4ff;border:1.5px solid #a8c0e8}
+.bank-intro-title{font-size:15px;font-weight:700;margin-bottom:.75rem}
+.bank-intro-rakuten .bank-intro-title{color:#BF0000}
+.bank-intro-sbi .bank-intro-title{color:#1e4a8a}
+.bank-intro ul{margin:0;padding-left:1.3rem}
+.bank-intro li{font-size:14px;line-height:2;color:#3a2c20}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">家計・リベ活</span>
+  <span class="le" style="display:none">Finances</span>
+  <span>›</span>
+  <span class="lj">都市銀行よりネット銀行が大優勝！な話</span>
+  <span class="le" style="display:none">Why Net Banks Beat Traditional Banks</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag money lj">家計・リベ活</span>
+        <span class="post-tag money le" style="display:none">Finances</span>
+        <span class="post-date">2026.06.02</span>
+      </div>
+      <h1 class="article-title lj">楽天銀行・住信SBIネット銀行<br>都市銀行よりネット銀行が大優勝！な話</h1>
+      <h1 class="article-title le" style="display:none">Rakuten Bank & SBI Net Bank:<br>Why I Switched from Traditional Banks</h1>
+    </div>
+
+    <div class="article-body">
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>ゆうちょ・三井住友・三菱UFJ・埼玉りそなと4つの銀行口座を使い分けていた私が、ネット銀行に集約した話をします。毎月あちこちの銀行窓口やATMを巡っていた「銀行回り」が一切なくなって、本当に楽になりました。</p>
+
+        <p>私は<strong>楽天銀行（楽天コンボ）</strong>、夫は私が設定した<strong>住信SBIネット銀行（SBIコンボ）</strong>を利用しています。2つのネット銀行の実体験をもとに、都市銀行との違いや使い方をご紹介します。</p>
+
+        <div class="conclusion-box" style="margin:1rem 0 1.5rem">
+          <div class="con-title">📋 この記事でわかること</div>
+          <ul>
+            <li>なぜ都市銀行の口座を整理してネット銀行に集約したか（実体験）</li>
+            <li>都市銀行 vs ネット銀行の金利・手数料の差</li>
+            <li>楽天銀行×楽天証券「マネーブリッジ」で金利がアップする仕組み</li>
+            <li>住信SBIネット銀行の「目的別口座」で複数口座を一元管理する方法</li>
+          </ul>
+        </div>
+
+        <!-- ▼ A8.net 楽天銀行 審査通過後にリンクを設置① ▼ -->
+        <!--
+        <p style="text-align:center;margin:.5rem 0 1.5rem">
+          <a href="[楽天銀行アフィリエイトURL]" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#BF0000;color:#fff;font-weight:700;padding:.85rem 2rem;border-radius:8px;text-decoration:none;font-size:15px">▶ 楽天銀行の口座開設はこちら</a>
+        </p>
+        -->
+
+        <h2>きっかけはリベシティの宿題リスト</h2>
+
+        <p><a href="money-01-libekatsu.html">リベシティ</a>に入会すると、両学長が「宿題リスト」を用意してくれています。その中に<strong>「銀行口座・クレジットカードの整理」</strong>という項目があり、我が家の口座を改めて見直すことにしました。</p>
+
+        <p>整理してみると、自分名義だけでなく、夫が子供たちのために作っていたゆうちょ銀行の口座が長男・次男それぞれ2口座ずつ計4口座もあることが発覚。子供の口座はそれぞれ1口座に集約しました。</p>
+
+        <h2>こんなに口座が散らばっていた【Before】</h2>
+
+        <p>整理する前、我が家の口座はそれぞれ目的があって使い分けていたのですが、管理が複雑で毎月の銀行回りが欠かせませんでした。</p>
+
+        <div class="bank-grid">
+          <div class="bank-card bank-card-before">
+            <div class="bank-card-label">Before ❌</div>
+            <div class="bank-card-name">ゆうちょ銀行</div>
+            <div class="bank-card-purpose">生活防衛資金の置き場</div>
+          </div>
+          <div class="bank-card bank-card-before">
+            <div class="bank-card-label">Before ❌</div>
+            <div class="bank-card-name">三井住友銀行①</div>
+            <div class="bank-card-purpose">地代の更新料積立</div>
+          </div>
+          <div class="bank-card bank-card-before">
+            <div class="bank-card-label">Before ❌</div>
+            <div class="bank-card-name">三井住友銀行②</div>
+            <div class="bank-card-purpose">家電買い替え積立</div>
+          </div>
+          <div class="bank-card bank-card-before">
+            <div class="bank-card-label">Before ❌</div>
+            <div class="bank-card-name">三菱UFJ銀行</div>
+            <div class="bank-card-purpose">駐車場代の支払い<br><span style="font-size:11px">（同行振込で手数料無料）</span></div>
+          </div>
+          <div class="bank-card bank-card-before">
+            <div class="bank-card-label">Before → 現在も利用中</div>
+            <div class="bank-card-name">埼玉りそな銀行</div>
+            <div class="bank-card-purpose">給与振込口座（当時）<br>現在：失業給付金の受取口座</div>
+          </div>
+        </div>
+
+        <p>それぞれに理由があったとはいえ、毎月あちこちの店舗やATMを回る手間は相当なものでした。「管理する通帳の数が多いな」と感じながらも、なんとなくそのままにしてしまっていたのです。</p>
+
+        <div class="bank-grid" style="margin-top:1.5rem">
+          <div class="bank-card bank-card-after">
+            <div class="bank-card-label">After ✅ 私</div>
+            <div class="bank-card-name">楽天銀行</div>
+            <div class="bank-card-purpose">楽天証券と連携。ポイントも貯まる楽天コンボの要</div>
+          </div>
+          <div class="bank-card bank-card-after">
+            <div class="bank-card-label">After ✅ 夫</div>
+            <div class="bank-card-name">住信SBIネット銀行</div>
+            <div class="bank-card-purpose">目的別口座で複数の積立を一元管理。SBI証券と連携</div>
+          </div>
+        </div>
+
+        <p style="font-size:13px;color:#6a5848;margin-top:-.5rem">※ りそなは引き続き現役利用中（理由は後述）</p>
+
+        <h2>都市銀行 vs ネット銀行：金利・手数料を比べてみると</h2>
+
+        <p>ネット銀行に変えて一番驚いたのは、<strong>普通預金の金利の差</strong>です。都市銀行の普通預金金利は0.001%程度ですが、ネット銀行は証券口座との連携で大幅に上がります。</p>
+
+        <div class="tbl-card">
+          <table class="cmp-table">
+            <thead>
+              <tr>
+                <th>比較項目</th>
+                <th class="th-city">都市銀行<br><span style="font-size:11px;font-weight:400">ゆうちょ・三井住友等</span></th>
+                <th class="th-rakuten">🔴 楽天銀行</th>
+                <th class="th-sbi">🔵 住信SBIネット銀行</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>普通預金金利</td>
+                <td class="bad">0.001%</td>
+                <td>0.02%<br><span style="font-size:11px">マネーブリッジ後：<span class="good">0.1%</span></span></td>
+                <td>0.001%<br><span style="font-size:11px">ハイブリッド預金：<span class="good">変動・高め</span></span></td>
+              </tr>
+              <tr>
+                <td>ATM手数料</td>
+                <td class="bad">毎回発生</td>
+                <td><span class="good">条件付き月1〜7回無料</span></td>
+                <td><span class="good">条件付き月5〜20回無料</span></td>
+              </tr>
+              <tr>
+                <td>振込手数料</td>
+                <td class="bad">110〜660円</td>
+                <td><span class="good">月3回まで無料等</span></td>
+                <td><span class="good">月数回無料</span></td>
+              </tr>
+              <tr>
+                <td>目的別口座</td>
+                <td class="bad">✗ なし</td>
+                <td>△<br><span style="font-size:11px">別口座が必要</span></td>
+                <td><span class="good">✅ 1口座内で管理</span></td>
+              </tr>
+              <tr>
+                <td>証券口座との連携</td>
+                <td class="bad">✗</td>
+                <td><span class="good">✅ 楽天証券</span></td>
+                <td><span class="good">✅ SBI証券</span></td>
+              </tr>
+              <tr>
+                <td>通帳</td>
+                <td><span class="good">✅ あり</span></td>
+                <td>✗ なし<span style="font-size:11px">（アプリで確認）</span></td>
+                <td>✗ なし<span style="font-size:11px">（アプリで確認）</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:12px;color:#8a7f78">※ 2026年6月現在の情報をもとに作成。金利・手数料は変更になる場合があります。</p>
+
+        <h2>私の選択：楽天銀行（楽天コンボ）</h2>
+
+        <div class="bank-intro bank-intro-rakuten">
+          <div class="bank-intro-title">🔴 楽天銀行のここがおすすめ</div>
+          <ul>
+            <li>楽天証券と連携（マネーブリッジ）するだけで普通預金金利が<strong>0.1%</strong>にアップ</li>
+            <li>楽天市場・楽天カード・楽天モバイルとの連携でポイントが貯まりやすい</li>
+            <li>楽天ペイと連携してポイント払いがスムーズ</li>
+            <li>楽天経済圏をフル活用したい方に最適</li>
+          </ul>
+        </div>
+
+        <p>私が楽天銀行を選んだのは、すでに楽天モバイル・楽天市場・楽天カードを使っていたからです。<strong>マネーブリッジ</strong>とは、楽天銀行と楽天証券の口座を連携させる設定のことで、これをするだけで普通預金の金利が大幅にアップします。都市銀行の金利と比べると<strong>100倍</strong>の差があります。設定は5分もあればできるので、楽天証券を持っている方はぜひ設定してみてください。</p>
+
+        <p>楽天市場・楽天カードとの関係については、<a href="money-05-rakuten-keizaiken.html">こちらの記事</a>でも詳しく紹介しています。</p>
+
+        <!-- ▼ A8.net 楽天銀行 審査通過後にリンクを設置② ▼ -->
+        <!--
+        <p style="text-align:center;margin:1.5rem 0">
+          <a href="[楽天銀行アフィリエイトURL]" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#BF0000;color:#fff;font-weight:700;padding:.85rem 2rem;border-radius:8px;text-decoration:none;font-size:15px">▶ 楽天銀行の口座開設はこちら</a>
+        </p>
+        -->
+
+        <h2>夫の口座：住信SBIネット銀行（SBIコンボ）</h2>
+
+        <div class="bank-intro bank-intro-sbi">
+          <div class="bank-intro-title">🔵 住信SBIネット銀行のここがおすすめ</div>
+          <ul>
+            <li><strong>目的別口座</strong>で1つの口座の中に複数の積立口座を作れる</li>
+            <li>口座に名前が付けられるので管理がとてもわかりやすい</li>
+            <li>SBI証券と連携（ハイブリッド預金）で金利がアップ</li>
+            <li>ATM・振込手数料の無料回数が多い</li>
+          </ul>
+        </div>
+
+        <p>夫の口座は私が代わりに設定しました。住信SBIネット銀行の最大の魅力は<strong>「目的別口座」</strong>という機能です。1つの口座の中に「更新料積立」「家電積立」など名前をつけた仮想口座をいくつも作ることができます。以前はこの目的ごとに別々の銀行口座を持っていたのですが、これが1つにまとまったことで管理が本当に楽になりました。</p>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 目的別口座の使い方イメージ</div>
+          <p>住信SBIネット銀行の目的別口座に名前をつけると…<br>
+          <strong>「更新料積立」「家電買い替え」「旅行積立」「生活防衛資金」</strong>など、複数の貯金箱が1つのアプリで管理できます。毎月自動で振り替えることも可能です。</p>
+        </div>
+
+        <p>設定時に少し苦労したのは<strong>ネット証券（SBI証券）の設定画面の複雑さ</strong>と、<strong>本人確認のスマホでの顔撮影</strong>でした。何度もやり直しましたが、無事に開設できました。証券口座の開設について詳しくは<a href="money-03-nisa-koza-erabikata.html">こちらの記事</a>も参考にしてください。</p>
+
+        <!-- ▼ A8.net 住信SBIネット銀行 審査通過後にリンクを設置③ ▼ -->
+        <!--
+        <p style="text-align:center;margin:1.5rem 0">
+          <a href="[住信SBIネット銀行アフィリエイトURL]" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#1e4a8a;color:#fff;font-weight:700;padding:.85rem 2rem;border-radius:8px;text-decoration:none;font-size:15px">▶ 住信SBIネット銀行の口座開設はこちら</a>
+        </p>
+        -->
+
+        <h2>りそなを残した理由</h2>
+
+        <div class="caution-box">
+          <div class="caution-title">💡 全部ネット銀行にしなかった理由</div>
+          <p>埼玉りそな銀行は現在も現役利用中です。理由は2つ：<br><br>
+          ①<strong>PayPalの提携銀行がりそなのみ</strong>のため（海外リモートワークでの受け取りに必要）<br>
+          ②<strong>失業給付金の受取口座</strong>に設定してしまったため（現在も受給中）<br><br>
+          ネット銀行は便利ですが、PayPalのように「提携先が限られるサービス」もあります。口座を整理する前に、引き落とし先・受取先をすべて確認することをおすすめします。</p>
+        </div>
+
+        <h2>通帳がないことへの不安</h2>
+
+        <p>ネット銀行を使い始めた頃は、<strong>「通帳がないと不安…」</strong>と感じていました。何十年も通帳でお金の動きを確認してきたので、それがなくなることへの違和感は正直ありました。</p>
+
+        <p>ところが、実際に使ってみると<strong>困ったことは一度もありません</strong>。スマホのアプリで入出金の明細がすぐ確認でき、むしろ銀行窓口に並ぶ時間がゼロになったことの方がずっと快適でした。通帳への不安をお持ちの方も、使い始めてしまえばすぐ慣れます。</p>
+
+        <h2>まとめ</h2>
+
+        <p>都市銀行の口座をネット銀行に集約したことで、毎月の銀行回りがなくなり、管理する通帳の数も大幅に減りました。金利・手数料の面でも、ネット銀行の方が圧倒的にお得です。</p>
+
+        <div class="conclusion-box">
+          <div class="con-title">📋 この記事のポイントまとめ</div>
+          <ul>
+            <li>楽天経済圏を使っているなら → <strong>楽天銀行</strong>（マネーブリッジで金利0.1%）</li>
+            <li>SBI証券を使っているなら → <strong>住信SBIネット銀行</strong>（目的別口座が便利）</li>
+            <li>通帳への不安は使えばすぐ解消される</li>
+            <li>口座整理の前に引き落とし先・受取先を必ず確認して</li>
+          </ul>
+        </div>
+
+        <p>NISAの口座との組み合わせについては<a href="money-03-nisa-koza-erabikata.html">こちらの記事</a>もあわせて読んでみてください🍎</p>
+
+        <!-- ▼ A8.net 審査通過後にリンクを設置④⑤ ▼ -->
+        <!--
+        <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
+          <a href="[楽天銀行アフィリエイトURL]" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#BF0000;color:#fff;font-weight:700;padding:.85rem 1.5rem;border-radius:8px;text-decoration:none;font-size:14px">▶ 楽天銀行の口座開設</a>
+          <a href="[住信SBIネット銀行アフィリエイトURL]" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#1e4a8a;color:#fff;font-weight:700;padding:.85rem 1.5rem;border-radius:8px;text-decoration:none;font-size:14px">▶ 住信SBIネット銀行の口座開設</a>
+        </div>
+        -->
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>I used to maintain accounts at four different banks — each serving a specific purpose. After following the financial housekeeping checklist from LibreCity, I consolidated most of them into two net banks. Monthly trips to bank branches became a thing of the past.</p>
+
+        <p>I use <strong>Rakuten Bank</strong> (paired with Rakuten Securities), and I set up <strong>SBI Net Bank</strong> (paired with SBI Securities) for my husband. Here's what I learned from using both.</p>
+
+        <div class="conclusion-box" style="margin:1rem 0 1.5rem">
+          <div class="con-title">📋 What you'll find in this article</div>
+          <ul>
+            <li>Why I had so many bank accounts — and how I simplified</li>
+            <li>Interest rate and fee comparison: traditional banks vs. net banks</li>
+            <li>Rakuten Bank's "Money Bridge" — how linking to Rakuten Securities boosts your savings rate</li>
+            <li>SBI Net Bank's "purpose accounts" — one account, multiple virtual savings pots</li>
+          </ul>
+        </div>
+
+        <h2>Before: too many accounts to manage</h2>
+
+        <p>Each account had a reason to exist:</p>
+        <ul>
+          <li><strong>Japan Post Bank</strong> — emergency fund</li>
+          <li><strong>SMBC ①</strong> — land lease renewal savings</li>
+          <li><strong>SMBC ②</strong> — appliance replacement savings</li>
+          <li><strong>MUFG</strong> — parking fee payments (free transfer to same bank)</li>
+          <li><strong>Resona</strong> — salary account (still active today)</li>
+        </ul>
+        <p>On top of that, my husband had opened two Japan Post Bank accounts each for our two sons — four children's accounts that were consolidated into two.</p>
+
+        <h2>Interest rates: the numbers speak for themselves</h2>
+
+        <div class="tbl-card">
+          <table class="cmp-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="th-city">Traditional bank</th>
+                <th class="th-rakuten">🔴 Rakuten Bank</th>
+                <th class="th-sbi">🔵 SBI Net Bank</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Savings interest</td>
+                <td class="bad">0.001%</td>
+                <td>0.02% → <span class="good">0.1%</span> with Money Bridge</td>
+                <td>Higher with hybrid deposit</td>
+              </tr>
+              <tr>
+                <td>ATM fees</td>
+                <td class="bad">Charged each use</td>
+                <td colspan="2"><span class="good">Free up to several times/month (conditions apply)</span></td>
+              </tr>
+              <tr>
+                <td>Purpose accounts</td>
+                <td class="bad">✗</td>
+                <td>✗</td>
+                <td><span class="good">✅ Multiple virtual pots in one account</span></td>
+              </tr>
+              <tr>
+                <td>Securities link</td>
+                <td class="bad">✗</td>
+                <td><span class="good">✅ Rakuten Securities</span></td>
+                <td><span class="good">✅ SBI Securities</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Rakuten Bank: the heart of the Rakuten combo</h2>
+        <p>By linking Rakuten Bank to Rakuten Securities ("Money Bridge"), your ordinary savings account earns 0.1% — 100× the rate of a standard Japanese bank. If you already use Rakuten Mobile, Card, or Ichiba, this is a natural fit.</p>
+
+        <h2>SBI Net Bank: solving the "multiple accounts" problem</h2>
+        <p>SBI Net Bank's standout feature is <strong>purpose accounts</strong> — virtual savings pots inside a single account, each with a custom label. What used to require separate bank accounts ("renewal fund," "appliance fund," etc.) now lives in one app.</p>
+        <p>Setting up the linked SBI Securities account was the hardest part — particularly the face verification, which took several attempts. But once done, it works smoothly.</p>
+
+        <h2>Why I kept one traditional bank</h2>
+        <p>Resona Bank remains active because PayPal Japan's only partner bank is Resona (net banks aren't supported), and I set it as my unemployment benefit receiving account. Before consolidating, always check where your payments and receipts are routed.</p>
+
+        <h2>On the fear of going "passbook-free"</h2>
+        <p>I was nervous about switching to accounts with no physical passbook. That feeling disappeared within weeks. App notifications and digital transaction histories work just fine — and I haven't missed standing in a bank queue once.</p>
+
+        <h2>In summary</h2>
+        <p>If you're already using Rakuten services → Rakuten Bank. If you're on SBI Securities → SBI Net Bank. Either way, the interest rates and fee savings over a traditional bank are significant. The passbook anxiety passes quickly. 🍎</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="money-03-nisa-koza-erabikata.html">
+            <div class="post-img">🏦</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.26</span>
+              </div>
+              <p class="post-title lj">新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較</p>
+              <p class="post-title le" style="display:none">Where to Open Your NISA Account?</p>
+            </div>
+          </a>
+          <a class="post-card" href="money-05-rakuten-keizaiken.html">
+            <div class="post-img">🛒</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.06.02</span>
+              </div>
+              <p class="post-title lj">スマホ代の請求がタダに！？楽天モバイルの特典を使おう！！</p>
+              <p class="post-title le" style="display:none">Can Your Phone Bill Really Be ¥0?</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <img src="../images/profile-illustration.png" alt="ぴかりんごのプロフィールイラスト" style="width:80px;height:80px;border-radius:50%;display:block;margin:0 auto .75rem;object-fit:cover">
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><a href="money-05-rakuten-keizaiken.html" class="lj" style="color:inherit;text-decoration:none">スマホ代の請求がタダに！？楽天モバイルの特典を使おう</a><a href="money-05-rakuten-keizaiken.html" class="le" style="display:none;color:inherit;text-decoration:none">Can Your Phone Bill Really Be ¥0?</a></li>
+        <li><span class="popular-num">2</span><a href="banchan.html" class="lj" style="color:inherit;text-decoration:none">ドラム式洗濯機「バンちゃん」が私のしんどい毎日を救ってくれた話</a><a href="banchan.html" class="le" style="display:none;color:inherit;text-decoration:none">The Drum Washing Machine That Saved My Sanity</a></li>
+        <li><span class="popular-num">3</span><a href="money-04-tsushinhi.html" class="lj" style="color:inherit;text-decoration:none">現代の必需品　通信費膨らんでいませんか？</a><a href="money-04-tsushinhi.html" class="le" style="display:none;color:inherit;text-decoration:none">Is Your Phone Bill Draining Your Budget?</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">おすすめの本</h2>
+      <div class="affiliate-box">
+        <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="お金の大学 書影" style="width:60px;height:auto;border-radius:4px;object-fit:cover;flex-shrink:0">
+        <div class="affiliate-box-body">
+          <p class="affiliate-box-title">お金の大学（著：両@リベ大学長）</p>
+          <p class="affiliate-box-desc">銀行・保険・投資・節税など、お金の基本が全部わかる一冊。</p>
+          <a href="https://amzn.to/49aEmCJ" class="affiliate-box-btn" target="_blank" rel="noopener sponsored">Amazonで見る →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">日本の片隅から、日常のいろいろなことを。</p>
+  <p class="footer-sub le" style="display:none">From a quiet corner of Japan, writing about the many sides of everyday life.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
