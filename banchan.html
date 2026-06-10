@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>私のしんどい毎日を救ってくれるドラム式洗濯機、バンちゃんの話。</title>
+  <meta name="description" content="職場のストレス、母の介護、5人分の家事…そんな毎日を救ってくれるドラム式洗濯機「バンちゃん」の話。パナソニックNA-LX125BLを19万円台で買えた理由と、購入前に知っておきたいことを主婦目線でまとめました。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --warm-white: #fff9f4;
+      --soft-blue: #e8f0f7;
+      --blue-mid: #5b8db8;
+      --blue-deep: #2d5f8a;
+      --blue-light: #a8c8e8;
+      --accent-gold: #c8965a;
+      --accent-warm: #e07b4a;
+      --text-dark: #2a2420;
+      --text-mid: #5a4f47;
+      --text-light: #8a7f78;
+      --border: #e0d8d0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--text-dark);
+      font-family: 'Noto Sans JP', sans-serif;
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    /* ヘッダー */
+    .hero {
+      background: linear-gradient(160deg, var(--blue-deep) 0%, var(--blue-mid) 60%, var(--blue-light) 100%);
+      padding: 70px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 320px; height: 320px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 200px; height: 200px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.5;
+      max-width: 700px;
+      margin: 0 auto 24px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .hero-meta {
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+    }
+
+    /* 本文エリア */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* リード文 */
+    .lead {
+      background: var(--warm-white);
+      border-left: 4px solid var(--blue-mid);
+      padding: 28px 28px 28px 32px;
+      margin: 48px 0 40px;
+      border-radius: 0 12px 12px 0;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 17px;
+      line-height: 1.9;
+      color: var(--text-mid);
+    }
+
+    /* セクション */
+    section { margin: 56px 0; }
+
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(18px, 3.5vw, 24px);
+      font-weight: 700;
+      color: var(--blue-deep);
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 24px;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 60px; height: 2px;
+      background: var(--blue-mid);
+    }
+
+    p { margin-bottom: 20px; color: var(--text-dark); }
+
+    /* 強調ボックス */
+    .highlight-box {
+      background: var(--soft-blue);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 28px 0;
+      border: 1px solid var(--blue-light);
+    }
+    .highlight-box p { margin-bottom: 0; color: var(--text-mid); }
+
+    /* 名言ボックス */
+    .quote-box {
+      background: linear-gradient(135deg, #fff8f0, #fff3e8);
+      border: 1px solid #f0d8c0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 32px 0;
+      position: relative;
+    }
+    .quote-box::before {
+      content: '❝';
+      font-size: 48px;
+      color: var(--accent-gold);
+      opacity: 0.3;
+      position: absolute;
+      top: 10px; left: 18px;
+      line-height: 1;
+    }
+    .quote-box p {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 16px;
+      line-height: 1.9;
+      color: var(--text-mid);
+      padding-left: 8px;
+      margin: 0;
+    }
+
+    /* 命名エピソード */
+    .name-origin {
+      background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
+      border-radius: 16px;
+      padding: 32px;
+      margin: 32px 0;
+      color: #fff;
+      text-align: center;
+    }
+    .name-origin .bandage-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    .name-origin h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .name-origin p {
+      color: rgba(255,255,255,0.88);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    /* コスト表 */
+    .cost-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .cost-table th {
+      background: var(--blue-deep);
+      color: #fff;
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .cost-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+      background: #fff;
+    }
+    .cost-table tr:last-child td { border-bottom: none; }
+    .cost-table tr:nth-child(even) td { background: #f8f5f2; }
+    .cost-table .highlight-cell {
+      color: var(--accent-warm);
+      font-weight: 700;
+    }
+
+    /* チェックリスト */
+    .check-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+    .check-list li {
+      padding: 14px 16px 14px 52px;
+      margin-bottom: 10px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      position: relative;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .check-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 16px; top: 14px;
+      width: 24px; height: 24px;
+      background: var(--blue-mid);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .check-list li strong {
+      color: var(--blue-deep);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* 警告ボックス */
+    .warning-box {
+      background: #fffbf0;
+      border: 1px solid #f0d870;
+      border-left: 4px solid #e8c020;
+      border-radius: 0 10px 10px 0;
+      padding: 18px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: var(--text-mid);
+    }
+    .warning-box strong { color: #8a6800; }
+
+    /* 商品カード */
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 2px solid var(--blue-light);
+      overflow: hidden;
+      margin: 32px 0;
+      box-shadow: 0 4px 20px rgba(45,95,138,0.08);
+    }
+    .product-card-header {
+      background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
+      padding: 20px 24px;
+      color: #fff;
+    }
+    .product-card-header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      font-size: 11px;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+    .product-card-header h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 18px;
+    }
+    .product-card-body {
+      padding: 24px;
+    }
+    .product-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .spec-item {
+      background: var(--soft-blue);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .spec-label {
+      font-size: 11px;
+      color: var(--text-light);
+      margin-bottom: 4px;
+    }
+    .spec-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--blue-deep);
+    }
+    .price-display {
+      background: linear-gradient(135deg, #fff8f0, #fff3e8);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price-label { font-size: 13px; color: var(--text-light); }
+    .price-value { font-size: 22px; font-weight: 700; color: var(--accent-warm); }
+    .price-note { font-size: 11px; color: var(--text-light); }
+
+    .btn-amazon {
+      display: block;
+      background: #ff9900;
+      color: #111;
+      text-decoration: none;
+      text-align: center;
+      padding: 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: opacity 0.2s;
+      margin-bottom: 10px;
+    }
+    .btn-amazon:hover { opacity: 0.88; }
+    .btn-amazon-r {
+      display: block;
+      background: #bf0000;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      padding: 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: opacity 0.2s;
+    }
+    .btn-amazon-r:hover { opacity: 0.88; }
+    .affiliate-note {
+      font-size: 11px;
+      color: var(--text-light);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* 購入比較 */
+    .compare-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .compare-item {
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .compare-item.old {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+    }
+    .compare-item.new {
+      background: linear-gradient(135deg, #e8f4ff, #d0e8ff);
+      border: 1px solid var(--blue-light);
+    }
+    .compare-item .year {
+      font-size: 11px;
+      color: var(--text-light);
+      margin-bottom: 6px;
+    }
+    .compare-item .model {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    .compare-item .price-big {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--blue-deep);
+    }
+    .compare-item.new .price-big { color: var(--accent-warm); }
+    .compare-item .price-sub {
+      font-size: 11px;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    /* まとめ */
+    .summary-box {
+      background: linear-gradient(160deg, var(--blue-deep) 0%, #1a3d5c 100%);
+      border-radius: 20px;
+      padding: 40px 36px;
+      color: #fff;
+      margin: 40px 0;
+    }
+    .summary-box h2 {
+      color: #fff;
+      border-bottom-color: rgba(255,255,255,0.2);
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .summary-box h2::after { background: rgba(255,255,255,0.5); }
+    .summary-box p { color: rgba(255,255,255,0.88); }
+    .summary-box .final-quote {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 17px;
+      color: #fff;
+      border-left: 3px solid var(--blue-light);
+      padding-left: 20px;
+      margin-top: 24px;
+      line-height: 1.9;
+    }
+
+    /* フッター */
+    footer {
+      background: #1a1a1a;
+      color: #888;
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 13px;
+      margin-top: 80px;
+    }
+    footer a { color: #aaa; }
+
+    /* レスポンシブ */
+    @media (max-width: 480px) {
+      .product-specs { grid-template-columns: 1fr 1fr; }
+      .compare-box { grid-template-columns: 1fr 1fr; }
+      .hero { padding: 50px 16px 44px; }
+      .lead { padding: 20px 20px 20px 24px; }
+      .summary-box { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="hero-tag">🏠 家電・暮らし</div>
+  <h1>私のしんどい毎日を救ってくれる<br>ドラム式洗濯機、バンちゃんの話。</h1>
+  <div class="hero-meta">ぴかりんご &nbsp;|&nbsp; 2024年</div>
+</div>
+
+<div class="container">
+
+  <!-- リード -->
+  <div class="lead">
+    職場のストレス、夫婦のモヤモヤ、高齢の母の介護、5人分の家事…
+    それでも毎日、洗濯は待ってくれない。
+    そんな私をいつも黙って助けてくれる相棒がいます。
+    名前は「バンちゃん」。ドラム式洗濯機です。
+  </div>
+
+  <!-- 1. しんどい毎日 -->
+  <section>
+    <h2>毎日の家事、しんどくないですか？</h2>
+    <p>50代になってから、体力の衰えが止まりません（涙）。そんな私の悩みも体調もてんでおかまいなしに、来る日も来る日も、家族5人分の家事が容赦なく次から次へと湧き出てきます。</p>
+    <p>家事とパートの両立をしていたときは、夫が朝風呂派なこともあり、夫が入浴を済ませてすぐに洗濯機を回し、すべて干し終えてから出勤しなければなりませんでした。時間に追われながらこなす家事は本当に拷問でした。</p>
+    <p>パートを退職した後でさえ、家族5人分の洗濯は決して楽ではありません。何十年も家事とパートをよく両立出来ていたな〜と自分で自分をほめてあげたいほどです。</p>
+  </section>
+
+  <!-- 2. バンちゃんとの出会い -->
+  <section>
+    <h2>バンちゃんとの出会い</h2>
+    <p>我が家は、2023年10月に新しい洗濯機を購入しました。購入したのは、パナソニックのドラム式洗濯乾燥機 <strong>NA-LX125BL</strong> です。</p>
+    <p>3年半前から母と同居を始めたこともあり、4人分でももともと少なくなかった洗濯量が5人分とますます増えて、私の負担はどんどん重くなっていました。前の洗濯機が9kgと小型で、購入してから12年も経過していたこともあり、壊れてから購入するより、今のうちにより大型のものをと思い、購入を決めました。</p>
+
+    <div class="highlight-box">
+      <p>当時勤めていた職場の同僚がパナソニック推しだったことと、リベ大の両学長がパナソニックの洗濯機をおすすめしていたので、メーカー選びは迷いませんでした。両学長は「家電は価格コムで買えば80点の買い物ができる」とおっしゃっていたので、ネット購入も検討していましたが、購入前に現物も見てみたいという気持ちで最寄りの家電量販店に出かけました。</p>
+    </div>
+
+    <p>エスカレーターを上がってすぐの入り口のところにパナソニックの洗濯機が展示されていました。夫と2人で見ていると、すぐに店員さんがやってきました。なんと、<strong>展示されたばかりというのです。</strong>展示されたてのホヤホヤ、つまりほぼ新品。表示価格も展示品に設定されていたのでかなりリーズナブルになっていました。</p>
+    <p>ネットで調べると最安値価格より2万円安い価格でした。売り場を見て回ることなく即購入！！それが、私とバンちゃんの出会いです。</p>
+
+    <!-- 価格比較 -->
+    <div class="compare-box">
+      <div class="compare-item old">
+        <div class="year">2023年10月購入</div>
+        <div class="model">NA-LX125BL（バンちゃん）</div>
+        <div class="price-big">192,180円</div>
+        <div class="price-sub">リサイクル・運搬込み</div>
+      </div>
+      <div class="compare-item new">
+        <div class="year">2025年現行モデル</div>
+        <div class="model">NA-LX125EL（後継機）</div>
+        <div class="price-big">276,800円〜</div>
+        <div class="price-sub">約8万円以上値上がり</div>
+      </div>
+    </div>
+    <p style="font-size:14px; color:var(--text-light); text-align:center; margin-top:-8px;">新モデル発売のタイミングを狙って旧モデルをお得に購入できました</p>
+  </section>
+
+  <!-- 3. バンちゃん命名の由来 -->
+  <section>
+    <div class="name-origin">
+      <div class="bandage-icon">🩹</div>
+      <h3>「バンちゃん」という名前の由来</h3>
+      <p>包帯を英語で言うと <em>bandage（バンデージ）</em>。<br>心身ともにボロボロだった私を助けてくれたので、<br>私の傷をやさしくしっかり覆うような存在だったことから<br>そう名付けました。</p>
+    </div>
+
+    <p>当時、自身の体の衰え、職場の不毛な人間関係、依存心が異常に強い母のケアで、私は本当に心身ともに疲れ切っていました。家族の誰にも愚痴を聞いてもらえず、家族5人分の洗濯や食事の支度などの家事に疲れ切っていた私の負担を劇的に減らし、救ってくれたのはバンちゃんだったのです。</p>
+
+    <div class="quote-box">
+      <p>職場のストレス、夫婦のモヤモヤ、高齢の母に手がかかってイライラしているとき——そんな日でも、バンちゃんはいつも不平を言わずに私の家事の負担を軽くしてくれます。私の一番の味方、と言っても過言ではありません。</p>
+    </div>
+  </section>
+
+  <!-- 4. バンちゃんが変えてくれた毎日 -->
+  <section>
+    <h2>バンちゃんが変えてくれた毎日</h2>
+    <p>バンちゃんの優れている点は、その乾燥機能です。前の洗濯機も頑張ってくれていましたが、乾燥して仕上がった洗濯物が下水くさいことがありました。それに対してバンちゃんの乾燥機能は神✨でタオルがとってもフワフワに仕上がります。</p>
+    <p>それに加えて12kgなので、大量の洗濯ものを一度に済ませられるようになりました。洗剤投入口を外して洗うこともでき、乾燥フィルターのお掃除も楽です。洗いあがった洗濯物をしばらく忘れて放置していると、何度も「洗濯もう終わってるよー」と知らせてくれます。</p>
+
+    <p>我が家は室内干しにしています。その理由はたくさんあります。</p>
+    <ul class="check-list">
+      <li><strong>天候を気にしなくていい</strong>雨が続く季節も気にせず洗濯できるようになりました</li>
+      <li><strong>砂ぼこり問題が解消</strong>隣が空き地になって砂ぼこりがひどく、外干しが難しい状況です</li>
+      <li><strong>川のそばの匂い対策</strong>外気の匂いが洗濯物につくのが気になっていました</li>
+      <li><strong>花粉症が3人</strong>外に干せない季節が長く、乾燥機は必須です</li>
+      <li><strong>PM2.5対策</strong>空気が気になる日も安心して洗濯できます</li>
+    </ul>
+
+    <p>洗濯物を取り込む手間がなくなり、タオルを干す手間もなくなり、生乾き臭問題も解消して家事が本当に楽になりました。元々家事が嫌いな私の幸福度は、バンちゃんが我が家に来てから急上昇しました。</p>
+
+    <div class="quote-box">
+      <p>毎日家族のために働いてくれている夫にはもちろん感謝しています。でも…私の幸福度を爆上げしてくれたのは夫よりバンちゃんだったというのは、ここだけの秘密です（笑）</p>
+    </div>
+  </section>
+
+  <!-- 5. 家計目線 -->
+  <section>
+    <h2>家計目線で考えてみると</h2>
+    <p>ドラム式洗濯機欲しいけど、高くてとても買えない！と口にしている人はすごく多いです。でも、毎日必ず使う洗濯機は高額だとしても買うべきものだと私は思っています。なぜなら、洗濯機は人間のように文句も言わず家事負担を軽くしてくれる、生活の質を上げてくれるものだからです。</p>
+
+    <!-- コスト試算 -->
+    <table class="cost-table">
+      <tr>
+        <th>項目</th>
+        <th>金額</th>
+      </tr>
+      <tr>
+        <td>購入金額（リサイクル・運搬込み）</td>
+        <td class="highlight-cell">192,180円</td>
+      </tr>
+      <tr>
+        <td>洗濯機の平均寿命</td>
+        <td>約10〜12年</td>
+      </tr>
+      <tr>
+        <td>1日あたりのコスト（10年計算）</td>
+        <td class="highlight-cell">約52円</td>
+      </tr>
+      <tr>
+        <td>1日あたりのコスト（12年計算）</td>
+        <td class="highlight-cell">約44円</td>
+      </tr>
+    </table>
+
+    <p>1日たった44〜52円で、洗濯・乾燥まで全自動。天候を気にせず、干す手間もなく、フワフワのタオルが毎日使える。この「時間」と「体力」と「精神的ゆとり」は、お金に換算できないほどの価値があります。</p>
+
+    <div class="highlight-box">
+      <p>💡 <strong>私が必要なのは、ダイヤの指輪やブランドのバッグや洋服より、ドラム式全自動洗濯機です！</strong><br><br>
+      何気なく買っているお菓子やビール、なんとなくの外食などをちょっと切り詰めて貯金しておけば、手の届かない買い物ではないと思っています。そのために毎月、家電購入準備貯金もしています。</p>
+    </div>
+  </section>
+
+  <!-- 6. 購入前に知っておきたいこと -->
+  <section>
+    <h2>🛒 購入を考えている方へ：知っておきたいこと</h2>
+    <p>私がバンちゃんを購入したときに調べたことと、今だからこそ伝えたいことをまとめました。</p>
+
+    <ul class="check-list">
+      <li>
+        <strong>① 開き方向は必ず確認して（これ重要！）</strong>
+        左開き・右開きは設置場所によって決まります。洗濯機の<em>右側にスペースがあれば左開き（L）</em>、<em>左側にスペースがあれば右開き（R）</em>が使いやすいです。購入後に「開けにくい！」とならないよう、事前に確認を。
+      </li>
+      <li>
+        <strong>② 搬入経路も採寸しておいて</strong>
+        玄関・廊下・ドアの幅も事前に計測を。大型ドラム式は意外と大きく、搬入できないケースも。
+      </li>
+      <li>
+        <strong>③ 容量は大きめがおすすめ</strong>
+        家族の人数×1.5kgが目安。5人家族なら最低7.5kg、余裕を持つなら12kgがおすすめです。
+      </li>
+      <li>
+        <strong>④ お得な買い時は新モデル発売前後</strong>
+        パナソニックLXシリーズは毎年10月頃に新モデルが発売されます。その直前（8〜9月）に旧モデルが値下がりします。私がバンちゃんを192,180円で購入できたのもまさにこのタイミングでした。
+      </li>
+      <li>
+        <strong>⑤ 右開きモデルは早めに動いて</strong>
+        右開きモデルは人気が高く、新モデル発売前に在庫がなくなることがあります。欲しいモデルが決まったら早めの購入をおすすめします。
+      </li>
+      <li>
+        <strong>⑥ 部品不足・供給不安は今のところ心配なし</strong>
+        エアコンの2027年問題のような深刻な供給問題は洗濯機には今のところありません。ただし円安や値上がりの傾向は続いているので、欲しいと思ったタイミングで動くのが賢明です。
+      </li>
+    </ul>
+
+    <div class="warning-box">
+      <strong>⚠️ ポイント活用もお忘れなく</strong><br>
+      購入前にポイントサイト（ハピタスなど）経由での購入や、クレジットカードのポイント還元も確認しましょう。大きな買い物ほどポイントの差が大きくなります。
+    </div>
+  </section>
+
+  <!-- 7. 現行モデル紹介 -->
+  <section>
+    <h2>今買うならこのモデル</h2>
+    <p>バンちゃん（NA-LX125BL）の後継にあたる現行モデルをご紹介します。バンちゃんからさらに進化し、洗剤の自動投入機能（トリプル自動投入）が標準搭載されました。</p>
+
+    <div class="product-card">
+      <div class="product-card-header">
+        <div class="badge">2025年10月発売・最新モデル</div>
+        <h3>パナソニック ななめドラム洗濯乾燥機<br>NA-LX125EL-W（左開き）/ NA-LX125ER-W（右開き）</h3>
+      </div>
+      <div class="product-card-body">
+        <div class="product-specs">
+          <div class="spec-item">
+            <div class="spec-label">洗濯容量</div>
+            <div class="spec-value">12.0 kg</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">乾燥容量</div>
+            <div class="spec-value">6.0 kg</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">乾燥方式</div>
+            <div class="spec-value">ヒートポンプ式</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">自動投入</div>
+            <div class="spec-value">トリプル対応</div>
+          </div>
+        </div>
+        <div class="price-display">
+          <div>
+            <div class="price-label">実勢価格（目安）</div>
+            <div class="price-value">276,800円〜</div>
+          </div>
+          <div style="text-align:right">
+            <div class="price-note">メーカー定価</div>
+            <div style="font-size:15px; color:var(--text-light);">318,780円</div>
+          </div>
+        </div>
+
+        <!-- アフィリエイトリンク（要差し替え） -->
+        <a href="https://www.amazon.co.jp/dp/B0FQJ733DX" class="btn-amazon" target="_blank" rel="nofollow noopener">
+          🛒 Amazon で左開き（EL）を見る
+        </a>
+        <a href="https://www.amazon.co.jp/dp/B0FQHXVH79" class="btn-amazon-r" target="_blank" rel="nofollow noopener">
+          🛒 Amazon で右開き（ER）を見る
+        </a>
+        <p class="affiliate-note">※ リンクはAmazonアソシエイトリンクに差し替えてください</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- まとめ -->
+  <div class="summary-box">
+    <h2>まとめ：バンちゃんへの感謝を込めて</h2>
+    <p>もしまだドラム式を使っていなくて、毎日家事に追われて心に余裕がなくなっているパパさんやママさんに強くおすすめしたいです。</p>
+    <p>スマホ・ネット回線の見直し、保険の見直し、固定費を見直してみると意外な見落としているムダがあるものです。私は高額でも自分に絶対必要だ！と思うものにはお金を使うようにしています。</p>
+    <div class="final-quote">
+      みなさんも、ぜひ自分の幸福度を上げる買い物をしてください。<br>
+      バンちゃんは今日も、私の代わりにタオルを洗濯して、乾燥してくれています。🩹
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <p>© 2024 ぴかりんごの小部屋 &nbsp;|&nbsp; <a href="#">トップへ戻る</a></p>
+  <p style="margin-top:8px; font-size:11px;">※本記事にはAmazonアソシエイトのリンクが含まれています。</p>
+</footer>
+
+</body>
+</html>

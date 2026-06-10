@@ -1,0 +1,158 @@
+
+<style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.wrap{padding:1rem 0}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:1.25rem;font-size:12px;color:var(--color-text-secondary)}
+.legend-item{display:flex;align-items:center;gap:5px}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.tbl-wrap{overflow-x:auto;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg)}
+table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
+colgroup col:first-child{width:155px}
+colgroup col{width:125px}
+thead tr:first-child th{font-size:11px;font-weight:500;padding:10px 12px 4px;border-bottom:none;text-align:center}
+thead tr:first-child th:first-child{text-align:left}
+thead tr:last-child th{font-size:12px;font-weight:500;color:var(--color-text-primary);padding:6px 12px 10px;border-bottom:0.5px solid var(--color-border-tertiary);text-align:center}
+thead tr:last-child th:first-child{text-align:left}
+.net-head{background:#E6F1FB;color:#0C447C}
+.taimen-head{background:#FAEEDA;color:#633806}
+tbody tr td{padding:10px 12px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:middle;text-align:center;color:var(--color-text-primary)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr td:first-child{text-align:left;font-weight:500;font-size:12px;color:var(--color-text-secondary)}
+.cat-row td{background:var(--color-background-secondary);font-size:11px;font-weight:500;color:var(--color-text-tertiary);letter-spacing:0.04em;padding:5px 12px;text-align:left}
+.badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap}
+.free{background:#EAF3DE;color:#27500A}
+.paid{background:#FCEBEB;color:#791F1F}
+.partial{background:#FAEEDA;color:#633806}
+.na{background:#F1EFE8;color:#5F5E5A}
+.rec-sbi{display:inline-block;background:#E6F1FB;color:#0C447C;font-size:10px;font-weight:500;padding:2px 7px;border-radius:var(--border-radius-md);margin-bottom:4px}
+.rec-rakuten{display:inline-block;background:#FCEBEB;color:#791F1F;font-size:10px;font-weight:500;padding:2px 7px;border-radius:var(--border-radius-md);margin-bottom:4px}
+.note-section{margin-top:1.25rem;border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem}
+.note-title{font-size:12px;font-weight:500;color:var(--color-text-secondary);margin-bottom:10px}
+.note-item{font-size:12px;color:var(--color-text-secondary);line-height:1.7;padding:5px 0;border-bottom:0.5px solid var(--color-border-tertiary)}
+.note-item:last-child{border-bottom:none;padding-bottom:0}
+.note-label{font-weight:500;color:var(--color-text-primary)}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">新NISA口座 証券会社手数料比較表（SBI・楽天・マネックス・野村）2026年5月現在</h2>
+
+<div class="legend">
+  <div class="legend-item"><div class="dot" style="background:#639922"></div>無料</div>
+  <div class="legend-item"><div class="dot" style="background:#BA7517"></div>条件付き / 一部有料</div>
+  <div class="legend-item"><div class="dot" style="background:#A32D2D"></div>有料</div>
+  <div class="legend-item"><div class="dot" style="background:#888780"></div>取扱なし</div>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<colgroup>
+  <col><col><col><col><col>
+</colgroup>
+<thead>
+<tr>
+  <th></th>
+  <th colspan="3" class="net-head">ネット証券</th>
+  <th class="taimen-head">対面証券</th>
+</tr>
+<tr>
+  <th></th>
+  <th>SBI証券<br><span class="rec-sbi">おすすめ</span></th>
+  <th>楽天証券<br><span class="rec-rakuten">おすすめ</span></th>
+  <th>マネックス証券</th>
+  <th>野村証券</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="cat-row"><td colspan="5">国内株式（成長投資枠）</td></tr>
+<tr>
+  <td>売買手数料</td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge paid">有料</span><br><small style="color:var(--color-text-secondary);font-size:10px">20万以下2,860円〜</small></td>
+</tr>
+<tr>
+  <td>単元未満株（1株〜）</td>
+  <td><span class="badge free">対応・無料</span></td>
+  <td><span class="badge partial">スプレッドあり</span></td>
+  <td><span class="badge free">対応・無料</span></td>
+  <td><span class="badge na">非対応</span></td>
+</tr>
+
+<tr class="cat-row"><td colspan="5">米国株式（成長投資枠）</td></tr>
+<tr>
+  <td>売買手数料</td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge na">取扱なし</span></td>
+</tr>
+
+<tr class="cat-row"><td colspan="5">投資信託</td></tr>
+<tr>
+  <td>つみたて枠・購入手数料</td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+</tr>
+<tr>
+  <td>成長枠・購入手数料</td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge free">無料</span></td>
+  <td><span class="badge partial">銘柄による</span></td>
+</tr>
+<tr>
+  <td>取扱本数（つみたて枠）</td>
+  <td style="font-weight:500;color:#27500A">約250本</td>
+  <td style="font-weight:500;color:#27500A">約250本</td>
+  <td style="font-weight:500;color:#27500A">約250本</td>
+  <td style="color:#791F1F">約30本</td>
+</tr>
+
+<tr class="cat-row"><td colspan="5">クレカ積立</td></tr>
+<tr>
+  <td>対応カード</td>
+  <td style="font-size:12px">三井住友カード<br>（NL / ゴールドNL）</td>
+  <td style="font-size:12px">楽天カード<br>（各種）</td>
+  <td style="font-size:12px">マネックスカード</td>
+  <td><span class="badge na">非対応</span></td>
+</tr>
+<tr>
+  <td>無料カード還元率</td>
+  <td>0.5%</td>
+  <td>0.5〜1.0%</td>
+  <td>1.1%</td>
+  <td><span class="badge na">—</span></td>
+</tr>
+<tr>
+  <td>ゴールドカード還元率</td>
+  <td>最大1.0%<br><small style="color:var(--color-text-secondary);font-size:10px">※備考①参照</small></td>
+  <td>最大1.0%<br><small style="color:var(--color-text-secondary);font-size:10px">※備考②参照</small></td>
+  <td><span class="badge na">—</span></td>
+  <td><span class="badge na">—</span></td>
+</tr>
+<tr>
+  <td>投信保有ポイント</td>
+  <td><span class="badge free">付与あり</span></td>
+  <td><span class="badge free">付与あり</span></td>
+  <td><span class="badge free">付与あり</span></td>
+  <td><span class="badge na">なし</span></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="note-section">
+  <div class="note-title"><i class="ti ti-info-circle" style="font-size:14px;vertical-align:-2px;margin-right:4px" aria-hidden="true"></i>備考</div>
+  <div class="note-item"><span class="note-label">① SBI × ゴールドNL：</span>入会初年度は1.0%。2年目以降は前年のカード利用金額により変動（100万円以上→1.0%、10万円以上→0.75%、10万円未満→0%）。なお積立金額はカード年間利用金額の集計対象外。</div>
+  <div class="note-item"><span class="note-label">② 楽天 × ゴールドカード：</span>楽天ゴールドカード（年会費2,200円）は0.75%、楽天プレミアムカード（年会費11,000円）は1.0%。カードの種類により固定。</div>
+  <div class="note-item"><span class="note-label">③ SBI × プラチナプリファード：</span>年会費33,000円。前年利用500万円以上で3.0%、300万円以上で2.0%、300万円未満で1.0%。一般家庭では現実的でない水準。</div>
+  <div class="note-item"><span class="note-label">④ 無料カード同士の比較：</span>三井住友NL（0.5%）と楽天カード（0.5〜1.0%）では、楽天カードが有利な場合もある。「最大3.0%」はプラチナプリファード利用時のみ。</div>
+  <div class="note-item"><span class="note-label">⑤ Olive口座をお持ちの方：</span>SBI証券との連携口座（Olive）の円普通預金残高が100万円以上の場合、クレカ積立のポイント付与率がさらに最大＋0.5%アップ。ゴールドNLなら条件次第で最大1.5%になる場合がある。ただしOlive口座は金融商品の勧誘が増える場合があるため、開設は慎重に検討を。</div>
+  <div class="note-item"><span class="note-label">⑥ 共通事項：</span>つみたて投資枠の購入手数料は法令により全社無料。2026年5月現在の情報。手数料・還元率は予告なく変更される場合があります。</div>
+</div>
+</div>

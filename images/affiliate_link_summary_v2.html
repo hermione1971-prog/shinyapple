@@ -1,0 +1,98 @@
+
+<style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.wrap{padding:1rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--color-background-primary);border-radius:var(--border-radius-lg);padding:1.25rem;display:flex;flex-direction:column;gap:12px}
+.rakuten-card{border:2px solid #E24B4A}
+.sbi-card{border:2px solid #185FA5}
+.card-header{display:flex;align-items:center;gap:10px}
+.icon-circle{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.rakuten-icon{background:#FCEBEB}
+.sbi-icon{background:#E6F1FB}
+.card-title{font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.card-subtitle{font-size:12px;color:var(--color-text-secondary);margin-top:1px}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;font-weight:500;padding:3px 8px;border-radius:20px}
+.tag-rakuten{background:#FCEBEB;color:#791F1F}
+.tag-sbi{background:#E6F1FB;color:#0C447C}
+.divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:0}
+.link-list{display:flex;flex-direction:column;gap:8px}
+.link-btn{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:var(--border-radius-md);font-size:13px;font-weight:500;text-decoration:none;border:0.5px solid var(--color-border-secondary);color:var(--color-text-primary);background:var(--color-background-secondary)}
+.link-btn:hover{background:var(--color-background-tertiary)}
+.link-label{display:flex;align-items:center;gap:8px}
+.link-type{font-size:10px;font-weight:500;padding:2px 6px;border-radius:4px}
+.type-sec{background:#EAF3DE;color:#27500A}
+.type-card{background:#FAEEDA;color:#633806}
+.type-bank{background:#E1F5EE;color:#085041}
+.arrow{font-size:14px;color:var(--color-text-tertiary)}
+.note{font-size:11px;color:var(--color-text-secondary);margin-top:1.25rem;line-height:1.7}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">楽天コンボ・SBIコンボ別アフィリエイトリンクまとめ</h2>
+
+<div class="grid">
+
+<div class="card rakuten-card">
+  <div class="card-header">
+    <div class="icon-circle rakuten-icon"><i class="ti ti-building-store" style="color:#A32D2D" aria-hidden="true"></i></div>
+    <div>
+      <div class="card-title">楽天経済圏の方はこちら</div>
+      <div class="card-subtitle">楽天カードで積立 → 楽天ポイントを貯める</div>
+    </div>
+  </div>
+  <div class="tag-row">
+    <span class="tag tag-rakuten">楽天カード 0.5〜1.0%還元</span>
+    <span class="tag tag-rakuten">楽天銀行と連携でお得</span>
+  </div>
+  <hr class="divider">
+  <div class="link-list">
+    <a class="link-btn" href="#">
+      <span class="link-label"><span class="link-type type-sec">証券</span>楽天証券 口座開設</span>
+      <span class="arrow"><i class="ti ti-external-link" aria-hidden="true"></i></span>
+    </a>
+    <a class="link-btn" href="#">
+      <span class="link-label"><span class="link-type type-card">カード</span>楽天カード 申込み</span>
+      <span class="arrow"><i class="ti ti-external-link" aria-hidden="true"></i></span>
+    </a>
+    <a class="link-btn" href="#">
+      <span class="link-label"><span class="link-type type-bank">銀行</span>楽天銀行 口座開設</span>
+      <span class="arrow"><i class="ti ti-external-link" aria-hidden="true"></i></span>
+    </a>
+  </div>
+</div>
+
+<div class="card sbi-card">
+  <div class="card-header">
+    <div class="icon-circle sbi-icon"><i class="ti ti-building-bank" style="color:#0C447C" aria-hidden="true"></i></div>
+    <div>
+      <div class="card-title">三井住友経済圏の方はこちら</div>
+      <div class="card-subtitle">三井住友NLカードで積立 → Vポイントを貯める</div>
+    </div>
+  </div>
+  <div class="tag-row">
+    <span class="tag tag-sbi">三井住友NL 0.5〜1.0%還元</span>
+    <span class="tag tag-sbi">住信SBIネット銀行と連携</span>
+  </div>
+  <hr class="divider">
+  <div class="link-list">
+    <a class="link-btn" href="#">
+      <span class="link-label"><span class="link-type type-sec">証券</span>SBI証券 口座開設</span>
+      <span class="arrow"><i class="ti ti-external-link" aria-hidden="true"></i></span>
+    </a>
+    <a class="link-btn" href="#">
+      <span class="link-label"><span class="link-type type-card">カード</span>三井住友カード（NL）申込み</span>
+      <span class="arrow"><i class="ti ti-external-link" aria-hidden="true"></i></span>
+    </a>
+    <a class="link-btn" href="#">
+      <span class="link-label"><span class="link-type type-bank">銀行</span>住信SBIネット銀行 口座開設</span>
+      <span class="arrow"><i class="ti ti-external-link" aria-hidden="true"></i></span>
+    </a>
+  </div>
+</div>
+
+</div>
+
+<p class="note">※ 各リンクはアフィリエイトリンクです。リンク経由でお申込みいただいても、皆さんのご負担は一切増えません。本ブログの運営費に充てさせていただいております。2026年5月現在の情報です。</p>
+</div>
