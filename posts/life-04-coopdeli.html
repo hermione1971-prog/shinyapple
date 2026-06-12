@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<!--
-★★★ この記事は下書きです（もしもアフィリエイト承認待ち） ★★★
-公開前にやること：
- 1. 冒頭のPR表記のコメントアウトを外す（日本語版）
- 2. 記事末尾のCTAボタンのコメントアウトを外し、AFFILIATE_LINK_HERE を実際のリンクに差し替える
- 3. 公開日（2026.06.12 になっている箇所）を実際の公開日に更新する
- 4. index.html の記事グリッドにカードを追加する
- 5. 全ページのサイドバー「新着記事」を最新3件に更新する
- 6. git push ＆ wrangler デプロイ
--->
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -108,10 +98,6 @@
 
       <!-- ===== 日本語本文 ===== -->
       <div class="lj">
-
-        <!-- ★承認後にコメントアウトを外す★
-        <p style="font-size:13px;color:#6a5848;background:#f5f0e8;border-radius:6px;padding:.5rem .9rem;margin:1rem 0">※ この記事には広告（アフィリエイトリンク）が含まれています。</p>
-        -->
 
         <div class="conclusion-box" style="margin:1rem 0 1.5rem">
           <div class="con-title">📋 この記事でわかること</div>
@@ -243,18 +229,6 @@
         <p>時間をお金で買う！！という発想を持つことが大切だと私は感じています。節約もすごく大切である一方で、実は、お金という目に見える資産にばかり目が行って、時間というかけがえのない資産を犠牲にしてしまってはやりたいことをする時間が減り、幸福度が上がらないと思うからです。</p>
 
         <p>あなたの時間はタダではありません。便利なサービスを上手に活用して、自分の時間を手に入れて豊かな人生にしたいものですね。</p>
-
-        <!-- ★★★ もしもアフィリエイト承認後にやること ★★★
-          1. 下のコメントアウトを外す
-          2. AFFILIATE_LINK_HERE を実際のアフィリエイトリンクに差し替える
-          3. 記事冒頭のPR表記のコメントアウトも外す
-        -->
-        <!--
-        <a href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener sponsored" class="btn-coop">
-          🥕 コープデリの資料請求（無料）はこちら
-        </a>
-        <p class="affiliate-note">※ アフィリエイトリンクを含みます</p>
-        -->
 
       </div>
       <!-- ===== 日本語本文 ここまで ===== -->
@@ -391,7 +365,7 @@
     <div class="sidebar-card">
       <h2 class="sidebar-title lj">プロフィール</h2>
       <h2 class="sidebar-title le" style="display:none">About me</h2>
-      <div class="about-avatar">🍎</div>
+      <img src="../images/profile-illustration.png" alt="ぴかりんごのイラスト" class="sidebar-avatar-img">
       <p class="about-name">ぴかりんご</p>
       <p class="about-name-en">Shiny Apple</p>
       <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
@@ -408,16 +382,16 @@
           <span style="display:inline-block;background:var(--purple-mid);color:#fff;font-size:12px;padding:6px 16px;border-radius:20px;">Amazonで見る →</span>
         </div>
       </a>
+      <p style="font-size:11px;color:#8a7f78;text-align:center;margin-top:8px;margin-bottom:0">※ Amazonアソシエイトのリンクを含みます</p>
     </div>
 
     <div class="sidebar-card">
       <h2 class="sidebar-title lj">新着記事</h2>
       <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
-      <!-- ★公開時に最新3件であることを確認する★ -->
       <ul class="popular-list">
-        <li><span class="popular-num">1</span><span class="lj">食材の宅配サービス『コープデリ』を私がおススメするその理由</span><span class="le" style="display:none">Why I Recommend Coopdeli, Japan's Co-op Grocery Delivery</span></li>
-        <li><span class="popular-num">2</span><span class="lj">楽天経済圏住人の私がAmazon Primeに根負けした話</span><span class="le" style="display:none">A Rakuten Loyalist's Amazon Prime Confession</span></li>
-        <li><span class="popular-num">3</span><span class="lj">家事嫌いの主婦がAudibleで人生変わった話</span><span class="le" style="display:none">How Audible Changed My Life as a Housewife</span></li>
+        <li><span class="popular-num">1</span><a href="life-04-coopdeli.html" class="lj" style="color:inherit;text-decoration:none">食材の宅配サービス『コープデリ』を私がおススメするその理由</a><a href="life-04-coopdeli.html" class="le" style="display:none;color:inherit;text-decoration:none">Why I Recommend Coopdeli, Japan's Co-op Grocery Delivery</a></li>
+        <li><span class="popular-num">2</span><a href="money-07-amazon-prime.html" class="lj" style="color:inherit;text-decoration:none">楽天経済圏住人の私がAmazon Primeに根負けした話</a><a href="money-07-amazon-prime.html" class="le" style="display:none;color:inherit;text-decoration:none">A Rakuten Loyalist's Amazon Prime Confession</a></li>
+        <li><span class="popular-num">3</span><a href="life-03-audible-review.html" class="lj" style="color:inherit;text-decoration:none">家事嫌いの主婦がAudibleで人生変わった話</a><a href="life-03-audible-review.html" class="le" style="display:none;color:inherit;text-decoration:none">How Audible Changed My Life as a Housewife</a></li>
       </ul>
     </div>
 
