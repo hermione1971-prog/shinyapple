@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!--
+★★★ この記事は下書きです（もしもアフィリエイト承認待ち） ★★★
+公開前にやること：
+ 1. 冒頭のPR表記のコメントアウトを外す（日本語版）
+ 2. 記事末尾のCTAボタンのコメントアウトを外し、AFFILIATE_LINK_HERE を実際のリンクに差し替える
+ 3. 公開日（2026.06.12 になっている箇所）を実際の公開日に更新する
+ 4. index.html の記事グリッドにカードを追加する
+ 5. 全ページのサイドバー「新着記事」を最新3件に更新する
+ 6. git push ＆ wrangler デプロイ
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="生協の宅配コープデリを4年以上利用している主婦の本音レビュー。割高でも利用すべき理由、アプリ注文の進化、わが家の愛用品リスト、スーパーとの賢い併用術まで実体験をもとに紹介します。">
+<meta name="keywords" content="コープデリ, 生協 宅配, 食材宅配, コープみらい, 共働き 食材調達, 時短, 買い物 時短, 主婦">
+<meta property="og:title" content="食材の宅配サービス『コープデリ』を私がおススメするその理由 | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="割高なはずなのに食費が減った？コープデリを4年以上使い続ける主婦が、その理由と賢い使い方を本音で語ります。">
+<meta property="og:type" content="article">
+<title>食材の宅配サービス『コープデリ』を私がおススメするその理由 | ぴかりんご / Shiny Apple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ── 心の声ボックス ── */
+.voice-box{background:#f5f0e8;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.voice-box p{font-size:14px;color:#6a5848;line-height:2;margin:0;font-style:italic}
+/* ── メモボックス ── */
+.memo-box{background:#f5f0fb;border:1.5px solid #b0a0d0;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.memo-box .memo-title{font-weight:700;color:#5a3888;margin-bottom:.5rem;font-size:14px}
+.memo-box p{font-size:14px;color:#3a2c20;line-height:1.9;margin:0}
+/* ── まとめボックス ── */
+.conclusion-box{background:#f5f0fb;border:1.5px solid #b0a0d0;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.conclusion-box .con-title{font-weight:700;color:#5a3888;margin-bottom:.75rem;font-size:14px}
+.conclusion-box ul{margin:0;padding-left:1.2rem}
+.conclusion-box li{font-size:14px;color:#3a2c20;line-height:1.9}
+/* ── 愛用品リスト ── */
+.item-list{list-style:none;margin:1.5rem 0;padding:0}
+.item-list li{background:#faf7f2;border:1.5px solid #d0c8e0;border-radius:10px;padding:12px 16px;margin-bottom:10px;font-size:14px;line-height:1.9;color:#3a2c20}
+.item-list li strong{color:#5a3888}
+/* ── 地域テーブル ── */
+.region-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:14px}
+.region-table th{background:#7ab648;color:#fff;padding:10px 12px;text-align:left;font-weight:700}
+.region-table td{background:#faf7f2;border:1px solid #d0c8e0;padding:10px 12px;color:#3a2c20}
+/* ── 手数料リンク ── */
+.fee-links{margin:1rem 0;padding-left:1.2rem}
+.fee-links li{font-size:13px;line-height:2;color:#3a2c20}
+/* ── コープデリCTAボタン ── */
+.btn-coop{display:block;background:#7ab648;color:#fff;text-decoration:none;text-align:center;padding:14px 20px;border-radius:10px;font-weight:700;font-size:15px;margin:1.5rem 0;transition:opacity .2s}
+.btn-coop:hover{opacity:.85}
+.affiliate-note{font-size:11px;color:#8a7f78;text-align:center;margin-top:-10px}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067408047094320" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">日常</span>
+  <span class="le" style="display:none">Daily life</span>
+  <span>›</span>
+  <span class="lj">コープデリをおススメする理由</span>
+  <span class="le" style="display:none">Why I Recommend Coopdeli</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag life lj">日常</span>
+        <span class="post-tag life le" style="display:none">Daily life</span>
+        <span class="post-date">2026.06.12</span>
+      </div>
+      <h1 class="article-title lj">食材の宅配サービス『コープデリ』を<br>私がおススメするその理由</h1>
+      <h1 class="article-title le" style="display:none">Why I Recommend Coopdeli, Japan's Co-op Grocery Delivery</h1>
+    </div>
+
+    <div class="article-body">
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <!-- ★承認後にコメントアウトを外す★
+        <p style="font-size:13px;color:#6a5848;background:#f5f0e8;border-radius:6px;padding:.5rem .9rem;margin:1rem 0">※ この記事には広告（アフィリエイトリンク）が含まれています。</p>
+        -->
+
+        <div class="conclusion-box" style="margin:1rem 0 1.5rem">
+          <div class="con-title">📋 この記事でわかること</div>
+          <ul>
+            <li>生協の宅配をやめていた私が再開した理由</li>
+            <li>アプリ注文でこんなに便利になっていた！</li>
+            <li>ぴかりんご家の愛用品リスト</li>
+            <li>スーパーとの賢い併用術</li>
+            <li>対象地域・手数料・出資金のまとめ</li>
+          </ul>
+        </div>
+
+        <h2>生協の宅配、こんなイメージありませんか？</h2>
+
+        <div class="voice-box">
+          <p>「生協は、スーパーよりかなり割高だしなー」</p>
+          <p>「毎週注文するのが面倒！」</p>
+          <p>「毎週同じ時間に配達を待つのは嫌だなー」</p>
+          <p>「欲しいものがあるときとない時があるんだよね...」</p>
+        </div>
+
+        <p>生協などの食材の宅配サービスの利用に消極的になる理由って、けっこうあると思います。</p>
+
+        <p>私の子供たち2人が小さい頃は、夫が中の人（生協の職員）だったので、夫が持って帰ってきてくれるスタイルで、非常に楽で助かっていました。（笑）</p>
+
+        <p>私は、夫が退職したのを機に生協の利用をずっとしていなかったのですが、高齢の母との同居開始を機にコープデリの利用を再開しました。</p>
+
+        <p>私は子供たちが幼稚園の頃からパートで働いていましたが、仕事をしながらの食材の調達は骨の折れる家事の1つです。共働きが当たり前になった昨今、多くのパパさん、ママさんも毎日大変な思いをされているのではないでしょうか？</p>
+
+        <h2>注文システムがすごく進化していた！</h2>
+
+        <p>私はかなり長い間、生協の利用をやめていましたが、利用をやめている間に注文システムはすごく進化していました。それを知ったのは、職場のパート仲間が休憩中にスマホのアプリで食材の注文をしているのを見た時です。</p>
+
+        <p>私が利用していた頃は、カタログのチラシを1枚ずつめくっては、OCR注文書に注文番号や注文数を書き込むスタイルだったため、すごく驚きました。（そんなことで驚くなんて、過去からタイムトリップしてきた原始人が車を見た時みたいと笑ってしまうかもしれませんが、そんなに楽なシステムになっているんだ〜と感動しちゃいました。）</p>
+
+        <p>以前コープデリを利用していたときによく感じていたことは、何を注文していたのかを配達までに忘れてしまうことでした。気まぐれにスーパーに買い物に行った時に生協で注文してあったことを忘れていて購入してしまい、冷蔵庫の野菜室でキャベツが2個幅をきかせている！なんてこともよくありました。</p>
+
+        <p>その点、今はアプリで今週何が届くのか？何が欠品して届かないのか？を確認できるので、スーパーに行った時もアプリで購入していないものを確認しながら足りないものだけ購入出来ちゃいます。</p>
+
+        <p>あと、アプリが導入されて便利になったなあと思うことは、注文出来る期間が長いことです。注文書での注文の場合は、注文書を食材の配達時までに完成させておかなければなりませんが、アプリの締切時間は配達日の翌々日の午前2時までと余裕があります。</p>
+
+        <p>仕事の休憩時間にさっと注文することが出来て、購入金額も計算されているので、予算を決めて購入総額を抑えるのも簡単に出来ます。</p>
+
+        <h2>割高なはずなのに食費が抑えられた理由</h2>
+
+        <p>コープデリは、確かに割高ですが、スーパーに行くとたくさんの魅力的な特売品やスイーツなどを目にすることが多く、必要でないものを買いすぎてしまうということがよく起こります。そのため、割高なはずなのにコープデリの利用を始めてからの方が余計な買い物をすることがなくなり、食費が抑えられるようになりました。</p>
+
+        <p>小さいお子さんを連れて、買い物をするのは大変ですし、お菓子コーナーでのお子さんの買って買って攻撃の洗礼を受けることも避けられる！というのも、生協利用の大きなメリットかもしれませんね。（笑）</p>
+
+        <p>ぴかりんご家は、2人の子供がすでに成人していますが、母も含めた家族5人分の食材の調達は、やっぱり大変なので、生協を4年以上ずっと利用しています。最近はスーパーとの併用になっていますが、面倒な買い物には、週1回だけ足りないものを購入に行くだけで間に合っているので、時間と労力の節約になっており、非常に助かっています。</p>
+
+        <h2>ぴかりんご家の愛用品リスト</h2>
+
+        <p>ぴかりんごがよく利用している食材は以下の通りです。</p>
+
+        <ul class="item-list">
+          <li><strong>レンジでコロちゃんコロッケ・チキンステーキ・レンジで肉汁ハンバーグ・レンジでロースカツ丼の具</strong><br>レンジでチンするだけで、メインディッシュが出来上がる！</li>
+          <li><strong>野菜たっぷり和風ドレッシング・焙煎ごまたっぷりドレッシング</strong><br>コープデリでしか買えないのですが、いつも愛用しています。</li>
+          <li><strong>卵・牛乳・ジャガイモ・にんじん・キャベツ</strong><br>生協が提供しているという安心感があります。</li>
+          <li><strong>モーニングクロワッサン</strong><br>ロングライフパンなので常備しておくと手軽で便利です。</li>
+          <li><strong>ほっけ2枚おろし（4枚入り）</strong><br>冷凍なので、明日食べよう！と思ったときに冷蔵庫に移しておけば解凍出来ます。</li>
+          <li><strong>鶏もも肉</strong><br>ひと固まりずつ真空パックされているので常備しておくと、カレーやシチュー、煮物に利用できる等応用がききます。</li>
+          <li><strong>鶏肉パラパラミンチ</strong><br>スーパーで購入するものと違って、ひき肉がパラパラの状態で冷凍されているので、少しずつ使うことも出来て、非常に便利です。</li>
+          <li><strong>コープ焼きそば</strong><br>お値段がリーズナブルです。</li>
+          <li><strong>しょうゆ・ケチャップ・マヨネーズ・中濃ソース・合わせみそ</strong><br>プライベートブランドならではのリーズナブルな価格・安心感・味の良さから利用しています。</li>
+          <li><strong>冷凍かぼちゃ・冷凍インゲン・冷凍和風野菜・揚げなす</strong><br>常備しておけばいつでも使えて、生のものを購入するときと違って、傷むことを気にせずに好きな時に使えるので便利です。</li>
+          <li><strong>ミニワッフルドッグ（チーズ）</strong><br>割高ですが、とてもおいしいので、朝食やお子さんのおやつにぴったりです。ぴかりんご家は毎週のように購入しているので、定期的に特別割引クーポンを発行してもらうことが多いです。</li>
+          <li><strong>小松菜・ちりめんじゃこ</strong><br>常備菜として、生ふりかけを作っておくと家族の栄養面の手助けになり、なんか物足りないメニューのときにも活躍します。</li>
+          <li><strong>国産大豆絹ごし豆腐（充填）</strong><br>とにかく長持ちするのが魅力的！もう一品欲しいときに冷奴にしたり、味噌汁にしたり、ダイエット中のおやつにしたりしています。</li>
+        </ul>
+
+        <h2>生協ならではの安心ポイント</h2>
+
+        <p>生協の利用でポイントが貯まります。購入金額に応じて、ポイント付与率が上がるシステムです。あと、定期的に、よく利用する食材の特別割引クーポンが発行されることもあります。</p>
+
+        <p>ジャガイモの皮を剥いてみたら、中が傷んでいた！なんていう時に電話1本ですぐに返金対応に応じてくれることも生協の良いところだと思います。スーパーの場合も応じてくれるとは思いますが、店員さんをつかまえるまでに一苦労、野菜1つのためにわざわざ行かなければいけないのも面倒だし、細かい客だと嫌な顔されたら嫌だなーなんて思って泣き寝入りなことがほとんどなので、そういうところは生協のありがたいところです。</p>
+
+        <p>もちろん、悪用するのはダメです！そういうクレーム客のブラックリストがあるとかないとか・・・。まあ、そんな方はいらっしゃらないと思いますが。（笑）</p>
+
+        <p>旅行や家の事情で利用を休止したい時も、電話1本で利用を止められます。</p>
+
+        <h2>スーパーとの賢い併用術</h2>
+
+        <p>私の近所のスーパーは肉や魚が安くて品質が良いと評判なので、定期的に購入していますが、生協とスーパーそれぞれの良いとこどりをしています。</p>
+
+        <div class="memo-box">
+          <div class="memo-title">💡 ぴかりんご流・使い分けルール</div>
+          <p><strong>すぐに使いたい時はスーパー、いつ使うか未定の時は生協</strong>が良いです。</p>
+        </div>
+
+        <p>コープデリの肉や魚は賞味期限が長めの調理済み品や完全冷凍品が届くので、急に外食になった時などでは、消費期限を気にしないで良いので楽です。その一方で解凍の手間はありますが、食材を無駄にすることなく急なメニュー変更も出来たりするので、ものすごく便利だと感じています。</p>
+
+        <h2>対象地域・手数料・出資金</h2>
+
+        <p>コープデリの対象地域と、各地域の会員生協は以下の通りです。</p>
+
+        <table class="region-table">
+          <tr><th>都県</th><th>会員生協</th></tr>
+          <tr><td>東京都・埼玉県・千葉県</td><td>コープみらい</td></tr>
+          <tr><td>茨城県</td><td>いばらきコープ</td></tr>
+          <tr><td>栃木県</td><td>とちぎコープ</td></tr>
+          <tr><td>群馬県</td><td>コープぐんま</td></tr>
+          <tr><td>長野県</td><td>コープながの</td></tr>
+          <tr><td>新潟県</td><td>コープにいがた</td></tr>
+        </table>
+
+        <p style="font-size:13px;color:#6a5848">※ 神奈川県・静岡県・山梨県は「おうちCO-OP」という別のサービスのエリアになります。</p>
+
+        <p>手数料は地域や1回の利用金額によって異なります。ちなみに私の住む埼玉県では、1回の利用金額が6,000円（税別）以上で手数料が無料になります（2026年6月時点）。お住まいの地域の手数料は、公式サイトでご確認ください。</p>
+
+        <ul class="fee-links">
+          <li><a href="https://efriends.coopdeli.jp/look/shipping/" target="_blank" rel="noopener">東京都</a> ／ <a href="https://efriends.coopdeli.jp/look/shipping/saitama.php" target="_blank" rel="noopener">埼玉県</a> ／ <a href="https://efriends.coopdeli.jp/look/shipping/chiba.php" target="_blank" rel="noopener">千葉県</a> ／ <a href="https://efriends.coopdeli.jp/look/shipping/ibaraki.php" target="_blank" rel="noopener">茨城県</a></li>
+          <li><a href="https://efriends.coopdeli.jp/look/shipping/tochigi.php" target="_blank" rel="noopener">栃木県</a> ／ <a href="https://efriends.coopdeli.jp/look/shipping/gunma.php" target="_blank" rel="noopener">群馬県</a> ／ <a href="https://efriends.coopdeli.jp/look/shipping/nagano.php" target="_blank" rel="noopener">長野県</a> ／ <a href="https://efriends.coopdeli.jp/look/shipping/niigata.php" target="_blank" rel="noopener">新潟県</a></li>
+        </ul>
+
+        <div class="memo-box">
+          <div class="memo-title">💡 加入時の出資金について</div>
+          <p>生協に加入する際には出資金（東京・千葉・埼玉・茨城・栃木は1口500円から、群馬・長野・新潟は1口1,000円から）が必要です。これは生協の運営資金として預けるお金で、<strong>脱退する時には返却されます</strong>。</p>
+        </div>
+
+        <h2>それでも私がおススメする一番の理由</h2>
+
+        <p>そして、何よりも、割高であっても利用すべき！！だと、ぴかりんごが強く主張する理由は、買い物の手間の削減、簡単調理品の利用でたくさんの時間を節約出来ることです。</p>
+
+        <p>小さいお子さんがいるご家庭には特にメリットが大きいコープデリの利用ですが、私のように子育てがひと段落している主婦の方にも是非お勧めしたいです。</p>
+
+        <p>人生は、一度きりです。ただ生活に追われるだけで日々が過ぎてしまって、自分のやりたいことに割くための時間が確保できないのでは、何のために生きているのかわからなくなると思うからです。</p>
+
+        <p>時間をお金で買う！！という発想を持つことが大切だと私は感じています。節約もすごく大切である一方で、実は、お金という目に見える資産にばかり目が行って、時間というかけがえのない資産を犠牲にしてしまってはやりたいことをする時間が減り、幸福度が上がらないと思うからです。</p>
+
+        <p>あなたの時間はタダではありません。便利なサービスを上手に活用して、自分の時間を手に入れて豊かな人生にしたいものですね。</p>
+
+        <!-- ★★★ もしもアフィリエイト承認後にやること ★★★
+          1. 下のコメントアウトを外す
+          2. AFFILIATE_LINK_HERE を実際のアフィリエイトリンクに差し替える
+          3. 記事冒頭のPR表記のコメントアウトも外す
+        -->
+        <!--
+        <a href="AFFILIATE_LINK_HERE" target="_blank" rel="noopener sponsored" class="btn-coop">
+          🥕 コープデリの資料請求（無料）はこちら
+        </a>
+        <p class="affiliate-note">※ アフィリエイトリンクを含みます</p>
+        -->
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <div class="conclusion-box" style="margin:1rem 0 1.5rem">
+          <div class="con-title">📋 What you'll find in this article</div>
+          <ul>
+            <li>Why I came back to co-op grocery delivery after years away</li>
+            <li>How much the ordering system has evolved</li>
+            <li>Our family's favorite Coopdeli products</li>
+            <li>How I combine the co-op with the supermarket</li>
+            <li>Coverage area, fees, and membership basics</li>
+          </ul>
+        </div>
+
+        <h2>The usual objections to co-op delivery</h2>
+
+        <div class="voice-box">
+          <p>"The co-op is so much pricier than the supermarket."</p>
+          <p>"Placing an order every week sounds like a chore."</p>
+          <p>"I don't want to wait for a delivery at the same time every week."</p>
+          <p>"Some weeks they have what I want, some weeks they don't..."</p>
+        </div>
+
+        <p>There are plenty of reasons to hesitate about grocery delivery services like Japan's co-ops — I get it.</p>
+
+        <p>When my two children were small, my husband actually worked for the co-op, so he simply brought our order home with him. Very convenient! (laughs)</p>
+
+        <p>After he left that job, I stopped using the co-op for years. What brought me back to Coopdeli was my elderly mother moving in with us.</p>
+
+        <p>I've worked part-time since my children were in kindergarten, and keeping the household stocked with groceries while working is one of the most tiring chores there is. With dual-income households now the norm in Japan, I imagine many parents feel the same way.</p>
+
+        <h2>The ordering system had evolved!</h2>
+
+        <p>During my long break from the co-op, the ordering system had quietly evolved. I found out when I saw a coworker placing her grocery order on a smartphone app during our lunch break.</p>
+
+        <p>Back in my day, you flipped through paper catalogs and wrote product codes and quantities onto an OCR order sheet. I was honestly amazed — like a time-traveler from the past seeing a car for the first time. (laughs)</p>
+
+        <p>One thing I remembered disliking about the co-op: forgetting what I had ordered before it arrived. I'd impulsively stop by the supermarket, buy a cabbage — and then discover two cabbages competing for space in the vegetable drawer.</p>
+
+        <p>Now the app shows exactly what's arriving this week and what's out of stock, so I can check it at the supermarket and buy only what's missing.</p>
+
+        <p>The ordering window is generous too: the app deadline is 2 a.m. two days after your delivery day, instead of having the paper sheet ready by delivery time. I can place my order during a work break, and since the running total is calculated for me, staying within budget is easy.</p>
+
+        <h2>Why my grocery bill went DOWN despite higher prices</h2>
+
+        <p>Yes, Coopdeli is pricier than the supermarket. But at the supermarket, all those tempting sale items and sweets lead to buying things you don't need. Since switching most of our shopping to Coopdeli, those impulse buys have disappeared — and our food spending has actually gone down.</p>
+
+        <p>And if you have small children: no more "buy it, buy it!" attacks in the snack aisle. (laughs)</p>
+
+        <p>Our two children are grown now, but feeding a household of five — including my mother — is still a big job. We've used the co-op for over four years, and these days one supermarket trip a week for top-ups is all we need.</p>
+
+        <h2>Our family favorites</h2>
+
+        <p>Some staples in our weekly order: microwave-ready croquettes, chicken steak, hamburg steak, and katsudon toppings (a main dish in minutes!); the co-op's own Japanese-style and roasted-sesame dressings; eggs, milk, and vegetables with the co-op's quality assurance; long-life croissants and silken tofu that keep for ages; flash-frozen hokke fish; vacuum-packed chicken thighs; loose-frozen ground chicken you can use little by little; frozen vegetables that never go bad in the drawer; and cheese mini waffle dogs, which are pricey but delicious — we buy them so often we regularly get discount coupons for them.</p>
+
+        <h2>The co-op peace of mind</h2>
+
+        <p>Purchases earn points, with better rates the more you spend, and discount coupons regularly arrive for items you buy often.</p>
+
+        <p>If you peel a potato and find it spoiled inside, one phone call gets you a refund — no awkward trip back to the store, no worrying about seeming like a difficult customer. (No abusing the system, of course!)</p>
+
+        <p>And if you're traveling or life gets complicated, one phone call pauses your deliveries.</p>
+
+        <h2>Smart combo: co-op + supermarket</h2>
+
+        <p>My local supermarket has well-priced, good-quality meat and fish, so I take the best of both worlds.</p>
+
+        <div class="memo-box">
+          <div class="memo-title">💡 My rule of thumb</div>
+          <p><strong>Supermarket for what I'll use right away; co-op for what I'll use someday.</strong></p>
+        </div>
+
+        <p>Coopdeli's meat and fish arrive as long-shelf-life prepared items or fully frozen, so a sudden change of dinner plans is no problem — nothing goes to waste.</p>
+
+        <h2>Coverage area, fees, and membership</h2>
+
+        <p>Coopdeli serves eight prefectures: Tokyo, Saitama, Chiba, Ibaraki, Tochigi, Gunma, Nagano, and Niigata. Delivery fees vary by region — in Saitama, where I live, orders over ¥6,000 (before tax) ship free (as of June 2026). Joining requires a small refundable investment (¥500–¥1,000) that comes back to you if you ever leave the co-op.</p>
+
+        <h2>The real reason I recommend it</h2>
+
+        <p>Above all, here is why I insist it's worth it even at a higher price: the time you save — on shopping trips and with easy-cook items — is enormous.</p>
+
+        <p>Life only happens once. If every day is consumed by just keeping the household running, with no time left for the things you actually want to do, what is it all for?</p>
+
+        <p><strong>Buying time with money</strong> — I've come to believe that mindset matters. Saving money is important, but if we sacrifice our irreplaceable time while staring only at the visible asset of money, our happiness doesn't grow.</p>
+
+        <p>Your time is not free. I hope you'll use convenient services wisely, win back your own hours, and make your life richer for it 🍎</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="life-02-work-caregiving.html">
+            <div class="post-img">🌿</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag life lj">日常</span>
+                <span class="post-tag life le" style="display:none">Daily life</span>
+                <span class="post-date">2026.05.20</span>
+              </div>
+              <p class="post-title lj">仕事と介護</p>
+              <p class="post-title le" style="display:none">Work and Caregiving</p>
+            </div>
+          </a>
+          <a class="post-card" href="money-07-amazon-prime.html">
+            <div class="post-img">📦</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.06.10</span>
+              </div>
+              <p class="post-title lj">楽天経済圏住人の私がAmazon Primeに根負けした話</p>
+              <p class="post-title le" style="display:none">A Rakuten Loyalist's Amazon Prime Confession</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <div class="sidebar-card lj">
+      <h2 class="sidebar-title">おすすめの本</h2>
+      <a href="https://amzn.to/49aEmCJ" target="_blank" rel="noopener sponsored" style="display:block;text-decoration:none;">
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;">
+          <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="【改訂版】本当の自由を手に入れる お金の大学" style="width:120px;border-radius:4px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+          <p style="font-size:13px;font-weight:bold;color:var(--text);margin-bottom:4px;line-height:1.5;">【改訂版】本当の自由を手に入れる<br>お金の大学</p>
+          <p style="font-size:12px;color:var(--text-light);margin-bottom:12px;">両＠リベ大学長 著</p>
+          <span style="display:inline-block;background:var(--purple-mid);color:#fff;font-size:12px;padding:6px 16px;border-radius:20px;">Amazonで見る →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
+      <!-- ★公開時に最新3件であることを確認する★ -->
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><span class="lj">食材の宅配サービス『コープデリ』を私がおススメするその理由</span><span class="le" style="display:none">Why I Recommend Coopdeli, Japan's Co-op Grocery Delivery</span></li>
+        <li><span class="popular-num">2</span><span class="lj">楽天経済圏住人の私がAmazon Primeに根負けした話</span><span class="le" style="display:none">A Rakuten Loyalist's Amazon Prime Confession</span></li>
+        <li><span class="popular-num">3</span><span class="lj">家事嫌いの主婦がAudibleで人生変わった話</span><span class="le" style="display:none">How Audible Changed My Life as a Housewife</span></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">日本の片隅から、日常のいろいろなことを。</p>
+  <p class="footer-sub le" style="display:none">From a quiet corner of Japan, writing about the many sides of everyday life.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
