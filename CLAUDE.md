@@ -52,7 +52,7 @@
 | 8 | posts/money-02-hoken-vs-nisa.html | 銀行に預けておくだけでは危険？！―保険より新NISAが長期資産形成に向いている理由 | 家計・リベ活 | 2026.05.25 | Amazon（お金の大学） |
 | 9 | posts/money-03-nisa-koza-erabikata.html | 新NISAの口座はどこで開く？銀行・対面証券・ネット証券を徹底比較 | 家計・リベ活 | 2026.05.26 | A8（楽天証券系）＋Amazon |
 | 10 | posts/money-04-tsushinhi.html | 現代の必需品　通信費膨らんでいませんか？ | 家計・リベ活 | 2026.05.28 | Amazon（スターターパック等） |
-| 11 | posts/banchan.html | ドラム式洗濯機「バンちゃん」が私のしんどい毎日を救ってくれた話【パナソニック NA-LX125】 | 日常 | 2026.05.29 | Amazon（NA-LX125 新型直リンク＋新旧検索リンク） |
+| 11 | posts/banchan.html | ドラム式洗濯機「バンちゃん」が私のしんどい毎日を救ってくれた話【パナソニック NA-LX125】 | 日常 | 2026.05.29 | 楽天アフィリエイト（NA-LX125EL・ER ビックカメラ）＋Amazon（EL・ER直リンク＋旧型検索） |
 | 12 | posts/money-05-rakuten-keizaiken.html | スマホ代の請求がタダに！？楽天モバイルの特典を使おう！！ | 家計・リベ活 | 2026.06.02 | Amazon（A8楽天モバイル承認待ち） |
 | 13 | posts/money-06-net-bank.html | 楽天銀行・住信SBIネット銀行　都市銀行よりネット銀行が大優勝！な話 | 家計・リベ活 | 2026.06.02 | Amazon（お金の大学） |
 | 14 | posts/life-03-audible-review.html | 家事嫌いの主婦がAudibleで人生変わった話【57歳・体験レビュー】 | 日常 | 2026.06.08 | A8（Audible） |
