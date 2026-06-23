@@ -38,14 +38,13 @@
 | おしごと | Work | work | データアノテーション・在宅ワーク |
 | 日本の文化 | Japanese culture | japan | 季節行事・食・100均・コンビニ等 |
 
-## 公開済み記事（全15記事・日付順）
+## 公開済み記事（全16記事・日付順）
 
 | # | ファイル名 | タイトル（日本語） | カテゴリ | 日付 | アフィリエイト |
 |---|---|---|---|---|---|
 | 1 | posts/work-remote-decision.html | 50代主婦が在宅ワークを目指すことにした理由 | おしごと | 2026.05.07 | — |
-| 2 | posts/work-03-hellowork-resolve.html | 失業申請と強い決意 | おしごと | 2026.05.10 | — |
-| 3 | posts/work-02-money-vs-time.html | お金より大切なこと | 日常 | 2026.05.16 | — |
-| 4 | posts/work-04-remote-first-payment.html | 海外リモートワークと初めての支払い | おしごと | 2026.05.17 | — |
+| 2 | posts/work-03-hellowork-resolve.html | パートを退職した私がやったこと——失業申請・ハローワーク・20年分の片付け | おしごと | 2026.05.10 | — |
+| 3 | posts/work-04-remote-first-payment.html | 海外リモートワークと初めての支払い | おしごと | 2026.05.17 | — |
 | 5 | posts/life-01-poikatsu-loss.html | ポイ活でお金を失った話 | 日常 | 2026.05.18 | — |
 | 6 | posts/money-01-libekatsu.html | 主婦歴２６年目の初家計簿 | 家計・リベ活 | 2026.05.19 | Amazon（お金の大学） |
 | 7 | posts/life-02-work-caregiving.html | 仕事と介護 | 日常 | 2026.05.20 | — |
