@@ -58,6 +58,7 @@
 | 15 | posts/money-07-amazon-prime.html | 楽天経済圏住人の私がAmazon Primeに根負けした話 | 家計・リベ活 | 2026.06.10 | Amazon（Prime） |
 | 16 | posts/life-04-coopdeli.html | 食材の宅配サービス『コープデリ』を私がおススメするその理由 | 日常 | 2026.06.12 | なし（もしもコープデリ案件 否認。アフィリエイトなし体験記として公開） |
 | 17 | posts/life-05-vacuum-hitachi.html | 掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由【50代主婦レビュー】 | 日常 | 2026.06.14 | 楽天アフィリエイト（PV-BL3J）＋Amazon（PV-BL3J・CV-SF80A） |
+| 18 | posts/life-06-aircon-2027.html | 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話【ダイキン S226ATES-W・S366ATES-W】 | 日常 | 2026.06.27 | Amazon（S226ATES-W・S366ATES-W 検索リンク） |
 
 ## トップページ（index.html）の構成
 
@@ -73,9 +74,9 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由 → life-05-vacuum-hitachi.html
-2. 食材の宅配サービス『コープデリ』を私がおススメするその理由 → life-04-coopdeli.html
-3. 楽天経済圏住人の私がAmazon Primeに根負けした話 → money-07-amazon-prime.html
+1. 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話 → life-06-aircon-2027.html
+2. 掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由 → life-05-vacuum-hitachi.html
+3. 食材の宅配サービス『コープデリ』を私がおススメするその理由 → life-04-coopdeli.html
 
 ### おすすめの本（全記事ページ・日本語のみ）
 日本語版サイドバーに「おすすめの本」セクションあり（2026.06.12に全ページ設置完了）。
