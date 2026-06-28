@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="親が子供の奨学金を一括返済しようとすると贈与税がかかる！？知らなかった私が直面した税制の壁と、結局断念した理由、そしてぴかりんご家の最終的な結論をお話しします。">
+<meta name="keywords" content="奨学金 一括返済, 贈与税, 暦年贈与, 名義預金, 日本学生支援機構, 家計, 節税, 子供の学費">
+<meta property="og:title" content="子供の奨学金を一括返済しようとして贈与税の壁にぶつかった話 | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="親が子供の奨学金を一括返済すると贈与税対象になる！？知らなかった私の失敗談と、最終的に断念した理由をお話しします。">
+<meta property="og:type" content="article">
+<title>子供の奨学金を一括返済しようとして贈与税の壁にぶつかった話 | ぴかりんご / Shiny Apple</title>
+<link rel="canonical" href="https://pikaringo.com/posts/money-08-scholarship-gift-tax.html">
+<meta property="og:url" content="https://pikaringo.com/posts/money-08-scholarship-gift-tax.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ── ポイントボックス ── */
+.point-box{background:#f5f0fb;border:1.5px solid #b0a0d0;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.point-box .point-title{font-weight:700;color:#5a3888;margin-bottom:.5rem;font-size:14px}
+.point-box ul{margin:0;padding-left:1.2rem}
+.point-box li{font-size:14px;color:#3a2c20;line-height:1.9}
+/* ── 注意ボックス ── */
+.caution-box{background:#fff8f0;border:1.5px solid #e0b080;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.caution-box .caution-title{font-weight:700;color:#a06010;margin-bottom:.5rem;font-size:14px}
+.caution-box p{font-size:14px;color:#3a2c20;line-height:1.9;margin:0}
+/* ── 利息比較テーブル ── */
+.rate-table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:14px}
+.rate-table th{background:#e8e0f0;color:#4a2870;padding:10px 14px;text-align:left;border:1px solid #c8b8e0}
+.rate-table td{padding:10px 14px;border:1px solid #d0c8e0;line-height:1.8;background:#faf7f2}
+.rate-table tr:nth-child(even) td{background:#f3f0f8}
+/* ── 通帳変遷ボックス ── */
+.passbook-box{background:#f0f7f0;border:1.5px solid #90c090;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.passbook-box .pb-title{font-weight:700;color:#2a6030;margin-bottom:.5rem;font-size:14px}
+.passbook-box p{font-size:14px;color:#3a2c20;line-height:1.9;margin:0}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067408047094320" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="../index.html#posts" class="lj">記事一覧</a>
+        <a href="../index.html#posts" class="le" style="display:none">Posts</a>
+        <a href="../about.html" class="lj">プロフィール</a>
+        <a href="../about.html" class="le" style="display:none">About</a>
+        <a href="../contact.html" class="lj">お問い合わせ</a>
+        <a href="../contact.html" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../index.html" class="lj">ホーム</a>
+  <a href="../index.html" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">家計・リベ活</span>
+  <span class="le" style="display:none">Finances</span>
+  <span>›</span>
+  <span class="lj">子供の奨学金一括返済と贈与税</span>
+  <span class="le" style="display:none">The Gift Tax Trap in Scholarship Repayment</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag money lj">家計・リベ活</span>
+        <span class="post-tag money le" style="display:none">Finances</span>
+        <span class="post-date">2026.06.28</span>
+      </div>
+      <h1 class="article-title lj">子供の奨学金の一括返済で贈与税がかかる！？<br>私が一括返済を断念した理由</h1>
+      <h1 class="article-title le" style="display:none">The Gift Tax Trap I Didn't See Coming:<br>Why I Gave Up on Paying Off My Children's Student Loans</h1>
+    </div>
+
+    <div class="article-body">
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>無知すぎて恥ずかしい話になりますが、子供たちの奨学金の一括返済をしようとして、結局断念するまでの顛末をお話ししたいと思います。</p>
+
+        <div class="point-box">
+          <div class="point-title">📋 この記事を読むとわかること</div>
+          <ul>
+            <li>親が子供の奨学金を一括で返済しようとすると贈与税を支払うことになる話</li>
+            <li>贈与税控除額内に収まるように何回かに分けて返済しても、暦年贈与になり贈与税がかかる話</li>
+            <li>なんとか贈与税を回避しようとして、結局一括返済を断念した話</li>
+            <li>ぴかりんご家の最適解（名義預金を無くしてすっきりした話）</li>
+          </ul>
+        </div>
+
+        <h2>家計が楽になるまでの道のり</h2>
+
+        <p>私が５年前のにわかリベ活によって固定費を見直し始めたこと、２人の子供が大学を卒業して社会人になり生活費を入れてくれるようになったこと、母と同居するようになって生活費を入れてくれるようになったこと、夫の職位が上がり給与受取額が一気に上がったこと……。いわゆる「お金のかかり時」を抜けたことで、手元のお金に余裕が出てきました。</p>
+
+        <p>その余裕を使って、住宅ローンや屋根・外壁塗装のローンを前倒し一括返済し、車も中古ではありますが一括購入することができました。</p>
+
+        <p>実は、子供の大学の学費をすべて払い終えた後に、奨学金の残りのお金を元に生活費を工面しながら、返済を早めることができたという話でもあります。</p>
+
+        <p>私は典型的なダメ主婦で、子供たちの学費を事前に計画的に準備できませんでした。そのため、夫名義で日本政策金融公庫からの借り入れと、子供たち自身も日本学生支援機構から借り入れをしました。</p>
+
+        <p>子供の大学費用をすべて払い終えた後、生活防衛資金を残しつつ、手元のお金と貯金を合わせて金利の高い借り入れから順に返済していきました。</p>
+
+        <ul>
+          <li>屋根・外壁塗装の返済</li>
+          <li>住宅ローンの返済</li>
+          <li>日本政策金融公庫からの学費の借り入れ分</li>
+          <li>車の買い替え（中古車の一括購入）</li>
+        </ul>
+
+        <p>今思うと、とてつもない金額の返済を３年の間にしました。何十年間も火の車だった我が家の家計。住宅ローンの返済終了後に一気に楽になりました。</p>
+
+        <h2>残るは子供名義の奨学金のみ</h2>
+
+        <p>そんなこんなで2026年。ぴかりんご家の借金は、残すところ２人の子供名義の日本学生支援機構から借り入れた奨学金のみになりました。</p>
+
+        <p>巷では多額の奨学金の返済に苦しんでいる若者が多いと聞きます。うちの子供２人も例外ではない状況です。</p>
+
+        <p>ぴかりんご家は恥ずかしながら、老後の資金準備も一切進んでいません。それでも、老後の準備をしつつ、子供たちの借金を１日も早く無くさねばならぬと、AIに手伝ってもらって作戦会議を重ねました。アホなダメ主婦と超絶優秀なAIクロちゃん（Claude AI）の共同作業です。</p>
+
+        <h2>奨学金の利息比較と返済の優先順位</h2>
+
+        <p>奨学金の利息は、大学卒業時点の利率に基づいて計算されます。</p>
+
+        <table class="rate-table">
+          <tr>
+            <th>借り入れ先</th>
+            <th>利率</th>
+            <th>100万円あたりの年間利息</th>
+          </tr>
+          <tr>
+            <td>長男（日本学生支援機構）</td>
+            <td>0.369%</td>
+            <td>約3,700円</td>
+          </tr>
+          <tr>
+            <td>次男（日本学生支援機構）</td>
+            <td>0.905%</td>
+            <td>約9,000円</td>
+          </tr>
+          <tr>
+            <td>日本政策金融公庫（返済済み）</td>
+            <td>1.76〜1.78%</td>
+            <td>—</td>
+          </tr>
+        </table>
+
+        <p>ピンと来ないかもしれませんが、100万円の借り入れに対して9,000円の利息がかかるか3,700円の利息がかかるかでは大きな違いがあります。ほぼ最低時給で10年以上パートで働いてきた私にとっては、決して小さな金額ではないと感じました。</p>
+
+        <p>長男に事情を説明して、次男の一括返済を先にすることに決めました。</p>
+
+        <h2>衝撃の事実——贈与税がかかる！？</h2>
+
+        <p>ところが、天才AIクロちゃんから衝撃的な事実を告げられたのです。</p>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ 知らなかった贈与税のルール</div>
+          <p>親が子供の学費を支払う際は、金額がいくらであろうと税金はかかりません。ただし、それは子供が学生の間に都度支払う場合のみです。<br><br>
+          大学卒業後、子供が自身の名義で借り入れした奨学金は子供自身が返済を負う債務です。その返済を親が<strong>110万円を超えて</strong>肩代わりすると、贈与税の課税対象になってしまいます。</p>
+        </div>
+
+        <p>どういうこと？？？？？</p>
+
+        <h2>「分割して返せばいい」——でも暦年贈与の罠が</h2>
+
+        <p>それならば、年間110万円を超えないように２〜３回に分けて返せばいいのでは？と考えました。</p>
+
+        <p>ところがそうなると、<strong>暦年贈与</strong>扱いになってしまうのです。最初から110万円を超える金額を贈与するつもりだったとみなされてしまい、申告しなければ何倍もの追徴課税を課されてしまうことになるようです。</p>
+
+        <p>こんなことなら、子供の奨学金振り込み口座のお金には手を付けずにやりくりできていればよかった！とすごく後悔しました。</p>
+
+        <h2>借用書という選択肢</h2>
+
+        <p>どうしても利息節約のために一括返済したいのであれば、親が子供にお金を貸し付けたことを証明する<strong>借用書</strong>を作って、子供から親に返済させる形をとることもクロちゃんから提案されました。</p>
+
+        <p>実際は「子供のお金を親が借りていた」というのが実情のはずなのに、「親が子供にお金を貸した」ことにしなければならないなんて、おかしな話だと思いませんか？</p>
+
+        <p>計算してみると、次男の奨学金を一括返済することによる利息の節約額は約22万円ほどでした。贈与の申告をせずに一括返済を行って追徴課税された場合の金額も、それと変わらない水準とのことでした。</p>
+
+        <h2>子供たちの一言と長男の提案</h2>
+
+        <p>頭を抱えて悩んでいると、長男も次男も「もう俺たち自分で最後まで返済するから大丈夫だよ」と言われてしまいました。それでも私の気は済みません。</p>
+
+        <p>そこで長男が１つの提案をしてきました。</p>
+
+        <div class="point-box">
+          <div class="point-title">💡 長男の提案</div>
+          <ul>
+            <li>返済に充てる予定だったお金を、贈与税申告ライン（110万円）以下で長男・次男の証券口座の新NISA枠で長期運用する</li>
+            <li>ゆるく見積もっても年利4〜7%の運用が現実的なので、奨学金の利息分も余裕で吸収できる</li>
+            <li>贈与税の心配もいらなくなる</li>
+            <li>運用益の状況を見ながら、自分たちで一括返済に充てるかどうかを決める</li>
+          </ul>
+        </div>
+
+        <p>実は、超絶優秀なAIクロちゃんも最初から「返済を急ぐより合理的だ」とその提案をしてくれていました。それでも私は、子供に背負わせている荷物を一日も早く降ろしたい一心で、ごねにごねていました。</p>
+
+        <p>一度はクロちゃんに作成してもらった借用書を印刷して準備していた私ですが、結局は長男になだめられながら、最初のクロちゃんの提案を実行することに落着しました。</p>
+
+        <p>「老いては負うた子に教えられ」なんていう言葉がありますが、本当に子供たちは頼もしく成長してくれたものだと感じました。</p>
+
+        <h2>名義預金の解消——もうひとつの罪</h2>
+
+        <p>そして、ダメ母のもうひとつの罪、<strong>名義預金</strong>の問題。しっかりしたお母さんなら、子供が成人したときに贈与税対象金額以下にして渡すなり、別管理するなりしていることと思います。私は管理方法を一切変えずにそのままでした。無知って本当に罪ですね。</p>
+
+        <p>長男とクロちゃんの案を実行すべく、最近、長男と次男に名義預金の通帳の解約に行ってもらいました。</p>
+
+        <div class="passbook-box">
+          <div class="pb-title">📔 通帳の変遷（最多13冊 → 残り2冊へ）</div>
+          <p>
+            13冊（最多）<br>
+            → 12冊（小学校給食費用の口座解約）<br>
+            → 7冊（私名義4冊解約・1冊無通帳化）<br>
+            → 5冊（長男・次男名義各1冊ずつ解約）<br>
+            → 4冊（夫の同銀行の通帳を統合）<br>
+            → 2冊（長男・次男名義各1冊ずつ解約＝名義預金解消）<br>
+            <br>
+            残る2冊のうち1冊は解約待ちの夫名義の通帳のため、<br>
+            私が管理すべき通帳は<strong>ついに１冊</strong>になりました！
+          </p>
+        </div>
+
+        <p>私は楽天銀行と住信SBIネット銀行の３口座に資金を集約しました。管理しなければならないものが減り、本当にスッキリしました。</p>
+
+        <h2>まとめ</h2>
+
+        <p>母の介護資金と夫婦の老後資金の資産形成、家の修繕費の工面、子供たちの奨学金返済に代わる資産形成援助など、お金の問題はまだまだ山積しています。それでも、「学費の返済は自分で最後までするから大丈夫」と言えるまでに成長した子供たちを頼もしく感じて、大変嬉しく思っています。</p>
+
+        <p>リベラルアーツ大学の両学長の教えに従って返せる借金を返したかったのですが、ぴかりんご家ではこのような形で落着したというお話でした。</p>
+
+        <p>これから子供の教育資金を準備しなければならないお父様やお母様方は、どうか私のようにならないよう、私のしくじりを反面教師に、周到に準備していただければと思います。</p>
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>I'm a little embarrassed to share this story, but here's what happened when I tried to pay off my children's student loans in one go — and why I eventually gave up.</p>
+
+        <div class="point-box">
+          <div class="point-title">📋 What you'll find in this article</div>
+          <ul>
+            <li>Why a parent paying off a child's student loan can trigger gift tax in Japan</li>
+            <li>Why splitting payments into smaller amounts (under ¥1.1 million/year) doesn't help — it becomes "planned giving"</li>
+            <li>How I tried to work around the rules, and why I eventually gave up</li>
+            <li>What we decided instead, and how we simplified our family's finances</li>
+          </ul>
+        </div>
+
+        <h2>How our finances finally turned a corner</h2>
+
+        <p>About five years ago, I stumbled into the world of personal finance (what Japanese people call "ribe-katsu," inspired by the YouTube channel Liberal Arts University). I started reviewing our fixed costs, and over time, several things changed at once: both of my children graduated from university and started contributing to household expenses; my mother moved in and helped with living costs; my husband got a promotion and a salary increase. We'd finally made it through the most expensive years of raising a family.</p>
+
+        <p>With that breathing room, I was able to pay off our home loan, a home renovation loan (roof and exterior painting), and even buy a used car outright — all ahead of schedule.</p>
+
+        <p>By 2026, the only remaining debt in our household was the student loans both of my children had taken out in their own names from JASSO (Japan Student Services Organization).</p>
+
+        <p>I was also acutely aware that we had made zero progress on retirement savings. So I started plotting — with the help of my AI, Claude — on how to tackle the student loans as fast as possible.</p>
+
+        <h2>The interest rates: not all equal</h2>
+
+        <p>JASSO loan interest rates are fixed at the time of graduation. My sons' rates turned out to be quite different:</p>
+
+        <table class="rate-table">
+          <tr>
+            <th>Borrower</th>
+            <th>Interest rate</th>
+            <th>Annual interest per ¥1M borrowed</th>
+          </tr>
+          <tr>
+            <td>Older son</td>
+            <td>0.369%</td>
+            <td>approx. ¥3,700</td>
+          </tr>
+          <tr>
+            <td>Younger son</td>
+            <td>0.905%</td>
+            <td>approx. ¥9,000</td>
+          </tr>
+        </table>
+
+        <p>The difference doesn't sound dramatic, but for someone who spent over a decade working part-time at near minimum wage, ¥9,000 vs. ¥3,700 a year per million yen is very much noticeable. I decided to prioritise paying off my younger son's loan first.</p>
+
+        <h2>The shock: paying off your child's loan means gift tax</h2>
+
+        <p>That's when Claude told me something I genuinely didn't know.</p>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ The gift tax rule I didn't know existed</div>
+          <p>In Japan, parents can pay their child's tuition and living costs while the child is a student — no tax applies, regardless of amount. However, once the child graduates, their student loan becomes the child's own debt. If a parent pays more than ¥1.1 million of that debt, it's classified as a taxable gift.</p>
+        </div>
+
+        <p>Wait — what?</p>
+
+        <h2>"I'll just split the payments" — but that doesn't work either</h2>
+
+        <p>My first thought: can't I just pay in smaller chunks, staying under the ¥1.1 million annual gift tax exemption?</p>
+
+        <p>Unfortunately, no. If the tax authorities determine that you always intended to give more than ¥1.1 million — just spread across multiple years — they can reclassify it as "planned giving" (暦年贈与, reki-nen zōyo). The penalty for failing to declare that can be several times the original tax owed.</p>
+
+        <p>I was genuinely frustrated. If only I had kept the money in a separate account and not mixed it with our general savings…</p>
+
+        <h2>One possible workaround: a loan agreement</h2>
+
+        <p>Claude suggested another option: draw up a formal loan agreement between parent and child, where the parent officially "lends" money to the child, and the child repays the parent. That way it's a loan, not a gift, and avoids the gift tax issue.</p>
+
+        <p>The irony wasn't lost on me: in reality, we had been using money that was earmarked for the children. Yet the paperwork would have to say the opposite — that I was lending money to my own children. It felt deeply backwards.</p>
+
+        <p>When I ran the numbers, paying off my younger son's loan would save roughly ¥220,000 in interest. But the potential back-tax penalty if we didn't declare properly? About the same amount.</p>
+
+        <h2>My sons' reaction — and my older son's suggestion</h2>
+
+        <p>While I was agonising over all of this, both sons said: "Mum, don't worry about it. We'll pay it off ourselves."</p>
+
+        <p>That didn't sit well with me. But my older son made a calm, reasonable proposal:</p>
+
+        <div class="point-box">
+          <div class="point-title">💡 My son's suggestion</div>
+          <ul>
+            <li>Instead of repaying the loan directly, give each of them up to ¥1.1 million (below the gift tax threshold) to invest in their new NISA accounts</li>
+            <li>A conservative return of 4–7% per year would easily outpace the 0.9% loan interest</li>
+            <li>No gift tax concerns</li>
+            <li>They can decide for themselves when and whether to use the investment to pay off the loan</li>
+          </ul>
+        </div>
+
+        <p>Here's the thing: Claude had actually suggested exactly this approach from the beginning. I had been too fixated on eliminating the debt to listen properly. My son, younger and calmer, said the same thing — and somehow that made it land differently.</p>
+
+        <p>I had even printed out the loan agreement document Claude drafted, ready to use. In the end, I put it away and did what I should have done from the start.</p>
+
+        <p>There's an old Japanese saying: "In old age, you are taught by the very child you once carried on your back." I felt that deeply.</p>
+
+        <h2>One more thing: the named-deposit accounts</h2>
+
+        <p>There was another issue I had quietly ignored for years: savings accounts I had opened in my children's names and managed myself — what's called a 名義預金 (meigi yokin) in Japanese. A properly organised household would have transferred those assets cleanly when the children became adults. I hadn't touched them.</p>
+
+        <p>As part of putting this all in order, I asked my sons to go to the bank and close those accounts themselves. Done.</p>
+
+        <div class="passbook-box">
+          <div class="pb-title">📔 Our passbook count: from 13 to 2</div>
+          <p>
+            At peak: 13 passbooks<br>
+            → 12 (closed school lunch fee account)<br>
+            → 7 (closed 4 accounts in my name; 1 converted to paperless)<br>
+            → 5 (closed 1 account each in sons' names)<br>
+            → 4 (consolidated husband's duplicate accounts)<br>
+            → 2 (closed remaining named-deposit accounts)<br>
+            <br>
+            One of those two is a husband's account awaiting closure.<br>
+            That means I'm now actively managing just <strong>one passbook</strong>.
+          </p>
+        </div>
+
+        <p>My own funds are now consolidated into three accounts: Rakuten Bank, SBI Sumishin Net Bank, and one major bank account. It feels genuinely lighter.</p>
+
+        <h2>In summary</h2>
+
+        <p>There's still plenty to figure out — funding my mother's care, building retirement savings, planning for home maintenance, and supporting my sons' long-term financial wellbeing. But hearing them say "we'll handle it ourselves" — and mean it — was one of the most reassuring things I've heard in a long time.</p>
+
+        <p>I wanted to follow the advice of the Liberal Arts University channel and pay off every debt we could. In the end, our household reached a different but perhaps more sensible conclusion.</p>
+
+        <p>If you're currently saving for a child's education, I hope my mistakes serve as a useful cautionary tale. Please plan more carefully than I did.</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="money-01-libekatsu.html">
+            <div class="post-img">💛</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.19</span>
+              </div>
+              <p class="post-title lj">主婦歴２６年目の初家計簿</p>
+              <p class="post-title le" style="display:none">My First Household Budget After 26 Years of Marriage</p>
+            </div>
+          </a>
+          <a class="post-card" href="money-02-hoken-vs-nisa.html">
+            <div class="post-img">📊</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.05.25</span>
+              </div>
+              <p class="post-title lj">銀行に預けておくだけでは危険？！―保険より新NISAが長期資産形成に向いている理由</p>
+              <p class="post-title le" style="display:none">Is Keeping Money in the Bank Enough? Why New NISA Beats Insurance for Long-Term Saving</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <div class="sidebar-card lj">
+      <h2 class="sidebar-title">おすすめの本</h2>
+      <a href="https://amzn.to/49aEmCJ" target="_blank" rel="noopener sponsored" style="display:block;text-decoration:none;">
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;">
+          <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="【改訂版】本当の自由を手に入れる お金の大学" style="width:120px;border-radius:4px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+          <p style="font-size:13px;font-weight:bold;color:var(--text);margin-bottom:4px;line-height:1.5;">【改訂版】本当の自由を手に入れる<br>お金の大学</p>
+          <p style="font-size:12px;color:var(--text-light);margin-bottom:12px;">両＠リベ大学長 著</p>
+          <span style="display:inline-block;background:var(--purple-mid);color:#fff;font-size:12px;padding:6px 16px;border-radius:20px;">Amazonで見る →</span>
+        </div>
+      </a>
+      <p style="font-size:11px;color:#8a7f78;text-align:center;margin-top:8px">※ Amazonアソシエイトのリンクを含みます</p>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><a href="money-08-scholarship-gift-tax.html" class="lj" style="color:inherit;text-decoration:none">子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由</a><a href="money-08-scholarship-gift-tax.html" class="le" style="display:none;color:inherit;text-decoration:none">The Gift Tax Trap I Didn't See Coming: Why I Gave Up on Paying Off My Children's Student Loans</a></li>
+        <li><span class="popular-num">2</span><a href="life-06-aircon-2027.html" class="lj" style="color:inherit;text-decoration:none">安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話</a><a href="life-06-aircon-2027.html" class="le" style="display:none;color:inherit;text-decoration:none">The 2027 Air Conditioner Problem — Why I Replaced Two Units at Once</a></li>
+        <li><span class="popular-num">3</span><a href="life-05-vacuum-hitachi.html" class="lj" style="color:inherit;text-decoration:none">掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由</a><a href="life-05-vacuum-hitachi.html" class="le" style="display:none;color:inherit;text-decoration:none">I Bought Two of the Same Cordless Vacuum</a></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">日本の片隅から、日常のいろいろなことを。</p>
+  <p class="footer-sub le" style="display:none">From a quiet corner of Japan, writing about the many sides of everyday life.</p>
+  <div class="footer-links">
+    <a href="../about.html" class="lj">プロフィール</a>
+    <a href="../about.html" class="le" style="display:none">About</a>
+    <a href="../contact.html" class="lj">お問い合わせ</a>
+    <a href="../contact.html" class="le" style="display:none">Contact</a>
+    <a href="../privacy.html" class="lj">プライバシーポリシー</a>
+    <a href="../privacy.html" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
