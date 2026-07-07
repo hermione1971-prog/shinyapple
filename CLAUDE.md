@@ -60,6 +60,7 @@
 | 17 | posts/life-05-vacuum-hitachi.html | 掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由【50代主婦レビュー】 | 日常 | 2026.06.14 | 楽天アフィリエイト（PV-BL3J）＋Amazon（PV-BL3J・CV-SF80A） |
 | 18 | posts/life-06-aircon-2027.html | 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話【ダイキン S226ATES-W・S286ATES-W】 | 日常 | 2026.06.27 | 楽天アフィリエイト（S226ATES-W・S286ATES-W） |
 | 19 | posts/money-08-scholarship-gift-tax.html | 子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由 | 家計・リベ活 | 2026.06.28 | — |
+| 20 | posts/japan-01-tanabata.html | 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊【日本の文化】 | 日本の文化 | 2026.07.07 | — |
 
 ## トップページ（index.html）の構成
 
@@ -75,9 +76,11 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由 → money-08-scholarship-gift-tax.html
-2. 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話 → life-06-aircon-2027.html
-3. 掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由 → life-05-vacuum-hitachi.html
+1. 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊 → japan-01-tanabata.html
+2. 子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由 → money-08-scholarship-gift-tax.html
+3. 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話 → life-06-aircon-2027.html
+
+※ about.html・privacy.html・contact.html には「新着記事」サイドバーは無い（2026.07.07確認）。更新対象は index.html と posts/ 内の全記事ページ。
 
 ### おすすめの本（全記事ページ・日本語のみ）
 日本語版サイドバーに「おすすめの本」セクションあり（2026.06.12に全ページ設置完了）。
@@ -164,6 +167,7 @@ npx wrangler pages deploy . --project-name=shinyapple --commit-dirty=true
 | 草むしりビフォーアフター（日常） | 写真が撮れたら |
 | ある日の晩ごはん（日常） | 写真が撮れたら |
 | 元100均店員が選ぶお気に入り（日本の文化） | 100均に行ったら |
+| Netflixアニメ「超かぐや姫」家族4人レビュー（日常）——長男沼落ち・夫途中離脱・評価バラバラだった話。七夕記事から独立させたネタ | 未着手 |
 
 ## 作業上の注意
 
