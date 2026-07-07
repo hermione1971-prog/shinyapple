@@ -54,7 +54,7 @@
 | 11 | posts/banchan.html | ドラム式洗濯機「バンちゃん」が私のしんどい毎日を救ってくれた話【パナソニック NA-LX125】 | 日常 | 2026.05.29 | 楽天アフィリエイト（NA-LX125EL・ER ビックカメラ）＋Amazon（EL・ER直リンク＋旧型検索） |
 | 12 | posts/money-05-rakuten-keizaiken.html | スマホ代の請求がタダに！？楽天モバイルの特典を使おう！！ | 家計・リベ活 | 2026.06.02 | Amazon（A8楽天モバイル承認待ち） |
 | 13 | posts/money-06-net-bank.html | 楽天銀行・住信SBIネット銀行　都市銀行よりネット銀行が大優勝！な話 | 家計・リベ活 | 2026.06.02 | Amazon（お金の大学） |
-| 14 | posts/life-03-audible-review.html | 家事嫌いの主婦がAudibleで人生変わった話【57歳・体験レビュー】 | 日常 | 2026.06.08 | A8（Audible） |
+| 14 | posts/life-03-audible-review.html | 家事嫌いの主婦がAudibleで人生変わった話【55歳・体験レビュー】 | 日常 | 2026.06.08 | A8（Audible） |
 | 15 | posts/money-07-amazon-prime.html | 楽天経済圏住人の私がAmazon Primeに根負けした話 | 家計・リベ活 | 2026.06.10 | Amazon（Prime） |
 | 16 | posts/life-04-coopdeli.html | 食材の宅配サービス『コープデリ』を私がおススメするその理由 | 日常 | 2026.06.12 | なし（もしもコープデリ案件 否認。アフィリエイトなし体験記として公開） |
 | 17 | posts/life-05-vacuum-hitachi.html | 掃除のハードルが激下がり！日立ラクかるスティック PV-BL3J を2台買った理由【50代主婦レビュー】 | 日常 | 2026.06.14 | 楽天アフィリエイト（PV-BL3J）＋Amazon（PV-BL3J・CV-SF80A） |
