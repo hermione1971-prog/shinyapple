@@ -61,6 +61,7 @@
 | 18 | posts/life-06-aircon-2027.html | 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話【ダイキン S226ATES-W・S286ATES-W】 | 日常 | 2026.06.27 | 楽天アフィリエイト（S226ATES-W・S286ATES-W） |
 | 19 | posts/money-08-scholarship-gift-tax.html | 子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由 | 家計・リベ活 | 2026.06.28 | — |
 | 20 | posts/japan-01-tanabata.html | 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊【日本の文化】 | 日本の文化 | 2026.07.07 | — |
+| 21 | posts/life-07-aircon-install.html | くらしのマーケットでエアコン設置工事｜当日の流れ・所要時間・最終費用を全公開【総額314,890円】 | 日常 | 2026.07.09 | 楽天アフィリエイト（S226ATES-W・S286ATES-W） |
 
 ## トップページ（index.html）の構成
 
@@ -76,9 +77,9 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊 → japan-01-tanabata.html
-2. 子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由 → money-08-scholarship-gift-tax.html
-3. 安いエアコンが買えなくなる！？2027年問題対策でエアコン２台を新調した話 → life-06-aircon-2027.html
+1. くらしのマーケットでエアコン設置工事｜当日の流れ・所要時間・最終費用を全公開 → life-07-aircon-install.html
+2. 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊 → japan-01-tanabata.html
+3. 子供の奨学金の一括返済で贈与税がかかる！？私が一括返済を断念した理由 → money-08-scholarship-gift-tax.html
 
 ※ about.html・privacy.html・contact.html には「新着記事」サイドバーは無い（2026.07.07確認）。更新対象は index.html と posts/ 内の全記事ページ。
 
