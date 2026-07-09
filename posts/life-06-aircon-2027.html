@@ -87,6 +87,32 @@
           </ul>
         </div>
 
+        <!-- 目次（見出しから自動生成） -->
+        <style>
+        .toc{background:#faf7f0;border:1px solid #e6ddcc;border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0}
+        .toc-title{font-weight:700;color:#6a5a78;margin:0 0 .5rem;font-size:15px}
+        .toc ol{margin:0;padding-left:1.3rem;line-height:1.95}
+        .toc a{color:#3a2c20;text-decoration:none}
+        .toc a:hover{text-decoration:underline;color:#7a5a9e}
+        </style>
+        <nav class="toc lj" aria-label="目次">
+          <p class="toc-title">目次</p>
+          <ol id="toc-list"></ol>
+        </nav>
+        <script>
+        document.addEventListener('DOMContentLoaded',function(){
+          var body=document.querySelector('.article-body > .lj');
+          var list=document.getElementById('toc-list');
+          if(!body||!list)return;
+          body.querySelectorAll('h2').forEach(function(h,i){
+            if(!h.id)h.id='sec-'+(i+1);
+            var li=document.createElement('li'),a=document.createElement('a');
+            a.href='#'+h.id;a.textContent=h.textContent;
+            li.appendChild(a);list.appendChild(li);
+          });
+        });
+        </script>
+
         <h2>2027年問題とは？　なぜ今エアコンを買ったのか</h2>
 
         <p>エアコンの買い替えは大きな出費になるので、一昨年は１階の和室の１台、昨年は２階の長男の部屋の１台と、少しずつ買い替えを進めておりました。残るは、夫と次男の部屋。例にもれず今年も１台買いかえようかなあ。なんて呑気に思っていた私でしたが、2027年４月以降、今までのようなリーズナブルな価格帯のエアコンが市場から消える！と知れば、話は別です。</p>
@@ -276,6 +302,28 @@
           <p><strong>室外機の保管は天地無用！</strong><br>
           商品到着から工事日までの間、室外機を横転させないようにしましょう。横倒しにすると故障の原因になります。開梱も業者さんにお任せするのがベターです。我が家は男手が3人いたことと、商品到着から設置工事当日まで4日の開きがあったため、注意点を伝えたうえで、各設置場所の保管できるスペースまで運んでおいてもらいました。</p>
         </div>
+
+        <h2 id="faq">よくある質問（2027年問題とエアコン）</h2>
+        <style>
+        .faq-item{border:1px solid #e6ddcc;border-radius:10px;padding:.9rem 1.1rem;margin:.75rem 0;background:#fff}
+        .faq-q{font-weight:700;color:#1e4a70;margin:0 0 .4rem}
+        .faq-a{margin:0;color:#3a2c20;line-height:1.9}
+        </style>
+        <div class="faq-item">
+          <p class="faq-q">Q. 2027年問題って、結局なにが変わるの？</p>
+          <p class="faq-a">A. 2027年4月以降、エアコンに使われる冷媒が省エネ性能の高い次世代タイプへ切り替わり、今までのようなリーズナブルな価格帯のモデルが市場から姿を消していくと言われています。型落ち・エントリーモデルを安く買えるのは今のうち、という状況です。</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Q. 古いエアコンは、まだ壊れていなくても買い替えるべき？</p>
+          <p class="faq-a">A. 新しいものをすぐ買い替えるのはもったいないですが、10年以上使っているなら検討の余地ありです。省エネ性能が上がって電気代が下がりますし、2027年以降は本体価格の上昇が予想されるためです。</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Q. ネット購入＋くらしのマーケットは、誰にでもおすすめ？</p>
+          <p class="faq-a">A. 手間をかけてでも予算を抑えたい人、ネットやアプリに抵抗がない人には向いています。逆に、機種選びや業者を相談しながら決めたい人、特殊工事（屋根置き→1階置きなど）が必要な人は、店頭購入や慎重な業者選びのほうが安心です。</p>
+        </div>
+        <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"2027年問題って、結局なにが変わるの？","acceptedAnswer":{"@type":"Answer","text":"2027年4月以降、エアコンに使われる冷媒が省エネ性能の高い次世代タイプへ切り替わり、今までのようなリーズナブルな価格帯のモデルが市場から姿を消していくと言われています。型落ち・エントリーモデルを安く買えるのは今のうち、という状況です。"}},{"@type":"Question","name":"古いエアコンは、まだ壊れていなくても買い替えるべき？","acceptedAnswer":{"@type":"Answer","text":"新しいものをすぐ買い替えるのはもったいないですが、10年以上使っているなら検討の余地ありです。省エネ性能が上がって電気代が下がりますし、2027年以降は本体価格の上昇が予想されるためです。"}},{"@type":"Question","name":"ネット購入＋くらしのマーケットは、誰にでもおすすめ？","acceptedAnswer":{"@type":"Answer","text":"手間をかけてでも予算を抑えたい人、ネットやアプリに抵抗がない人には向いています。逆に、機種選びや業者を相談しながら決めたい人、特殊工事が必要な人は、店頭購入や慎重な業者選びのほうが安心です。"}}]}
+        </script>
 
         <h2>まとめ</h2>
 
