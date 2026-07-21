@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /posts/post-template.html
+
+Sitemap: https://pikaringo.com/sitemap.xml
