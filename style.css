@@ -319,6 +319,7 @@ nav a:hover { color: var(--purple-dark); }
 .cat-pill.money { color: #806030; border-color: #d0b888; background: #fdf4e0; }
 .cat-pill.work  { color: #885050; border-color: #d0a0a0; background: #fce8e8; }
 .cat-pill.japan { color: #505888; border-color: #a8b0d0; background: #eaeeff; }
+.cat-pill.health { color: #2f6f5e; border-color: #9ecabb; background: #e3f2ee; }
 .cat-pill.active, .cat-pill:hover { filter: brightness(0.88); }
 
 /* ── POST CARDS ── */
@@ -374,10 +375,11 @@ nav a:hover { color: var(--purple-dark); }
   font-family: sans-serif;
 }
 
-.post-tag.life  { background: #eaf4ea; color: #3a6040; }
-.post-tag.money { background: #fdf4e0; color: #806030; }
-.post-tag.work  { background: #fce8e8; color: #885050; }
-.post-tag.japan { background: #eaeeff; color: #505888; }
+.post-tag.life   { background: #eaf4ea; color: #3a6040; }
+.post-tag.money  { background: #fdf4e0; color: #806030; }
+.post-tag.work   { background: #fce8e8; color: #885050; }
+.post-tag.japan  { background: #eaeeff; color: #505888; }
+.post-tag.health { background: #e3f2ee; color: #2f6f5e; }
 
 .post-date { font-size: 11px; color: var(--text-light); font-family: sans-serif; }
 
