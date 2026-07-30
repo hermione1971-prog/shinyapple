@@ -64,6 +64,8 @@
 | 20 | posts/japan-01-tanabata.html | 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊【日本の文化】 | 日本の文化 | 2026.07.07 | — |
 | 21 | posts/life-07-aircon-install.html | くらしのマーケットでエアコン設置工事｜当日の流れ・所要時間・最終費用を全公開【総額314,890円】 | 日常 | 2026.07.09 | 楽天アフィリエイト（S226ATES-W・S286ATES-W） |
 | 22 | posts/health-01-blood-sugar-spike.html | 在宅ワーカーを襲う「食後の激烈な眠気」の正体｜今朝、パン屋さんの前で転んで気づいたこと | 予防医学（新カテゴリ） | 2026.07.21 | — |
+| 23 | posts/health-02-natsu-nemuke-taisaku.html | 更年期主婦を襲う「暑さ」と「眠気」！在宅ワーカーの実践対策 | 予防医学 | 2026.07.30 | 楽天アフィリエイト（クールリング fumitake・ハンディファン Francfranc・氷嚢 スケーター） |
+| 24 | posts/health-03-jikan-fusoku.html | 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 | 予防医学 | 2026.07.30 | —（health-02の後編） |
 
 ## トップページ（index.html）の構成
 
@@ -79,9 +81,9 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 在宅ワーカーを襲う「食後の激烈な眠気」の正体――血糖値スパイクと予防医学 → health-01-blood-sugar-spike.html
-2. くらしのマーケットでエアコン設置工事｜当日の流れ・所要時間・最終費用を全公開 → life-07-aircon-install.html
-3. 七夕の願い事は年をとると変わっていく——90代・80代・50代の短冊 → japan-01-tanabata.html
+1. 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 → health-03-jikan-fusoku.html
+2. 更年期主婦を襲う「暑さ」と「眠気」！在宅ワーカーの実践対策 → health-02-natsu-nemuke-taisaku.html
+3. 在宅ワーカーを襲う「食後の激烈な眠気」の正体――血糖値スパイクと予防医学 → health-01-blood-sugar-spike.html
 
 ※ about.html・privacy.html・contact.html には「新着記事」サイドバーは無い（2026.07.07確認）。更新対象は index.html と posts/ 内の全記事ページ。
 
