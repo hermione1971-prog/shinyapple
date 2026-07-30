@@ -37,6 +37,21 @@
 .next-box{background:#eef3fb;border:1.5px solid #a9c0e0;border-radius:10px;padding:1rem 1.3rem;margin:2rem 0}
 .next-box a{color:#3a5a88;font-weight:700;text-decoration:none}
 .next-box a:hover{text-decoration:underline}
+/* ── 時間管理マトリクス図 ── */
+.matrix{margin:1.5rem 0}
+.matrix-grid{display:grid;grid-template-columns:62px 1fr 1fr;gap:6px;max-width:560px;margin:0 auto}
+.matrix-grid>div{padding:.55rem .5rem;border-radius:8px;font-size:12.5px;line-height:1.45;text-align:center}
+.m-corner{background:transparent;padding:0}
+.m-head,.m-side{background:#5a3888;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.m-cell{background:#f5f0fb;border:1.5px solid #cdbfe6;color:#3a2c20}
+.m-cell small{color:#6a5f52;font-size:11px}
+.m-key{background:#fff8f0;border:1.5px solid #e2c59a}
+.m-key .m-badge{display:inline-block;margin-top:.35rem;background:#9a6a2a;color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px}
+.m-mute{background:#f2f0ee;border:1.5px dashed #c8bca8;color:#8a7f78}
+.matrix figcaption{font-size:12px;color:#8a7f78;text-align:center;margin:.7rem auto 0;line-height:1.7;max-width:560px}
+/* ── CTA ── */
+.cta-box{background:#eef7f3;border:1.5px solid #9ecabb;border-radius:10px;padding:1rem 1.3rem;margin:2rem 0;font-size:14px;color:#3a2c20;line-height:1.9}
+.cta-box a{color:#2f6f5e;font-weight:700}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067408047094320" crossorigin="anonymous"></script>
 </head>
@@ -128,6 +143,21 @@
           </ul>
           <p style="margin-top:.6rem">多くの人は「緊急なこと」に追われがちですが、この分類の目的は「重要だが緊急でない」領域（将来への投資）に意識的に時間を割り振ることにあります。ただ書き出すだけのToDoリストと違い、“何からやるべきか”の判断基準を持てる点が特徴です。</p>
         </div>
+
+        <figure class="matrix">
+          <div class="matrix-grid">
+            <div class="m-corner"></div>
+            <div class="m-head">緊急</div>
+            <div class="m-head">緊急ではない</div>
+            <div class="m-side">重要</div>
+            <div class="m-cell"><strong>今すぐやる</strong><br><small>締切間近の仕事 など</small></div>
+            <div class="m-cell m-key"><strong>計画的に取り組む</strong><br><small>将来への投資・やりたいこと</small><br><span class="m-badge">★ ここが人生を変える</span></div>
+            <div class="m-side">重要では<br>ない</div>
+            <div class="m-cell"><strong>人に任せる</strong><br><small>急な問い合わせ など</small></div>
+            <div class="m-cell m-mute"><strong>減らす・やめる</strong><br><small>なんとなくのSNS など</small></div>
+          </div>
+          <figcaption>重要度×緊急度のマトリクス。多くの人は「緊急」に追われがちですが、本当に人生を変えるのは<strong>「重要だが緊急ではない」</strong>領域。ここに意識して時間を割くのがポイントです。</figcaption>
+        </figure>
 
         <div class="method-box">
           <div class="method-title">② タイムブロッキング（時間帯ごとにタスクを割り振る）</div>
@@ -228,6 +258,10 @@
 
         <p>だけど、これからは以上の方法で、やりたいこととやるべきことの両方のバランスをうまくとって、楽しい人生にしていけたらいいなあと思っています。私の気づきが、誰かのお役に立てれば嬉しいです。最後まで読んでくださり、ありがとうございました🍎</p>
 
+        <div class="cta-box">
+          この記事が、時間に追われている誰かの肩の力を、少しでも抜けたら嬉しいです。あなたの時間の工夫やご感想も、<a href="../contact.html">お問い合わせ</a>からぜひ教えてください。X（旧Twitter）でも、在宅ワークや暮らしのことを発信しています → <a href="https://x.com/shinyapple_room" target="_blank" rel="noopener">@shinyapple_room</a> 🍎
+        </div>
+
         <div class="note-box">
           ※ この記事は、私自身の体験と考えをもとにした内容です。時間管理術の効果や感じ方には個人差があります。ご自身に合った形で、無理なく取り入れてみてくださいね。
         </div>
@@ -270,6 +304,21 @@
           </ul>
           <p style="margin-top:.6rem">Most people tend to get chased by "urgent" things, but the point of this sorting is to consciously allocate time to the "important but not urgent" area (investing in your future). Unlike a plain to-do list, it gives you a standard for deciding <em>what to do first.</em></p>
         </div>
+
+        <figure class="matrix">
+          <div class="matrix-grid">
+            <div class="m-corner"></div>
+            <div class="m-head">Urgent</div>
+            <div class="m-head">Not urgent</div>
+            <div class="m-side">Impor-<br>tant</div>
+            <div class="m-cell"><strong>Do it now</strong><br><small>work near a deadline</small></div>
+            <div class="m-cell m-key"><strong>Plan &amp; invest</strong><br><small>your future, your wants</small><br><span class="m-badge">★ life-changing</span></div>
+            <div class="m-side">Not<br>important</div>
+            <div class="m-cell"><strong>Delegate</strong><br><small>sudden inquiries</small></div>
+            <div class="m-cell m-mute"><strong>Cut / drop</strong><br><small>aimless scrolling</small></div>
+          </div>
+          <figcaption>The importance × urgency matrix. Most people get chased by the "urgent," but what truly changes your life is the <strong>"important but not urgent"</strong> quadrant — the place to deliberately spend your time.</figcaption>
+        </figure>
 
         <div class="method-box">
           <div class="method-title">② Time blocking (assigning tasks to time slots)</div>
@@ -369,6 +418,10 @@
         <p>Undoing bad habits and thought patterns soaked in over 50-plus years won't be easy, I know. But without giving up, and without rushing, I want to keep improving little by little. Until now I've repeated the cycle of demanding too much perfection and giving up, or bottling up stress by denying myself what I wanted, then swinging the other way — neglecting my have-tos to do only what I liked, and then blaming myself for it.</p>
 
         <p>But from now on, with these methods, I hope to balance both my wants and my have-tos well, and make life an enjoyable one. I'll be glad if my realizations are of some use to someone. Thank you so much for reading to the end 🍎</p>
+
+        <div class="cta-box">
+          If this article took even a little weight off someone who feels rushed for time, I'm glad. I'd love to hear your own time tricks or thoughts via the <a href="../contact.html">contact page</a> 🍎
+        </div>
 
         <div class="note-box">
           * This article is based on my own experience and reflections. The effect of time-management techniques, and how they feel, varies from person to person. Please adopt whatever suits you, at a pace that's comfortable for you.
