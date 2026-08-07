@@ -66,6 +66,7 @@
 | 22 | posts/health-01-blood-sugar-spike.html | 在宅ワーカーを襲う「食後の激烈な眠気」の正体｜今朝、パン屋さんの前で転んで気づいたこと | 予防医学（新カテゴリ） | 2026.07.21 | — |
 | 23 | posts/health-02-natsu-nemuke-taisaku.html | 更年期主婦を襲う「暑さ」と「眠気」！在宅ワーカーの実践対策 | 予防医学 | 2026.07.30 | 楽天アフィリエイト（クールリング fumitake・ハンディファン Francfranc・氷嚢 スケーター） |
 | 24 | posts/health-03-jikan-fusoku.html | 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 | 予防医学 | 2026.07.30 | —（health-02の後編） |
+| 25 | posts/life-08-aru-hi-no-bangohan.html | 料理が苦手な主婦の"ある日の晩ごはん"献立を公開｜5人家族の食費と、簡単・作りおきレシピ | 日常 | 2026.08.07 | —（アフィリエイトなし。noteと同テーマ連動記事） |
 
 ## トップページ（index.html）の構成
 
@@ -81,9 +82,9 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 → health-03-jikan-fusoku.html
-2. 更年期主婦を襲う「暑さ」と「眠気」！在宅ワーカーの実践対策 → health-02-natsu-nemuke-taisaku.html
-3. 在宅ワーカーを襲う「食後の激烈な眠気」の正体――血糖値スパイクと予防医学 → health-01-blood-sugar-spike.html
+1. 料理が苦手な主婦の"ある日の晩ごはん"献立公開 → life-08-aru-hi-no-bangohan.html
+2. 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 → health-03-jikan-fusoku.html
+3. 更年期主婦を襲う「暑さ」と「眠気」！在宅ワーカーの実践対策 → health-02-natsu-nemuke-taisaku.html
 
 ※ about.html・privacy.html・contact.html には「新着記事」サイドバーは無い（2026.07.07確認）。更新対象は index.html と posts/ 内の全記事ページ。
 
@@ -175,7 +176,7 @@ npx wrangler pages deploy . --project-name=shinyapple --commit-dirty=true
 | 海外リモートワーク体験シリーズの続編 | writing-guide.md参照 |
 | 初めてのデータアノテーション体験記（おしごと） | 未着手 |
 | 草むしりビフォーアフター（日常） | 写真が撮れたら |
-| ある日の晩ごはん（日常） | 写真が撮れたら |
+| ある日の晩ごはん（日常） | 完了（2026.08.07 life-08として公開。noteと同テーマ連動。写真なし・メニュー公開形式。写真は後日追加可） |
 | 元100均店員が選ぶお気に入り（日本の文化） | 100均に行ったら |
 | Netflixアニメ「超かぐや姫」家族それぞれの感想（日常）——それぞれが別々に見て、長男は沼落ち（映画館リピート・グッズ散財）、夫は途中離脱、次男は「面白いが何回も見たくはない」、母は可も不可も無し、と評価バラバラだった話。七夕記事から独立させたネタ | 未着手 |
 
