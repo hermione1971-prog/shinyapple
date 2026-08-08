@@ -180,6 +180,17 @@ npx wrangler pages deploy . --project-name=shinyapple --commit-dirty=true
 | 元100均店員が選ぶお気に入り（日本の文化） | 100均に行ったら |
 | Netflixアニメ「超かぐや姫」家族それぞれの感想（日常）——それぞれが別々に見て、長男は沼落ち（映画館リピート・グッズ散財）、夫は途中離脱、次男は「面白いが何回も見たくはない」、母は可も不可も無し、と評価バラバラだった話。七夕記事から独立させたネタ | 未着手 |
 
+## URLの重要ルール（拡張子なし・2026.08.09確定）
+
+**Cloudflare Pages は `.html` を自動で308リダイレクトで消す**（`/posts/xxx.html` → `/posts/xxx`）。
+そのため、Googleに伝えるURLと内部リンクは**必ず拡張子（.html）なし**で書く。混在すると「リダイレクトエラー」でインデックスされなくなる（2026.08.08 Search Consoleで発生 → 08.09に全ページ修正済み）。
+
+- **canonical / og:url**：`https://pikaringo.com/posts/xxx`（.htmlなし）
+- **sitemap.xml の `<loc>`**：`.html`なし
+- **内部リンク（href）**：`href="posts/xxx"`、`href="about"`、ホームは `href="/"`（`index.html`や`index`は使わない＝どちらも/へリダイレクトされる）
+- ファイル名自体は `xxx.html` のまま（ディスク上は.html、URLだけ拡張子なし）
+- 新記事作成時・テンプレ流用時は、リンクとcanonical/og:url/sitemapを必ず拡張子なしにすること
+
 ## 作業上の注意
 
 - ファイルはすべて UTF-8 で保存する
