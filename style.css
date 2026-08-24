@@ -844,6 +844,31 @@ footer {
   font-family: sans-serif;
 }
 
+/* ── フォローする（SNS） ── */
+.follow-lead {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.follow-btns { display: flex; flex-direction: column; gap: 0.6rem; }
+.follow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.08s;
+}
+.follow-btn:hover { filter: brightness(1.08); }
+.follow-btn:active { transform: translateY(1px); }
+.follow-btn.note { background: #2e9e8f; }
+.follow-btn.x { background: #2b2b2b; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 700px) {
   .container { grid-template-columns: 1fr; padding: 2rem 1rem; }

@@ -20,6 +20,8 @@
 - GitHubリポジトリ：https://github.com/hermione1971-prog/shinyapple
 - ホスティング：Cloudflare Pages（wranglerでデプロイ）
 - お問い合わせフォーム：Formspree（ID: mzdwpaqz）
+- note：https://note.com/shinyapple_room （クリエイター名：ぴかりんごShinyapple）
+- X（旧Twitter）：@shinyapple_room （https://x.com/shinyapple_room）
 
 ## デザインの方向性
 
@@ -95,6 +97,12 @@
 - 画像URL：https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg
 - アフィリエイトリンク：https://amzn.to/49aEmCJ
 - ボックス直下に「※ Amazonアソシエイトのリンクを含みます」の注記を付ける
+
+### フォローする（index＋全記事ページ・2026.08.24設置）
+サイドバー最終カード（引用ボックス）の直前に「フォローする」カードを設置。note・Xへの2ボタン（`.follow-btn.note` / `.follow-btn.x`、スタイルは style.css）。
+- note：https://note.com/shinyapple_room ／ X：https://x.com/shinyapple_room
+- フッター（全ページ共通）にも note・X リンクを追加済み。about.html には専用の「SNSでつながる」枠あり。
+- 新記事作成時は、テンプレート（post-template.html）にフォローカードが入っているのでそのまま流用でOK。
 
 ## アフィリエイト情報
 
