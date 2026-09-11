@@ -68,6 +68,7 @@
 | 24 | posts/health-03-jikan-fusoku.html | 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 | 予防医学 | 2026.07.30 | —（health-02の後編） |
 | 25 | posts/life-08-aru-hi-no-bangohan.html | 料理が苦手な主婦の"ある日の晩ごはん"献立を公開｜5人家族の食費と、簡単・作りおきレシピ | 日常 | 2026.08.07 | —（アフィリエイトなし。noteと同テーマ連動記事） |
 | 26 | posts/work-05-remote-english-wall.html | 英文履歴書を作ったことがなくても海外リモートワークは始められる！50代主婦がAIでサクッと解決した、その方法。 | おしごと | 2026.08.14 | —（海外リモートワーク体験シリーズ。noteに本音版あり） |
+| 27 | posts/money-09-furusato-nozei.html | ふるさと納税の返礼品、牛肉よりトイレットペーパー！節約主婦が守る4つのルール【体験談】 | 家計・リベ活 | 2026.09.11 | 楽天アフィリエイト（シミュレーター・八代市ショップ・返礼品・楽天ふるさと納税ページ）＋TG（楽天カード） |
 
 ## トップページ（index.html）の構成
 
@@ -83,9 +84,9 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 英文履歴書がなくても海外リモートワークは始められる → work-05-remote-english-wall.html
-2. 料理が苦手な主婦の"ある日の晩ごはん"献立公開 → life-08-aru-hi-no-bangohan.html
-3. 「時間がない」を卒業したい。50代主婦が見つけた3つの敗因 → health-03-jikan-fusoku.html
+1. ふるさと納税の返礼品、牛肉よりトイレットペーパー！ → money-09-furusato-nozei.html
+2. 英文履歴書がなくても海外リモートワークは始められる → work-05-remote-english-wall.html
+3. 料理が苦手な主婦の"ある日の晩ごはん"献立公開 → life-08-aru-hi-no-bangohan.html
 
 ※ about.html・privacy.html・contact.html には「新着記事」サイドバーは無い（2026.07.07確認）。更新対象は index.html と posts/ 内の全記事ページ。
 
