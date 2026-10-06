@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="ふるさと納税の返礼品、実は牛肉よりトイレットペーパー派です。節約主婦が5年間続けて分かった、上限額・申請先・時期・名義の4つの注意点を実体験ベースで解説します。">
-<meta name="keywords" content="ふるさと納税, ふるさと納税 返礼品 日用品, ふるさと納税 やり方, ふるさと納税 注意点, ワンストップ特例, 楽天ふるさと納税, 節約主婦">
+<meta name="keywords" content="ふるさと納税, ふるさと納税 返礼品 日用品, ふるさと納税 やり方, ふるさと納税 注意点, ワンストップ特例, ワンストップ特例 オンライン, 自治体マイページ, 楽天ふるさと納税, 節約主婦">
 <meta property="og:title" content="ふるさと納税の返礼品、牛肉よりトイレットペーパー！節約主婦が守る4つのルール【体験談】 | ぴかりんご / Shiny Apple">
 <meta property="og:description" content="ふるさと納税の返礼品、実は牛肉よりトイレットペーパー派です。節約主婦が5年間続けて分かった、上限額・申請先・時期・名義の4つの注意点を実体験ベースで解説します。">
 <meta property="og:type" content="article">
@@ -30,6 +30,17 @@
 .rule-item{background:#fff;border:1px solid #e0d4c4;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
 .rule-item h3{margin:0 0 .5rem;font-size:16px;color:#5a3020}
 .rule-item p{margin:0;font-size:14px;line-height:1.9}
+/* ── チェックリスト ── */
+.check-box{background:#f0f7f0;border:1.5px solid #90c090;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.check-box .check-group{font-weight:700;color:#2a6030;margin:.9rem 0 .3rem;font-size:14px}
+.check-box .check-group:first-child{margin-top:0}
+.check-box ul{list-style:none;margin:0;padding:0}
+.check-box li{font-size:14px;color:#3a2c20;line-height:1.9;padding-left:1.6em;text-indent:-1.6em}
+/* ── 手順ステップ ── */
+.step-list{list-style:none;margin:1rem 0 1.5rem;padding:0}
+.step-list li{position:relative;padding:12px 14px 12px 52px;margin-bottom:8px;background:#fff;border:1px solid #e0d4c4;border-radius:10px;font-size:14px;line-height:1.75;color:#3a2c20}
+.step-list li::before{content:attr(data-step);position:absolute;left:12px;top:12px;width:24px;height:24px;background:#5a3888;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.step-list li strong{color:#5a3888;display:block;margin-bottom:2px}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067408047094320" crossorigin="anonymous"></script>
 </head>
@@ -99,7 +110,8 @@
             <li>ふるさと納税の仕組みと、押さえておきたい3つの注意点</li>
             <li>返礼品ランキング上位は高級食材ばかりなのに、私が日用品を選ぶ理由</li>
             <li>ぴかりんごがふるさと納税で必ず守っている4つのルール</li>
-            <li>2026年、寄付先に熊本県八代市を選んだ理由</li>
+            <li>2026年、寄付先に熊本県八代市を選んだ理由（実際の購入履歴つき）</li>
+            <li>寄附後のワンストップ特例申請は「自治体マイページ」からオンラインで（実際に届いたメールつき）</li>
           </ul>
         </div>
 
@@ -142,7 +154,7 @@
 
         <div class="rule-item">
           <h3>② 申請先は1か所にまとめること</h3>
-          <p>私自身は対象者から外れていてふるさと納税ができないので、夫のふるさと納税を代理で行っています。できるだけ手続きを簡単にするため、ワンストップ特例制度を使って申請しています。寄付先の自治体が5か所までの会社員が使える制度ですが、寄付先を分けるとそれぞれの自治体への申請書を用意しなければならず面倒なので、寄付先は1か所にまとめています。</p>
+          <p>私自身は対象者から外れていてふるさと納税ができないので、夫のふるさと納税を代理で行っています。できるだけ手続きを簡単にするため、ワンストップ特例制度を使って申請しています。寄付先の自治体が5か所までの会社員が使える制度ですが、寄付先を分けるとそれぞれの自治体への申請書を用意しなければならず面倒なので、寄付先は1か所にまとめています。（ただし後述のとおり、自治体マイページに対応している自治体どうしなら、オンラインでまとめて申請できます。）</p>
         </div>
 
         <div class="rule-item">
@@ -163,20 +175,101 @@
         <div class="rule-item">
           <h3>④ 納税は必ず、納税者本人名義のカードで行うこと</h3>
           <p>我が家の場合、必ず夫の楽天アカウントから、夫名義のカードで手続きをしています。楽天ふるさと納税のページでも触れられていますが、注文者情報は納税者本人と一致していなければなりません。住民票に記載されている名前・住所が、注文者情報として登録されているか必ず確認しましょう。</p>
-          <p style="margin-top:.6rem">最近では、ワンストップ特例の申請手続きが郵送だけでなく、マイナポータルでもできるようになりました。自治体によっては対応していない場合もあるので、事前に確認してみてください。</p>
+          <p style="margin-top:.6rem">最近では、ワンストップ特例の申請手続きが郵送だけでなく、マイナポータルでもできるようになりました。さらに自治体によっては、郵送の申請書そのものをやめて、オンライン申請に一本化しているところもあります（今回私が寄附した八代市がそうでした。詳しくは下の「寄附したあとが本番！」で紹介します）。対応は自治体ごとに違うので、事前に確認してみてください。</p>
         </div>
+
+        <h2>実際に申し込みました｜今年の寄附先は熊本県八代市</h2>
+
+        <p style="font-size:13px;color:#6a5848">※ 2026年10月6日に、実際に寄附した記録と寄附後の手続きについて追記しました。</p>
+
+        <p>今までは単純に品目で納税先を決めてきましたが、今年は、2026年7月に発生した令和8年熊本地震で被害の大きかった熊本県八代市を寄附先に選び、9月21日に申し込みました。返礼品は、結局トイレットペーパー（3ヶ月に1回お届けの定期便2回・合計96ロール）とティッシュ（60箱）です（笑）。こんな選び方ができるのも、ふるさと納税の良さかもしれません。</p>
+
+        <img
+          src="../images/furusato-nozei-order-history.png"
+          alt="楽天市場でふるさと納税（熊本県八代市）を申し込んだ購入履歴。トイレットペーパーとティッシュを注文 / Rakuten order history for a furusato nozei donation to Yatsushiro City, Kumamoto: toilet paper and tissues"
+          style="border-radius:8px;max-width:90%;display:block;margin:1rem auto .4rem;box-shadow:0 2px 12px rgba(0,0,0,0.12);">
+        <p style="font-size:12px;color:#8a7f78;text-align:center;margin:0 0 1rem">実際の購入履歴（注文番号は伏せています）</p>
+
+        <p>私が選んだショップは<a href="https://a.r10.to/hPIeXa" target="_blank" rel="noopener sponsored">こちら</a>です。（ちなみに選んだメインの商品は<a href="https://a.r10.to/h5ekGa" target="_blank" rel="noopener sponsored">こちら</a>です。）</p>
+
+        <h2>寄附したあとが本番！ワンストップ特例は「自治体マイページ」からオンライン申請</h2>
+
+        <p>寄附が終わると、八代市から「寄附受付完了のお知らせと今後のお手続きについて」というメールが届きました。これまでの「申請書が郵送で届くのを待つ」感覚だと戸惑いそうな内容だったので、ご紹介します。</p>
+
+        <img
+          src="../images/furusato-onestop-mail.png"
+          alt="熊本県八代市から届いた寄附受付完了のお知らせメール。ワンストップ特例は自治体マイページからオンライン申請と案内されている / Email from Yatsushiro City after the donation, explaining that One-Stop applications are made online through the Jichitai My Page portal"
+          style="border-radius:8px;max-width:90%;display:block;margin:1rem auto .4rem;box-shadow:0 2px 12px rgba(0,0,0,0.12);">
+        <p style="font-size:12px;color:#8a7f78;text-align:center;margin:0 0 1rem">実際に届いたメール（氏名は伏せています）</p>
+
+        <div class="caution-box">
+          <div class="caution-title">📩 八代市からのメールの要点（2026年9月時点）</div>
+          <ul>
+            <li>令和8年6月23日の寄附分から、<strong>ワンストップ特例申請書の郵送は行っていない</strong></li>
+            <li>ワンストップ特例を利用する人は、「<strong>自治体マイページ</strong>」からオンライン申請する</li>
+            <li>寄附金受領証明書は、ハガキで郵送される</li>
+            <li>紙の申請書を希望する場合は、八代市ふるさと納税サポートセンターに問い合わせる</li>
+            <li>申請期限は、<strong>寄附をした翌年1月10日 23時59分まで</strong></li>
+            <li>確定申告をする人は、ハガキで届く寄附金受領証明書を使って、通常どおり確定申告する</li>
+            <li>返礼品は、事業者の準備が整い次第、順次配送される（発送時期は返礼品によって異なる）</li>
+          </ul>
+        </div>
+
+        <p>つまり、申請書が届くのを待つのではなく、<strong>自分から自治体マイページにアクセスして申請する</strong>形に変わっています。ただ、実際にやってみたら拍子抜けするほど簡単でした。</p>
+
+        <p><strong>自治体マイページでのワンストップ申請は、迷わず終わりました</strong></p>
+
+        <p>寄附のあとすぐに届いたメールに、自治体マイページへのリンクが入っていました。そこから進んでアカウントを作成すれば、<strong>マイナンバーカードと、その暗証番号があれば</strong>簡単に終わります。私は迷う箇所もありませんでした。手続きはiPhoneで行い、スマホでマイナンバーカードを読み取って本人確認するスタイルでした。手続きの流れは、<a href="https://mypg.jp/" target="_blank" rel="noopener">自治体マイページ</a>の案内によると、次の5ステップです。</p>
+
+        <ol class="step-list">
+          <li data-step="1"><strong>アカウント登録</strong>自治体マイページのアカウントを作ります（すでにお持ちなら不要です）。</li>
+          <li data-step="2"><strong>ログインして申請開始</strong>ワンストップ申請を始めて、対象の寄附を選びます。複数選べば、まとめて申請できます。</li>
+          <li data-step="3"><strong>マイナンバーカードの読み取り（1回目）</strong>券面の情報を取得するため、カードを読み取ります。</li>
+          <li data-step="4"><strong>申請内容の入力・確認</strong>住所などの内容を入力して、確認します。</li>
+          <li data-step="5"><strong>マイナンバーカードの読み取り（2回目）</strong>署名用電子証明書を付与するため、もう一度カードを読み取ります。読み取りが終われば、ワンストップ申請の完了です。</li>
+        </ol>
+
+        <p>複数の自治体に寄附した場合も、自治体マイページに対応している自治体であれば、このページで一度にまとめて申請できる仕組みでした。カードの暗証番号は、手続きの前に確認しておくと安心です。申請の最初には方法を選ぶ画面があり、マイナンバーカードで本人確認をする方法のほかに、カードを使えない方向けとして、申請書を作成して各種書類を撮影し、オンラインで提出する方法も用意されていました（自治体によっては対応していない場合があります）。</p>
+
+        <p>自治体マイページでは、ほかにも、複数の自治体への寄附をまとめて確認したり、返礼品の配送状況を調べたり、引越しなどで住所が変わったときの変更届を出したりすることもできるようです。</p>
+
+        <p>なお、パソコンやスマホを使わない方や、オンライン申請に対応していない自治体に寄附した方は、従来どおり申請書を郵送する方法になります。期限は同じ寄附をした翌年1月10日で、郵送は必着です。</p>
+
+        <p>こうした対応は自治体によって違います。寄附したあとに届くメールや案内を必ず読んで、期限に間に合うように手続きしてくださいね。</p>
 
         <h2>まとめ：ふるさと納税は「贅沢のご褒美」じゃなくて「堅実な家計防衛術」</h2>
 
         <p>実は夫は最初、「ふるさと納税は愚策だ！」と否定的でした。「その気持ちは理解できるけれど、存在する制度を利用することで節約になるわけだし、愚策だからと言って何もしないで自分の自治体に100％いつもどおり納税したところで、特別感謝されて還元されるわけじゃないよね？」と伝えたところ、妙に納得してくれて、夫名義のふるさと納税をすることを許してくれました（笑）。</p>
 
-        <p>今までは単純に品目で納税先を決めてきましたが、2026年7月に発生した令和8年熊本地震で被害の大きかった熊本県八代市を、2026年の納税先として選ぼうと思っています。返礼品は、結局トイレットペーパーを選んでいますが（笑）、こんな選び方ができるのも、ふるさと納税の良さかもしれません。</p>
-
-        <p>私が選んだショップは<a href="https://a.r10.to/hPIeXa" target="_blank" rel="noopener sponsored">こちら</a>です。（ちなみに選んだメインの商品は<a href="https://a.r10.to/h5ekGa" target="_blank" rel="noopener sponsored">こちら</a>です。）</p>
-
-        <p>せっかくふるさと納税をしたのに、自治体への申請を忘れてしまい、ただの寄付になってしまっている方が毎年一定数いらっしゃるようです。ふるさと納税対象品を購入したら、忘れないうちにすぐ申請を済ませてしまうことをおすすめします。申請書は各自治体から郵送で送られてきますが、オンライン申請に対応している場合はオンラインで済ませてしまいましょう（楽天ふるさと納税のサイトから申請書のダウンロードも可能です）。</p>
+        <p>せっかくふるさと納税をしたのに、自治体への申請を忘れてしまい、ただの寄付になってしまっている方が毎年一定数いらっしゃるようです。ふるさと納税対象品を購入したら、忘れないうちにすぐ申請を済ませてしまうことをおすすめします。申請書が郵送で届くとは限らず、八代市のように自治体マイページでのオンライン申請に一本化している自治体もあります。オンライン申請に対応している場合は、その場で済ませてしまいましょう（紙の申請書が必要な場合は、楽天ふるさと納税のサイトからダウンロードできることもあります）。</p>
 
         <p>初めてふるさと納税をしてみるという方は、<a href="https://a.r10.to/h5N9DE" target="_blank" rel="noopener sponsored">楽天ふるさと納税のページ</a>で詳細を確認して、抜かりなく準備してくださいね。</p>
+
+        <h2>保存版｜ふるさと納税 重要チェックリスト</h2>
+
+        <p>この記事でお伝えしたポイントを、チェックリストにまとめました。寄附の前後に見返してみてください。</p>
+
+        <div class="check-box">
+          <div class="check-group">📝 寄附する前</div>
+          <ul>
+            <li>☐ 控除上限額をシミュレーションで確認した（上限ぎりぎりは攻めない）</li>
+            <li>☐ 寄附先は、自分が住んでいる自治体ではない</li>
+            <li>☐ ワンストップ特例が使えるか確認した（確定申告が不要な会社員などで、寄附先が5自治体以内）</li>
+          </ul>
+          <div class="check-group">🛒 寄附するとき</div>
+          <ul>
+            <li>☐ 寄附の時期を決めた（収入がほぼ確定する年の後半。年末ぎりぎりは避ける）</li>
+            <li>☐ 注文者情報の氏名・住所が、住民票と一致している</li>
+            <li>☐ 納税者本人名義のカードで支払う</li>
+          </ul>
+          <div class="check-group">📩 寄附したあと</div>
+          <ul>
+            <li>☐ 寄附後に届くメールで、申請方法（オンライン／郵送）を確認した</li>
+            <li>☐ ワンストップ特例の申請を済ませた（期限は翌年1月10日。郵送は必着）</li>
+            <li>☐ 確定申告をする場合は、届いた寄附金受領証明書を保管している</li>
+            <li>☐ 引越しなどで住所が変わったら、自治体に変更届を出す</li>
+          </ul>
+        </div>
 
       </div>
       <!-- ===== 日本語本文 ここまで ===== -->
@@ -239,7 +332,22 @@
 
         <p>My husband was skeptical of furusato nozei at first — he thought it felt like a loophole. I told him: choosing not to use a system that genuinely saves money doesn't earn you any extra credit with your own municipality either. He came around, and I now handle it on his behalf every year.</p>
 
-        <p>For 2026, I'm choosing Yatsushiro City in Kumamoto Prefecture, one of the areas hit hardest by the July 2026 Kumamoto earthquake, as our donation destination — a reminder that this system can be about more than just picking the best deal. And yes, I'm still choosing toilet paper. If you've never tried furusato nozei before, I'd encourage you to look into it — just remember to complete the application after you donate, or it becomes nothing more than a regular donation.</p>
+        <p>This year, on September 21, I donated to Yatsushiro City in Kumamoto Prefecture — one of the areas hit hardest by the July 2026 Kumamoto earthquake — a reminder that this system can be about more than just picking the best deal. And yes, I chose toilet paper and tissues again.</p>
+
+        <p>One thing worth knowing: for donations made on or after June 23, 2026, Yatsushiro no longer mails paper One-Stop forms. Donors are asked to apply online through a portal called "Jichitai My Page" instead (deadline: January 10 of the following year). The link was in the email I received right after donating; once I created an account, all I needed was my My Number card and its PIN, and nothing was confusing. I did it all on my iPhone, scanning the card with the phone to verify my identity. If you don't have a My Number card, the portal also offers an option to fill out the form and submit photos of your documents online (not every municipality supports it). If you donate to several participating municipalities, you can apply for all of them in one go. If you don't use a computer or smartphone, or your municipality doesn't support online applications, you'll still mail the paper form the traditional way — it must arrive by January 10 of the following year. Policies differ by municipality, so read the email you receive after donating. If you've never tried furusato nozei before, I'd encourage you to look into it — just remember to complete the application after you donate, or it becomes nothing more than a regular donation.</p>
+
+        <h2>Quick checklist</h2>
+
+        <div class="check-box">
+          <ul>
+            <li>☐ Checked my deduction limit with a simulator (and left a margin)</li>
+            <li>☐ Not donating to my own municipality</li>
+            <li>☐ Chose a donation time when my income for the year is nearly settled</li>
+            <li>☐ Name and address on the order match my residency record, and I'm paying with a card in the taxpayer's own name</li>
+            <li>☐ Read the email sent after donating to confirm how to apply (online or by mail)</li>
+            <li>☐ Completed the One-Stop application before the January 10 deadline (mail must arrive by then)</li>
+          </ul>
+        </div>
 
       </div>
       <!-- ===== English body end ===== -->
