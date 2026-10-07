@@ -112,7 +112,7 @@
           <div class="point-title">📋 この記事を読むとわかること</div>
           <ul>
             <li>SMSのリンクからネット銀行の不正送金につながる流れ</li>
-            <li>私のスマホに実際に届いた怪しいSMS</li>
+            <li>私のスマホに実際に届いた怪しいSMSと、種類ごとに狙われるもの</li>
             <li>今日からできる見分け方と自衛策</li>
             <li>もし入力してしまったときにやること（早さが大事）</li>
             <li>ネットバンキングの被害は補償されるのか</li>
@@ -155,16 +155,64 @@
         </figure>
         -->
 
-        <p>【ぴかりんごさん記入：届いたSMSの種類（不在配達・アカウント復旧の催促・「重要なお知らせ」など）、いつ頃届いたか、最初に見たときの感想、どこで「おかしい」と気づいたか。スクショは2〜3枚まで】</p>
+        <p>私のスマホにも、怪しいSMSはたびたび届きます。これまでに届いたのは、こんな種類です。</p>
 
-        <p>こうしたSMSは、宅配業者や銀行、携帯会社、カード会社など、普段からやり取りのある会社を名乗ってきます。「不在だったので再配達の手続きを」「お客様のアカウントに不審なアクセスがありました」など、つい急いでタップしたくなる文面になっているのが特徴です。</p>
+        <ul>
+          <li>宅配業者を名乗る「不在のため持ち帰りました」という通知</li>
+          <li>海外リモートワークや在宅の仕事の勧誘・スカウト</li>
+          <li>「アカウントを復旧してください」という催促</li>
+          <li>「重要なお知らせがあります。至急ご連絡ください」という連絡の要求</li>
+        </ul>
 
-        <h2>SMSから不正送金までの流れ</h2>
+        <p>【ぴかりんごさん記入：いつ頃届いたか、最初に見たときの感想、どこで「おかしい」と気づいたか。スクショは2〜3枚まで】</p>
+
+        <p>実は、<strong>銀行を名乗るSMSは一度も受け取ったことがありません</strong>。そして私は、どれも詐欺だとわかっていたので、リンクは押していません。だから「押したあとに何が起きるのか」は、私自身は知らないのです。</p>
+
+        <p>そこで疑問に思いました。宅配や仕事の案内なら、銀行は関係なさそうです。なのに、どうしてネット銀行が被害にあうのでしょう？　調べてみると、SMSの種類によって、リンクの先で狙われるものが違うことがわかりました。</p>
+
+        <h2>SMSの種類で、狙われるものが違う</h2>
+
+        <table class="rate-table">
+          <tr>
+            <th>SMSの種類</th>
+            <th>リンクの先で起きること</th>
+            <th>主な被害</th>
+          </tr>
+          <tr>
+            <td>銀行を名乗る</td>
+            <td>銀行そっくりの偽サイトで、ID・パスワード・ワンタイムパスワードを入力させる</td>
+            <td>ネット銀行からの不正送金</td>
+          </tr>
+          <tr>
+            <td>宅配業者を名乗る</td>
+            <td>Androidでは偽のアプリを入れさせようとする。iPhoneでは偽サイトでカード番号などを入力させようとすることが多い</td>
+            <td>スマホの乗っ取り、カードの不正利用</td>
+          </tr>
+          <tr>
+            <td>通販などのアカウントを名乗る</td>
+            <td>偽のログイン画面で、メールアドレス・パスワード・カード番号を入力させる</td>
+            <td>アカウントの乗っ取り、カードの不正利用</td>
+          </tr>
+          <tr>
+            <td>仕事の勧誘</td>
+            <td>LINEなどに誘導して、やり取りを続けさせる</td>
+            <td>「手数料」「保証金」などの名目で振り込ませる</td>
+          </tr>
+        </table>
+
+        <p>ネット銀行の被害に一番まっすぐつながるのは、いちばん上の「銀行を名乗るSMS」です。ただ、ほかの種類も銀行と無関係とは言い切れません。</p>
+
+        <ul>
+          <li><strong>偽アプリを入れてしまった場合</strong>：スマホに届くSMSを盗み見られることがあり、銀行から届く認証コードも例外ではありません。さらに、自分のスマホから知らない人へ詐欺SMSを大量に送られてしまうこともあります。警察庁の資料でも、だまされて入れた不正アプリが原因で、身に覚えのないSMSが大量に送られる事例が紹介されています。</li>
+          <li><strong>パスワードを使い回している場合</strong>：通販サイトなどで盗まれたメールアドレスとパスワードを、犯人がほかのサイトでも試すことがあります。銀行で同じパスワードを使っていれば、ログインされる入口になってしまいます。</li>
+        </ul>
+
+        <h2>銀行を名乗るSMSから不正送金までの流れ</h2>
 
         <div class="flow-box">
           <div class="flow-title">🔗 被害はこうして起きる</div>
           <p>
-            ① 宅配業者や銀行を名乗るSMSが届く<br>
+            ① 「お取引を制限しました」「本人確認が必要です」など、銀行を名乗るSMSが届く<br>
             　↓<br>
             ② リンクをタップすると、本物そっくりの偽サイトが開く<br>
             　↓<br>
@@ -178,6 +226,8 @@
 
         <p>怖いのは③から④がほぼ同時に起きることです。警察庁の資料でも、入力された情報をその場で使ってログインし、二段階認証まで突破してしまう「リアルタイム型」の手口が紹介されています。ワンタイムパスワードを入力したから安心、とは言えないのです。</p>
 
+        <p>警察庁の資料には、偽SMSの文面づくりに生成AIが悪用されているとみられる事例も載っていました。「日本語が不自然だから見抜ける」という時代ではなくなってきているようです。</p>
+
         <h2>見分け方と、今日からできる自衛策</h2>
 
         <div class="point-box">
@@ -188,6 +238,8 @@
             <li><strong>取引通知メールをオンにする。</strong>ログインや送金があればすぐに気づける</li>
             <li><strong>振込限度額を必要な分だけに下げておく。</strong>万一のときの被害を小さくできる</li>
             <li><strong>使える銀行では、パスキーや認証アプリなどの強い認証を使う。</strong>偽サイトにパスワードを入れてしまっても使われにくくなる</li>
+            <li><strong>銀行のパスワードは、ほかのサービスと使い回さない。</strong>どこかで漏れても銀行まで広がらないようにする</li>
+            <li><strong>SMSやメールで案内されたアプリは入れない。</strong>アプリは公式のストアから、自分で探して入れる</li>
           </ol>
         </div>
 
@@ -270,7 +322,7 @@
           <div class="point-title">📋 What you'll find in this article</div>
           <ul>
             <li>How a text message can lead to money being stolen from an online bank account</li>
-            <li>A suspicious text I actually received</li>
+            <li>The suspicious texts I've received, and what each type is after</li>
             <li>Simple rules to protect yourself, starting today</li>
             <li>What to do immediately if you entered your details on a fake site</li>
             <li>Whether victims get their money back (in Japan)</li>
@@ -300,18 +352,52 @@
 
         <p>In 2025, roughly 90% of these cases involved phishing. Losses have fallen in 2026, but the police also report that new tricks keep appearing. The police even noted that many of the scam texts are being sent from ordinary people's smartphones that have been infected with malware.</p>
 
-        <h2>The text I received</h2>
+        <h2>The texts I've received</h2>
 
-        <p>[Pikaringo to add: the type of message, when it arrived, and what made it feel off.]</p>
+        <p>Suspicious texts arrive on my phone fairly often: fake missed-delivery notices, overseas remote-work "job offers" and scouting messages, demands to "recover your account," and "important notice — contact us urgently" messages.</p>
 
-        <p>These messages pretend to come from companies you already deal with — delivery services, banks, phone carriers, card companies — and they are written to make you tap quickly: "We missed you, please rearrange delivery," or "Unusual activity was detected on your account."</p>
+        <p>[Pikaringo to add: when they arrived and what made them feel off.]</p>
 
-        <h2>From a text message to a stolen transfer</h2>
+        <p>Interestingly, <strong>I have never received a text claiming to be from a bank</strong>. And because I knew these were scams, I never tapped the links — so I didn't actually know what happens next. That made me wonder: if the message is about a parcel or a job, how does it end up hurting someone's bank account?</p>
+
+        <h2>Different texts target different things</h2>
+
+        <table class="rate-table">
+          <tr>
+            <th>Type of text</th>
+            <th>What happens after the link</th>
+            <th>Main damage</th>
+          </tr>
+          <tr>
+            <td>Pretending to be a bank</td>
+            <td>A fake bank site asks for your ID, password and one-time code</td>
+            <td>Money transferred out of your account</td>
+          </tr>
+          <tr>
+            <td>Pretending to be a delivery company</td>
+            <td>On Android, you're asked to install a fake app; on iPhone, usually a fake site asks for card details</td>
+            <td>Phone takeover, card fraud</td>
+          </tr>
+          <tr>
+            <td>Pretending to be a shopping account</td>
+            <td>A fake login page asks for your email, password and card number</td>
+            <td>Account takeover, card fraud</td>
+          </tr>
+          <tr>
+            <td>Job offers</td>
+            <td>You're moved to LINE or another chat app</td>
+            <td>You're asked to pay "fees" or "deposits"</td>
+          </tr>
+        </table>
+
+        <p>Bank-impersonating texts lead most directly to online banking fraud. But the others aren't unrelated: a fake app can read the texts on your phone — including codes from your bank — and can send scam texts to strangers from your number. And if you reuse passwords, credentials stolen from a shopping site can be tried on your bank.</p>
+
+        <h2>From a bank-impersonating text to a stolen transfer</h2>
 
         <div class="flow-box">
           <div class="flow-title">🔗 How it happens</div>
           <p>
-            ① A text arrives, claiming to be from a delivery company or bank<br>
+            ① A text arrives claiming to be from your bank ("Your account has been restricted")<br>
             　↓<br>
             ② The link opens a fake site that looks exactly like the real one<br>
             　↓<br>
@@ -323,7 +409,7 @@
           </p>
         </div>
 
-        <p>Steps ③ and ④ can happen almost at the same moment. The police describe "real-time" phishing that even gets past two-step verification, so entering a one-time code doesn't make you safe.</p>
+        <p>Steps ③ and ④ can happen almost at the same moment. The police describe "real-time" phishing that even gets past two-step verification. They also report signs that generative AI is being used to write scam texts — so awkward Japanese is no longer a reliable giveaway.</p>
 
         <h2>My rules for staying safe</h2>
 
@@ -335,6 +421,8 @@
             <li><strong>Turn on transaction alerts</strong> so you notice any login or transfer right away.</li>
             <li><strong>Lower your transfer limit</strong> to what you actually need.</li>
             <li><strong>Use stronger sign-in methods</strong> such as passkeys or an authenticator app, where available.</li>
+            <li><strong>Never reuse your bank password</strong> for any other service.</li>
+            <li><strong>Never install an app from a link in a text or email.</strong> Find it yourself in the official app store.</li>
           </ol>
         </div>
 
