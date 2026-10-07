@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 下書き：公開時にこの noindex 行を削除すること -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="SMSのリンクから偽サイトに誘導され、ネット銀行から200万円を不正送金された――そんな話を聞いて他人事に思えなかった50代主婦が、手口・見分け方・もし入力してしまったときの対処法・補償のしくみを、警察庁と金融庁の公表データをもとにまとめました。">
+<meta name="keywords" content="SMS フィッシング, ネット銀行 不正送金, スミッシング, ネットバンキング 補償, 不正アクセス 対策, 詐欺 対策, 50代 主婦">
+<meta property="og:title" content="SMSのリンクからネット銀行に不正アクセス！200万円の被害を聞いて調べた手口と自衛策 | ぴかりんご / Shiny Apple">
+<meta property="og:description" content="SMSフィッシングからネット銀行の不正送金被害につながる流れと、見分け方・もしものときの対処法・補償のしくみを、公的データをもとにまとめました。">
+<meta property="og:type" content="article">
+<title>SMSのリンクからネット銀行に不正アクセス！200万円の被害を聞いて調べた手口と自衛策 | ぴかりんご / Shiny Apple</title>
+<link rel="canonical" href="https://pikaringo.com/posts/money-10-sms-phishing-netbank">
+<meta property="og:url" content="https://pikaringo.com/posts/money-10-sms-phishing-netbank">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* ── ポイントボックス ── */
+.point-box{background:#f5f0fb;border:1.5px solid #b0a0d0;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.point-box .point-title{font-weight:700;color:#5a3888;margin-bottom:.5rem;font-size:14px}
+.point-box ul,.point-box ol{margin:0;padding-left:1.2rem}
+.point-box li{font-size:14px;color:#3a2c20;line-height:1.9}
+/* ── 注意ボックス ── */
+.caution-box{background:#fff8f0;border:1.5px solid #e0b080;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.caution-box .caution-title{font-weight:700;color:#a06010;margin-bottom:.5rem;font-size:14px}
+.caution-box p{font-size:14px;color:#3a2c20;line-height:1.9;margin:0}
+.caution-box ol,.caution-box ul{margin:0;padding-left:1.2rem}
+.caution-box li{font-size:14px;color:#3a2c20;line-height:1.9}
+/* ── データ表 ── */
+.rate-table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:14px}
+.rate-table th{background:#e8e0f0;color:#4a2870;padding:10px 14px;text-align:left;border:1px solid #c8b8e0}
+.rate-table td{padding:10px 14px;border:1px solid #d0c8e0;line-height:1.8;background:#faf7f2}
+.rate-table tr:nth-child(even) td{background:#f3f0f8}
+/* ── 流れ図 ── */
+.flow-box{background:#f0f7f0;border:1.5px solid #90c090;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}
+.flow-box .flow-title{font-weight:700;color:#2a6030;margin-bottom:.5rem;font-size:14px}
+.flow-box p{font-size:14px;color:#3a2c20;line-height:2;margin:0}
+/* ── 出典 ── */
+.source-list{font-size:12.5px;color:#6a5f58;line-height:1.8;padding-left:1.2rem}
+/* ── 下書きメモ（公開時に削除） ── */
+.draft-note{background:#ffeef0;border:2px dashed #d08090;border-radius:8px;padding:.7rem 1rem;margin:1rem 0;font-size:13px;color:#8a2a3a}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6067408047094320" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="/" class="site-title">
+      ぴかりんご <span>/ Shiny Apple</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="/#posts" class="lj">記事一覧</a>
+        <a href="/#posts" class="le" style="display:none">Posts</a>
+        <a href="../about" class="lj">プロフィール</a>
+        <a href="../about" class="le" style="display:none">About</a>
+        <a href="../contact" class="lj">お問い合わせ</a>
+        <a href="../contact" class="le" style="display:none">Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/" class="lj">ホーム</a>
+  <a href="/" class="le" style="display:none">Home</a>
+  <span>›</span>
+  <span class="lj">家計・リベ活</span>
+  <span class="le" style="display:none">Finances</span>
+  <span>›</span>
+  <span class="lj">SMSフィッシングとネット銀行の不正送金</span>
+  <span class="le" style="display:none">SMS Phishing and Online Banking Fraud</span>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <main>
+
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="post-tag money lj">家計・リベ活</span>
+        <span class="post-tag money le" style="display:none">Finances</span>
+        <span class="post-date">2026.10.XX</span>
+      </div>
+      <h1 class="article-title lj">SMSのリンクからネット銀行に不正アクセス！<br>200万円の被害を聞いて調べた手口と自衛策【詐欺シリーズ①】</h1>
+      <h1 class="article-title le" style="display:none">One Text Message, ¥2 Million Gone:<br>How SMS Phishing Leads to Online Banking Fraud — and How to Protect Yourself</h1>
+    </div>
+
+    <div class="article-body">
+
+      <div class="draft-note">✏️ 下書きメモ（公開前にこのボックスごと削除）：【】で囲んだ部分は、ぴかりんごさんご自身の体験・言葉で書き換えてください。スクショは個人情報・URL・電話番号を塗りつぶしてから images/ に入れます。</div>
+
+      <!-- ===== 日本語本文 ===== -->
+      <div class="lj">
+
+        <p>先日、あるライブ配信を見ていたら、「SMSのリンクから偽サイトに入ってしまい、ネット銀行に不正アクセスされて200万円の被害が出た」という話が出てきました。</p>
+
+        <p>私はこのブログでも書いているとおり、楽天銀行やドコモSMTBネット銀行（旧・住信SBIネット銀行）に口座を集約しています。便利さと引き換えに、ネット銀行はスマホひとつで全部が動いてしまう場所でもあります。正直、まったく他人事に思えませんでした。</p>
+
+        <p>そこで、警察庁や金融庁が公表しているデータを読みながら、手口と対策、もしものときの補償のしくみを調べてみました。これから何回かに分けて、私が実際に遭遇した詐欺の話も書いていく予定です。シリーズのテーマは<strong>「知っていれば安心」</strong>。怖がらせるためではなく、落ち着いて対処するための記事です。</p>
+
+        <div class="point-box">
+          <div class="point-title">📋 この記事を読むとわかること</div>
+          <ul>
+            <li>SMSのリンクからネット銀行の不正送金につながる流れ</li>
+            <li>私のスマホに実際に届いた怪しいSMS</li>
+            <li>今日からできる見分け方と自衛策</li>
+            <li>もし入力してしまったときにやること（早さが大事）</li>
+            <li>ネットバンキングの被害は補償されるのか</li>
+          </ul>
+        </div>
+
+        <h2>数字で見る、ネットバンキング不正送金の今</h2>
+
+        <p>まず、どのくらい起きているのかを見てみます。警察庁のまとめによると、ネットバンキングの不正送金被害は次のとおりです。</p>
+
+        <table class="rate-table">
+          <tr>
+            <th>期間</th>
+            <th>発生件数</th>
+            <th>被害総額</th>
+          </tr>
+          <tr>
+            <td>2025年（令和7年）1年間</td>
+            <td>4,747件</td>
+            <td>約103億9,700万円（過去最悪）</td>
+          </tr>
+          <tr>
+            <td>2026年（令和8年）上半期</td>
+            <td>253件</td>
+            <td>約20億7,000万円（前年同期比51％減）</td>
+          </tr>
+        </table>
+        <p style="font-size:12.5px;color:#6a5f58">出典：警察庁「令和7年におけるサイバー空間をめぐる脅威の情勢等について」「令和8年上半期における〜」</p>
+
+        <p>2025年は手口の<strong>約9割がフィッシング</strong>でした。2026年に入って被害額は減っていますが、警察庁は新しい手口が出てきていることも報告しています。「減ったからもう大丈夫」ではなく、「対策が効いてきている。だから自分も対策しておこう」と受け止めるのがよさそうです。</p>
+
+        <p>ちなみに警察庁の資料では、2025年にSMSからフィッシングサイトへ誘導される手口が増えた理由として、<strong>ウイルスに感染したスマホが悪用されて、怪しいSMSが大量に送られている</strong>可能性が挙げられていました。知らない人からではなく、「どこかの誰かのスマホ」から届くこともあるということです。</p>
+
+        <h2>私のスマホに届いたSMS</h2>
+
+        <!-- 画像：不在配達SMSのスクショ（電話番号・URLを塗りつぶし済みのもの）
+        <figure style="margin:1.5rem 0;text-align:center">
+          <img src="../images/scam-sms-01.png" alt="宅配業者を装った不在通知のSMS（URLは塗りつぶし済み）" style="max-width:320px;width:100%;border-radius:8px;border:1px solid #ddd">
+          <figcaption style="font-size:12.5px;color:#6a5f58;margin-top:.4rem">実際に届いた不在通知風のSMS（URL・番号は隠しています）</figcaption>
+        </figure>
+        -->
+
+        <p>【ぴかりんごさん記入：届いたSMSの種類（不在配達・アカウント復旧の催促・「重要なお知らせ」など）、いつ頃届いたか、最初に見たときの感想、どこで「おかしい」と気づいたか。スクショは2〜3枚まで】</p>
+
+        <p>こうしたSMSは、宅配業者や銀行、携帯会社、カード会社など、普段からやり取りのある会社を名乗ってきます。「不在だったので再配達の手続きを」「お客様のアカウントに不審なアクセスがありました」など、つい急いでタップしたくなる文面になっているのが特徴です。</p>
+
+        <h2>SMSから不正送金までの流れ</h2>
+
+        <div class="flow-box">
+          <div class="flow-title">🔗 被害はこうして起きる</div>
+          <p>
+            ① 宅配業者や銀行を名乗るSMSが届く<br>
+            　↓<br>
+            ② リンクをタップすると、本物そっくりの偽サイトが開く<br>
+            　↓<br>
+            ③ ログインID・パスワード、ワンタイムパスワードなどを入力してしまう<br>
+            　↓<br>
+            ④ 犯人がその情報で本物のネット銀行にログイン<br>
+            　↓<br>
+            ⑤ 知らない口座へ送金される
+          </p>
+        </div>
+
+        <p>怖いのは③から④がほぼ同時に起きることです。警察庁の資料でも、入力された情報をその場で使ってログインし、二段階認証まで突破してしまう「リアルタイム型」の手口が紹介されています。ワンタイムパスワードを入力したから安心、とは言えないのです。</p>
+
+        <h2>見分け方と、今日からできる自衛策</h2>
+
+        <div class="point-box">
+          <div class="point-title">🛡️ 私が決めたルール</div>
+          <ol>
+            <li><strong>SMSやメールのリンクから銀行にログインしない。</strong>銀行へは、公式アプリか、自分でブックマークしたページからだけ入る</li>
+            <li><strong>文面がそれらしくても、まずリンク以外の方法で確認する。</strong>宅配なら公式アプリや伝票番号、銀行ならアプリのお知らせ欄を見る</li>
+            <li><strong>取引通知メールをオンにする。</strong>ログインや送金があればすぐに気づける</li>
+            <li><strong>振込限度額を必要な分だけに下げておく。</strong>万一のときの被害を小さくできる</li>
+            <li><strong>使える銀行では、パスキーや認証アプリなどの強い認証を使う。</strong>偽サイトにパスワードを入れてしまっても使われにくくなる</li>
+          </ol>
+        </div>
+
+        <p>なかでも一番大事なのは1つめだと思います。偽サイトは本物そっくりに作られていて、見た目で見分けるのは正直難しいです。だから「見分ける」より「そもそもリンクから入らない」と決めてしまう方が、私のような慌てんぼうには合っています。</p>
+
+        <p>【ぴかりんごさん記入（任意）：ご自身が楽天銀行・ドコモSMTBネット銀行で設定していること（通知・限度額など）。設定画面のスクショを載せる場合は口座番号等を隠す】</p>
+
+        <h2>もし入力してしまったら――早さが大事</h2>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ 気づいたらすぐにやること</div>
+          <ol>
+            <li><strong>すぐに銀行へ電話する。</strong>ログインを止めてもらう、口座を止めてもらうなど。電話番号はSMSに書かれたものではなく、キャッシュカードや公式アプリ・公式サイトで確認する</li>
+            <li><strong>パスワードを変更する。</strong>同じパスワードを使い回しているサービスがあれば、そちらも変える</li>
+            <li><strong>警察に相談・届け出をする。</strong>補償の申し出のときに、警察への届け出を条件にしている銀行もある</li>
+            <li><strong>何が起きたかをメモしておく。</strong>届いたSMS、入力した日時、入力した情報など。スクショも残す</li>
+          </ol>
+        </div>
+
+        <p>「恥ずかしい」「怒られそう」と迷っている時間がいちばんもったいないです。銀行に早く知らせることが、被害を広げないためにも、補償を受けるためにも大事になります。</p>
+
+        <h2>ネットバンキングの被害は補償されるの？</h2>
+
+        <p>ここがいちばん気になるところだと思います。調べてわかったことをまとめます。</p>
+
+        <ul>
+          <li>もともと法律（預金者保護法）で補償が決められているのは、偽造・盗難キャッシュカードの被害です。ネットバンキングは、法律の直接の対象ではありません。</li>
+          <li>ただ、全国銀行協会の申し合わせによって、<strong>個人のネットバンキング被害も、法律に準じて補償する</strong>しくみになっています。</li>
+          <li>多くの銀行では、<strong>銀行に知らせた日の30日前以降</strong>の被害が補償の対象とされています。</li>
+          <li>利用者に「過失」や「重大な過失」があったと判断されると、<strong>減額されたり、補償の対象外になったりする場合があります</strong>。どこからが過失かは、銀行ごと・事案ごとの判断です。</li>
+          <li>警察への届け出、被害状況の説明への協力、速やかな通知などを補償の条件にしている銀行もあります。</li>
+        </ul>
+
+        <p>金融庁の集計（2025年9月末時点）では、ネットバンキングの被害のうち処理方針が決まった27,190件について、<strong>全額または一部が補償されたのは22,224件（81.7％）</strong>、補償されなかったのは4,966件（18.3％）でした。「一部補償」も含んだ数字なので、全額戻ったケースがどのくらいあるのかまではわかりません。</p>
+
+        <p>ライブ配信では「75％くらい戻るらしい」という話も出ていました。調べてみると、75％という割合は、盗難通帳の被害などで預金者に過失がある場合の補償割合として決められているものでした。ネットバンキングについては、過失の判断や補償の割合を一律に決めるのは難しいとして、個別に対応することになっています。</p>
+
+        <p>つまり、<strong>補償されるケースは多いけれど、必ず全額戻るとは限らない</strong>というのが実際のところです。ぜひ一度、ご自身が使っている銀行の「不正送金の補償」のページを見てみてください。【ぴかりんごさん記入（任意）：楽天銀行・ドコモSMTBネット銀行の補償ページを実際に見てみた感想】</p>
+
+        <h2>まとめ：知っていれば安心</h2>
+
+        <div class="point-box">
+          <div class="point-title">🍎 今日のポイント</div>
+          <ul>
+            <li>銀行へは、SMSやメールのリンクからではなく、公式アプリかブックマークから</li>
+            <li>取引通知メールと振込限度額は、今日のうちに見直す</li>
+            <li>入力してしまったら、恥ずかしがらずにすぐ銀行へ電話</li>
+            <li>補償のしくみはあるけれど、全額とは限らない。自分の銀行の規定を一度確認しておく</li>
+          </ul>
+        </div>
+
+        <p>【ぴかりんごさん記入：締めのひと言。ライブで話を聞いて感じたこと、ご家族（お母さまなど）にも伝えたい、など】</p>
+
+        <p>次回は、パソコンで広告をクリックしたら出てきた「偽のセキュリティ警告」の話を書く予定です。</p>
+
+        <p style="font-size:13px;color:#6a5f58">※ 本記事の補償に関する内容は一般的なしくみの説明です。実際の補償の可否や割合は、各金融機関の規定と個別の判断によります。詳しくはご利用の金融機関にご確認ください。（2026年10月時点の情報です）</p>
+
+        <h3 style="font-size:15px;margin-top:2rem">参考にした資料</h3>
+        <ul class="source-list">
+          <li><a href="https://www.npa.go.jp/publications/statistics/cybersecurity/data/R7/R07_cyber_jousei.pdf" target="_blank" rel="noopener">警察庁「令和7年におけるサイバー空間をめぐる脅威の情勢等について」</a></li>
+          <li><a href="https://www.npa.go.jp/publications/statistics/cybersecurity/data/R8kami/R08_kami_cyber_jousei.pdf" target="_blank" rel="noopener">警察庁「令和8年上半期におけるサイバー空間をめぐる脅威の情勢等について」</a></li>
+          <li><a href="https://www.fsa.go.jp/news/r7/ginkou/20251226.html" target="_blank" rel="noopener">金融庁「預貯金の不正送金被害等の発生状況（令和7年9月末）」</a></li>
+          <li><a href="https://www.netbk.co.jp/contents/security/if/kojin.html" target="_blank" rel="noopener">ドコモSMTBネット銀行「被害に遭ってしまったら（個人のお客さま）」</a></li>
+          <li><a href="https://www.pref.nagano.lg.jp/police/anshin/cyber/netanzen.html" target="_blank" rel="noopener">長野県警察「インターネットバンキングの不正送金被害に注意！」</a></li>
+        </ul>
+
+      </div>
+      <!-- ===== 日本語本文 ここまで ===== -->
+
+      <!-- ===== English body ===== -->
+      <div class="le" style="display:none">
+
+        <p>Recently, while watching a livestream, I heard a story that stuck with me: someone tapped a link in a text message, landed on a fake website, and ended up losing ¥2 million from their online bank account.</p>
+
+        <p>As I've written on this blog, I've moved most of my money into online banks. They're convenient — but that also means everything can be done from a single smartphone. It didn't feel like someone else's problem at all.</p>
+
+        <p>So I read through the data published by Japan's National Police Agency and Financial Services Agency to understand how these scams work, how to protect yourself, and what happens if the worst occurs. This is the first post in a series about scams I've actually encountered. The theme of the series: <strong>knowing is the best protection</strong>. Not to scare anyone — just to help us stay calm.</p>
+
+        <div class="point-box">
+          <div class="point-title">📋 What you'll find in this article</div>
+          <ul>
+            <li>How a text message can lead to money being stolen from an online bank account</li>
+            <li>A suspicious text I actually received</li>
+            <li>Simple rules to protect yourself, starting today</li>
+            <li>What to do immediately if you entered your details on a fake site</li>
+            <li>Whether victims get their money back (in Japan)</li>
+          </ul>
+        </div>
+
+        <h2>The numbers in Japan</h2>
+
+        <table class="rate-table">
+          <tr>
+            <th>Period</th>
+            <th>Cases</th>
+            <th>Total losses</th>
+          </tr>
+          <tr>
+            <td>2025 (full year)</td>
+            <td>4,747</td>
+            <td>approx. ¥10.4 billion (record high)</td>
+          </tr>
+          <tr>
+            <td>2026 (first half)</td>
+            <td>253</td>
+            <td>approx. ¥2.07 billion (down 51% year on year)</td>
+          </tr>
+        </table>
+        <p style="font-size:12.5px;color:#6a5f58">Source: National Police Agency of Japan</p>
+
+        <p>In 2025, roughly 90% of these cases involved phishing. Losses have fallen in 2026, but the police also report that new tricks keep appearing. The police even noted that many of the scam texts are being sent from ordinary people's smartphones that have been infected with malware.</p>
+
+        <h2>The text I received</h2>
+
+        <p>[Pikaringo to add: the type of message, when it arrived, and what made it feel off.]</p>
+
+        <p>These messages pretend to come from companies you already deal with — delivery services, banks, phone carriers, card companies — and they are written to make you tap quickly: "We missed you, please rearrange delivery," or "Unusual activity was detected on your account."</p>
+
+        <h2>From a text message to a stolen transfer</h2>
+
+        <div class="flow-box">
+          <div class="flow-title">🔗 How it happens</div>
+          <p>
+            ① A text arrives, claiming to be from a delivery company or bank<br>
+            　↓<br>
+            ② The link opens a fake site that looks exactly like the real one<br>
+            　↓<br>
+            ③ You enter your login ID, password, or one-time code<br>
+            　↓<br>
+            ④ The criminal immediately uses them to log in to your real bank<br>
+            　↓<br>
+            ⑤ Money is transferred to an unknown account
+          </p>
+        </div>
+
+        <p>Steps ③ and ④ can happen almost at the same moment. The police describe "real-time" phishing that even gets past two-step verification, so entering a one-time code doesn't make you safe.</p>
+
+        <h2>My rules for staying safe</h2>
+
+        <div class="point-box">
+          <div class="point-title">🛡️ What I decided</div>
+          <ol>
+            <li><strong>Never log in to a bank from a link in a text or email.</strong> Only use the official app or a bookmark you saved yourself.</li>
+            <li><strong>Check another way first.</strong> For deliveries, use the official app or tracking number; for banks, check the notices inside the app.</li>
+            <li><strong>Turn on transaction alerts</strong> so you notice any login or transfer right away.</li>
+            <li><strong>Lower your transfer limit</strong> to what you actually need.</li>
+            <li><strong>Use stronger sign-in methods</strong> such as passkeys or an authenticator app, where available.</li>
+          </ol>
+        </div>
+
+        <p>Fake sites are very hard to tell apart from real ones, so for someone as easily flustered as me, "never use the link" works better than "try to spot the fake."</p>
+
+        <h2>If you entered your details — act fast</h2>
+
+        <div class="caution-box">
+          <div class="caution-title">⚠️ Do this right away</div>
+          <ol>
+            <li><strong>Call your bank immediately.</strong> Use the number on your cash card or the official website — never the one in the message.</li>
+            <li><strong>Change your password</strong>, and change it anywhere else you used the same one.</li>
+            <li><strong>Report it to the police.</strong> Some banks require a police report for compensation.</li>
+            <li><strong>Write down what happened</strong> and keep screenshots.</li>
+          </ol>
+        </div>
+
+        <h2>Will the money come back?</h2>
+
+        <p>In Japan, banks have agreed to compensate individual customers for online banking fraud in line with the rules for stolen cash cards, generally covering losses from 30 days before the bank was notified. However, if the customer is judged to have been negligent, compensation may be reduced or refused, and that decision is made case by case.</p>
+
+        <p>According to the Financial Services Agency (data as of September 2025), of 27,190 cases with a decision, 81.7% received full or partial compensation and 18.3% received none. In other words: compensation is common, but a full refund isn't guaranteed. It's worth checking your own bank's policy once.</p>
+
+        <h2>Summary: knowing is the best protection</h2>
+
+        <div class="point-box">
+          <div class="point-title">🍎 Key points</div>
+          <ul>
+            <li>Go to your bank through the official app or a bookmark — never through a link</li>
+            <li>Review your transaction alerts and transfer limit today</li>
+            <li>If you entered your details, call your bank right away — don't be embarrassed</li>
+            <li>Compensation exists, but it isn't always full — check your bank's rules</li>
+          </ul>
+        </div>
+
+        <p>Next time, I'll write about the fake "security warning" pop-up that appeared after I clicked an ad on my computer.</p>
+
+        <p style="font-size:13px;color:#6a5f58">* This article explains the general system in Japan as of October 2026. Actual compensation depends on each bank's rules and the circumstances of each case.</p>
+
+      </div>
+      <!-- ===== English body end ===== -->
+
+      <div class="lj" style="background:#f5f0fb;border-left:3px solid #b0a0d0;padding:.7rem 1rem;margin:1.5rem 0 0;font-size:14px;border-radius:6px;line-height:1.9;">
+        📎 あわせて読みたい：<a href="money-06-net-bank" style="color:#5a3888;">都市銀行よりネット銀行が大優勝！な話</a> ／ <a href="life-01-poikatsu-loss" style="color:#5a3888;">ポイ活でお金を失った話</a>
+      </div>
+
+      <!-- 関連記事 -->
+      <div class="related-posts">
+        <h2 class="related-title lj">関連記事</h2>
+        <h2 class="related-title le" style="display:none">Related posts</h2>
+        <div class="posts-grid">
+          <a class="post-card" href="money-06-net-bank">
+            <div class="post-img">🏦</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag money lj">家計・リベ活</span>
+                <span class="post-tag money le" style="display:none">Finances</span>
+                <span class="post-date">2026.06.02</span>
+              </div>
+              <p class="post-title lj">楽天銀行・ドコモSMTBネット銀行　都市銀行よりネット銀行が大優勝！な話</p>
+              <p class="post-title le" style="display:none">Why Online Banks Beat Big City Banks</p>
+            </div>
+          </a>
+          <a class="post-card" href="life-01-poikatsu-loss">
+            <div class="post-img">💸</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag life lj">日常</span>
+                <span class="post-tag life le" style="display:none">Daily life</span>
+                <span class="post-date">2026.05.18</span>
+              </div>
+              <p class="post-title lj">ポイ活でお金を失った話</p>
+              <p class="post-title le" style="display:none">How I Lost Money Chasing Points</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">プロフィール</h2>
+      <h2 class="sidebar-title le" style="display:none">About me</h2>
+      <div class="about-avatar">🍎</div>
+      <p class="about-name">ぴかりんご</p>
+      <p class="about-name-en">Shiny Apple</p>
+      <p class="about-body lj">埼玉県在住の主婦です。赤毛のアンが大好きで、素朴で飾らない自然なものに心惹かれます。日々のくらし、お金のこと、新しい挑戦など、何気ない日常をゆるりと書き留めています。</p>
+      <p class="about-body le" style="display:none">A homemaker from Saitama, Japan. Writing about everyday life, home finances, and small beautiful things each season.</p>
+    </div>
+
+    <div class="sidebar-card lj">
+      <h2 class="sidebar-title">おすすめの本</h2>
+      <a href="https://amzn.to/49aEmCJ" target="_blank" rel="noopener sponsored" style="display:block;text-decoration:none;">
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;">
+          <img src="https://m.media-amazon.com/images/I/71LAm5mfnuL._SY425_.jpg" alt="【改訂版】本当の自由を手に入れる お金の大学" style="width:120px;border-radius:4px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+          <p style="font-size:13px;font-weight:bold;color:var(--text);margin-bottom:4px;line-height:1.5;">【改訂版】本当の自由を手に入れる<br>お金の大学</p>
+          <p style="font-size:12px;color:var(--text-light);margin-bottom:12px;">両＠リベ大学長 著</p>
+          <span style="display:inline-block;background:var(--purple-mid);color:#fff;font-size:12px;padding:6px 16px;border-radius:20px;">Amazonで見る →</span>
+        </div>
+      </a>
+      <p style="font-size:11px;color:#8a7f78;text-align:center;margin-top:8px">※ Amazonアソシエイトのリンクを含みます</p>
+    </div>
+
+    <div class="sidebar-card">
+      <h2 class="sidebar-title lj">新着記事</h2>
+      <h2 class="sidebar-title le" style="display:none">Recent posts</h2>
+      <ul class="popular-list">
+        <li><span class="popular-num">1</span><a href="money-09-furusato-nozei" class="lj" style="color:inherit;text-decoration:none">ふるさと納税の返礼品、牛肉よりトイレットペーパー！</a><a href="money-09-furusato-nozei" class="le" style="display:none;color:inherit;text-decoration:none">Toilet Paper Over Wagyu? My Furusato Nozei Rules</a></li>
+        <li><span class="popular-num">2</span><a href="work-05-remote-english-wall" class="lj" style="color:inherit;text-decoration:none">英文履歴書がなくても海外リモートワークは始められる</a><a href="work-05-remote-english-wall" class="le" style="display:none;color:inherit;text-decoration:none">Starting Overseas Remote Work Without an English Résumé</a></li>
+        <li><span class="popular-num">3</span><a href="life-08-aru-hi-no-bangohan" class="lj" style="color:inherit;text-decoration:none">料理が苦手な主婦の&quot;ある日の晩ごはん&quot;献立公開</a><a href="life-08-aru-hi-no-bangohan" class="le" style="display:none;color:inherit;text-decoration:none">A Not-So-Great Cook's Real Weeknight Dinners</a></li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text lj">"明日はいつもまっさらで、まだ失敗がない。"</p>
+      <p class="quote-text le" style="display:none">"Tomorrow is always fresh, with no mistakes in it."</p>
+      <p class="quote-attr">— L.M. Montgomery</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-title">ぴかりんご / Shiny Apple</p>
+  <p class="footer-sub lj">日本の片隅から、日常のいろいろなことを。</p>
+  <p class="footer-sub le" style="display:none">From a quiet corner of Japan, writing about the many sides of everyday life.</p>
+  <div class="footer-links">
+    <a href="../about" class="lj">プロフィール</a>
+    <a href="../about" class="le" style="display:none">About</a>
+    <a href="../contact" class="lj">お問い合わせ</a>
+    <a href="../contact" class="le" style="display:none">Contact</a>
+    <a href="../privacy" class="lj">プライバシーポリシー</a>
+    <a href="../privacy" class="le" style="display:none">Privacy Policy</a>
+  </div>
+  <p class="footer-copy">© 2026 ぴかりんご / Shiny Apple. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  const isJa = lang === 'ja';
+  document.querySelectorAll('.lj').forEach(el => el.style.display = isJa ? '' : 'none');
+  document.querySelectorAll('.le').forEach(el => el.style.display = isJa ? 'none' : '');
+  document.getElementById('btn-ja').classList.toggle('active', isJa);
+  document.getElementById('btn-en').classList.toggle('active', !isJa);
+  document.documentElement.lang = isJa ? 'ja' : 'en';
+}
+</script>
+
+</body>
+</html>
