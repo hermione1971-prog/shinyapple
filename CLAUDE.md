@@ -71,6 +71,7 @@
 | 27 | posts/money-09-furusato-nozei.html | ふるさと納税の返礼品、牛肉よりトイレットペーパー！節約主婦が守る4つのルール【体験談】 | 家計・リベ活 | 2026.09.11 | TG（楽天カード）＋Amazon（お金の大学） |
 | 27 | posts/money-09-furusato-nozei.html | ふるさと納税の返礼品、牛肉よりトイレットペーパー！節約主婦が守る4つのルール【体験談】 | 家計・リベ活 | 2026.09.11 | 楽天アフィリエイト（シミュレーター・八代市ショップ・返礼品・楽天ふるさと納税ページ）＋TG（楽天カード） |
 | 28 | posts/money-10-sms-phishing-netbank.html | あなたは大丈夫？生成AIで見抜けなくなったSMS詐欺から、ネット銀行の資産を守る方法【詐欺対策①】 | 家計・リベ活 | 2026.10.07 | —（詐欺シリーズ①。本文はぴかりんご執筆。スクショ3枚 images/scam-sms-*.png は本人判断で塗りつぶしなし） |
+| 29 | posts/work-06-mystery-payment.html | 海外リモートワークで身に覚えのない報酬254円！正体と、50代主婦が見直した設定【体験談】 | おしごと | 2026.10.22 | —（海外リモートワーク体験シリーズ。noteと連動：体験談・気持ちはnote、ブログは確認手順・チェックリスト等の実用版。プラットフォーム名・案件名・ツール名は守秘義務のため伏せる） |
 
 ## トップページ（index.html）の構成
 
@@ -86,9 +87,9 @@
 **リンク付き形式**（`<a href="..." class="lj" style="color:inherit;text-decoration:none">`）で統一。
 
 現在の表示（最新3記事）：
-1. 生成AIで見抜けなくなったSMS詐欺から資産を守る方法 → money-10-sms-phishing-netbank.html
-2. ふるさと納税の返礼品、牛肉よりトイレットペーパー！ → money-09-furusato-nozei.html
-3. 英文履歴書がなくても海外リモートワークは始められる → work-05-remote-english-wall.html
+1. 海外リモートワークで身に覚えのない報酬254円の正体 → work-06-mystery-payment.html
+2. 生成AIで見抜けなくなったSMS詐欺から資産を守る方法 → money-10-sms-phishing-netbank.html
+3. ふるさと納税の返礼品、牛肉よりトイレットペーパー！ → money-09-furusato-nozei.html
 
 ※ about.html・privacy.html・contact.html には「新着記事」サイドバーは無い（2026.07.07確認）。更新対象は index.html と posts/ 内の全記事ページ。
 
