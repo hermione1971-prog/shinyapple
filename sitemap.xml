@@ -86,6 +86,20 @@
   </url>
 
   <url>
+    <loc>https://pikaringo.com/privacy</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaringo.com/contact</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
     <loc>https://pikaringo.com/posts/money-08-scholarship-gift-tax</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
