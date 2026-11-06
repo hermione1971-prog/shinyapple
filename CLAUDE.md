@@ -81,7 +81,11 @@
 - サイドバー「おすすめの本」（日本語のみ）：お金の大学の本のアフィリエイトリンク
 
 ## サイドバーの統一形（2026.11.06 全ページ統一）
-全ページ（index・全記事・post-template）で同じ構成：**プロフィール（イラスト images/profile-illustration.png、class="sidebar-avatar-img"、50代主婦の自己紹介文）→ 新着記事 → おすすめの本（.lj のみ）→ 引用**。新記事を作るときは post-template.html のサイドバーをそのまま使う。CSS変数は --text / --purple-mid を使う（--text-dark・--accent は存在しない）。
+全ページ（index・全記事・post-template）で同じ構成：**プロフィール（イラスト images/profile-illustration.png、class="sidebar-avatar-img"、50代主婦の自己紹介文）→ 新着記事 → カテゴリ（記事数つき・家計は.ljのみ）→ おすすめの本（.lj のみ）→ 引用**。
+**新記事を追加したら、全ページのカテゴリ欄の記事数（例：「（9）」と英語版「(9)」）も更新すること。** リンクは `/?cat=life#posts` 形式で、トップページの絞り込み（index.html末尾の filterCat）が動く。
+
+## 免責事項ページ（2026.11.06 新設）
+disclaimer.html（URL /disclaimer）。全ページのフッターにリンクあり・sitemap掲載。privacy.html の免責事項節はこのページへのリンクに置換済み。金融記事の末尾には「情報の時点＋共通免責」ブロック（class="info-asof"）、制度系記事（money-02/03/08/09/10）には「参考・出典」欄（class="sources-box"）がある。新記事を作るときは post-template.html のサイドバーをそのまま使う。CSS変数は --text / --purple-mid を使う（--text-dark・--accent は存在しない）。
 
 ## サイドバーのルール
 

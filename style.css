@@ -856,3 +856,11 @@ footer {
 
 /* ── LANG SWITCH ── */
 .lj, .le { transition: opacity 0.15s; }
+
+/* サイドバー：カテゴリ一覧（2026.11.06） */
+.cat-list { list-style: none; margin: 0; padding: 0; }
+.cat-list li { border-bottom: 1px dashed var(--lavender2); }
+.cat-list li:last-child { border-bottom: none; }
+.cat-list a { display: flex; justify-content: space-between; padding: 8px 2px; font-size: 13px; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+.cat-list a:hover { color: var(--purple-dark); }
+.cat-count { color: var(--text-light); font-size: 12px; }
