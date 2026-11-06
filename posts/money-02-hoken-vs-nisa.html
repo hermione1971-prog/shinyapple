@@ -58,6 +58,8 @@
   margin: 1rem 0;
 }
 @media(max-width:480px){ .sim-results { grid-template-columns:1fr; } }
+.sim-row input[type=range] { min-width: 0; }
+@media(max-width:480px){ .sim-row { flex-wrap: wrap; gap: 4px 12px; } .sim-row label { width: 100%; } }
 .sim-card { border-radius: 8px; padding: 0.9rem 1rem; }
 .sim-card.bad  { background: #fdf0d8; }
 .sim-card.good { background: #eaf4ea; }

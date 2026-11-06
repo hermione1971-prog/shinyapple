@@ -852,6 +852,9 @@ footer {
   .hero { padding: 3rem 1rem 2.5rem; }
   .page-hero { padding: 2rem 1rem; }
   .affiliate-box { flex-direction: column; text-align: center; }
+  .site-title { white-space: nowrap; font-size: 20px; gap: 6px; }
+  .site-title span { font-size: 11px; }
+  .lang-btn { white-space: nowrap; padding: 4px 10px; }
 }
 
 /* ── LANG SWITCH ── */
@@ -864,3 +867,6 @@ footer {
 .cat-list a { display: flex; justify-content: space-between; padding: 8px 2px; font-size: 13px; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
 .cat-list a:hover { color: var(--purple-dark); }
 .cat-count { color: var(--text-light); font-size: 12px; }
+
+/* スマホで記事内の幅の広い部品（楽天ウィジェット・比較表）に枠が引っぱられて横にはみ出すのを防ぐ（2026.11.06） */
+.container > main, .container > aside { min-width: 0; }
