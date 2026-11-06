@@ -870,3 +870,6 @@ footer {
 
 /* スマホで記事内の幅の広い部品（楽天ウィジェット・比較表）に枠が引っぱられて横にはみ出すのを防ぐ（2026.11.06） */
 .container > main, .container > aside { min-width: 0; }
+
+/* 英語版：日本国外の読者向けの断り書き（家計・リベ活の記事冒頭、2026.11.06） */
+.intl-note { background: #fdf8ec; border: 1.5px dashed #d9c49a; border-radius: 12px; padding: 1rem 1.25rem; margin: 0 0 1.75rem; font-size: 15px; line-height: 1.8; color: #5a4a32; }

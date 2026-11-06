@@ -34,7 +34,7 @@
 | カテゴリ（日本語） | カテゴリ（英語） | タグclass | 内容 |
 |---|---|---|---|
 | 日常 | Daily life | life | 暮らし・季節・手作り |
-| 家計・リベ活 | Finances | money | 家計管理・節約・投資（日本語記事のみ） |
+| 家計・リベ活 | Finances | money | 家計管理・節約・投資（英語版もあり。英語版冒頭に日本国外の読者向けの断り書き。アフィリエイトは日本語版のみ） |
 | おしごと | Work | work | データアノテーション・在宅ワーク |
 | 日本の文化 | Japanese culture | japan | 季節行事・食・100均・コンビニ等 |
 | 予防医学 | Preventive health | health | 健康・血糖値・運動・食生活（在宅ワークと健康） |
@@ -81,7 +81,7 @@
 - サイドバー「おすすめの本」（日本語のみ）：お金の大学の本のアフィリエイトリンク
 
 ## サイドバーの統一形（2026.11.06 全ページ統一）
-全ページ（index・全記事・post-template）で同じ構成：**プロフィール（イラスト images/profile-illustration.png、class="sidebar-avatar-img"、50代主婦の自己紹介文）→ 新着記事 → カテゴリ（記事数つき・家計は.ljのみ）→ おすすめの本（.lj のみ）→ 引用**。
+全ページ（index・全記事・post-template）で同じ構成：**プロフィール（イラスト images/profile-illustration.png、class="sidebar-avatar-img"、50代主婦の自己紹介文）→ 新着記事 → カテゴリ（記事数つき・日英とも5カテゴリ）→ おすすめの本（.lj のみ）→ 引用**。
 **新記事を追加したら、全ページのカテゴリ欄の記事数（例：「（9）」と英語版「(9)」）も更新すること。** リンクは `/?cat=life#posts` 形式で、トップページの絞り込み（index.html末尾の filterCat）が動く。
 
 ## 免責事項ページ（2026.11.06 新設）
@@ -150,7 +150,7 @@ shinyapple/
 - `.lj` クラス = 日本語コンテンツ（デフォルト表示）
 - `.le` クラス = 英語コンテンツ（`style="display:none"` でデフォルト非表示）
 - `setLang('ja')` / `setLang('en')` 関数で切り替え
-- 「家計・リベ活」カテゴリは日本語ページのみに表示
+- 「家計・リベ活」は英語版にも表示する（2026.11.06 方針変更）。英語本文の冒頭に `<div class="intl-note">` の断り書きを入れる：日本の制度・サービスの記事は「A note for readers outside Japan: This article is about systems and services available only in Japan…」、海外でも役立つ記事（money-01・money-10）は「Some details in this article are specific to Japan, but the basic ideas apply wherever you live…」。新しい家計記事も同様にする
 - アフィリエイトリンク・日本語書籍の紹介は日本語版のみ
 
 ## デプロイ方法
